@@ -1,0 +1,399 @@
+<!--
+=======================================================
+EMAIL: Predator of the Month — The Wolf
+CLIENT: Proclamation Jewelry
+TYPE: Promotional / Series Email (Predator of the Month)
+DATE: 2026-04-23
+=======================================================
+
+CAMPAIGN: Recurring "Predator of the Month" series. April = The Wolf.
+THEMES: Discipline. Loyalty. Moving with intention. Quiet leadership.
+SEASONAL: April marks transition (winter to spring) — the wolf moves through change.
+PROMOTES: Wolf Clasps (primary), Alpha Wolf Pendant (secondary)
+
+SUBJECT LINE OPTIONS:
+1. Predator of the Month: The Wolf
+2. The Wolf Moves with Intention
+3. Discipline. Loyalty. Quiet Leadership.
+
+PREVIEW TEXT OPTIONS:
+1. April's predator. The wolf, and what it carries.
+2. The most disciplined leader in the wild walks alone first.
+3. New wolf clasps and pendants for the month of transition.
+
+IMAGES USED:
+- Hero: 4mm-wolf-kings-clasp-silver clasp top shot (editorial dark close-up)
+- Product grid: Wolf signature clasps and alpha wolf pendants (real images from PJ CDN)
+
+DESIGN NOTES:
+- Story-led, editorial. Symbolism > sales pitch.
+- Four pillars: Discipline / Loyalty / Intention / Quiet Leadership.
+- Seasonal frame: wolf as the predator of transition months.
+- Two product sections: Wolf Clasps (main feature), Alpha Wolf Pendants (companion).
+- No pricing per brand rule (this is not a sale email).
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predator of the Month: The Wolf — Proclamation Jewelry</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
+
+    .metadata, .subject-lines, .notes {
+      background: #fff3cd; border: 2px dashed #D4AF37; padding: 20px; margin: 20px auto; border-radius: 8px;
+      max-width: 600px;
+    }
+    .metadata h2, .subject-lines h3, .notes h3 { color: #B31B1B; margin-bottom: 10px; font-family: 'Trajan Pro', 'Times New Roman', serif; letter-spacing: 1px; }
+    .subject-lines ol { padding-left: 20px; margin: 0 0 16px 0; }
+    .subject-lines li { margin-bottom: 6px; color: #0A0A0A; font-size: 14px; line-height: 1.5; }
+
+    .email-wireframe {
+      max-width: 600px; margin: 30px auto; background: #0A0A0A; color: #ffffff;
+      font-family: 'Optimo Plain', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* HEADER */
+    .header { text-align: center; padding: 26px 20px; background: #0A0A0A; border-bottom: 1px solid #1a1a1a; }
+    .header .logo { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 22px; letter-spacing: 6px; }
+
+    /* SERIES BANNER */
+    .series-banner { text-align: center; padding: 36px 30px 8px 30px; background: #0A0A0A; }
+    .series-banner .eyebrow {
+      color: #D4AF37; font-size: 11px; letter-spacing: 5px;
+      text-transform: uppercase; margin-bottom: 18px;
+    }
+    .series-banner .title {
+      color: #FFFFFF; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 44px; letter-spacing: 6px; text-transform: uppercase;
+      line-height: 1.1; font-weight: normal;
+    }
+    .series-banner .month {
+      color: #888; font-size: 11px; letter-spacing: 4px;
+      text-transform: uppercase; margin-top: 18px;
+    }
+
+    /* HERO IMAGE */
+    .hero-image { line-height: 0; padding-top: 30px; }
+    .hero-image img { width: 100%; display: block; }
+
+    /* HERO HOOK */
+    .hero-hook {
+      padding: 40px 36px 0 36px; text-align: center;
+    }
+    .hero-hook p {
+      color: #E4E4E4; font-size: 17px; line-height: 1.7;
+      font-style: italic; max-width: 460px; margin: 0 auto;
+    }
+
+    /* OPENING CTA */
+    .cta-wrap { text-align: center; padding: 36px 30px 44px 30px; background: #0A0A0A; }
+    .cta-btn {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 14px 44px; font-size: 12px; font-weight: bold; letter-spacing: 3px;
+      text-decoration: none; text-transform: uppercase;
+    }
+    .cta-outline {
+      display: inline-block; border: 1px solid #D4AF37; color: #D4AF37;
+      padding: 12px 36px; font-size: 11px; letter-spacing: 3px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* OPENING STORY */
+    .story {
+      padding: 48px 36px; background: #0A0A0A;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+    }
+    .story p {
+      color: #E4E4E4; font-size: 15px; line-height: 1.85; margin-bottom: 18px;
+    }
+    .story p:last-child { margin-bottom: 0; }
+    .gold-accent { color: #D4AF37; }
+
+    /* PILLARS */
+    .pillars { padding: 56px 30px; background: #0A0A0A; text-align: center; }
+    .pillars h2 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif;
+      color: #D4AF37; font-size: 14px; letter-spacing: 4px;
+      text-transform: uppercase; margin-bottom: 36px;
+    }
+    .pillar-row { margin-bottom: 32px; }
+    .pillar-row:last-child { margin-bottom: 0; }
+    .pillar-row .roman {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 22px; letter-spacing: 2px; margin-bottom: 10px;
+    }
+    .pillar-row .label {
+      color: #FFFFFF; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 16px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .pillar-row .desc {
+      color: #C0C0C0; font-size: 14px; line-height: 1.7;
+      max-width: 440px; margin: 0 auto;
+    }
+
+    /* SEASONAL FRAME */
+    .seasonal {
+      padding: 48px 36px; background: #0A0A0A;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+      text-align: center;
+    }
+    .seasonal .eyebrow {
+      color: #D4AF37; font-size: 10px; letter-spacing: 4px;
+      text-transform: uppercase; margin-bottom: 14px;
+    }
+    .seasonal h3 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif;
+      color: #FFFFFF; font-size: 22px; letter-spacing: 2px;
+      text-transform: uppercase; font-weight: normal; margin-bottom: 18px;
+    }
+    .seasonal p {
+      color: #C0C0C0; font-size: 15px; line-height: 1.85; font-style: italic;
+      max-width: 460px; margin: 0 auto;
+    }
+
+    /* COLLECTION HEADER */
+    .collection-header { padding: 48px 30px 24px 30px; text-align: center; background: #0A0A0A; }
+    .collection-header .eyebrow {
+      color: #D4AF37; font-size: 10px; letter-spacing: 4px;
+      text-transform: uppercase; margin-bottom: 14px;
+    }
+    .collection-header h2 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif;
+      color: #FFFFFF; font-size: 26px; letter-spacing: 2px;
+      text-transform: uppercase; font-weight: normal;
+    }
+    .collection-header .sub {
+      color: #C0C0C0; font-size: 13px; line-height: 1.6; font-style: italic;
+      max-width: 440px; margin: 14px auto 0 auto;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid {
+      padding: 20px 20px 0 20px; background: #0A0A0A;
+    }
+    .product-row {
+      display: flex; gap: 16px; margin-bottom: 16px;
+    }
+    .product-card {
+      flex: 1; background: #111; text-align: center; padding: 14px 12px 18px 12px;
+    }
+    .product-card img {
+      width: 100%; height: auto; display: block; margin-bottom: 12px;
+    }
+    .product-card .title {
+      color: #E4E4E4; font-size: 11px; line-height: 1.4;
+      letter-spacing: 0.5px; min-height: 44px;
+    }
+
+    /* CTA WRAP MID */
+    .cta-mid { text-align: center; padding: 28px 30px 44px 30px; background: #0A0A0A; }
+
+    /* CLOSING */
+    .closing {
+      padding: 56px 30px; text-align: center; background: #0A0A0A;
+      border-top: 1px solid #1a1a1a;
+    }
+    .closing .quote {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 19px; letter-spacing: 1px; line-height: 1.5;
+      max-width: 460px; margin: 0 auto 28px auto; font-style: italic;
+    }
+    .closing .attribution {
+      color: #888; font-size: 11px; letter-spacing: 3px;
+      text-transform: uppercase; margin-bottom: 32px;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #050505; padding: 30px; text-align: center;
+      border-top: 1px solid #1a1a1a;
+    }
+    .footer .tagline {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 18px;
+    }
+    .footer .info {
+      color: #666; font-size: 10px; line-height: 1.8; letter-spacing: 1px;
+    }
+    .footer a { color: #888; text-decoration: underline; }
+
+    /* MOBILE */
+    @media only screen and (max-width: 600px) {
+      .series-banner .title { font-size: 32px !important; letter-spacing: 4px !important; }
+      .product-row { flex-direction: column !important; }
+      .story, .seasonal { padding: 36px 24px !important; }
+      .pillars { padding: 40px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SUBJECT LINES & PREVIEW TEXT -->
+<div class="subject-lines">
+  <h3>Subject Line Options</h3>
+  <ol>
+    <li>Predator of the Month: The Wolf</li>
+    <li>The Wolf Moves with Intention</li>
+    <li>Discipline. Loyalty. Quiet Leadership.</li>
+  </ol>
+  <h3>Preview Text Options</h3>
+  <ol>
+    <li>April's predator. The wolf, and what it carries.</li>
+    <li>The most disciplined leader in the wild walks alone first.</li>
+    <li>New wolf clasps and pendants for the month of transition.</li>
+  </ol>
+</div>
+
+<!-- ===================================================
+     EMAIL BEGINS
+=================================================== -->
+<div class="email-wireframe">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">PROCLAMATION</div>
+  </div>
+
+  <!-- SERIES BANNER -->
+  <div class="series-banner">
+    <div class="eyebrow">Predator of the Month</div>
+    <div class="title">The Wolf</div>
+    <div class="month">April &nbsp;&middot;&nbsp; The Month of Transition</div>
+  </div>
+
+  <!-- HERO IMAGE — Alpha Wolf Pendant close-up (symbol clearly visible) -->
+  <div class="hero-image">
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Alpha_Gold_Wolf_Necklace_Pendant_Proclamation_Jewelry.jpg?v=1775936169" alt="Alpha Wolf Pendant by Proclamation Jewelry" />
+  </div>
+
+  <!-- HERO HOOK -->
+  <div class="hero-hook">
+    <p>The most disciplined leader in the wild walks alone first. Then leads the rest of the pack.</p>
+  </div>
+
+  <!-- OPENING CTA -->
+  <div class="cta-wrap">
+    <a href="https://www.proclamationjewelry.com/collections/signature-clasps/style-wolf" class="cta-btn">Shop The Wolf</a>
+  </div>
+
+
+  <!-- OPENING STORY — merged with "What the Wolf Carries" for tighter mobile read -->
+  <div class="story">
+    <p>The wolf is not the loudest creature in the wild. Not the largest. Not the first to move.</p>
+
+    <p>What it carries is something different. <span class="gold-accent">Patience. Loyalty. Quiet command.</span> The kind of authority that does not need to announce itself.</p>
+
+    <p>Where other predators rely on force, the wolf relies on intention. Every step measured. Every alliance earned. Every fight chosen.</p>
+
+    <p style="text-align:center; margin-top: 28px; color:#D4AF37; font-family:'Trajan Pro','Times New Roman',serif; font-size:13px; letter-spacing:4px; text-transform:uppercase;">Discipline &nbsp;&middot;&nbsp; Loyalty &nbsp;&middot;&nbsp; Intention &nbsp;&middot;&nbsp; Quiet Leadership</p>
+  </div>
+
+
+  <!-- SEASONAL FRAME -->
+  <div class="seasonal">
+    <div class="eyebrow">A Note on April</div>
+    <h3>The Month of Transition</h3>
+    <p>Winter does not end at once. Spring does not arrive in a single day. April lives in the space between, where the discipline to keep moving matters more than the conditions to move through.</p>
+    <p style="margin-top: 16px;">It is the wolf's month.</p>
+  </div>
+
+
+  <!-- WOLF CLASPS COLLECTION HEADER -->
+  <div class="collection-header">
+    <div class="eyebrow">The Feature</div>
+    <h2>Wolf Clasps</h2>
+    <p class="sub">Functional jewelry. Worn close. Built to be the signature element of any chain it carries.</p>
+  </div>
+
+
+  <!-- WOLF CLASPS GRID -->
+  <div class="product-grid">
+
+    <!-- Row 1 -->
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/4mm-wolf-signature-clasp-14k-yellow-gold" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Clasp_Signature_Gold_4mm_Wolf_Top_cc443f78-aaaa-40d9-a209-ee7bd1dcd4a1.jpg?v=1768343294" alt="4mm Wolf Signature Clasp 14k Yellow Gold" />
+        <div class="title">4mm Wolf Signature Clasp<br>14k Yellow Gold</div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/5mm-wolf-signature-clasp-platinum" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Clasp_Signature_Platinum_5mm_Wolf_Top_bef1a690-f9dd-4311-a8b7-2207a41fa89f.jpg?v=1768343498" alt="5mm Wolf Signature Clasp Platinum" />
+        <div class="title">5mm Wolf Signature Clasp<br>Platinum</div>
+      </a>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/4mm-wolf-kings-clasp-platinum" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Clasp_Kings_Platinum_4mm_Wolf_Top_50533e21-2932-42ff-9c19-1f9875d16733.jpg?v=1768343529" alt="4mm Wolf Kings Clasp Platinum" />
+        <div class="title">4mm Wolf King's Clasp<br>Platinum</div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/5mm-wolf-kings-clasp-silver" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Clasp_Kings_Silver_5mm_Wolf_Top_7917e1bd-6c31-420c-a5bb-6901fd0515eb.jpg?v=1768343163" alt="5mm Wolf Kings Clasp Silver" />
+        <div class="title">5mm Wolf King's Clasp<br>Silver</div>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- VIEW ALL CLASPS CTA -->
+  <div class="cta-mid">
+    <a href="https://www.proclamationjewelry.com/collections/signature-clasps/style-wolf" class="cta-btn">View All Wolf Clasps</a>
+  </div>
+
+
+  <!-- ALPHA WOLF PENDANTS HEADER -->
+  <div class="collection-header" style="border-top: 1px solid #1a1a1a;">
+    <div class="eyebrow">Worn at the Heart</div>
+    <h2>Alpha Wolf Pendants</h2>
+    <p class="sub">For those who carry the wolf as a daily reminder. Cast in silver and gold.</p>
+  </div>
+
+
+  <!-- ALPHA WOLF PENDANTS GRID -->
+  <div class="product-grid">
+
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/alpha-yellow-gold" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Alpha_Gold_Wolf_Necklace_Pendant_Proclamation_Jewelry.jpg?v=1775936169" alt="Alpha Gold Wolf Pendant with Diamonds" />
+        <div class="title">Alpha Gold Wolf Pendant<br>With Diamonds</div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/silver-wolf-pendant" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Alpha_Silver_Wolf_Pendant_Necklace.jpg?v=1723375405" alt="Alpha Silver Wolf Pendant" />
+        <div class="title">Alpha Silver Wolf Pendant</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="cta-mid">
+    <a href="https://www.proclamationjewelry.com/products/alpha-yellow-gold" class="cta-outline">Explore the Alpha</a>
+  </div>
+
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <p class="quote">&ldquo;The strength of the pack is the wolf. The strength of the wolf is the pack.&rdquo;</p>
+    <p class="attribution">Rudyard Kipling</p>
+    <a href="https://www.proclamationjewelry.com/collections/signature-clasps/style-wolf" class="cta-btn">Shop The Wolf</a>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="tagline">Forged for Legacy, Worn to Inspire</div>
+    <div class="info">
+      PROCLAMATION JEWELRY<br>
+      Houston, Texas<br><br>
+      <a href="#">View in Browser</a> &nbsp;|&nbsp; <a href="#">Email Preferences</a> &nbsp;|&nbsp; <a href="#">Unsubscribe</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

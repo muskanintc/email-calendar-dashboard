@@ -1,0 +1,477 @@
+<!--
+=======================================================
+EMAIL: The Voyager — Our #1 Best Selling Pendant
+CLIENT: Proclamation Jewelry
+TYPE: Promotional (Product Spotlight — Full Collection)
+DATE: 2026-05-21
+=======================================================
+
+CONTEXT: Full Voyager compass pendant spotlight. Hero focus on the
+Voyager Gold Compass Pendant with Single Diamond (best seller).
+Nick's warm founder voice throughout. No marketing language.
+Experimental typography. Gold price dip urgency. Limited quantities.
+
+Six additional variants at bottom:
+1. Voyager Gold Compass Pendant (no diamonds)
+2. Voyager Gold Compass Pendant with Diamonds (multiple)
+3. Platinum Compass Pendant with Diamonds
+4. Platinum Compass Pendant
+5. White Gold Compass Pendant with Diamonds
+6. Voyager Silver Compass Pendant
+
+FORMAT: Designed HTML campaign. Experimental typography.
+Mobile-first responsive. Optimized for Klaviyo.
+
+PRODUCT URLS:
+- HERO: https://www.proclamationjewelry.com/products/voyager-gold-compass-pendant-diamond
+- Gold (no diamonds): https://www.proclamationjewelry.com/products/gold-compass-pendant
+- Gold (multi-diamond): https://www.proclamationjewelry.com/products/voyager-yellow-gold
+- Platinum (diamonds): https://www.proclamationjewelry.com/products/voyager-diamond-platinum-compass-pendant
+- Platinum (plain): https://www.proclamationjewelry.com/products/platinum-compass-pendant
+- White Gold (diamonds): https://www.proclamationjewelry.com/products/voyager-white-gold
+- Silver: https://www.proclamationjewelry.com/products/silver-compass-pendant
+
+SUBJECT LINE OPTIONS:
+1. The Voyager. Our most requested pendant.
+2. Why everyone keeps asking about this pendant.
+3. This pendant keeps selling out. Here's why.
+
+PREVIEW TEXT OPTIONS:
+1. Gold compass pendant with a hand-set diamond at center.
+2. Our #1 best seller, now with gold at its lowest in months.
+3. Compass rose front. Sailing ship on the reverse. Seven ways to wear it.
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Voyager — Proclamation Jewelry</title>
+<style>
+  /* === RESET === */
+  body { margin: 0; padding: 0; background: #f5f5f5; -webkit-font-smoothing: antialiased; }
+  img { display: block; border: 0; max-width: 100%; height: auto; }
+  a { color: #D4AF37; text-decoration: none; }
+  table { border-collapse: collapse; }
+
+  /* === SUBJECT / PREVIEW DISPLAY === */
+  .subject-lines {
+    background: #1A1A1A; border: 2px dashed #D4AF37; padding: 20px; margin: 20px auto; border-radius: 8px;
+    max-width: 600px; font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .subject-lines h3 { color: #D4AF37; margin-bottom: 10px; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 13px; letter-spacing: 2px; }
+  .subject-lines ol { padding-left: 20px; margin: 0 0 16px 0; }
+  .subject-lines li { margin-bottom: 6px; color: #E4E4E4; font-size: 14px; line-height: 1.5; }
+
+  .designer-note {
+    background: #1A1A1A; border: 2px dashed #D4AF37; padding: 20px; margin: 0 auto; color: #E4E4E4;
+    max-width: 600px; font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 13px; line-height: 1.6;
+    border-radius: 8px 8px 0 0;
+  }
+  .designer-note strong { color: #D4AF37; letter-spacing: 1px; }
+
+  /* === EMAIL CONTAINER === */
+  .email-wrapper {
+    max-width: 600px; margin: 0 auto; background: #0A0A0A;
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    color: #E4E4E4;
+  }
+
+  /* === TYPOGRAPHY === */
+  .brand-bar {
+    text-align: center; padding: 32px 20px 24px;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 9px; letter-spacing: 8px; color: #D4AF37;
+    text-transform: uppercase;
+  }
+
+  .hero-the {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    font-size: 14px; letter-spacing: 10px; color: #888;
+    text-align: center; text-transform: uppercase;
+    margin: 0 0 6px 0; font-weight: 300;
+  }
+  .hero-title {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 76px; letter-spacing: 16px; line-height: 0.9;
+    color: #FFFFFF; text-align: center; text-transform: uppercase;
+    margin: 0; padding: 0 10px;
+  }
+  .hero-diamond-accent {
+    text-align: center; color: #D4AF37; font-size: 18px;
+    margin: 16px 0 0 0; letter-spacing: 8px;
+  }
+  .hero-product-name {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 12px; letter-spacing: 5px; color: #D4AF37;
+    text-align: center; text-transform: uppercase;
+    margin: 18px 0 0 0;
+  }
+
+  .section-label {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 9px; letter-spacing: 5px; color: #D4AF37;
+    text-transform: uppercase; margin: 0 0 24px 0;
+  }
+
+  .nick-copy {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    font-size: 16px; line-height: 1.85; color: #E4E4E4;
+  }
+  .nick-copy p { margin: 0 0 18px 0; }
+
+  .cta-link {
+    display: inline-block; color: #D4AF37;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    border-bottom: 1px solid #D4AF37; padding-bottom: 4px;
+    text-decoration: none;
+  }
+
+  .cta-button {
+    display: inline-block; background: #D4AF37; color: #0A0A0A;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    padding: 16px 40px; text-decoration: none; font-weight: bold;
+  }
+
+  .gold-rule { border: 0; border-top: 1px solid #1A1A1A; margin: 0; }
+  .gold-rule-accent { display: block; border: 0; border-top: 1px solid #D4AF37; width: 60px; margin: 0 auto; }
+
+  .bestseller-badge {
+    display: inline-block;
+    border: 1px solid #D4AF37; padding: 6px 18px;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 9px; letter-spacing: 4px; color: #D4AF37;
+    text-transform: uppercase;
+  }
+
+  .variant-name {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 10px; letter-spacing: 3px; color: #FFFFFF;
+    text-transform: uppercase; margin: 0 0 4px 0;
+  }
+  .variant-metal {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    font-size: 12px; color: #888; font-style: italic;
+    margin: 0 0 10px 0;
+  }
+
+  .gold-callout {
+    border: 1px solid #D4AF37; padding: 32px 36px;
+    background: rgba(212, 175, 55, 0.04);
+  }
+
+  .footer { padding: 36px 36px 28px; border-top: 1px solid #1A1A1A; text-align: center; }
+  .footer p { color: #555; font-size: 11px; line-height: 1.8; margin: 0; font-family: 'Optima', 'Palatino', Georgia, serif; }
+  .footer a { color: #777; font-size: 11px; }
+
+  /* === RESPONSIVE === */
+  @media only screen and (max-width: 600px) {
+    .hero-title { font-size: 44px !important; letter-spacing: 8px !important; }
+    .hero-the { font-size: 11px !important; letter-spacing: 6px !important; }
+    .nick-copy { font-size: 15px !important; }
+    .content-pad { padding-left: 24px !important; padding-right: 24px !important; }
+    .variant-cell { display: block !important; width: 100% !important; padding-bottom: 32px !important; }
+    .front-back-cell { display: block !important; width: 100% !important; padding-bottom: 24px !important; }
+    .gold-callout { padding: 24px 20px !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== SUBJECT LINES & PREVIEW TEXT ===== -->
+<div class="subject-lines">
+  <h3>Subject Line Options</h3>
+  <ol>
+    <li>The Voyager. Our most requested pendant.</li>
+    <li>Why everyone keeps asking about this pendant.</li>
+    <li>This pendant keeps selling out. Here's why.</li>
+  </ol>
+  <h3>Preview Text Options</h3>
+  <ol>
+    <li>Gold compass pendant with a hand-set diamond at center.</li>
+    <li>Our #1 best seller, now with gold at its lowest in months.</li>
+    <li>Compass rose front. Sailing ship on the reverse. Seven ways to wear it.</li>
+  </ol>
+</div>
+
+<!-- ===== DESIGNER NOTE ===== -->
+<div class="designer-note">
+  <p style="margin:0;"><strong>DESIGN DIRECTION</strong><br>
+  Experimental typography. Oversized type, extreme letter-spacing, mixed type scales. Nick's warm founder voice throughout. Dark canvas, gold accents. Mobile-first, concise, no fluff. One body section for the hero product, then front/back reveal, then gold dip note, then variant collection grid.</p>
+</div>
+
+
+<!-- ================================================================
+     EMAIL START
+================================================================ -->
+<div class="email-wrapper">
+
+  <!-- ===== BRAND BAR ===== -->
+  <div class="brand-bar">
+    Proclamation Jewelry
+  </div>
+
+
+  <!-- ===== HERO: TYPOGRAPHY + PRODUCT + BEST SELLER ===== -->
+  <!--
+  DESIGNER NOTE: Giant stacked "THE / VOYAGER" typography. Product image
+  centered. Clear product name underneath. Best seller badge below that.
+  Editorial magazine cover energy.
+  -->
+  <div style="text-align: center; padding: 0 20px 40px;">
+
+    <p class="hero-the">THE</p>
+    <h1 class="hero-title">VOYAGER</h1>
+    <p class="hero-diamond-accent">◆</p>
+    <p class="hero-product-name">Gold Compass Pendant with Single Diamond</p>
+
+    <div style="padding: 40px 0 0;">
+      <a href="https://www.proclamationjewelry.com/products/voyager-gold-compass-pendant-diamond">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant_Single_Diamond.png?v=1778681476"
+             alt="Voyager Gold Compass Pendant with Single Diamond"
+             style="max-width: 380px; margin: 0 auto;" />
+      </a>
+    </div>
+
+    <div style="margin-top: 32px;">
+      <span class="bestseller-badge">◆&nbsp; #1 Best Seller &nbsp;◆</span>
+    </div>
+
+    <div style="margin-top: 28px;">
+      <a href="https://www.proclamationjewelry.com/products/voyager-gold-compass-pendant-diamond" class="cta-button">Shop Now</a>
+    </div>
+
+  </div>
+
+  <hr class="gold-rule" />
+
+
+  <!-- ===== BODY: ONE SECTION — WHY IT'S THE BEST SELLER ===== -->
+  <!--
+  DESIGNER NOTE: Single body section. Nick's voice. No separate intro,
+  no pull quote, no repeated sections. Covers: why it's the best seller,
+  people loving it, one diamond one purpose, gold options, sizes, crafting.
+  Full-width product image after the opening lines, then continues copy.
+  CTA: "Shop Now" button.
+  -->
+  <div class="content-pad" style="padding: 48px 60px 0;">
+    <div class="nick-copy">
+      <p>I get asked about the Voyager more than any other piece we make. And honestly, I get it.</p>
+
+      <p>I designed the Voyager for the guys who are always moving forward, always building something bigger. Compass rose on the front for direction and purpose. A ship under full sail on the reverse for the courage to actually go. That's what the Voyager is about. It's not just jewelry, it's a reminder of where you're headed and why you started.</p>
+
+      <p>The Voyager Gold Compass Pendant with Single Diamond is our #1 best seller and it's not even close. That one hand set diamond sits right at the center of the compass. Clarity, direction, purpose, all in one stone. People have been loving this piece. Every week I see new orders come in and it honestly never gets old. One diamond. One purpose.</p>
+    </div>
+  </div>
+
+  <!-- Full-width product image -->
+  <div style="padding: 36px 0;">
+    <a href="https://www.proclamationjewelry.com/products/voyager-gold-compass-pendant-diamond">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Diamond_Compass_Pendant.png?v=1778681693"
+           alt="Voyager Gold Compass Pendant with Single Diamond, close up"
+           style="width: 100%;" />
+    </a>
+  </div>
+
+  <div class="content-pad" style="padding: 0 60px 48px;">
+    <div class="nick-copy">
+      <p>Available in 14k, 18k, and 22k solid gold. This is the only Voyager we offer in 22k for those who want the richest gold possible. Three sizes so you can match it to your frame and your chain. Every single one handcrafted through our 16 step crafting process.</p>
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="https://www.proclamationjewelry.com/products/voyager-gold-compass-pendant-diamond" class="cta-button">Shop Now</a>
+    </div>
+  </div>
+
+  <hr class="gold-rule" />
+
+
+  <!-- ===== TWO SIDES. ONE STORY. ===== -->
+  <!--
+  DESIGNER NOTE: Two-column layout. Left = compass rose (front),
+  right = ship (back). Tiny tracked "FRONT" / "BACK" labels.
+  Brief poetic copy under each. On mobile: stacks vertically.
+  -->
+  <div style="padding: 48px 36px;">
+
+    <p class="section-label" style="text-align: center; margin-bottom: 32px;">Two Sides. One Story.</p>
+
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td class="front-back-cell" width="48%" style="text-align: center; vertical-align: top; padding-right: 12px;">
+          <p style="font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 9px; letter-spacing: 5px; color: #D4AF37; text-transform: uppercase; margin: 0 0 14px;">Front</p>
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant_Single_Diamond.png?v=1778681476"
+               alt="Voyager Front, Compass Rose with Diamond"
+               style="max-width: 220px; margin: 0 auto;" />
+          <p style="font-family: Georgia, serif; font-size: 14px; font-style: italic; color: #999; margin: 18px 0 0; line-height: 1.6;">Your direction.<br>Your purpose.<br>Your north star.</p>
+        </td>
+        <td class="front-back-cell" width="4%" style="border-left: 1px solid #1A1A1A;">&nbsp;</td>
+        <td class="front-back-cell" width="48%" style="text-align: center; vertical-align: top; padding-left: 12px;">
+          <p style="font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 9px; letter-spacing: 5px; color: #D4AF37; text-transform: uppercase; margin: 0 0 14px;">Back</p>
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Gold_Ship_Pendant_Compass.png?v=1778681453"
+               alt="Voyager Back, Ship Sailing Across Globe"
+               style="max-width: 220px; margin: 0 auto;" />
+          <p style="font-family: Georgia, serif; font-size: 14px; font-style: italic; color: #999; margin: 18px 0 0; line-height: 1.6;">The courage to go.<br>Adventure on the reverse.<br>Hidden against your chest.</p>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <hr class="gold-rule" />
+
+
+  <!-- ===== GOLD DIP CALLOUT ===== -->
+  <!--
+  DESIGNER NOTE: Gold-bordered box. Timely pricing note from Nick.
+  No hyphens. Brief and direct.
+  -->
+  <div class="content-pad" style="padding: 48px 48px;">
+
+    <div class="gold-callout">
+      <p class="section-label" style="text-align: center;">◆&nbsp; A Note on Gold Pricing &nbsp;◆</p>
+
+      <div class="nick-copy" style="text-align: center;">
+        <p>Quick reminder, gold is still sitting below $4,500 right now and all of our gold pieces reflect that lower price. We mentioned it a few days ago and a lot of you jumped on it. These prices move with the market, so when gold goes back up, so do ours.</p>
+
+        <p style="margin-bottom: 0;">If you've been thinking about investing in gold, this is a good window.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ===== URGENCY ===== -->
+  <div class="content-pad" style="padding: 8px 60px 48px;">
+    <div class="nick-copy" style="text-align: center;">
+      <p style="margin-bottom: 0;">These are handcrafted to order and quantities are limited. We've been getting more requests than usual lately. If you've been eyeing one, I'd lock it in sooner rather than later.</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 24px;">
+      <a href="https://www.proclamationjewelry.com/products/voyager-gold-compass-pendant-diamond" class="cta-button">Shop Now</a>
+    </div>
+  </div>
+
+  <hr class="gold-rule" />
+
+
+  <!-- ===== THE COMPLETE VOYAGER COLLECTION ===== -->
+  <!--
+  DESIGNER NOTE: 2-column grid of 6 variant products. Each card has
+  product image, tracked name, italic metal type, "Shop Now" link.
+  On mobile: stacks to single column.
+  -->
+  <div style="padding: 52px 20px 12px; text-align: center;">
+    <p style="font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 9px; letter-spacing: 5px; color: #D4AF37; text-transform: uppercase; margin: 0 0 8px;">The Complete</p>
+    <p style="font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 28px; letter-spacing: 8px; color: #FFFFFF; text-transform: uppercase; margin: 0;">Voyager Collection</p>
+    <hr class="gold-rule-accent" style="margin: 24px auto 8px;" />
+    <p style="font-family: Georgia, serif; font-size: 14px; font-style: italic; color: #888; margin: 0;">Same compass. Same ship. Pick the metal that speaks to you.</p>
+  </div>
+
+  <!-- Row 1: Gold + Gold w/ Diamonds -->
+  <div style="padding: 32px 20px 0;">
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td class="variant-cell" width="50%" style="text-align: center; vertical-align: top; padding: 0 10px 32px;">
+          <a href="https://www.proclamationjewelry.com/products/gold-compass-pendant">
+            <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant.jpg?v=1775935835"
+                 alt="Voyager Gold Compass Pendant"
+                 style="max-width: 220px; margin: 0 auto 16px;" />
+          </a>
+          <p class="variant-name">Voyager Gold</p>
+          <p class="variant-metal">14k &amp; 18k Yellow Gold</p>
+          <a href="https://www.proclamationjewelry.com/products/gold-compass-pendant" class="cta-link" style="font-size: 10px; letter-spacing: 3px;">Shop Now</a>
+        </td>
+        <td class="variant-cell" width="50%" style="text-align: center; vertical-align: top; padding: 0 10px 32px;">
+          <a href="https://www.proclamationjewelry.com/products/voyager-yellow-gold">
+            <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant_Necklace.jpg?v=1775936285"
+                 alt="Voyager Gold Compass Pendant with Diamonds"
+                 style="max-width: 220px; margin: 0 auto 16px;" />
+          </a>
+          <p class="variant-name">Voyager Gold</p>
+          <p class="variant-metal">With Lab-Grown Diamonds</p>
+          <a href="https://www.proclamationjewelry.com/products/voyager-yellow-gold" class="cta-link" style="font-size: 10px; letter-spacing: 3px;">Shop Now</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Row 2: Platinum + Platinum w/ Diamonds -->
+  <div style="padding: 0 20px;">
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td class="variant-cell" width="50%" style="text-align: center; vertical-align: top; padding: 0 10px 32px;">
+          <a href="https://www.proclamationjewelry.com/products/platinum-compass-pendant">
+            <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Platinum_Compass_Pendant.jpg?v=1758637565"
+                 alt="Voyager Platinum Compass Pendant"
+                 style="max-width: 220px; margin: 0 auto 16px;" />
+          </a>
+          <p class="variant-name">Voyager Platinum</p>
+          <p class="variant-metal">Solid 950 Platinum</p>
+          <a href="https://www.proclamationjewelry.com/products/platinum-compass-pendant" class="cta-link" style="font-size: 10px; letter-spacing: 3px;">Shop Now</a>
+        </td>
+        <td class="variant-cell" width="50%" style="text-align: center; vertical-align: top; padding: 0 10px 32px;">
+          <a href="https://www.proclamationjewelry.com/products/voyager-diamond-platinum-compass-pendant">
+            <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant_Necklace_White_Gold.jpg?v=1775936254"
+                 alt="Voyager Platinum Compass Pendant with Diamonds"
+                 style="max-width: 220px; margin: 0 auto 16px;" />
+          </a>
+          <p class="variant-name">Voyager Platinum</p>
+          <p class="variant-metal">With Lab-Grown Diamonds</p>
+          <a href="https://www.proclamationjewelry.com/products/voyager-diamond-platinum-compass-pendant" class="cta-link" style="font-size: 10px; letter-spacing: 3px;">Shop Now</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Row 3: White Gold w/ Diamonds + Silver -->
+  <div style="padding: 0 20px;">
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td class="variant-cell" width="50%" style="text-align: center; vertical-align: top; padding: 0 10px 32px;">
+          <a href="https://www.proclamationjewelry.com/products/voyager-white-gold">
+            <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Compass_Gold_Pendant_Necklace_Voyager_White_Gold.jpg?v=1723140288"
+                 alt="Voyager White Gold Compass Pendant with Diamonds"
+                 style="max-width: 220px; margin: 0 auto 16px;" />
+          </a>
+          <p class="variant-name">Voyager White Gold</p>
+          <p class="variant-metal">14k White Gold with Diamonds</p>
+          <a href="https://www.proclamationjewelry.com/products/voyager-white-gold" class="cta-link" style="font-size: 10px; letter-spacing: 3px;">Shop Now</a>
+        </td>
+        <td class="variant-cell" width="50%" style="text-align: center; vertical-align: top; padding: 0 10px 32px;">
+          <a href="https://www.proclamationjewelry.com/products/silver-compass-pendant">
+            <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Silver_Compass_Pendant.jpg?v=1779283289"
+                 alt="Voyager Silver Compass Pendant"
+                 style="max-width: 220px; margin: 0 auto 16px;" />
+          </a>
+          <p class="variant-name">Voyager Silver</p>
+          <p class="variant-metal">Sterling Silver, Rhodium Plated</p>
+          <a href="https://www.proclamationjewelry.com/products/silver-compass-pendant" class="cta-link" style="font-size: 10px; letter-spacing: 3px;">Shop Now</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer">
+    <p>
+      Proclamation Jewelry &nbsp;|&nbsp; Houston, TX<br>
+      Forged for Legacy, Worn to Inspire<br><br>
+      <a href="#">Instagram</a> &nbsp; <a href="https://www.youtube.com/@proclamationjewelry">YouTube</a> &nbsp; <a href="#">Facebook</a><br><br>
+      <a href="#">Unsubscribe</a> &nbsp;|&nbsp; <a href="#">Manage Preferences</a><br>
+      &copy; 2026 Proclamation Jewelry. All rights reserved.
+    </p>
+  </div>
+
+</div>
+<!-- ================================================================
+     EMAIL END
+================================================================ -->
+
+</body>
+</html>

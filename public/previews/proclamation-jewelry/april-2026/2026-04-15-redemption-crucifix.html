@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redemption Gold Crucifix Pendant — Proclamation Jewelry</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
+
+    .metadata, .subject-lines, .notes {
+      background: #fff3cd; border: 2px dashed #d4af37; padding: 20px; margin: 20px 0; border-radius: 8px;
+    }
+    .metadata h2, .subject-lines h3, .notes h3 { color: #B31B1B; margin-bottom: 10px; }
+
+    .email-wireframe {
+      max-width: 600px; margin: 30px auto; background: #0A0A0A; color: #ffffff;
+      font-family: 'Optimo Plain', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* BANNER */
+    .banner { position: relative; text-align: center; background: #0A0A0A; }
+    .banner img { width: 100%; height: auto; display: block; }
+
+    /* SECTIONS */
+    .section { padding: 25px 30px; text-align: center; }
+    .section p { color: #E4E4E4; font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
+    .section p:last-child { margin-bottom: 0; }
+    .emphasis { color: #D4AF37; font-weight: bold; }
+    .section-left { padding: 25px 30px; text-align: left; }
+    .section-left p { color: #E4E4E4; font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
+    .section-left p:last-child { margin-bottom: 0; }
+
+    .divider { border: none; border-top: 1px solid #222; margin: 0 30px; }
+
+    /* CTA */
+    .cta { text-align: center; padding: 20px 30px; }
+    .cta a {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 14px 44px; font-size: 14px; font-weight: bold; letter-spacing: 2px;
+      text-decoration: none; text-transform: uppercase;
+    }
+    .cta-outline { text-align: center; padding: 20px 30px; }
+    .cta-outline a {
+      display: inline-block; border: 1px solid #D4AF37; color: #D4AF37;
+      padding: 12px 36px; font-size: 12px; letter-spacing: 2px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* SCRIPTURE BLOCK */
+    .scripture {
+      padding: 30px; text-align: center; background: #111;
+      border-top: 1px solid #222; border-bottom: 1px solid #222;
+    }
+    .scripture .verse {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 22px; letter-spacing: 1.5px; line-height: 1.4;
+      font-style: italic; margin-bottom: 10px;
+    }
+    .scripture .ref {
+      color: #888; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+    }
+
+    /* PRODUCT HERO */
+    .product-hero { text-align: center; padding: 0; }
+    .product-hero img { width: 100%; height: auto; display: block; }
+
+    /* TWO-UP IMAGES */
+    .two-up { display: flex; gap: 0; }
+    .two-up img { width: 50%; height: auto; display: block; object-fit: cover; }
+
+    /* SPEC GRID */
+    .spec-grid {
+      padding: 20px 30px; display: flex; gap: 0;
+      border-top: 1px solid #222; border-bottom: 1px solid #222;
+    }
+    .spec-item {
+      flex: 1; text-align: center; padding: 12px 8px;
+      border-right: 1px solid #222;
+    }
+    .spec-item:last-child { border-right: none; }
+    .spec-item .label { color: #888; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
+    .spec-item .value { color: #D4AF37; font-size: 14px; font-weight: bold; }
+
+    /* REVIEW BLOCK */
+    .reviews { padding: 30px; background: #111; }
+    .reviews h2 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif; color: #D4AF37;
+      font-size: 16px; letter-spacing: 2px; text-align: center; margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .review-card {
+      border-top: 1px solid #222; padding: 20px 0;
+    }
+    .review-card:first-of-type { border-top: none; padding-top: 0; }
+    .review-stars { color: #D4AF37; font-size: 14px; margin-bottom: 6px; }
+    .review-text { color: #C0C0C0; font-size: 14px; line-height: 1.6; font-style: italic; margin-bottom: 6px; }
+    .review-author { color: #666; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+
+    /* ALT METALS SECTION */
+    .alt-section { background: #111; }
+    .alt-metals { display: flex; gap: 0; }
+    .alt-metal-card {
+      flex: 1; text-align: center; padding: 20px 15px;
+      border-right: 1px solid #222;
+    }
+    .alt-metal-card:last-child { border-right: none; }
+    .alt-metal-card img { width: 100%; max-width: 200px; height: auto; display: block; margin: 0 auto 12px auto; }
+    .alt-metal-card h4 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif; color: #ffffff;
+      font-size: 13px; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;
+    }
+    .alt-metal-card p { color: #999; font-size: 12px; line-height: 1.5; margin-bottom: 12px; }
+    .alt-metal-card a {
+      display: inline-block; border: 1px solid #D4AF37; color: #D4AF37;
+      padding: 8px 20px; font-size: 10px; letter-spacing: 1.5px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center; padding: 25px 30px; border-top: 1px solid #333;
+      color: #666; font-size: 12px; line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- EMAIL METADATA -->
+  <!-- ============================================ -->
+  <div class="metadata">
+    <h2>Email Metadata</h2>
+    <p><strong>Client:</strong> Proclamation Jewelry</p>
+    <p><strong>Email Type:</strong> Promotional</p>
+    <p><strong>Send Date:</strong> Wednesday, April 15, 2026</p>
+    <p><strong>Topic:</strong> Minimalist Gold Crucifix Pendant for Men</p>
+    <p><strong>Featured Product:</strong></p>
+    <ul>
+      <li>REDEMPTION, Gold Crucifix Pendant &rarr; https://www.proclamationjewelry.com/products/redemption-gold-crucifix-pendant</li>
+      <li>Also available in Silver &rarr; https://www.proclamationjewelry.com/products/redemption-silver-crucifix-pendant</li>
+      <li>Also available in Platinum &rarr; https://www.proclamationjewelry.com/products/redemption-platinum-crucifix-pendant</li>
+    </ul>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SUBJECT LINE & PREVIEW TEXT OPTIONS -->
+  <!-- ============================================ -->
+  <div class="subject-lines">
+    <h3>Subject Line Options</h3>
+    <ol>
+      <li>The crucifix that says everything quietly.</li>
+      <li>Minimalist. Solid gold. One verse.</li>
+      <li>Faith without the flash.</li>
+    </ol>
+    <h3>Preview Text Options</h3>
+    <ol>
+      <li>The Redemption Crucifix. Understated. Intentional. Forged in solid gold.</li>
+      <li>Inspired by John 19:30. Crafted for the man who carries his faith close.</li>
+      <li>A crucifix for men who let their convictions speak softly.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- EMAIL WIREFRAME -->
+  <!-- ============================================ -->
+
+  <div class="email-wireframe">
+
+    <!-- HERO IMAGE: GOLD CRUCIFIX — FULL WIDTH -->
+    <div class="banner">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Gold_Crucifix.jpg?v=1731599019" alt="Redemption Gold Crucifix Pendant — hero product shot">
+    </div>
+
+    <!-- HEADLINE -->
+    <div class="section" style="padding-top: 30px; padding-bottom: 10px;">
+      <h1 style="font-family: 'Trajan Pro', 'Times New Roman', serif; color: #ffffff; font-size: 24px; letter-spacing: 2px; line-height: 1.3;">THE <span class="emphasis">REDEMPTION</span><br>CRUCIFIX PENDANT</h1>
+      <p style="color: #888; font-size: 12px; letter-spacing: 3px; margin-top: 10px; text-transform: uppercase;">MINIMALIST. INTENTIONAL. SOLID GOLD.</p>
+    </div>
+
+    <!-- OPENING HOOK -->
+    <div class="section">
+      <p>Some symbols are meant to be loud. This one is meant to be <span class="emphasis">felt.</span></p>
+      <p>The Redemption Crucifix is not layered in ornament. There are no excess flourishes. No competing motifs. Just a polished, radiant figure of Christ, arms extended in forgiveness and resilience, set against a beveled cross with a brushed finish that creates a striking depth between <span class="emphasis">gravity and grace.</span></p>
+    </div>
+
+    <!-- CTA 1: FIRST HALF -->
+    <div class="cta">
+      <a href="https://www.proclamationjewelry.com/products/redemption-gold-crucifix-pendant">INVEST IN THE REDEMPTION</a>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SCRIPTURE BLOCK -->
+    <div class="scripture">
+      <p class="verse">"It is finished."</p>
+      <p class="ref">John 19:30</p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- MEANING / STORY SECTION -->
+    <div class="section">
+      <p>Jesus's final words on the cross. The fulfillment of His mission and the beginning of a new covenant.</p>
+      <p>The Redemption Crucifix carries that weight. Not as decoration, but as a <span class="emphasis">daily declaration</span> that love and redemption will always prevail. Through every trial, this pendant stands as a symbol of hope, resilience, and divine light.</p>
+      <p>More than jewelry. <span class="emphasis">A profound emblem of faith, strength, and the eternal promise of hope.</span></p>
+    </div>
+
+    <!-- PERSONALIZED BACK IMAGE -->
+    <div class="product-hero">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Gold_Crucifix_Personalized_Proclamation_Jewelry.jpg?v=1731601420" alt="Redemption Gold Crucifix Pendant — back view, personalization detail">
+    </div>
+
+    <div class="section">
+      <p style="color: #888; font-size: 13px;">The reverse. Clean, considered, and ready for a personal engraving that makes it <span class="emphasis">entirely yours.</span></p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SPECS GRID -->
+    <div class="spec-grid">
+      <div class="spec-item">
+        <div class="label">Metals</div>
+        <div class="value">14k &bull; 18k &bull; 22k</div>
+      </div>
+      <div class="spec-item">
+        <div class="label">Small</div>
+        <div class="value">30 &times; 21mm</div>
+      </div>
+      <div class="spec-item">
+        <div class="label">Large</div>
+        <div class="value">40 &times; 26mm</div>
+      </div>
+      <div class="spec-item">
+        <div class="label">Finish</div>
+        <div class="value">Polished &bull; Brushed</div>
+      </div>
+    </div>
+
+    <!-- DETAIL IMAGE -->
+    <div class="product-hero">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Gold_Crucifix.jpg?v=1731599218" alt="Redemption Gold Crucifix Pendant — detail shot">
+    </div>
+
+    <hr class="divider">
+
+    <!-- REVIEWS -->
+    <div class="reviews">
+      <h2>&starf; &starf; &starf; &starf; &starf; &nbsp; Client Reviews</h2>
+
+      <div class="review-card">
+        <div class="review-stars">&starf;&starf;&starf;&starf;&starf;</div>
+        <p class="review-text">"Purchased the 14k large option of this piece and couldn't be more pleased with the decision. Fantastic craftsmanship and attention to detail. Highly recommended. Christ is king!!"</p>
+        <p class="review-author">&mdash; AJ, Verified Buyer</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">&starf;&starf;&starf;&starf;&starf;</div>
+        <p class="review-text">"It's a meticulously done piece of work, very detailed and outstanding quality. To be enjoyed for many years to come."</p>
+        <p class="review-author">&mdash; Igor M., Verified Buyer</p>
+      </div>
+
+      <p style="text-align: center; margin-top: 16px;"><a href="https://www.proclamationjewelry.com/products/redemption-gold-crucifix-pendant" style="color: #D4AF37; font-size: 12px; letter-spacing: 1px; text-decoration: underline;">READ ALL REVIEWS</a></p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ALSO AVAILABLE IN SILVER & PLATINUM -->
+    <div class="alt-section">
+
+      <div class="section" style="padding-top: 30px; padding-bottom: 10px;">
+        <h2 style="font-family: 'Trajan Pro', 'Times New Roman', serif; color: #D4AF37; font-size: 18px; letter-spacing: 2px;">ALSO AVAILABLE IN</h2>
+        <p style="color: #888; font-size: 13px;">The same emblem. The same meaning. A different metal to match your journey.</p>
+      </div>
+
+      <div class="alt-metals">
+
+        <!-- SILVER -->
+        <div class="alt-metal-card">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Silver_Crucifix_Pendant.jpg?v=1731603100" alt="Redemption Silver Crucifix Pendant">
+          <h4>Sterling Silver</h4>
+          <p>Handcrafted in .925 sterling silver. Rhodium plated for enduring shine. A quieter expression of the same conviction.</p>
+          <a href="https://www.proclamationjewelry.com/products/redemption-silver-crucifix-pendant">SHOP SILVER</a>
+        </div>
+
+        <!-- PLATINUM -->
+        <div class="alt-metal-card">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Silver_Crucifix_Pendant.jpg?v=1731603100" alt="Redemption Platinum Crucifix Pendant">
+          <h4>Solid Platinum</h4>
+          <p>The rarest expression of the Redemption. Solid platinum, 11.5 to 20 grams depending on size. For the man whose faith demands the finest.</p>
+          <a href="https://www.proclamationjewelry.com/products/redemption-platinum-crucifix-pendant">SHOP PLATINUM</a>
+        </div>
+
+      </div>
+
+      <div style="padding: 15px;"></div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- CLOSING -->
+    <div class="section">
+      <p>Wear it as a reminder of <span class="emphasis">faith's triumph over fear.</span></p>
+      <p>As both armor and inspiration. A call to reflect on the boundless grace offered by Christ's ultimate sacrifice.</p>
+    </div>
+
+    <!-- FINAL CTA -->
+    <div class="cta">
+      <a href="https://www.proclamationjewelry.com/products/redemption-gold-crucifix-pendant">CLAIM YOUR REDEMPTION</a>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p style="margin-bottom: 10px;">
+        <strong style="color: #D4AF37;">PROCLAMATION JEWELRY</strong><br>
+        Forged for Legacy, Worn to Inspire.
+      </p>
+      <p>
+        [Instagram] &nbsp; [YouTube] &nbsp; [Facebook]<br><br>
+        [Unsubscribe] &nbsp;|&nbsp; [Manage Preferences]<br><br>
+        Proclamation Jewelry &nbsp;|&nbsp; Houston, TX<br>
+        &copy; 2026 Proclamation Jewelry. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ============================================ -->
+  <!-- NOTES FOR DESIGNER -->
+  <!-- ============================================ -->
+  <div class="notes">
+    <h3>Notes for Designer</h3>
+    <ul>
+      <li><strong>Brand colors:</strong> Background #0A0A0A, Headlines #FFFFFF + #D4AF37, Body #E4E4E4, Accent #B31B1B, Alt section #111</li>
+      <li><strong>Typography:</strong> Headlines: Trajan Pro Bold (all caps, tracked). Body: Optimo Plain.</li>
+      <li><strong>Email width:</strong> 600px max</li>
+      <li><strong>Layout approach:</strong> Single product deep dive with a contemplative, reverent tone. Product images drive the story. Scripture block creates a moment of pause. Specs are minimal and clean. Ends with silver and platinum alternatives side by side.</li>
+      <li><strong>Hero image:</strong> Full-width gold crucifix on clean background. Headline sits below the image.</li>
+      <li><strong>Scripture block:</strong> Centered, gold text, darker background (#111) to create visual separation and a reverent pause in the scroll.</li>
+      <li><strong>Back view image:</strong> Shows the clean reverse with engraving area. Subtle callout for personalization.</li>
+      <li><strong>Spec grid:</strong> Four columns: Metals | Small size | Large size | Finish. Gold values on dark background with subtle borders.</li>
+      <li><strong>Reviews:</strong> Two verified 5-star reviews from the gold crucifix product page (AJ and Igor M.). Both word-for-word from Okendo.</li>
+      <li><strong>Silver &amp; Platinum section:</strong> Two-column side by side on darker background (#111). Each card has product image, metal name, short description, and outline CTA button. Note: Platinum uses the same product image as Silver (they appear identical on the website). If a distinct platinum image exists, replace it.</li>
+      <li><strong>CTA flow:</strong> "Invest in the Redemption" (first half, solid gold button) → "Shop Silver" / "Shop Platinum" (outline buttons in alt section) → "Claim Your Redemption" (final CTA, solid gold button)</li>
+      <li><strong>No prices shown in email.</strong></li>
+      <li><strong>All product images from Shopify CDN.</strong> Publicly accessible.</li>
+      <li><strong>Minimalist angle:</strong> Per the email calendar, this email emphasizes the minimalist, understated nature of the piece. Copy should feel contemplative, not loud.</li>
+      <li><strong>[NEEDS INFO]:</strong> Social media links for footer.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!--
+=======================================================
+EMAIL: The Designer's Private Collection — Final Hours
+CLIENT: Proclamation Jewelry
+TYPE: Promotional / Last Call
+DATE: 2026-04-15
+=======================================================
+
+CAMPAIGN: 72-hour exclusive release of founder Nick Miller's personal rotation.
+POSITIONING: Final hours. Restrained urgency. Still intentional and refined.
+THIS IS: Email 2 of 2 (final hours last call). Email 1 = announcement.
+
+SUBJECT LINE OPTIONS:
+1. Final Hours. Save Up to 25%.
+2. The Private Collection Closes Tonight
+3. Last Call. Up to 25% Off.
+
+PREVIEW TEXT OPTIONS:
+1. The Private Collection exclusive sale closes tonight.
+2. Final hours to save up to 25% on pieces from our founder's rotation.
+3. One of one. Final hours. Up to 25% below commission pricing.
+
+IMAGES USED:
+- Hero: Proclamation_Jewelry_GoldChain_10__02__16x9_53925a84-bb36-4b41-8d32-76e6c37a6c44.jpg
+  (gold chain held in hand, editorial dark background)
+
+PRODUCTS FEATURED (different from announcement, sold-out items excluded, markdown prices shown):
+1. 1.8mm Diamond Cut Franco Chain, 14k Yellow Gold, 20" — $1,199 (was $1,449)
+2. 3.2mm Hermes (Heavy Link) Chain, 14k Yellow Gold, 24" — $3,399 (was $4,209)
+3. 2.7mm Diamond Cut Franco Chain, 22k Gold, 24" — $6,349 (was $7,479)
+4. 3.2mm Diamond Cut Franco Chain, 22k Gold, 22" — $8,999 (was $10,729)
+5. 5mm Diamond Cut Franco Chain, 18k Yellow Gold, Lion Snake & Diamond Clasp, 25" — $18,999 (was $24,189)
+6. Memento Mori 14k Gold Skull Pendant, Medium — $1,699 (was $2,049) [REPEAT from announcement]
+
+DESIGN NOTES:
+- Prices shown with compare-at strikethrough (markdown visible in final hours email only).
+- Body copy rewritten to avoid repeating announcement language.
+- No "pieces return to the rotation" phrasing per client feedback.
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Hours — The Designer's Private Collection — Proclamation Jewelry</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
+
+    .metadata, .subject-lines, .notes {
+      background: #fff3cd; border: 2px dashed #D4AF37; padding: 20px; margin: 20px auto; border-radius: 8px;
+      max-width: 600px;
+    }
+    .metadata h2, .subject-lines h3, .notes h3 { color: #B31B1B; margin-bottom: 10px; font-family: 'Trajan Pro', 'Times New Roman', serif; letter-spacing: 1px; }
+    .subject-lines ol { padding-left: 20px; margin: 0 0 16px 0; }
+    .subject-lines li { margin-bottom: 6px; color: #0A0A0A; font-size: 14px; line-height: 1.5; }
+
+    .email-wireframe {
+      max-width: 600px; margin: 30px auto; background: #0A0A0A; color: #ffffff;
+      font-family: 'Optimo Plain', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* HEADER */
+    .header { text-align: center; padding: 26px 20px; background: #0A0A0A; border-bottom: 1px solid #1a1a1a; }
+    .header .logo { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 22px; letter-spacing: 6px; }
+
+    /* TIME BANNER (FINAL HOURS + SAVE UP TO 25%) */
+    .time-banner { text-align: center; padding: 36px 30px 10px 30px; background: #0A0A0A; }
+    .time-banner .time {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 42px; letter-spacing: 6px; text-transform: uppercase;
+      line-height: 1.1; font-weight: normal;
+    }
+    .time-banner .time-sub {
+      color: #FFFFFF; font-size: 11px; letter-spacing: 4px;
+      text-transform: uppercase; margin-top: 14px;
+    }
+    .time-banner .offer {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 16px; letter-spacing: 4px; text-transform: uppercase;
+      margin-top: 14px;
+    }
+
+    /* HERO HEADLINE */
+    .hero {
+      padding: 28px 30px 30px 30px; text-align: center;
+    }
+    .hero h1 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif;
+      color: #FFFFFF; font-size: 28px; line-height: 1.2; letter-spacing: 2px;
+      text-transform: uppercase; font-weight: normal; margin-bottom: 16px;
+    }
+    .hero .sub {
+      color: #C0C0C0; font-size: 14px; line-height: 1.7; font-style: italic;
+      max-width: 440px; margin: 0 auto;
+    }
+
+    /* HERO IMAGE */
+    .hero-image { line-height: 0; }
+    .hero-image img { width: 100%; display: block; }
+
+    /* OPENING CTA */
+    .cta-wrap { text-align: center; padding: 36px 30px 44px 30px; background: #0A0A0A; }
+    .cta-btn {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 14px 44px; font-size: 12px; font-weight: bold; letter-spacing: 3px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* BODY COPY */
+    .body-copy {
+      padding: 48px 36px; background: #0A0A0A;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+    }
+    .body-copy p {
+      color: #E4E4E4; font-size: 15px; line-height: 1.85; margin-bottom: 18px;
+      font-style: italic;
+    }
+    .body-copy p:last-child { margin-bottom: 0; }
+
+    /* COLLECTION PREVIEW HEADER */
+    .collection-header { padding: 48px 30px 24px 30px; text-align: center; background: #0A0A0A; }
+    .collection-header h2 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif;
+      color: #FFFFFF; font-size: 24px; letter-spacing: 2px;
+      text-transform: uppercase; font-weight: normal;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid {
+      padding: 20px 20px 0 20px; background: #0A0A0A;
+    }
+    .product-row {
+      display: flex; gap: 16px; margin-bottom: 16px;
+    }
+    .product-card {
+      flex: 1; background: #111; text-align: center; padding: 14px 12px 18px 12px;
+    }
+    .product-card img {
+      width: 100%; height: auto; display: block; margin-bottom: 12px;
+    }
+    .product-card .title {
+      color: #E4E4E4; font-size: 11px; line-height: 1.4;
+      letter-spacing: 0.5px; min-height: 44px; margin-bottom: 8px;
+    }
+    .product-card .price-block {
+      text-align: center; padding-top: 6px;
+    }
+    .product-card .sale-price {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 14px; letter-spacing: 1px; font-weight: bold;
+    }
+    .product-card .compare-price {
+      color: #888; font-size: 11px; letter-spacing: 0.5px;
+      text-decoration: line-through; margin-left: 6px;
+    }
+
+    /* FINAL CTA (LAST CHANCE) */
+    .explore-wrap { text-align: center; padding: 36px 30px 52px 30px; background: #0A0A0A; }
+    .explore-btn {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 14px 44px; font-size: 12px; font-weight: bold; letter-spacing: 3px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #050505; padding: 30px; text-align: center;
+      border-top: 1px solid #1a1a1a;
+    }
+    .footer .tagline {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 18px;
+    }
+    .footer .info {
+      color: #666; font-size: 10px; line-height: 1.8; letter-spacing: 1px;
+    }
+    .footer a { color: #888; text-decoration: underline; }
+
+    /* MOBILE */
+    @media only screen and (max-width: 600px) {
+      .hero h1 { font-size: 22px !important; }
+      .time-banner .time { font-size: 30px !important; letter-spacing: 4px !important; }
+      .time-banner .offer { font-size: 13px !important; letter-spacing: 3px !important; }
+      .product-row { flex-direction: column !important; }
+      .body-copy { padding: 36px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SUBJECT LINES & PREVIEW TEXT -->
+<div class="subject-lines">
+  <h3>Subject Line Options</h3>
+  <ol>
+    <li>Final Hours. Save Up to 25%.</li>
+    <li>The Private Collection Closes Tonight</li>
+    <li>Last Call. Up to 25% Off.</li>
+  </ol>
+  <h3>Preview Text Options</h3>
+  <ol>
+    <li>The Private Collection exclusive sale closes tonight.</li>
+    <li>Final hours to save up to 25% on pieces from our founder's rotation.</li>
+    <li>One of one. Final hours. Up to 25% below commission pricing.</li>
+  </ol>
+</div>
+
+<!-- ===================================================
+     EMAIL BEGINS
+=================================================== -->
+<div class="email-wireframe">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">PROCLAMATION</div>
+  </div>
+
+  <!-- FINAL HOURS + SAVE UP TO 25% -->
+  <div class="time-banner">
+    <div class="time">Final Hours</div>
+    <div class="time-sub">The Private Collection Exclusive Sale Closes Tonight</div>
+    <div class="offer">Save Up to 25%</div>
+  </div>
+
+  <!-- HERO HEADLINE -->
+  <div class="hero">
+    <h1>The Designer's<br>Private Collection</h1>
+    <p class="sub">The window is closing tonight.</p>
+  </div>
+
+  <!-- HERO IMAGE — GOLD CHAIN IN HAND -->
+  <div class="hero-image">
+    <img src="../images/Proclamation_Jewelry_GoldChain_10__02__16x9_53925a84-bb36-4b41-8d32-76e6c37a6c44.jpg" alt="Gold chain from the Designer's Private Collection" />
+  </div>
+
+  <!-- OPENING CTA -->
+  <div class="cta-wrap">
+    <a href="https://www.proclamationjewelry.com/collections/designers-private-collection" class="cta-btn">Shop Now</a>
+  </div>
+
+
+  <!-- BODY COPY -->
+  <div class="body-copy">
+    <p>This limited exclusive release is ending tonight.</p>
+
+    <p>A handful of pieces remain. Each singular. Each held to the standard of a new commission. Each offered at up to 25 percent below commission pricing, only for the length of this window.</p>
+
+    <p>If one has stayed on your mind, this is the final moment to bring it home.</p>
+  </div>
+
+
+  <!-- COLLECTION PREVIEW HEADER -->
+  <div class="collection-header">
+    <h2>Still Available</h2>
+  </div>
+
+
+  <!-- PRODUCT GRID — 6 FEATURED PIECES WITH MARKDOWN PRICES -->
+  <div class="product-grid">
+
+    <!-- Row 1 -->
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/1-8mm-diamond-cut-franco-chain-14k-yellow-gold-20" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/2mmDiamondCutFrancoChain_14kyellowGold_hanging.jpg" alt="1.8mm Diamond Cut Franco Chain 14k Yellow Gold" />
+        <div class="title">1.8mm Diamond Cut Franco<br>14k Yellow Gold &middot; 20"</div>
+        <div class="price-block">
+          <span class="sale-price">$1,199</span>
+          <span class="compare-price">$1,449</span>
+        </div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/3mm-hermes-heavy-link-chain-14k-yellow-gold-24" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_Forza_Heavy_Chain_Mens_Yellow_Gold.jpg" alt="3.2mm Hermes Heavy Link Chain 14k Yellow Gold" />
+        <div class="title">Hermes Heavy Link Chain<br>14k Yellow Gold &middot; 24"</div>
+        <div class="price-block">
+          <span class="sale-price">$3,399</span>
+          <span class="compare-price">$4,209</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/2-7mm-diamond-cut-franco-chain-22k-gold-24" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_DiamondCut_Franco_Chain_22k_Gold_Hanging.jpg" alt="2.7mm Diamond Cut Franco Chain 22k Gold" />
+        <div class="title">2.7mm Diamond Cut Franco<br>22k Gold &middot; 24"</div>
+        <div class="price-block">
+          <span class="sale-price">$6,349</span>
+          <span class="compare-price">$7,479</span>
+        </div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/3-2mm-diamond-cut-franco-chain-22k-gold-22" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_DiamondCut_Franco_Chain_22k_Gold_Hanging.jpg" alt="3.2mm Diamond Cut Franco Chain 22k Gold" />
+        <div class="title">3.2mm Diamond Cut Franco<br>22k Gold &middot; 22"</div>
+        <div class="price-block">
+          <span class="sale-price">$8,999</span>
+          <span class="compare-price">$10,729</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/memento-mori-14k-gold-skull-pendant-medium" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Memento_Mori_Gold_Skull_Pendant_Necklace.jpg" alt="Memento Mori 14k Gold Skull Pendant" />
+        <div class="title">Memento Mori Skull Pendant<br>14k Gold &middot; Medium</div>
+        <div class="price-block">
+          <span class="sale-price">$1,699</span>
+          <span class="compare-price">$2,049</span>
+        </div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/5mm-diamond-cut-franco-chain-18k" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_DiamondCutFrancoChain_YellowGold_Hanging_0d1fad82-c149-4edb-90f9-56152078367b.jpg" alt="5mm Diamond Cut Franco Chain with Lion Snake & Diamond Clasp" />
+        <div class="title">5mm Franco Chain<br>Lion Snake &amp; Diamond Clasp</div>
+        <div class="price-block">
+          <span class="sale-price">$18,999</span>
+          <span class="compare-price">$24,189</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- FINAL CTA -->
+  <div class="explore-wrap">
+    <a href="https://www.proclamationjewelry.com/collections/designers-private-collection" class="explore-btn">Last Chance &nbsp;&middot;&nbsp; Save Up to 25%</a>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="tagline">Forged for Legacy, Worn to Inspire</div>
+    <div class="info">
+      PROCLAMATION JEWELRY<br>
+      Houston, Texas<br><br>
+      <a href="#">View in Browser</a> &nbsp;|&nbsp; <a href="#">Email Preferences</a> &nbsp;|&nbsp; <a href="#">Unsubscribe</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

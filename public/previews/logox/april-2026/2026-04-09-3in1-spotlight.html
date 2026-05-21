@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LogOX 3-in-1 Multi-Tool Application Spotlight — LogOX</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
+
+    .metadata, .subject-lines, .notes {
+      background: #fff3cd; border: 2px dashed #F37021; padding: 20px; margin: 20px 0; border-radius: 8px;
+    }
+    .metadata h2, .subject-lines h3, .notes h3 { color: #006AC6; margin-bottom: 10px; }
+
+    .email-wireframe {
+      max-width: 600px; margin: 30px auto; background: #ffffff;
+      font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* LOGO BAR */
+    .logo-bar { text-align: center; padding: 20px 30px; background: #ffffff; border-bottom: 3px solid #F37021; }
+
+    /* GIF BANNER */
+    .banner { position: relative; text-align: center; padding: 0; overflow: hidden; background: #24374A; }
+    .banner .gif-placeholder {
+      background: #1a2d3d; padding: 100px 30px; color: #6986AD; font-size: 14px;
+      border: 2px dashed #6986AD; margin: 0;
+    }
+    .banner .overlay {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(36,55,74,0.95));
+      padding: 30px;
+    }
+    .banner .overlay h1 {
+      color: #ffffff; font-weight: 800; font-size: 24px; letter-spacing: 0.5px;
+      line-height: 1.3; margin-bottom: 6px;
+    }
+    .banner .overlay h1 span { color: #F37021; }
+    .banner .overlay p { color: #DAD9D5; font-size: 14px; }
+
+    /* SECTIONS */
+    .section { padding: 25px 30px; }
+    .section h2 {
+      color: #24374A; font-weight: 800; font-size: 22px; margin-bottom: 12px; text-align: center;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .section h2 span { color: #F37021; }
+    .section p { color: #333; font-size: 15px; line-height: 1.7; margin-bottom: 10px; text-align: center; }
+    .section p.left { text-align: left; }
+
+    .highlight-box {
+      background: #f5f5f5; border-left: 4px solid #F37021; padding: 20px 25px; margin: 15px 30px;
+    }
+    .highlight-box p { text-align: left; color: #24374A; font-size: 15px; line-height: 1.7; margin-bottom: 0; }
+    .highlight-box strong { color: #F37021; }
+
+    /* CTA */
+    .cta { text-align: center; padding: 20px 30px; }
+    .cta a {
+      display: inline-block; background: #F37021; color: #ffffff;
+      padding: 14px 44px; font-size: 15px; font-weight: 700; letter-spacing: 1px;
+      text-decoration: none; text-transform: uppercase; border-radius: 4px;
+    }
+
+    /* IMAGE BLOCKS */
+    .image-block { text-align: center; padding: 0; }
+    .image-block img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+    /* APPLICATION CARDS */
+    .app-card {
+      display: flex; align-items: center; padding: 0; border-bottom: 1px solid #DAD9D5;
+    }
+    .app-card.reverse { flex-direction: row-reverse; }
+    .app-card-img { flex: 1; min-width: 45%; }
+    .app-card-img img { width: 100%; height: auto; display: block; object-fit: cover; }
+    .app-card-text { flex: 1; padding: 20px 25px; }
+    .app-card-text h3 {
+      color: #24374A; font-weight: 800; font-size: 16px; margin-bottom: 8px; text-transform: uppercase;
+    }
+    .app-card-text p { color: #555; font-size: 14px; line-height: 1.6; margin-bottom: 0; text-align: left; }
+
+    /* CALLOUT BANNER */
+    .callout-banner {
+      background: #24374A; padding: 30px; text-align: center;
+    }
+    .callout-banner h2 { color: #ffffff; font-weight: 800; font-size: 20px; margin-bottom: 10px; text-transform: uppercase; }
+    .callout-banner p { color: #DAD9D5; font-size: 14px; line-height: 1.6; }
+    .callout-banner .big-number { color: #F37021; font-weight: 800; font-size: 48px; line-height: 1; margin-bottom: 5px; }
+
+    /* TRUST BADGES */
+    .trust-badges {
+      text-align: center; padding: 25px 30px; background: #f9f9f9; border-top: 1px solid #DAD9D5;
+    }
+    .trust-badges p { color: #888; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+    .badge-row { display: flex; justify-content: center; gap: 20px; align-items: center; }
+    .badge-item { color: #666; font-size: 11px; text-align: center; font-weight: 700; }
+
+    /* FOOTER */
+    .footer {
+      text-align: center; padding: 25px 30px; background: #24374A;
+      color: #6986AD; font-size: 12px; line-height: 1.8;
+    }
+    .footer a { color: #DAD9D5; text-decoration: none; }
+    .footer .social-icons { margin: 10px 0; }
+    .footer .social-icons a { color: #DAD9D5; margin: 0 8px; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- EMAIL METADATA -->
+  <!-- ============================================ -->
+  <div class="metadata">
+    <h2>Email Metadata</h2>
+    <p><strong>Client:</strong> LogOX</p>
+    <p><strong>Email Type:</strong> Promotional (Application Spotlight)</p>
+    <p><strong>Send Date:</strong> Thursday, April 9, 2026</p>
+    <p><strong>Topic:</strong> LogOX 3-in-1 Multi-Tool Application Spotlight</p>
+    <p><strong>Featured Product:</strong> LogOX 3-in-1 Forestry MultiTool → https://www.thelogox.com/products/logox-3-in-1</p>
+    <p><strong>Instagram Inspo:</strong> https://www.instagram.com/reel/DWjCsVmOj2q/ — Repositioning a 700/800 lb locust log using a chunk of firewood as a fulcrum and the LogOX as a lever</p>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SUBJECT LINE & PREVIEW TEXT OPTIONS -->
+  <!-- ============================================ -->
+  <div class="subject-lines">
+    <h3>Subject Line Options</h3>
+    <ol>
+      <li>She moved 800 lbs with one tool.</li>
+      <li>A chunk of firewood and a LogOX.</li>
+      <li>800 lbs. One lever. Done.</li>
+    </ol>
+    <h3>Preview Text Options</h3>
+    <ol>
+      <li>Watch what happens when leverage meets the 3-in-1.</li>
+      <li>No machines. No crew. Just smart technique.</li>
+      <li>This is what working smarter actually looks like.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- EMAIL WIREFRAME -->
+  <!-- ============================================ -->
+
+  <div class="email-wireframe">
+
+    <!-- LOGO -->
+    <div class="logo-bar">
+      [LogOX Logo — Blue ox + "LogOX" wordmark, centered]
+    </div>
+
+    <!-- GIF BANNER FROM INSTAGRAM REEL -->
+    <div class="banner">
+      <div class="gif-placeholder">
+        [ GIF BANNER — From Instagram Reel ]<br><br>
+        Source: https://www.instagram.com/reel/DWjCsVmOj2q/<br>
+        Shows: Repositioning a massive locust log using LogOX as lever + firewood chunk as fulcrum.<br>
+        Full-width, auto-loop, no audio.
+      </div>
+      <div class="overlay">
+        <h1>She Moved an <span>800 lb</span> Log.<br>With One Tool.</h1>
+      </div>
+    </div>
+
+    <!-- OPENING HOOK -->
+    <div class="section">
+      <p><strong>No machines. No crew. Just a chunk of firewood, a LogOX, and a little physics.</strong></p>
+      <p>One of our customers needed to reposition a 700 to 800 lb locust log. Instead of calling in heavy equipment, she placed a chunk of firewood as a fulcrum, used her LogOX 3-in-1 as a lever, and moved it in seconds.</p>
+    </div>
+
+    <!-- CTA 1: FIRST HALF -->
+    <div class="cta">
+      <a href="https://www.thelogox.com/products/logox-3-in-1">SEE IT IN ACTION</a>
+    </div>
+
+    <!-- THE TECHNIQUE BREAKDOWN -->
+    <div class="callout-banner">
+      <div class="big-number">800 lbs</div>
+      <h2>Moved With Leverage, Not Muscle</h2>
+      <p>A strategically placed fulcrum and 40 inches of American steel. That's it. The LogOX 3-in-1 isn't just a tool. It's a force multiplier.</p>
+    </div>
+
+    <!-- PRODUCT IMAGE -->
+    <div class="image-block">
+      <img src="https://cdn.shopify.com/s/files/1/0878/5952/7978/files/LogOX_2025_Listing_Photo.png?v=1763990459" alt="LogOX 3-in-1 Forestry MultiTool — full product view">
+    </div>
+
+    <!-- HOW PEOPLE ARE USING IT -->
+    <div class="section" style="padding-bottom: 10px;">
+      <h2>How People <span>Actually Use</span> Theirs</h2>
+      <p>The 3-in-1 was built for firewood. But our customers keep finding new ways to put it to work.</p>
+    </div>
+
+    <!-- APPLICATION 1: TIMBERJACK -->
+    <div class="app-card">
+      <div class="app-card-img">
+        <img src="/Users/muskanaggarwal/Desktop/Claude Code/email-copywriter/clients/logox/images/Timberjack.jpg" alt="Timberjack mode — log elevated off ground, man cutting with chainsaw">
+      </div>
+      <div class="app-card-text">
+        <h3>Elevate and Cut</h3>
+        <p>Lift logs off the ground with the Timberjack so your chainsaw never touches dirt. Cleaner cuts, longer chain life, less time sharpening.</p>
+      </div>
+    </div>
+
+    <!-- APPLICATION 2: CANT HOOK -->
+    <div class="app-card reverse">
+      <div class="app-card-img">
+        <img src="/Users/muskanaggarwal/Desktop/Claude Code/email-copywriter/clients/logox/images/Cant Hook2.jpg" alt="Cant Hook mode — man rolling massive log with 40 inch handle">
+      </div>
+      <div class="app-card-text">
+        <h3>Roll and Position</h3>
+        <p>Use the 40" Cant Hook to roll heavy logs exactly where you need them. Load trailers, feed splitters, or reposition timber without a second pair of hands.</p>
+      </div>
+    </div>
+
+    <!-- APPLICATION 3: HAULER -->
+    <div class="app-card">
+      <div class="app-card-img">
+        <img src="/Users/muskanaggarwal/Desktop/Claude Code/email-copywriter/clients/logox/images/Hauler Lift.jpg" alt="Hauler mode — man gripping and lifting log round without bending">
+      </div>
+      <div class="app-card-text">
+        <h3>Grab and Go</h3>
+        <p>The 21" Hauler hooks into rounds so you can grip, lift, and carry without ever bending over. Your back does zero work. That's the point.</p>
+      </div>
+    </div>
+
+    <!-- CTA 2 -->
+    <div class="cta">
+      <a href="https://www.thelogox.com/products/logox-3-in-1">SEE WHAT YOU CAN DO</a>
+    </div>
+
+    <!-- LEVERAGE QUOTE / CLOSING -->
+    <div class="highlight-box">
+      <p>"It's amazing what you can do with a little leverage and a strategically placed fulcrum."</p>
+    </div>
+
+    <!-- LIFESTYLE IMAGE -->
+    <div class="image-block">
+      <img src="https://cdn.shopify.com/s/files/1/0878/5952/7978/files/LogOX-3-in-1-Forestry-MultiTool-Tool-LogOX-2-_2.jpg?v=1762440484" alt="LogOX 3-in-1 in outdoor use">
+    </div>
+
+    <!-- CLOSING SECTION -->
+    <div class="section">
+      <h2>One Tool. <span>Endless Applications.</span></h2>
+      <p>American steel and hardwood. Lifetime warranty. Made in the USA.</p>
+    </div>
+
+    <div class="cta" style="padding-top: 0;">
+      <a href="https://www.thelogox.com/products/logox-3-in-1">SHOP THE 3-IN-1</a>
+    </div>
+
+    <!-- TRUST BADGES -->
+    <div class="trust-badges">
+      <div class="badge-row">
+        <div class="badge-item">BBB A+<br>Rating</div>
+        <div class="badge-item">Made in<br>USA</div>
+        <div class="badge-item">TCIA<br>Member</div>
+        <div class="badge-item">SBA<br>Certified</div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p><strong style="color: #ffffff;">LogOX</strong><br>
+      American Tools for Woodsmen<br>
+      From Harvest to Hearth</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a> &nbsp; <a href="#">Facebook</a> &nbsp; <a href="#">YouTube</a> &nbsp; <a href="#">Pinterest</a>
+      </div>
+      <p>
+        <a href="#">Unsubscribe</a> &nbsp;|&nbsp; <a href="#">Manage Preferences</a><br><br>
+        LogOX LLC &nbsp;|&nbsp; 484 Salter Hill Rd, Arlington, Vermont 05250<br>
+        &copy; 2026 LogOX LLC. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ============================================ -->
+  <!-- NOTES FOR DESIGNER -->
+  <!-- ============================================ -->
+  <div class="notes">
+    <h3>Notes for Designer</h3>
+    <ul>
+      <li><strong>Brand colors:</strong> Background #FFFFFF, Headlines #24374A (Dark Blue), Accents/CTAs #F37021 (Bold Orange), Logo #006AC6 (LogOX Blue), Light Grey #DAD9D5</li>
+      <li><strong>Typography:</strong> Headlines: PT Sans Pro Extra Bold (uppercase). Body: PT Sans Pro Regular. Subheads: PT Sans Pro Bold.</li>
+      <li><strong>Email width:</strong> 600px max</li>
+      <li><strong>Angle:</strong> This is an APPLICATION SPOTLIGHT, not a product feature email. The audience already knows the 3-in-1. The goal is to show a real, impressive use case (moving 800 lb log) and inspire them with what's possible.</li>
+      <li><strong>GIF BANNER:</strong>
+        <ul>
+          <li>Source: Instagram Reel https://www.instagram.com/reel/DWjCsVmOj2q/</li>
+          <li>Content: Customer repositioning a 700/800 lb locust log using a chunk of firewood as a fulcrum and the LogOX 3-in-1 as a lever.</li>
+          <li>Convert reel to GIF. Full-width, auto-play, loop continuously, no audio.</li>
+          <li>Overlay headline at bottom with gradient fade from transparent to dark blue (#24374A).</li>
+          <li>If GIF file size is too large, use a static hero frame with a "play" icon.</li>
+        </ul>
+      </li>
+      <li><strong>800 lbs callout banner:</strong> Dark blue (#24374A) background. The "800 lbs" number should be large and orange (#F37021), creating a strong visual anchor. This is the "wow" moment of the email.</li>
+      <li><strong>Application cards:</strong> Alternating left/right layout. These are USE CASES, not feature specs. On mobile, stack image on top of text. <strong>IMPORTANT:</strong> Each image must match its use case:
+        <ul>
+          <li>"Elevate and Cut" → Image showing the Timberjack mode (log elevated, chainsaw cutting above ground)</li>
+          <li>"Roll and Position" → Image showing the Cant Hook mode (person using the 40" handle to roll/reposition a log)</li>
+          <li>"Grab and Go" → Image showing the Hauler mode (person gripping and lifting a log round upright)</li>
+        </ul>
+        Source correct images from the LogOX 3-in-1 product page or lifestyle photography.
+      </li>
+      <li><strong>Quote highlight box:</strong> Light grey background with orange left border. Pulls directly from the Instagram post caption tone. Not attributed to any specific person.</li>
+      <li><strong>CTA buttons:</strong> Bold Orange (#F37021), white text, rounded corners (4px). Three CTAs: "See It In Action" (first half), "See What You Can Do" (middle), "Shop the 3-in-1" (closing).</li>
+      <li><strong>Application card images:</strong> Three client-provided lifestyle photos (in images folder). Hero product image and lifestyle closing image from Shopify CDN.</li>
+      <li><strong>Trust badges:</strong> Use actual badge images (BBB, Made in USA stamp, TCIA, SBA) as shown in approved reference emails.</li>
+      <li><strong>[NEEDS INFO]:</strong> Social media URLs for footer links.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!--
+=======================================================
+EMAIL: The Designer's Private Collection — Announcement
+CLIENT: Proclamation Jewelry
+TYPE: Promotional / Limited Release Announcement
+DATE: 2026-04-13
+=======================================================
+
+CAMPAIGN: 72-hour exclusive release of founder Nick Miller's personal rotation.
+POSITIONING: Limited, exclusive, intentional. NOT a clearance event.
+THIS IS: Email 1 of 2 (announcement). Email 2 = final hours last call.
+
+SUBJECT LINE OPTIONS:
+1. From My Personal Rotation
+2. The Private Collection Opens Tonight
+3. 72 Hours. One of One. By Invitation.
+
+PREVIEW TEXT OPTIONS:
+1. A rare release of pieces from our founder's personal rotation.
+2. Thirteen one-of-one pieces from Nick's private rotation. 72 hours.
+3. Worn. Refined. Up to 25% off commission pricing.
+
+IMAGES USED:
+- Hero: IMG_3943.jpg (founder Nick Miller portrait, in images folder)
+
+PRODUCTS FEATURED (sold-out items excluded):
+1. Memento Mori 14k Gold Skull Pendant, Medium
+2. 4mm Figaro Chain, 14k Yellow Gold, 24"
+3. 3mm Diamond Cut Franco Chain, 18k Yellow Gold, 22"
+4. 2mm Hermes Heavy Link Chain, Platinum, 20"
+5. Rolex Submariner (No Date) 2021
+6. 4.5mm Diamond Cut Franco Chain, 18k Yellow Gold, 20"
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Designer's Private Collection — Proclamation Jewelry</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
+
+    .metadata, .subject-lines, .notes {
+      background: #fff3cd; border: 2px dashed #D4AF37; padding: 20px; margin: 20px auto; border-radius: 8px;
+      max-width: 600px;
+    }
+    .metadata h2, .subject-lines h3, .notes h3 { color: #B31B1B; margin-bottom: 10px; font-family: 'Trajan Pro', 'Times New Roman', serif; letter-spacing: 1px; }
+    .subject-lines ol { padding-left: 20px; margin: 0 0 16px 0; }
+    .subject-lines li { margin-bottom: 6px; color: #0A0A0A; font-size: 14px; line-height: 1.5; }
+
+    .email-wireframe {
+      max-width: 600px; margin: 30px auto; background: #0A0A0A; color: #ffffff;
+      font-family: 'Optimo Plain', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* HEADER */
+    .header { text-align: center; padding: 26px 20px; background: #0A0A0A; border-bottom: 1px solid #1a1a1a; }
+    .header .logo { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 22px; letter-spacing: 6px; }
+
+    /* TIME BANNER (72 HOURS ONLY + UP TO 25% OFF) */
+    .time-banner { text-align: center; padding: 36px 30px 10px 30px; background: #0A0A0A; }
+    .time-banner .time {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 38px; letter-spacing: 6px; text-transform: uppercase;
+      line-height: 1.1; font-weight: normal;
+    }
+    .time-banner .time-sub {
+      color: #FFFFFF; font-size: 11px; letter-spacing: 4px;
+      text-transform: uppercase; margin-top: 14px;
+    }
+    .time-banner .offer {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 16px; letter-spacing: 4px; text-transform: uppercase;
+      margin-top: 14px;
+    }
+
+    /* HERO HEADLINE */
+    .hero {
+      padding: 28px 30px 30px 30px; text-align: center;
+    }
+    .hero h1 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif;
+      color: #FFFFFF; font-size: 28px; line-height: 1.2; letter-spacing: 2px;
+      text-transform: uppercase; font-weight: normal; margin-bottom: 16px;
+    }
+    .hero .sub {
+      color: #C0C0C0; font-size: 14px; line-height: 1.7; font-style: italic;
+      max-width: 440px; margin: 0 auto;
+    }
+
+    /* HERO IMAGE — FOUNDER PORTRAIT */
+    .hero-image { line-height: 0; }
+    .hero-image img { width: 100%; display: block; }
+
+    /* OPENING CTA */
+    .cta-wrap { text-align: center; padding: 36px 30px 44px 30px; background: #0A0A0A; }
+    .cta-btn {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 14px 44px; font-size: 12px; font-weight: bold; letter-spacing: 3px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* BODY COPY */
+    .body-copy {
+      padding: 48px 36px; background: #0A0A0A;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+    }
+    .body-copy p {
+      color: #E4E4E4; font-size: 15px; line-height: 1.85; margin-bottom: 18px;
+      font-style: italic;
+    }
+    .body-copy p:last-child { margin-bottom: 0; }
+
+    /* COLLECTION PREVIEW HEADER */
+    .collection-header { padding: 48px 30px 24px 30px; text-align: center; background: #0A0A0A; }
+    .collection-header h2 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif;
+      color: #FFFFFF; font-size: 24px; letter-spacing: 2px;
+      text-transform: uppercase; font-weight: normal;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid {
+      padding: 20px 20px 0 20px; background: #0A0A0A;
+    }
+    .product-row {
+      display: flex; gap: 16px; margin-bottom: 16px;
+    }
+    .product-card {
+      flex: 1; background: #111; text-align: center; padding: 14px 12px 18px 12px;
+    }
+    .product-card img {
+      width: 100%; height: auto; display: block; margin-bottom: 12px;
+    }
+    .product-card .title {
+      color: #E4E4E4; font-size: 11px; line-height: 1.4;
+      letter-spacing: 0.5px; min-height: 44px;
+    }
+
+    /* EXPLORE MORE CTA */
+    .explore-wrap { text-align: center; padding: 36px 30px 52px 30px; background: #0A0A0A; }
+    .explore-btn {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 14px 44px; font-size: 12px; font-weight: bold; letter-spacing: 3px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #050505; padding: 30px; text-align: center;
+      border-top: 1px solid #1a1a1a;
+    }
+    .footer .tagline {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 18px;
+    }
+    .footer .info {
+      color: #666; font-size: 10px; line-height: 1.8; letter-spacing: 1px;
+    }
+    .footer a { color: #888; text-decoration: underline; }
+
+    /* MOBILE */
+    @media only screen and (max-width: 600px) {
+      .hero h1 { font-size: 22px !important; }
+      .time-banner .time { font-size: 28px !important; letter-spacing: 4px !important; }
+      .time-banner .offer { font-size: 13px !important; letter-spacing: 3px !important; }
+      .product-row { flex-direction: column !important; }
+      .body-copy { padding: 36px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SUBJECT LINES & PREVIEW TEXT -->
+<div class="subject-lines">
+  <h3>Subject Line Options</h3>
+  <ol>
+    <li>From My Personal Rotation</li>
+    <li>The Private Collection Opens Tonight</li>
+    <li>72 Hours. One of One. By Invitation.</li>
+  </ol>
+  <h3>Preview Text Options</h3>
+  <ol>
+    <li>A rare release of pieces from our founder's personal rotation.</li>
+    <li>Thirteen one-of-one pieces from Nick's private rotation. 72 hours.</li>
+    <li>Worn. Refined. Up to 25% off commission pricing.</li>
+  </ol>
+</div>
+
+<!-- ===================================================
+     EMAIL BEGINS
+=================================================== -->
+<div class="email-wireframe">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">PROCLAMATION</div>
+  </div>
+
+  <!-- 72 HOURS ONLY + UP TO 25% OFF -->
+  <div class="time-banner">
+    <div class="time">72 Hours Only</div>
+    <div class="time-sub">An Exclusive Release</div>
+    <div class="offer">Up to 25% Off</div>
+  </div>
+
+  <!-- HERO HEADLINE -->
+  <div class="hero">
+    <h1>The Designer's<br>Private Collection</h1>
+    <p class="sub">A rare release of pieces from our founder's personal rotation. Worn. Refined. Offered once.</p>
+  </div>
+
+  <!-- HERO IMAGE — NICK MILLER, FOUNDER -->
+  <div class="hero-image">
+    <img src="../images/IMG_3943.jpg" alt="Nick Miller, Founder of Proclamation Jewelry" />
+  </div>
+
+  <!-- OPENING CTA -->
+  <div class="cta-wrap">
+    <a href="https://www.proclamationjewelry.com/collections/designers-private-collection" class="cta-btn">Shop Now</a>
+  </div>
+
+
+  <!-- BODY COPY -->
+  <div class="body-copy">
+    <p>These are not mass offerings. These are individual pieces chosen for their balance of design, presence, and meaning. Fully restored to like new condition and limited to a single, one of one item.</p>
+
+    <p>For the next 72 hours, we are opening access to this rotation for those who appreciate what cannot be duplicated.</p>
+  </div>
+
+
+  <!-- COLLECTION PREVIEW HEADER -->
+  <div class="collection-header">
+    <h2>A Preview From the Rotation</h2>
+  </div>
+
+
+  <!-- PRODUCT GRID — 6 FEATURED PIECES (3 rows x 2) -->
+  <div class="product-grid">
+
+    <!-- Row 1 -->
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/memento-mori-14k-gold-skull-pendant-medium" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Memento_Mori_Gold_Skull_Pendant_Necklace.jpg" alt="Memento Mori 14k Gold Skull Pendant" />
+        <div class="title">Memento Mori Skull Pendant<br>14k Gold &middot; Medium</div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/4mm-figaro-chain-14k-yellow-gold-24" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mmGoldFigaroChain.jpg" alt="4mm Figaro Chain 14k Yellow Gold" />
+        <div class="title">4mm Figaro Chain<br>14k Yellow Gold &middot; 24"</div>
+      </a>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/3mm-diamond-cut-franco-chain-18k-yellow-gold-22" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_DiamondCutFrancoChain_YellowGold_Hanging_2965d651-de9f-42af-9d2b-0d29fa7888bc.jpg" alt="3mm Diamond Cut Franco Chain 18k Yellow Gold" />
+        <div class="title">3mm Diamond Cut Franco<br>18k Yellow Gold &middot; 22"</div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/2mm-hermes-heavy-link-chain-platinum-20" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/2mm_hermes_Heavy_Link_Necklace_platinum.jpg" alt="2mm Hermes Heavy Link Chain Platinum" />
+        <div class="title">Hermes Heavy Link Chain<br>Platinum &middot; 20"</div>
+      </a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="product-row">
+      <a href="https://www.proclamationjewelry.com/products/4-5mm-diamond-cut-franco-chain-18k-yellow-gold-20" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_DiamondCutFrancoChain_YellowGold_Hanging_cb29a8fb-a370-451e-b06b-f95134504468.jpg" alt="4.5mm Diamond Cut Franco Chain 18k Yellow Gold" />
+        <div class="title">4.5mm Diamond Cut Franco<br>18k Yellow Gold &middot; 20"</div>
+      </a>
+      <a href="https://www.proclamationjewelry.com/products/rolex-submariner-no-date-2021-black-dial-oyster-bracelet" class="product-card" style="text-decoration:none;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Rolex_Submariner_124060_2022_black_white.jpg" alt="Rolex Submariner No Date 2021" />
+        <div class="title">Rolex Submariner<br>No Date, 2021 &middot; Oyster Bracelet</div>
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- EXPLORE MORE CTA -->
+  <div class="explore-wrap">
+    <a href="https://www.proclamationjewelry.com/collections/designers-private-collection" class="explore-btn">Explore More Pieces</a>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="tagline">Forged for Legacy, Worn to Inspire</div>
+    <div class="info">
+      PROCLAMATION JEWELRY<br>
+      Houston, Texas<br><br>
+      <a href="#">View in Browser</a> &nbsp;|&nbsp; <a href="#">Email Preferences</a> &nbsp;|&nbsp; <a href="#">Unsubscribe</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

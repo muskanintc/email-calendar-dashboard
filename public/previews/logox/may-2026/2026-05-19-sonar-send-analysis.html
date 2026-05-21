@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogOX Sonar Send Analysis | Last 30 Days</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f6fa;
+            color: #2d3436;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .report-header {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2d50 100%);
+            color: #fff;
+            padding: 48px 44px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+
+        .report-header .brand {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: #64b5f6;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .report-header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .report-header .subtitle {
+            font-size: 16px;
+            color: #b0bec5;
+            font-weight: 400;
+        }
+
+        .report-header .meta {
+            margin-top: 20px;
+            display: flex;
+            gap: 28px;
+            font-size: 13px;
+            color: #90a4ae;
+        }
+
+        .report-header .meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Section */
+        .section {
+            background: #fff;
+            border-radius: 14px;
+            padding: 36px 40px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            border: 1px solid #e8ecf1;
+        }
+
+        .section-number {
+            display: inline-block;
+            background: #0a1628;
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 28px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0a1628;
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        .section p {
+            font-size: 15px;
+            color: #4a5568;
+            margin-bottom: 14px;
+        }
+
+        /* Big Metric Cards */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .metric-card {
+            background: #f8f9fc;
+            border: 1px solid #e8ecf1;
+            border-radius: 12px;
+            padding: 22px 20px;
+            text-align: center;
+        }
+
+        .metric-card.highlight {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2d50 100%);
+            border: none;
+            color: #fff;
+        }
+
+        .metric-card .value {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0a1628;
+            letter-spacing: -0.5px;
+        }
+
+        .metric-card.highlight .value {
+            color: #64b5f6;
+        }
+
+        .metric-card .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #718096;
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        .metric-card.highlight .label {
+            color: #b0bec5;
+        }
+
+        .metric-card .context {
+            font-size: 12px;
+            color: #a0aec0;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .metric-card.highlight .context {
+            color: #78909c;
+        }
+
+        /* Two Column Metrics */
+        .metric-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 20px 0;
+            font-size: 14px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e8ecf1;
+        }
+
+        thead th {
+            background: #0a1628;
+            color: #fff;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        thead th:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        thead th:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        tbody td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f0f2f5;
+            color: #4a5568;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fc;
+        }
+
+        tbody tr.total-row {
+            background: #f0f4ff;
+            font-weight: 700;
+        }
+
+        tbody tr.total-row td {
+            color: #0a1628;
+            border-top: 2px solid #0a1628;
+        }
+
+        /* Status Badges */
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-live {
+            background: #e6f9ee;
+            color: #1a8a4a;
+        }
+
+        .badge-draft {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .badge-green {
+            background: #e6f9ee;
+            color: #1a8a4a;
+        }
+
+        .badge-red {
+            background: #ffeef0;
+            color: #d32f2f;
+        }
+
+        /* Callout Boxes */
+        .callout {
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .callout-warning {
+            background: #fff8e1;
+            border-left: 4px solid #ffa000;
+            color: #5d4037;
+        }
+
+        .callout-info {
+            background: #e3f2fd;
+            border-left: 4px solid #1976d2;
+            color: #1a237e;
+        }
+
+        .callout-success {
+            background: #e8f5e9;
+            border-left: 4px solid #388e3c;
+            color: #1b5e20;
+        }
+
+        .callout-danger {
+            background: #ffeef0;
+            border-left: 4px solid #d32f2f;
+            color: #b71c1c;
+        }
+
+        .callout strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        /* Flow Cards */
+        .flow-card {
+            border: 1px solid #e8ecf1;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 16px 0;
+        }
+
+        .flow-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0a1628;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .flow-card .flow-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .flow-card .flow-stat {
+            text-align: center;
+        }
+
+        .flow-card .flow-stat .stat-value {
+            font-size: 20px;
+            font-weight: 800;
+            color: #0a1628;
+        }
+
+        .flow-card .flow-stat .stat-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #718096;
+            font-weight: 600;
+        }
+
+        .flow-card .insight {
+            margin-top: 14px;
+            font-size: 14px;
+            color: #4a5568;
+            padding: 12px 16px;
+            background: #f8f9fc;
+            border-radius: 8px;
+        }
+
+        /* Recommendation Box */
+        .recommendation {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2d50 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 36px 40px;
+            margin-bottom: 24px;
+        }
+
+        .recommendation h2 {
+            color: #64b5f6;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .recommendation p {
+            color: #cfd8dc;
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+
+        .rec-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin: 16px 0;
+            padding: 16px 20px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .rec-step-number {
+            background: #64b5f6;
+            color: #0a1628;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+
+        .rec-step-content {
+            flex: 1;
+        }
+
+        .rec-step-content strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 2px;
+            font-size: 15px;
+        }
+
+        .rec-step-content span {
+            color: #90a4ae;
+            font-size: 13px;
+        }
+
+        /* Projection Table */
+        .projection-table {
+            margin: 20px 0;
+        }
+
+        .projection-table table {
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .projection-table thead th {
+            background: rgba(255,255,255,0.08);
+            color: #b0bec5;
+        }
+
+        .projection-table tbody td {
+            color: #cfd8dc;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .projection-table tbody tr:hover {
+            background: rgba(255,255,255,0.03);
+        }
+
+        .projection-table tbody tr.total-row {
+            background: rgba(100,181,246,0.1);
+        }
+
+        .projection-table tbody tr.total-row td {
+            color: #64b5f6;
+            border-top: 2px solid rgba(100,181,246,0.3);
+        }
+
+        /* Talk Track */
+        .talk-track {
+            background: #fafbfd;
+            border: 2px dashed #d0d7e2;
+            border-radius: 12px;
+            padding: 32px 36px;
+            margin: 24px 0;
+        }
+
+        .talk-track h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #718096;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .talk-block {
+            margin-bottom: 20px;
+        }
+
+        .talk-block .talk-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #1976d2;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .talk-block p {
+            font-size: 14px;
+            color: #37474f;
+            font-style: italic;
+            line-height: 1.7;
+            padding-left: 16px;
+            border-left: 3px solid #e3f2fd;
+        }
+
+        /* Cheat Sheet */
+        .cheat-sheet {
+            background: #fff;
+            border: 2px solid #0a1628;
+            border-radius: 14px;
+            padding: 32px 36px;
+            margin-bottom: 24px;
+        }
+
+        .cheat-sheet h2 {
+            font-size: 18px;
+            color: #0a1628;
+            margin-bottom: 18px;
+        }
+
+        .cheat-sheet ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cheat-sheet ul li {
+            padding: 8px 0;
+            font-size: 14px;
+            color: #4a5568;
+            border-bottom: 1px solid #f0f2f5;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .cheat-sheet ul li:last-child {
+            border-bottom: none;
+        }
+
+        .cheat-sheet .bullet {
+            width: 6px;
+            height: 6px;
+            background: #0a1628;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 8px;
+        }
+
+        /* Footer */
+        .report-footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: #a0aec0;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px;
+            }
+
+            .report-header {
+                padding: 32px 24px;
+            }
+
+            .report-header h1 {
+                font-size: 24px;
+            }
+
+            .report-header .meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .section {
+                padding: 24px 20px;
+            }
+
+            .metric-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metric-grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .flow-card .flow-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            thead th, tbody td {
+                padding: 8px 10px;
+            }
+
+            .recommendation {
+                padding: 24px 20px;
+            }
+
+            .talk-track {
+                padding: 20px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="report-header">
+        <div class="brand">LogOX</div>
+        <h1>Sonar Send Performance Analysis</h1>
+        <div class="subtitle">Should we expand Sonar Send to more flows?</div>
+        <div class="meta">
+            <span>Period: Last 30 Days (Apr 19 &ndash; May 18, 2026)</span>
+            <span>Prepared: May 19, 2026</span>
+            <span>Source: Sonar + Triple Whale Dashboard</span>
+        </div>
+    </div>
+
+    <!-- SECTION 1: WHAT IS SONAR SEND -->
+    <div class="section">
+        <div class="section-number">1</div>
+        <h2>What Is Sonar Send?</h2>
+        <p>Sonar Send is a tool that sits on top of your existing Klaviyo flows and adds <strong>extra touchpoints</strong> (email, SMS, or both) to people who didn't convert from the original Klaviyo flow message.</p>
+
+        <div class="callout callout-info">
+            <strong>How it works:</strong>
+            Customer triggers a Klaviyo flow (e.g., abandons checkout) &rarr; Klaviyo sends its normal flow email &rarr; If that person doesn't convert, Sonar Send fires an <strong>additional message</strong> to try to recover the sale &rarr; Triple Whale pixel tracks the attribution.
+        </div>
+
+        <p>It's not replacing your Klaviyo emails. It's a <strong>second-chance layer</strong> that re-engages non-converters with an additional send.</p>
+    </div>
+
+    <!-- SECTION 2: BIG PICTURE -->
+    <div class="section">
+        <div class="section-number">2</div>
+        <h2>The Big Picture</h2>
+
+        <div class="metric-grid">
+            <div class="metric-card highlight">
+                <div class="value">$1,206.73</div>
+                <div class="label">Sonar Revenue</div>
+                <div class="context">From additional touchpoints</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">$17,836</div>
+                <div class="label">Abandonment Flow Revenue</div>
+                <div class="context">Klaviyo emails alone</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">$66,077</div>
+                <div class="label">Total Flow Revenue</div>
+                <div class="context">All Klaviyo flows combined</div>
+            </div>
+        </div>
+
+        <div class="metric-grid-2">
+            <div class="metric-card">
+                <div class="value">7%</div>
+                <div class="label">% of Abandonment Revenue</div>
+                <div class="context">For every $100 abandonment emails make, Sonar adds $7</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">2%</div>
+                <div class="label">% of Total Flow Revenue</div>
+                <div class="context">Sonar's share of all flow revenue</div>
+            </div>
+        </div>
+
+        <div class="callout callout-warning">
+            <strong>Bottom line:</strong>
+            Klaviyo flows generated $66,077 in 30 days. Sonar added $1,206 on top. It exists, it's not zero, but it's a 2% addition. And the setup isn't even fully live yet.
+        </div>
+    </div>
+
+    <!-- SECTION 3: FLOW-BY-FLOW BREAKDOWN -->
+    <div class="section">
+        <div class="section-number">3</div>
+        <h2>Flow-by-Flow Breakdown</h2>
+        <p>There are 3 abandonment flows connected to Sonar. Here's how each is performing:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Flow</th>
+                    <th>Status</th>
+                    <th>Received</th>
+                    <th>Clicks</th>
+                    <th>Purchases</th>
+                    <th>Revenue</th>
+                    <th>AOV</th>
+                    <th>Click Rate</th>
+                    <th>Conv. Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Abandoned Browse</strong></td>
+                    <td><span class="badge badge-live">Live</span></td>
+                    <td>461</td>
+                    <td>106</td>
+                    <td>3</td>
+                    <td>$492.39</td>
+                    <td>$164.13</td>
+                    <td>23.0%</td>
+                    <td>0.65%</td>
+                </tr>
+                <tr>
+                    <td><strong>Abandoned Checkout</strong></td>
+                    <td><span class="badge badge-live">Live</span></td>
+                    <td>40</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>$714.34</td>
+                    <td>$238.11</td>
+                    <td>10.0%</td>
+                    <td>7.50%</td>
+                </tr>
+                <tr>
+                    <td><strong>Abandoned Cart</strong></td>
+                    <td><span class="badge badge-draft">Draft</span></td>
+                    <td>&mdash;</td>
+                    <td>&mdash;</td>
+                    <td>&mdash;</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                    <td>&mdash;</td>
+                    <td>&mdash;</td>
+                </tr>
+                <tr class="total-row">
+                    <td><strong>Total</strong></td>
+                    <td></td>
+                    <td><strong>501</strong></td>
+                    <td><strong>110</strong></td>
+                    <td><strong>6</strong></td>
+                    <td><strong>$1,206.73</strong></td>
+                    <td><strong>$201.12</strong></td>
+                    <td><strong>21.9%</strong></td>
+                    <td><strong>1.2%</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Flow Detail Cards -->
+        <div class="flow-card">
+            <h3><span class="badge badge-live">Live</span> Abandoned Browse</h3>
+            <p style="color:#718096; font-size:13px; margin-top:4px;">People who viewed a product but didn't add to cart</p>
+            <div class="flow-stats">
+                <div class="flow-stat">
+                    <div class="stat-value">461</div>
+                    <div class="stat-label">Received</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">106</div>
+                    <div class="stat-label">Clicks</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Purchases</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">$492</div>
+                    <div class="stat-label">Revenue</div>
+                </div>
+            </div>
+            <div class="insight">
+                <strong>Insight:</strong> Highest volume flow (461 sends) but lowest conversion (0.65%). These are low-intent shoppers who were just browsing. The extra Sonar touchpoint brings a few back, but most won't buy. Solid click rate (23%) shows engagement, but it doesn't translate to purchases at this funnel stage.
+            </div>
+        </div>
+
+        <div class="flow-card" style="border-color: #388e3c;">
+            <h3><span class="badge badge-live">Live</span> Abandoned Checkout</h3>
+            <p style="color:#718096; font-size:13px; margin-top:4px;">People who started checkout but didn't complete the purchase</p>
+            <div class="flow-stats">
+                <div class="flow-stat">
+                    <div class="stat-value">40</div>
+                    <div class="stat-label">Received</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">Clicks</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Purchases</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">$714</div>
+                    <div class="stat-label">Revenue</div>
+                </div>
+            </div>
+            <div class="insight" style="background:#e8f5e9;">
+                <strong>Star Performer.</strong> Only 40 people received this, but 3 converted (7.5% conversion rate). AOV of $238 is the highest. These are high-intent shoppers who had their payment info ready. An extra Sonar touchpoint is genuinely effective at this stage. This is where Sonar adds the most value.
+            </div>
+        </div>
+
+        <div class="flow-card" style="border-color: #e65100;">
+            <h3><span class="badge badge-draft">Draft</span> Abandoned Cart</h3>
+            <p style="color:#718096; font-size:13px; margin-top:4px;">People who added to cart but didn't proceed to checkout</p>
+            <div class="flow-stats">
+                <div class="flow-stat">
+                    <div class="stat-value">&mdash;</div>
+                    <div class="stat-label">Received</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">&mdash;</div>
+                    <div class="stat-label">Clicks</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">&mdash;</div>
+                    <div class="stat-label">Purchases</div>
+                </div>
+                <div class="flow-stat">
+                    <div class="stat-value">$0</div>
+                    <div class="stat-label">Revenue</div>
+                </div>
+            </div>
+            <div class="insight" style="background:#fff3e0;">
+                <strong>Not active.</strong> This flow is still in Draft and generating $0. Cart abandoners sit between Browse (low intent) and Checkout (high intent) in the funnel. This should have been the first flow activated, not the last. Activating this is the single biggest opportunity before any expansion discussion.
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4: INCREMENTAL CLAIMS -->
+    <div class="section">
+        <div class="section-number">4</div>
+        <h2>Sonar's Incremental Revenue Claims</h2>
+        <p>Sonar positions itself as "incremental" revenue, meaning sales you wouldn't have gotten without it:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Klaviyo Revenue</th>
+                    <th>Sonar Added</th>
+                    <th>% Increase</th>
+                    <th>Klaviyo Purchases</th>
+                    <th>Sonar Purchases</th>
+                    <th>% Increase</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Viewed Product</td>
+                    <td>$1,931.60</td>
+                    <td>$492.40</td>
+                    <td><span class="badge badge-green">+25.5%</span></td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td><span class="badge badge-green">+33.3%</span></td>
+                </tr>
+                <tr>
+                    <td>Checkout Started</td>
+                    <td>$15,904.70</td>
+                    <td>$714.30</td>
+                    <td><span class="badge badge-green">+4.5%</span></td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td><span class="badge badge-green">+42.9%</span></td>
+                </tr>
+                <tr class="total-row">
+                    <td><strong>Total</strong></td>
+                    <td><strong>$17,836.30</strong></td>
+                    <td><strong>$1,206.70</strong></td>
+                    <td><span class="badge badge-green">+6.8%</span></td>
+                    <td><strong>16</strong></td>
+                    <td><strong>6</strong></td>
+                    <td><span class="badge badge-green">+37.5%</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="callout callout-warning">
+            <strong>Important caveat:</strong>
+            This is Sonar's own attribution via Triple Whale pixel. When someone receives both a Klaviyo email and a Sonar follow-up, then buys, both platforms may claim that conversion. The true incremental number is likely lower than +6.8%. Even taking Sonar at face value: <strong>6 extra purchases in 30 days, $1,206 in revenue.</strong>
+        </div>
+    </div>
+
+    <!-- SECTION 5: REVENUE CONSISTENCY -->
+    <div class="section">
+        <div class="section-number">5</div>
+        <h2>Revenue Consistency</h2>
+        <p>Looking at the daily chart (Klaviyo vs Sonar Abandonment Flows):</p>
+
+        <div class="callout callout-info">
+            <strong>Key observation:</strong>
+            Klaviyo abandonment flows show large revenue spikes ($4K&ndash;$7K) on certain days. Sonar revenue appears as tiny dots at the bottom of the chart, barely visible in comparison. Sonar's revenue also spikes on random individual days and drops to $0 on most days.
+        </div>
+
+        <p>With only <strong>6 total purchases in 30 days</strong>, one large order on one random day can dramatically swing the numbers. This is not a steady revenue stream yet. It's a handful of recovered orders scattered across the month.</p>
+    </div>
+
+    <!-- SECTION 6: THE GAP -->
+    <div class="section">
+        <div class="section-number">6</div>
+        <h2>What "Expanding" Actually Means</h2>
+        <p>There are two different things expansion could refer to:</p>
+
+        <div class="callout callout-danger">
+            <strong>Option A: Complete the existing setup (must do first)</strong>
+            Turn on the Abandoned Cart flow. It's still in Draft generating $0. This is a medium-high intent flow sitting between Browse and Checkout. This isn't "expanding." This is finishing the basic setup that should already be live.
+        </div>
+
+        <div class="callout callout-info">
+            <strong>Option B: Add Sonar to entirely new flow types</strong>
+            This means adding Sonar touchpoints to welcome flows, post-purchase, winback, etc. This is true expansion. But you cannot evaluate whether expansion makes sense when 1 of 3 existing flows isn't even active. You need all 3 flows running for at least 30 days to understand Sonar's real ceiling on abandonment before going broader.
+        </div>
+    </div>
+
+    <!-- RECOMMENDATION -->
+    <div class="recommendation">
+        <div class="section-number" style="background:#64b5f6; color:#0a1628;">7</div>
+        <h2>Recommendation</h2>
+        <p>Before expanding Sonar to new flow types, complete and evaluate the existing setup:</p>
+
+        <div class="rec-step">
+            <div class="rec-step-number">1</div>
+            <div class="rec-step-content">
+                <strong>Activate the Abandoned Cart flow immediately</strong>
+                <span>It's the highest-volume abandonment flow sitting at $0. This is the single biggest quick win available right now.</span>
+            </div>
+        </div>
+
+        <div class="rec-step">
+            <div class="rec-step-number">2</div>
+            <div class="rec-step-content">
+                <strong>Run all 3 flows for a full 30 days</strong>
+                <span>Get complete data on the entire abandonment funnel with Sonar active. Current data only reflects 2 of 3 flows.</span>
+            </div>
+        </div>
+
+        <div class="rec-step">
+            <div class="rec-step-number">3</div>
+            <div class="rec-step-content">
+                <strong>Evaluate ROI after 30 days</strong>
+                <span>If all 3 flows together generate $2,000+/month and the return vs Sonar's cost makes sense, expand to other flow types. If not, you'll know the ceiling.</span>
+            </div>
+        </div>
+
+        <div style="margin-top:24px; padding: 16px 20px; background: rgba(255,168,0,0.15); border-radius:10px; border: 1px solid rgba(255,168,0,0.3);">
+            <strong style="color:#ffcc80;">Key question to resolve:</strong>
+            <span style="color:#b0bec5; font-size:14px;">What is the monthly cost for Sonar Send? The $1,206/month needs to be weighed against the cost. If Sonar costs $200/month, the ROI is strong. If it's $800/month, we need all 3 flows performing before it makes financial sense.</span>
+        </div>
+
+        <h2 style="margin-top:32px;">Revenue Projections</h2>
+        <div class="projection-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Est. Monthly Revenue</th>
+                        <th>Reasoning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Current (2 live flows)</td>
+                        <td><strong>~$1,200</strong></td>
+                        <td>Actual 30-day data</td>
+                    </tr>
+                    <tr>
+                        <td>All 3 flows live</td>
+                        <td><strong>~$1,500&ndash;$2,000</strong></td>
+                        <td>Adding Cart flow (medium-high intent, est. 3&ndash;5% conversion)</td>
+                    </tr>
+                    <tr>
+                        <td>Expanded to all flow types</td>
+                        <td><strong>~$2,500&ndash;$3,500</strong></td>
+                        <td>Rough ceiling, diminishing returns on lower-intent flows</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="font-size:12px; color:#78909c; margin-top:8px;">* These are directional estimates. Activate the Cart flow first and measure for 30 days to get real numbers.</p>
+    </div>
+
+    <!-- TALK TRACK -->
+    <div class="section">
+        <div class="section-number">8</div>
+        <h2>Call Talk Track</h2>
+        <p>Suggested talking points for the conversation with Austin:</p>
+
+        <div class="talk-track">
+            <h3>What to say on the call</h3>
+
+            <div class="talk-block">
+                <div class="talk-label">What Sonar Does</div>
+                <p>"Just to make sure we're aligned: Sonar Send adds an extra touchpoint, email or SMS, to people who don't convert from the original Klaviyo flow. If someone abandons checkout and doesn't respond to the Klaviyo email, Sonar sends them an additional message to try to bring them back."</p>
+            </div>
+
+            <div class="talk-block">
+                <div class="talk-label">Current Performance</div>
+                <p>"Over the last 30 days, Sonar generated $1,206 from 6 purchases. For context, your total Klaviyo flows did $66,077 in the same period, so Sonar is adding about 2% on top."</p>
+            </div>
+
+            <div class="talk-block">
+                <div class="talk-label">What's Working</div>
+                <p>"The Abandoned Checkout flow is the standout: 7.5% conversion rate, $238 average order. When someone was already at checkout and didn't complete, that extra Sonar message is genuinely bringing some of them back. That makes sense because these are high-intent people."</p>
+            </div>
+
+            <div class="talk-block">
+                <div class="talk-label">The Gap</div>
+                <p>"Here's the thing: the Abandoned Cart flow is still in Draft. It's not turned on. That's the flow for people who added something to their cart but didn't make it to checkout. That's a big chunk of the abandonment funnel that Sonar isn't even touching right now."</p>
+            </div>
+
+            <div class="talk-block">
+                <div class="talk-label">The Recommendation</div>
+                <p>"Before we expand to new flow types, let's get the Abandoned Cart flow live, run all 3 for a full 30 days, then evaluate. If the numbers justify it, we expand. If not, we'll know the ceiling. It doesn't make sense to add more flows when the existing setup isn't fully operational."</p>
+            </div>
+
+            <div class="talk-block">
+                <div class="talk-label">The Cost Question</div>
+                <p>"One thing I need from you: what's the monthly cost for Sonar? I want to make sure the revenue we're generating actually justifies the spend."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHEAT SHEET -->
+    <div class="cheat-sheet">
+        <h2>Quick Reference Cheat Sheet</h2>
+        <ul>
+            <li><div class="bullet"></div><span>Sonar Send adds extra touchpoints (email/SMS) on top of Klaviyo flows to re-engage non-converters</span></li>
+            <li><div class="bullet"></div><span>Last 30 days: <strong>$1,206 from 6 purchases</strong> (2% of total flow revenue)</span></li>
+            <li><div class="bullet"></div><span><strong>Abandoned Checkout</strong> is the best performer: 7.5% conversion, $238 AOV</span></li>
+            <li><div class="bullet"></div><span><strong>Abandoned Browse</strong> has volume (461 sends) but low conversion (0.65%)</span></li>
+            <li><div class="bullet"></div><span><strong>Abandoned Cart is still in Draft</strong> generating $0. This needs to go live first.</span></li>
+            <li><div class="bullet"></div><span>Don't expand to new flows until the existing 3 are fully live with 30 days of data</span></li>
+            <li><div class="bullet"></div><span>Ask Austin for Sonar's monthly cost to calculate true ROI</span></li>
+            <li><div class="bullet"></div><span>The $7,667 / 20% from the original email was cumulative, not current period performance</span></li>
+        </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="report-footer">
+        LogOX Sonar Send Analysis &bull; Prepared May 19, 2026 &bull; Data source: Sonar + Triple Whale Dashboard
+    </div>
+
+</div>
+
+</body>
+</html>

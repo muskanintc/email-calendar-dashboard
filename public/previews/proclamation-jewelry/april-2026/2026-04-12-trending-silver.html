@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Most Trending Silver Jewelry — Proclamation Jewelry</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
+
+    .metadata, .subject-lines, .notes {
+      background: #fff3cd; border: 2px dashed #d4af37; padding: 20px; margin: 20px 0; border-radius: 8px;
+    }
+    .metadata h2, .subject-lines h3, .notes h3 { color: #B31B1B; margin-bottom: 10px; }
+
+    .email-wireframe {
+      max-width: 600px; margin: 30px auto; background: #0A0A0A; color: #ffffff;
+      font-family: 'Optimo Plain', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* FLATLAY BANNER */
+    .banner { position: relative; text-align: center; background: #0A0A0A; }
+    .banner .flatlay-placeholder {
+      background: #111; padding: 100px 30px; color: #666; font-size: 14px;
+      border: 2px dashed #333;
+    }
+    .banner .overlay {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(10,10,10,0.95));
+      padding: 30px;
+    }
+    .banner .overlay .tag {
+      display: inline-block; border: 1px solid #D4AF37; color: #D4AF37;
+      padding: 5px 14px; font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .banner .overlay h1 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif; color: #ffffff;
+      font-size: 28px; letter-spacing: 2px; line-height: 1.3;
+    }
+    .banner .overlay h1 span { color: #D4AF37; }
+
+    /* SECTION */
+    .section { padding: 25px 30px; text-align: center; }
+    .section p { color: #E4E4E4; font-size: 15px; line-height: 1.7; margin-bottom: 10px; }
+    .emphasis { color: #D4AF37; font-weight: bold; }
+
+    .divider { border: none; border-top: 1px solid #222; margin: 0 30px; }
+
+    /* CTA */
+    .cta { text-align: center; padding: 20px 30px; }
+    .cta a {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 14px 44px; font-size: 14px; font-weight: bold; letter-spacing: 2px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* PRODUCT FEATURE — FULL WIDTH HERO STYLE */
+    .product-hero { padding: 0; position: relative; }
+    .product-hero img { width: 100%; height: auto; display: block; }
+    .product-hero-text {
+      padding: 25px 30px; text-align: left;
+    }
+    .product-hero-text .product-number {
+      color: #D4AF37; font-size: 11px; font-weight: bold; letter-spacing: 3px;
+      text-transform: uppercase; margin-bottom: 6px;
+    }
+    .product-hero-text h3 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif; color: #ffffff;
+      font-size: 18px; letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase;
+    }
+    .product-hero-text p { color: #C0C0C0; font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
+    .product-hero-text .price { color: #D4AF37; font-size: 15px; font-weight: bold; margin-bottom: 12px; }
+    .product-hero-text a {
+      display: inline-block; border: 1px solid #D4AF37; color: #D4AF37;
+      padding: 10px 28px; font-size: 12px; letter-spacing: 2px; text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    /* PRODUCT CARD — TWO-COLUMN SIDE BY SIDE */
+    .product-duo { display: flex; gap: 0; }
+    .product-duo-card {
+      flex: 1; text-align: center; padding: 25px 20px;
+      border-right: 1px solid #1a1a1a;
+    }
+    .product-duo-card:last-child { border-right: none; }
+    .product-duo-card img { max-width: 100%; height: 200px; object-fit: contain; margin-bottom: 15px; }
+    .product-duo-card .product-number {
+      color: #D4AF37; font-size: 10px; font-weight: bold; letter-spacing: 3px;
+      text-transform: uppercase; margin-bottom: 4px;
+    }
+    .product-duo-card h4 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif; color: #ffffff;
+      font-size: 13px; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;
+    }
+    .product-duo-card p { color: #C0C0C0; font-size: 12px; line-height: 1.6; margin-bottom: 10px; }
+    .product-duo-card .price { color: #D4AF37; font-size: 13px; font-weight: bold; margin-bottom: 10px; }
+    .product-duo-card a {
+      display: inline-block; border: 1px solid #D4AF37; color: #D4AF37;
+      padding: 8px 20px; font-size: 11px; letter-spacing: 1.5px; text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    /* PRODUCT STRIP — FULL WIDTH WITH TEXT OVERLAY */
+    .product-strip { position: relative; background: #111; }
+    .product-strip-inner { display: flex; align-items: center; }
+    .product-strip-inner.reverse { flex-direction: row-reverse; }
+    .product-strip-img { flex: 1; min-width: 50%; }
+    .product-strip-img img { width: 100%; height: auto; display: block; object-fit: cover; }
+    .product-strip-text { flex: 1; padding: 25px; }
+    .product-strip-text .product-number {
+      color: #D4AF37; font-size: 10px; font-weight: bold; letter-spacing: 3px;
+      text-transform: uppercase; margin-bottom: 4px;
+    }
+    .product-strip-text h3 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif; color: #ffffff;
+      font-size: 15px; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase;
+    }
+    .product-strip-text p { color: #C0C0C0; font-size: 13px; line-height: 1.6; margin-bottom: 10px; text-align: left; }
+    .product-strip-text .price { color: #D4AF37; font-size: 14px; font-weight: bold; margin-bottom: 10px; }
+    .product-strip-text a {
+      display: inline-block; border: 1px solid #D4AF37; color: #D4AF37;
+      padding: 8px 22px; font-size: 11px; letter-spacing: 1.5px; text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    /* CLOSING STRIP */
+    .closing-strip {
+      background: #111; padding: 30px; text-align: center; border-top: 1px solid #222;
+    }
+    .closing-strip h2 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif; color: #D4AF37;
+      font-size: 18px; letter-spacing: 1.5px; margin-bottom: 8px;
+    }
+    .closing-strip p { color: #999; font-size: 13px; }
+
+    /* FOOTER */
+    .footer {
+      text-align: center; padding: 25px 30px; border-top: 1px solid #333;
+      color: #666; font-size: 12px; line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- EMAIL METADATA -->
+  <!-- ============================================ -->
+  <div class="metadata">
+    <h2>Email Metadata</h2>
+    <p><strong>Client:</strong> Proclamation Jewelry</p>
+    <p><strong>Email Type:</strong> Promotional</p>
+    <p><strong>Send Date:</strong> Sunday, April 12, 2026</p>
+    <p><strong>Topic:</strong> Most Trending Silver Jewelry</p>
+    <p><strong>Featured Products:</strong></p>
+    <ul>
+      <li>CHAMPION, Silver Saint Michael Pendant → https://www.proclamationjewelry.com/products/silver-saint-michael-pendant</li>
+      <li>3mm Silver Franco Chain → https://www.proclamationjewelry.com/products/3mm-franco-chain-silver</li>
+      <li>Faith, Silver Cross Pendant → https://www.proclamationjewelry.com/products/faith-silver-cross-pendant</li>
+      <li>Stoic 4 Virtues, Silver Pendant → https://www.proclamationjewelry.com/products/stoic-4-virtues-pendant-silver</li>
+      <li>5mm Silver Franco Chain → https://www.proclamationjewelry.com/products/5mm-franco-chain-silver</li>
+    </ul>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SUBJECT LINE & PREVIEW TEXT OPTIONS -->
+  <!-- ============================================ -->
+  <div class="subject-lines">
+    <h3>Subject Line Options</h3>
+    <ol>
+      <li>The 5 pieces everyone is wearing.</li>
+      <li>Guess what our clients can't stop buying.</li>
+      <li>These five won't stay in stock.</li>
+    </ol>
+    <h3>Preview Text Options</h3>
+    <ol>
+      <li>Our most sought after silver pieces, all in one place.</li>
+      <li>From the Saint Michael to the Franco. See what's moving.</li>
+      <li>Five pieces. Five stories. One metal.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- EMAIL WIREFRAME -->
+  <!-- ============================================ -->
+
+  <div class="email-wireframe">
+
+    <!-- FLATLAY BANNER IMAGE -->
+    <div class="banner">
+      <div class="flatlay-placeholder">
+        [ FLATLAY BANNER IMAGE ]<br><br>
+        Designer: Create a top-down flatlay on a matte black surface featuring all five silver products<br>
+        arranged artfully. Include the Saint Michael pendant, Faith cross, Stoic 4 Virtues pendant,<br>
+        and both Franco chains coiled around the pendants. Moody, editorial lighting.<br>
+        Soft reflections on the black surface. No props, let the silver speak.<br><br>
+        NOTE: Headline sits BELOW the image, not overlaid. Keep the flatlay clean.
+      </div>
+    </div>
+
+    <!-- HEADLINE — BELOW BANNER, NOT OVERLAID -->
+    <div class="section" style="padding-top: 30px; padding-bottom: 10px;">
+      <h1 style="font-family: 'Trajan Pro', 'Times New Roman', serif; color: #ffffff; font-size: 26px; letter-spacing: 2px; line-height: 1.3; text-align: center;">THE MOST TRENDING<br><span class="emphasis">SILVER PIECES</span> RIGHT NOW</h1>
+    </div>
+
+    <!-- OPENING HOOK -->
+    <div class="section">
+      <p>Silver has always carried its own kind of authority. Quiet. Confident. <span class="emphasis">Unmistakable.</span></p>
+      <p>These are the five pieces our clients are reaching for right now. Each one handcrafted, each one with a story worth wearing.</p>
+    </div>
+
+    <!-- CTA 1: FIRST HALF -->
+    <div class="cta">
+      <a href="https://www.proclamationjewelry.com/collections/bestsellers">SHOP ALL SILVER</a>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ============================== -->
+    <!-- PRODUCT 1: SAINT MICHAEL — HERO FORMAT -->
+    <!-- ============================== -->
+    <div class="product-hero">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Silver_Saint_Michael_Necklace.jpg?v=1733930688" alt="CHAMPION Silver Saint Michael Pendant on chain — lifestyle shot">
+      <div class="product-hero-text">
+        <h3>CHAMPION<br>Silver Saint Michael Pendant</h3>
+        <p>Saint Michael vanquishing the serpent on the front. His shield, the scales of justice, and the inscription <span class="emphasis">"Quis ut Deus"</span> on the reverse. This is the piece men reach for when they need to carry something bigger than themselves. Sacred armor, forged in sterling silver.</p>
+        <a href="https://www.proclamationjewelry.com/products/silver-saint-michael-pendant">SHOP NOW</a>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ============================== -->
+    <!-- PRODUCTS 2 & 3: TWO-COLUMN DUO -->
+    <!-- ============================== -->
+    <div class="product-duo">
+
+      <!-- PRODUCT 2: 3MM FRANCO CHAIN -->
+      <div class="product-duo-card">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_Silver_Franco_Chain_Necklace.jpg?v=1722964125" alt="3mm Silver Franco Chain — hanging product shot">
+        <h4>3mm Silver<br>Franco Chain</h4>
+        <p>Italian crafted, rhodium plated, built to layer or wear alone. This is the chain that starts most collections. Understated enough for every day, substantial enough to hold any pendant.</p>
+        <a href="https://www.proclamationjewelry.com/products/3mm-franco-chain-silver">SHOP NOW</a>
+      </div>
+
+      <!-- PRODUCT 3: FAITH CROSS -->
+      <div class="product-duo-card">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Faith_Silver_Cross_Necklace_Pendant_for_men.jpg?v=1723375405" alt="Faith Silver Cross Pendant — product shot">
+        <h4>Faith<br>Silver Cross Pendant</h4>
+        <p>A symbol of hope and the everlasting sacrifice. Handcrafted by artisan jewelers and rhodium plated for enduring shine. The cross that doesn't shout. It simply states what you believe.</p>
+        <a href="https://www.proclamationjewelry.com/products/faith-silver-cross-pendant">SHOP NOW</a>
+      </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <!-- ============================== -->
+    <!-- PRODUCT 4: STOIC 4 VIRTUES — STRIP FORMAT -->
+    <!-- ============================== -->
+    <div class="product-strip">
+      <div class="product-strip-inner">
+        <div class="product-strip-img">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Silver_Stoic_Pendant_4_Virtues_Proclamation_Jewelry.jpg?v=1764047333" alt="Stoic 4 Virtues Silver Pendant — front view">
+        </div>
+        <div class="product-strip-text">
+          <h3>Stoic 4 Virtues<br>Silver Pendant</h3>
+          <p>Wisdom. Courage. Justice. Temperance. Four virtues mapped to a compass rose. On the reverse, Marcus Aurelius: <span class="emphasis">"Waste no time arguing what a good man should be. Be one."</span></p>
+          <a href="https://www.proclamationjewelry.com/products/stoic-4-virtues-pendant-silver">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ============================== -->
+    <!-- PRODUCT 5: 5MM FRANCO CHAIN — STRIP FORMAT (REVERSED) -->
+    <!-- ============================== -->
+    <div class="product-strip">
+      <div class="product-strip-inner reverse">
+        <div class="product-strip-img">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_Silver_Franco_Chain_Necklace.jpg?v=1722964594" alt="5mm Silver Franco Chain — hanging product shot">
+        </div>
+        <div class="product-strip-text">
+          <h3>5mm Silver<br>Franco Chain</h3>
+          <p>When you want your chain to do the talking. 67 to 79 grams of solid Italian sterling silver with a thick, commanding profile. The Franco link that makes a room take notice. Rhodium plated for a finish that lasts.</p>
+          <a href="https://www.proclamationjewelry.com/products/5mm-franco-chain-silver">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p style="margin-bottom: 10px;">
+        <strong style="color: #D4AF37;">PROCLAMATION JEWELRY</strong><br>
+        Forged for Legacy, Worn to Inspire.
+      </p>
+      <p>
+        [Instagram] &nbsp; [YouTube] &nbsp; [Facebook]<br><br>
+        [Unsubscribe] &nbsp;|&nbsp; [Manage Preferences]<br><br>
+        Proclamation Jewelry &nbsp;|&nbsp; Houston, TX<br>
+        &copy; 2026 Proclamation Jewelry. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ============================================ -->
+  <!-- NOTES FOR DESIGNER -->
+  <!-- ============================================ -->
+  <div class="notes">
+    <h3>Notes for Designer</h3>
+    <ul>
+      <li><strong>Brand colors:</strong> Background #0A0A0A, Headlines #FFFFFF + #D4AF37 (gold accents), Body #C0C0C0 (silver-toned text for this email), Accent #D4AF37, Alt section #111</li>
+      <li><strong>Typography:</strong> Headlines: Trajan Pro Bold (all caps, tracked). Body: Optimo Plain.</li>
+      <li><strong>Email width:</strong> 600px max</li>
+      <li><strong>FLATLAY BANNER:</strong>
+        <ul>
+          <li>Create a top-down flatlay photograph on a matte black surface.</li>
+          <li>Arrange all 5 silver products artfully: Saint Michael pendant, Faith cross pendant, Stoic 4 Virtues pendant, 3mm Franco chain, 5mm Franco chain.</li>
+          <li>Chains should coil organically around or near the pendants.</li>
+          <li>Moody, editorial lighting with soft reflections on the black surface. No props.</li>
+          <li>IMPORTANT: Headline sits BELOW the image, not overlaid. Keep the flatlay image clean and unobstructed.</li>
+        </ul>
+      </li>
+      <li><strong>Layout approach:</strong> Magazine editorial style with varied product layouts:
+        <ul>
+          <li>Product 1 (Saint Michael) — Full-width hero image + text block below. The star of the email.</li>
+          <li>Products 2 &amp; 3 (3mm Franco + Faith Cross) — Two-column side by side. Creates visual variety and pacing.</li>
+          <li>Product 4 (Stoic 4 Virtues) — Image left, text right strip.</li>
+          <li>Product 5 (5mm Franco) — Image right, text left strip (reversed). Creates alternating rhythm.</li>
+        </ul>
+      </li>
+      <li><strong>Product CTAs:</strong> All "SHOP NOW" — outline buttons (gold border, gold text on black bg).</li>
+      <li><strong>Main CTA:</strong> Solid gold (#D4AF37), black text. One main CTA: "Shop All Silver" in the first half.</li>
+      <li><strong>No prices shown anywhere in the email.</strong></li>
+      <li><strong>No product numbering (01, 02, etc.).</strong></li>
+      <li><strong>Silver theme:</strong> Body text uses #C0C0C0 (silver-toned) instead of the usual #E4E4E4 to reinforce the silver theme subtly.</li>
+      <li><strong>All product images from Shopify CDN.</strong> Publicly accessible.</li>
+      <li><strong>Note:</strong> Faith Cross Large variant is currently out of stock. Only Small is available.</li>
+      <li><strong>[NEEDS INFO]:</strong> Social media links for footer.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

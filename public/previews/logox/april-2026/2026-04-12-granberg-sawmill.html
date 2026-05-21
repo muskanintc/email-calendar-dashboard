@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Turn Your Chainsaw Into a Portable Sawmill — LogOX</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
+
+    .metadata, .subject-lines, .notes {
+      background: #fff3cd; border: 2px dashed #F37021; padding: 20px; margin: 20px 0; border-radius: 8px;
+    }
+    .metadata h2, .subject-lines h3, .notes h3 { color: #006AC6; margin-bottom: 10px; }
+
+    .email-wireframe {
+      max-width: 600px; margin: 30px auto; background: #ffffff;
+      font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* LOGO BAR */
+    .logo-bar { text-align: center; padding: 20px 30px; background: #ffffff; border-bottom: 3px solid #F37021; }
+
+    /* HERO */
+    .hero { position: relative; text-align: center; overflow: hidden; background: #24374A; }
+    .hero img { width: 100%; height: auto; display: block; opacity: 0.7; }
+    .hero .hero-overlay {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      padding: 30px; background: rgba(36,55,74,0.5);
+    }
+    .hero .hero-overlay h1 {
+      color: #ffffff; font-weight: 800; font-size: 26px; letter-spacing: 0.5px;
+      line-height: 1.3; text-transform: uppercase; text-align: center;
+    }
+    .hero .hero-overlay h1 span { color: #F37021; }
+    .hero .hero-overlay p { color: #DAD9D5; font-size: 14px; margin-top: 8px; }
+
+    /* SECTIONS */
+    .section { padding: 25px 30px; }
+    .section h2 {
+      color: #24374A; font-weight: 800; font-size: 22px; margin-bottom: 12px; text-align: center;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .section h2 span { color: #F37021; }
+    .section p { color: #333; font-size: 15px; line-height: 1.7; margin-bottom: 10px; text-align: center; }
+
+    /* CTA */
+    .cta { text-align: center; padding: 20px 30px; }
+    .cta a {
+      display: inline-block; background: #F37021; color: #ffffff;
+      padding: 16px 44px; font-size: 15px; font-weight: 700; letter-spacing: 1px;
+      text-decoration: none; text-transform: uppercase; border-radius: 4px;
+      /* Mobile: large tap target */
+      min-width: 260px; text-align: center;
+    }
+
+    /* PRODUCT CARDS — Mobile-first stacked layout */
+    .product-card {
+      border: 1px solid #DAD9D5; margin: 0 20px 20px 20px; border-radius: 6px; overflow: hidden;
+    }
+    .product-card-img { text-align: center; background: #f9f9f9; padding: 15px; }
+    .product-card-img img { max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 280px; object-fit: contain; }
+    .product-card-body { padding: 20px 25px; }
+    .product-card-body h3 {
+      color: #24374A; font-weight: 800; font-size: 18px; margin-bottom: 6px; text-transform: uppercase;
+    }
+    .product-card-body p { color: #555; font-size: 14px; line-height: 1.6; margin-bottom: 10px; text-align: left; }
+    .product-card-body .spec-list { list-style: none; padding: 0; margin: 12px 0; }
+    .product-card-body .spec-list li {
+      color: #333; font-size: 14px; line-height: 1.5; padding: 4px 0 4px 20px;
+      position: relative;
+    }
+    .product-card-body .spec-list li::before {
+      content: "✓"; color: #F37021; font-weight: 700; position: absolute; left: 0;
+    }
+    .product-card-cta { padding: 0 25px 20px 25px; text-align: center; }
+    .product-card-cta a {
+      display: block; background: #F37021; color: #ffffff;
+      padding: 14px 20px; font-size: 15px; font-weight: 700; letter-spacing: 1px;
+      text-decoration: none; text-transform: uppercase; border-radius: 4px; text-align: center;
+    }
+
+    /* BEST FOR TAG */
+    .best-for {
+      display: inline-block; background: #24374A; color: #ffffff;
+      font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 3px; margin-bottom: 10px;
+    }
+
+    /* CALLOUT BANNER */
+    .callout-banner {
+      background: #24374A; padding: 30px; text-align: center;
+    }
+    .callout-banner h2 { color: #ffffff; font-weight: 800; font-size: 20px; margin-bottom: 10px; text-transform: uppercase; }
+    .callout-banner h2 span { color: #F37021; }
+    .callout-banner p { color: #DAD9D5; font-size: 14px; line-height: 1.6; }
+
+    /* ACCESSORIES GRID */
+    .accessories { padding: 25px 30px; background: #f9f9f9; }
+    .accessories h2 {
+      color: #24374A; font-weight: 800; font-size: 20px; margin-bottom: 16px; text-align: center;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .accessories h2 span { color: #F37021; }
+    .acc-grid { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .acc-item {
+      flex: 1 1 45%; max-width: 48%; background: #ffffff; border: 1px solid #DAD9D5;
+      border-radius: 6px; padding: 15px; text-align: center;
+    }
+    .acc-item img { max-width: 80px; height: auto; margin-bottom: 8px; }
+    .acc-item h4 { color: #24374A; font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+    .acc-item p { color: #888; font-size: 12px; line-height: 1.4; }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box {
+      background: #f5f5f5; border-left: 4px solid #F37021; padding: 20px 25px; margin: 0 30px 20px 30px;
+    }
+    .highlight-box p { text-align: left; color: #24374A; font-size: 14px; line-height: 1.6; margin-bottom: 0; }
+    .highlight-box strong { color: #F37021; }
+
+    /* TRUST BADGES */
+    .trust-badges {
+      text-align: center; padding: 25px 30px; background: #f9f9f9; border-top: 1px solid #DAD9D5;
+    }
+    .badge-row { display: flex; justify-content: center; gap: 20px; align-items: center; }
+    .badge-item { color: #666; font-size: 11px; text-align: center; font-weight: 700; }
+
+    /* FOOTER */
+    .footer {
+      text-align: center; padding: 25px 30px; background: #24374A;
+      color: #6986AD; font-size: 12px; line-height: 1.8;
+    }
+    .footer a { color: #DAD9D5; text-decoration: none; }
+    .footer .social-icons { margin: 10px 0; }
+    .footer .social-icons a { color: #DAD9D5; margin: 0 8px; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- EMAIL METADATA -->
+  <!-- ============================================ -->
+  <div class="metadata">
+    <h2>Email Metadata</h2>
+    <p><strong>Client:</strong> LogOX</p>
+    <p><strong>Email Type:</strong> Promotional (Multi-Product Showcase)</p>
+    <p><strong>Send Date:</strong> Sunday, April 12, 2026</p>
+    <p><strong>Topic:</strong> Granberg Alaskan Mill Bundles — Turn Your Chainsaw Into a Portable Sawmill</p>
+    <p><strong>Featured Products:</strong></p>
+    <ul>
+      <li>Homeowner Bundle 20" → https://www.thelogox.com/products/homeowner-bundle</li>
+      <li>Backcountry Bundle 24" → https://www.thelogox.com/products/granberg-alaskan-mill-backcountry-bundle</li>
+      <li>Backcountry Bundle 30" → https://www.thelogox.com/products/granberg-alaskan-mill-backcountry-bundle-30</li>
+      <li>Backcountry Bundle 36" → https://www.thelogox.com/products/granberg-backcountry-bundle-36</li>
+    </ul>
+    <p><strong>Collection Page:</strong> https://www.thelogox.com/collections/granberg-alaskan-mills-and-accessories</p>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SUBJECT LINE & PREVIEW TEXT OPTIONS -->
+  <!-- ============================================ -->
+  <div class="subject-lines">
+    <h3>Subject Line Options</h3>
+    <ol>
+      <li>Your chainsaw is also a sawmill.</li>
+      <li>Mill your own lumber. No sawmill required.</li>
+      <li>One chainsaw. Four ways to mill.</li>
+    </ol>
+    <h3>Preview Text Options</h3>
+    <ol>
+      <li>Four Granberg Alaskan Mill bundles. One box. Ready to mill.</li>
+      <li>Turn any log into boards, slabs, and beams.</li>
+      <li>Everything you need to start milling today.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- EMAIL WIREFRAME -->
+  <!-- ============================================ -->
+
+  <div class="email-wireframe">
+
+    <!-- LOGO -->
+    <div class="logo-bar">
+      [LogOX Logo — Blue ox + "LogOX" wordmark, centered]
+    </div>
+
+    <!-- HERO BANNER -->
+    <div class="hero">
+      <img src="https://wasatchtimber.com/cdn/shop/files/Ben-using-ALaskan-MKIV-lower-res-600x400.jpg?v=1739820049" alt="Person milling a log with Granberg Alaskan MK-IV Mill attached to chainsaw">
+      <div class="hero-overlay">
+        <h1>Turn Your Existing Chainsaw<br>Into a <span>Portable Sawmill</span></h1>
+      </div>
+    </div>
+
+    <!-- OPENING HOOK -->
+    <div class="section">
+      <p>If you already own a chainsaw, you're one attachment away from milling your own boards, slabs, beams, and posts from any log, anywhere you need it.</p>
+      <p>The Granberg Alaskan Mill clamps directly to your chainsaw bar and turns it into a precision milling system. No stationary sawmill. No hauling logs to a shop. We put together four bundles so you get everything you need in one box.</p>
+    </div>
+
+    <!-- CTA 1: FIRST HALF -->
+    <div class="cta">
+      <a href="https://www.thelogox.com/collections/granberg-alaskan-mills-and-accessories">SHOP GRANBERG BUNDLES</a>
+    </div>
+
+    <!-- WHICH BUNDLE? GUIDE SECTION -->
+    <div class="callout-banner">
+      <h2>Which Bundle <span>Fits Your Setup?</span></h2>
+      <p>Every bundle matches a chainsaw bar size. Pick the one that fits your saw, and you're ready to mill. Not sure? Start with the bar length printed on your chainsaw.</p>
+    </div>
+
+    <!-- =============================== -->
+    <!-- PRODUCT 1: HOMEOWNER BUNDLE 20" -->
+    <!-- =============================== -->
+    <div class="section" style="padding-bottom: 0;">
+      <h2>The Bundles</h2>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-img">
+        <img src="https://wasatchtimber.com/cdn/shop/files/SmallLogMillG777.jpg?v=1739641726" alt="Granberg G777 Small Log Mill — Homeowner Bundle core product">
+      </div>
+      <div class="product-card-body">
+        <span class="best-for">Best for: Firewood and Small Projects</span>
+        <h3>Homeowner Bundle 20"</h3>
+        <p>Built for homeowners who want to mill firewood rounds, small beams, and planks. Clamps to any chainsaw with a 20" bar or shorter. Lightweight, compact, and easy to set up in your yard or at the woodlot.</p>
+        <ul class="spec-list">
+          <li>Cuts slabs up to <strong>18 inches wide</strong></li>
+          <li>Cutting depth: 1/2" to 13"</li>
+          <li>Fits chainsaws with 20" bar, 50cc+ engine</li>
+          <li>Chainsaw bar must be solid steel (not laminate)</li>
+          <li>Includes <strong>Slabbing Rail Bracket Set (G850)</strong> — brackets that attach to 2x4s and secure to the log, giving your mill a level guide for a perfectly flat first cut</li>
+          <li>Includes <strong>Precision Chain Grinder (G1012XT)</strong> — 12V grinder that sharpens ripping chains in the field so your cuts stay clean and efficient</li>
+        </ul>
+      </div>
+      <div class="product-card-cta">
+        <a href="https://www.thelogox.com/products/homeowner-bundle">SHOP NOW</a>
+      </div>
+    </div>
+
+    <!-- ==================================== -->
+    <!-- PRODUCT 2: BACKCOUNTRY BUNDLE 24"    -->
+    <!-- ==================================== -->
+    <div class="product-card">
+      <div class="product-card-img">
+        <img src="https://wasatchtimber.com/cdn/shop/files/AlaskanMK-IV24_300.jpg?v=1739558269" alt="Granberg G778-24 Alaskan MK-IV Mill — Backcountry Bundle 24 inch">
+      </div>
+      <div class="product-card-body">
+        <span class="best-for">Best for: General Milling</span>
+        <h3>Backcountry Bundle 24"</h3>
+        <p>The starting point for serious milling. The MK-IV frame is built heavier than the Homeowner model and includes the G555B Edging Mill, so you can square up logs before slabbing. Great for cutting dimensional lumber from smaller hardwoods and softwoods.</p>
+        <ul class="spec-list">
+          <li>Cuts slabs up to <strong>20 inches wide</strong></li>
+          <li>Cutting depth: 1/2" to 13"</li>
+          <li>Fits chainsaws with 24" bar, 50cc+ engine</li>
+          <li>Includes <strong>Edging Mill (G555B)</strong> — a vertical milling attachment that squares logs and cuts dimensional lumber without rolling the log</li>
+          <li>Includes <strong>Slabbing Rail Bracket Set (G850)</strong> and <strong>Precision Chain Grinder (G1012XT)</strong></li>
+        </ul>
+      </div>
+      <div class="product-card-cta">
+        <a href="https://www.thelogox.com/products/granberg-alaskan-mill-backcountry-bundle">SHOP NOW</a>
+      </div>
+    </div>
+
+    <!-- ==================================== -->
+    <!-- PRODUCT 3: BACKCOUNTRY BUNDLE 30"    -->
+    <!-- ==================================== -->
+    <div class="product-card">
+      <div class="product-card-img">
+        <img src="https://wasatchtimber.com/cdn/shop/files/Alaskan_MK-IV_30_300.jpg?v=1739639675" alt="Granberg G778-30 Alaskan MK-IV Mill — Backcountry Bundle 30 inch">
+      </div>
+      <div class="product-card-body">
+        <span class="best-for">Best for: Wide Slabs and Large Logs</span>
+        <h3>Backcountry Bundle 30"</h3>
+        <p>When you're working with bigger timber, this is the bundle that handles it. 26 inches of cutting width means you can slab most mid-size hardwoods in a single pass. Perfect for live edge slabs, thick mantels, and outdoor furniture stock.</p>
+        <ul class="spec-list">
+          <li>Cuts slabs up to <strong>26 inches wide</strong></li>
+          <li>Cutting depth: 1/2" to 13"</li>
+          <li>Fits chainsaws with 30" bar, 60cc+ engine</li>
+          <li>Includes <strong>Edging Mill (G555B)</strong>, <strong>Slabbing Rail Bracket Set (G850)</strong>, and <strong>Precision Chain Grinder (G1012XT)</strong></li>
+        </ul>
+      </div>
+      <div class="product-card-cta">
+        <a href="https://www.thelogox.com/products/granberg-alaskan-mill-backcountry-bundle-30">SHOP NOW</a>
+      </div>
+    </div>
+
+    <!-- ==================================== -->
+    <!-- PRODUCT 4: BACKCOUNTRY BUNDLE 36"    -->
+    <!-- ==================================== -->
+    <div class="product-card">
+      <div class="product-card-img">
+        <img src="https://wasatchtimber.com/cdn/shop/files/Alaskan_MK-IV_36_300.jpg?v=1739640339" alt="Granberg G778-36 Alaskan MK-IV Mill — Backcountry Bundle 36 inch">
+      </div>
+      <div class="product-card-body">
+        <span class="best-for">Best for: Maximum Capacity</span>
+        <h3>Backcountry Bundle 36"</h3>
+        <p>The biggest bundle for the biggest logs. 32 inches of cutting width handles large oaks, walnuts, and other wide-diameter trees. If you're milling for projects, stockpiling lumber, or cutting for neighbors, this is the one that won't limit you.</p>
+        <ul class="spec-list">
+          <li>Cuts slabs up to <strong>32 inches wide</strong></li>
+          <li>Cutting depth: 1/2" to 13"</li>
+          <li>Fits chainsaws with 36" bar, 60cc+ engine</li>
+          <li>Includes <strong>Edging Mill (G555B)</strong>, <strong>Slabbing Rail Bracket Set (G850)</strong>, and <strong>Precision Chain Grinder (G1012XT)</strong></li>
+        </ul>
+      </div>
+      <div class="product-card-cta">
+        <a href="https://www.thelogox.com/products/granberg-backcountry-bundle-36">SHOP NOW</a>
+      </div>
+    </div>
+
+    <!-- ============================== -->
+    <!-- WHAT'S IN EVERY BUNDLE         -->
+    <!-- ============================== -->
+    <div class="accessories">
+      <h2>Every Bundle <span>Comes With</span></h2>
+      <div class="acc-grid">
+        <div class="acc-item">
+          <img src="https://www.mfgsupply.com/media/catalog/product/cache/44839202120a379b45b40c29bdd602da/g/-/g-1012.jpg" alt="Granberg G1012XT Precision Chain Grinder">
+          <h4>Precision Chain Grinder</h4>
+          <p>12V grinder sharpens ripping chains in the field. Sharp chains = cleaner cuts, less work.</p>
+        </div>
+        <div class="acc-item">
+          <img src="https://www.bandsawbladecenter.com/images/products/g850.jpg" alt="Granberg G850 Slabbing Rail Bracket Set">
+          <h4>Slabbing Rail Brackets</h4>
+          <p>Attach a straight-edge rail to any log for a perfectly flat first cut, every time.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMPORTANT NOTE -->
+    <div class="highlight-box" style="margin-top: 20px;">
+      <p><strong>Important:</strong> Your chainsaw bar must be solid steel, not laminate. Check your bar type before ordering. Need help figuring out your setup? Reach out to us.</p>
+    </div>
+
+    <!-- LOGOX TOOLS + MILLING CROSS-SELL -->
+    <div class="section">
+      <h2>Already Own a <span>LogOX?</span></h2>
+      <p>The LogOX 3-in-1 Forestry MultiTool, LogOX Hauler, and PickOX Pickaroon Attachment make milling even easier. Use the Timberjack to elevate logs off the ground. Use the Cant Hook to roll them into position. Use the Hauler to move rounds after you cut.</p>
+      <p>All the tools work together to make your work more efficient, faster, and easier on your body. From harvest to hearth.</p>
+    </div>
+
+    <!-- FINAL CTA -->
+    <div class="cta">
+      <a href="https://www.thelogox.com/collections/granberg-alaskan-mills-and-accessories">SHOP GRANBERG BUNDLES</a>
+    </div>
+
+    <!-- TRUST BADGES -->
+    <div class="trust-badges">
+      <div class="badge-row">
+        <div class="badge-item">BBB A+<br>Rating</div>
+        <div class="badge-item">Made in<br>USA</div>
+        <div class="badge-item">TCIA<br>Member</div>
+        <div class="badge-item">SBA<br>Certified</div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p><strong style="color: #ffffff;">LogOX</strong><br>
+      American Tools for Woodsmen<br>
+      From Harvest to Hearth</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a> &nbsp; <a href="#">Facebook</a> &nbsp; <a href="#">YouTube</a> &nbsp; <a href="#">Pinterest</a>
+      </div>
+      <p>
+        <a href="#">Unsubscribe</a> &nbsp;|&nbsp; <a href="#">Manage Preferences</a><br><br>
+        LogOX LLC &nbsp;|&nbsp; 484 Salter Hill Rd, Arlington, Vermont 05250<br>
+        &copy; 2026 LogOX LLC. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ============================================ -->
+  <!-- NOTES FOR DESIGNER -->
+  <!-- ============================================ -->
+  <div class="notes">
+    <h3>Notes for Designer</h3>
+    <ul>
+      <li><strong>Brand colors:</strong> Background #FFFFFF, Headlines #24374A (Dark Blue), Accents/CTAs #F37021 (Bold Orange), Logo #006AC6 (LogOX Blue), Light Grey #DAD9D5</li>
+      <li><strong>Typography:</strong> Headlines: PT Sans Pro Extra Bold (uppercase). Body: PT Sans Pro Regular. Subheads: PT Sans Pro Bold.</li>
+      <li><strong>Email width:</strong> 600px max</li>
+      <li><strong>Mobile-first design:</strong> This email is designed to be read primarily on mobile. All product cards stack vertically. CTA buttons are full-width on mobile (min-width: 260px on desktop, 100% on mobile). Image heights should be consistent across cards. Text sizes are already mobile-friendly (14-15px body, 18px+ headings).</li>
+      <li><strong>Hero image:</strong> Shows someone actively milling a log with a Granberg Alaskan MK-IV attached to a chainsaw. The image from Wasatch Timber CDN is a placeholder. If a higher-resolution image is available from LogOX or Granberg, replace it. Dark overlay + white text headline on top.</li>
+      <li><strong>Product card images:</strong> Each card shows the specific Granberg mill model (G777 for Homeowner, MK-IV variants for Backcountry). Images sourced from Wasatch Timber Shopify CDN. If LogOX has their own product photography for these bundles, use those instead. Images should show the mill only (no chainsaw attached) on a clean background.</li>
+      <li><strong>"Best for" tags:</strong> Dark blue (#24374A) pill-shaped labels above each product name. These help the reader quickly scan and identify which bundle fits their use case.</li>
+      <li><strong>Accessories grid:</strong> Two items side by side (Precision Grinder + Slabbing Rail). Light grey background (#f9f9f9) to differentiate from product cards. On mobile, these can remain side-by-side at 50% width or stack to full-width if needed.</li>
+      <li><strong>Cross-sell section:</strong> Light mention of existing LogOX tools. No images or CTAs needed here. Just a text nudge for existing LogOX customers to see how their tools complement milling.</li>
+      <li><strong>CTA buttons:</strong> Bold Orange (#F37021), white bold text, rounded corners (4px). Two collection CTAs ("SHOP GRANBERG BUNDLES") and four individual product CTAs ("SHOP NOW"). On mobile, all CTAs should be full-width.</li>
+      <li><strong>[NEEDS INFO]:</strong>
+        <ul>
+          <li>Higher-res product images from LogOX's own photography if available</li>
+          <li>Social media URLs for footer links</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!--
+=======================================================
+EMAIL: Best of Gold
+CLIENT: Proclamation Jewelry
+TYPE: Promotional / Category Showcase
+DATE: 2026-04-20
+=======================================================
+
+CAMPAIGN: Bestsellers in gold. The defining pieces of the house.
+POSITIONING: Exciting, confident, high-conversion. The "hero" gold edit.
+PRODUCTS FEATURED (6):
+1. CHAMPION, Gold Saint Michael Pendant
+2. 4mm Diamond Cut Franco Chain, 18k Yellow Gold
+3. VOYAGER, Gold Compass Pendant
+4. TRIUMPH, Gold David & Goliath Pendant
+5. 4mm Gold Franco Chain
+6. FAITH, Gold Cross Pendant
+
+SUBJECT LINE OPTIONS:
+1. The Best of Gold
+2. Six Gold Pieces. One House.
+3. This Is the Gold We're Known For.
+
+PREVIEW TEXT OPTIONS:
+1. The pieces that define the house, cast in gold.
+2. Saint Michael. Franco. Compass. The gold edit.
+3. Six gold pieces. Worn by men who choose with intention.
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Best of Gold — Proclamation Jewelry</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
+
+    .subject-lines {
+      background: #fff3cd; border: 2px dashed #D4AF37; padding: 20px; margin: 20px auto; border-radius: 8px;
+      max-width: 600px;
+    }
+    .subject-lines h3 { color: #B31B1B; margin-bottom: 10px; font-family: 'Trajan Pro', 'Times New Roman', serif; letter-spacing: 1px; }
+    .subject-lines ol { padding-left: 20px; margin: 0 0 16px 0; }
+    .subject-lines li { margin-bottom: 6px; color: #0A0A0A; font-size: 14px; line-height: 1.5; }
+
+    .email-wireframe {
+      max-width: 600px; margin: 30px auto; background: #0A0A0A; color: #ffffff;
+      font-family: 'Optimo Plain', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* HEADER */
+    .header { text-align: center; padding: 26px 20px; background: #0A0A0A; border-bottom: 1px solid #1a1a1a; }
+    .header .logo { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 22px; letter-spacing: 6px; }
+
+    /* BANNER */
+    .banner { text-align: center; padding: 40px 30px 8px 30px; background: #0A0A0A; }
+    .banner .eyebrow {
+      color: #D4AF37; font-size: 11px; letter-spacing: 5px;
+      text-transform: uppercase; margin-bottom: 18px;
+    }
+    .banner .title {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 58px; letter-spacing: 10px; text-transform: uppercase;
+      line-height: 1.05; font-weight: normal;
+    }
+    .banner .sub {
+      color: #C0C0C0; font-size: 13px; letter-spacing: 2px;
+      text-transform: uppercase; margin-top: 20px;
+    }
+
+    /* HERO IMAGE */
+    .hero-image { line-height: 0; padding-top: 28px; }
+    .hero-image img { width: 100%; display: block; }
+
+    /* HERO HOOK */
+    .hero-hook { padding: 38px 36px 0 36px; text-align: center; }
+    .hero-hook p {
+      color: #E4E4E4; font-size: 17px; line-height: 1.7;
+      font-style: italic; max-width: 460px; margin: 0 auto;
+    }
+
+    /* OPENING CTA */
+    .cta-wrap { text-align: center; padding: 32px 30px 40px 30px; background: #0A0A0A; }
+    .cta-btn {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 14px 44px; font-size: 12px; font-weight: bold; letter-spacing: 3px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* INTRO COPY */
+    .intro {
+      padding: 40px 36px; background: #0A0A0A;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+    }
+    .intro p {
+      color: #E4E4E4; font-size: 15px; line-height: 1.85; margin-bottom: 16px;
+    }
+    .intro p:last-child { margin-bottom: 0; }
+    .gold-accent { color: #D4AF37; }
+
+    /* COLLECTION HEADER */
+    .collection-header { padding: 48px 30px 24px 30px; text-align: center; background: #0A0A0A; }
+    .collection-header .eyebrow {
+      color: #D4AF37; font-size: 10px; letter-spacing: 4px;
+      text-transform: uppercase; margin-bottom: 14px;
+    }
+    .collection-header h2 {
+      font-family: 'Trajan Pro', 'Times New Roman', serif;
+      color: #FFFFFF; font-size: 24px; letter-spacing: 2px;
+      text-transform: uppercase; font-weight: normal;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid { padding: 20px 20px 0 20px; background: #0A0A0A; }
+    .product-row { display: flex; gap: 16px; margin-bottom: 16px; }
+    .product-card {
+      flex: 1; background: #111; text-align: center; padding: 14px 12px 20px 12px;
+    }
+    .product-card img { width: 100%; height: auto; display: block; margin-bottom: 14px; }
+    .product-card .series {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px;
+    }
+    .product-card .title {
+      color: #FFFFFF; font-size: 12px; line-height: 1.4;
+      letter-spacing: 0.5px; margin-bottom: 10px; font-weight: bold;
+    }
+    .product-card .pointer {
+      color: #C0C0C0; font-size: 11px; line-height: 1.6;
+      font-style: italic; padding: 0 4px; margin-bottom: 14px;
+    }
+    .product-card .shop-now {
+      display: inline-block; background: #D4AF37; color: #0A0A0A;
+      padding: 9px 22px; font-size: 10px; font-weight: bold; letter-spacing: 2px;
+      text-decoration: none; text-transform: uppercase;
+    }
+
+    /* FINAL CTA */
+    .final-cta { text-align: center; padding: 40px 30px 48px 30px; background: #0A0A0A; }
+
+    /* CLOSING */
+    .closing {
+      padding: 48px 30px; text-align: center; background: #0A0A0A;
+      border-top: 1px solid #1a1a1a;
+    }
+    .closing .line {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 16px; letter-spacing: 3px; text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #050505; padding: 30px; text-align: center;
+      border-top: 1px solid #1a1a1a;
+    }
+    .footer .tagline {
+      color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif;
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 18px;
+    }
+    .footer .info {
+      color: #666; font-size: 10px; line-height: 1.8; letter-spacing: 1px;
+    }
+    .footer a { color: #888; text-decoration: underline; }
+
+    /* MOBILE */
+    @media only screen and (max-width: 600px) {
+      .banner .title { font-size: 42px !important; letter-spacing: 6px !important; }
+      .product-row { flex-direction: column !important; }
+      .intro { padding: 32px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SUBJECT LINES & PREVIEW TEXT -->
+<div class="subject-lines">
+  <h3>Subject Line Options</h3>
+  <ol>
+    <li>The Best of Gold</li>
+    <li>Our Most Loved Gold</li>
+    <li>Gold Isn't Worn. It's Chosen.</li>
+  </ol>
+  <h3>Preview Text Options</h3>
+  <ol>
+    <li>The gold pieces worn, carried, and returned to most.</li>
+    <li>Saint Michael. Franco. Compass. Cross. David. The gold that matters.</li>
+    <li>Gold is not a trend. These are the pieces that prove it.</li>
+  </ol>
+</div>
+
+<!-- ===================================================
+     EMAIL BEGINS
+=================================================== -->
+<div class="email-wireframe">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">PROCLAMATION</div>
+  </div>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <div class="eyebrow">Our Most Loved</div>
+    <div class="title">Best<br>of Gold</div>
+  </div>
+
+  <!-- HERO IMAGE — Saint Michael (flagship gold piece) -->
+  <div class="hero-image">
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Saint_Michael_Gold_Necklace.jpg?v=1775906755" alt="Champion Gold Saint Michael Pendant by Proclamation Jewelry" />
+  </div>
+
+  <!-- HERO HOOK -->
+  <div class="hero-hook">
+    <p>Gold is not worn. It is <span class="gold-accent">chosen, carried, and wielded.</span></p>
+  </div>
+
+  <!-- OPENING CTA -->
+  <div class="cta-wrap">
+    <a href="https://www.proclamationjewelry.com/collections/all-gold-mens-jewelry" class="cta-btn">Shop Gold</a>
+  </div>
+
+
+  <!-- INTRO -->
+  <div class="intro">
+    <p>Gold does not follow a trend. It holds meaning. It marks a moment. It stays with the man who earned it.</p>
+
+    <p>These are the gold pieces our customers return to, gift, and reach for first. Bestsellers, by every measure that matters.</p>
+  </div>
+
+
+  <!-- COLLECTION HEADER -->
+  <div class="collection-header">
+    <h2>The Bestsellers</h2>
+  </div>
+
+
+  <!-- PRODUCT GRID -->
+  <div class="product-grid">
+
+    <!-- Row 1 -->
+    <div class="product-row">
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160" alt="Champion Gold Saint Michael Pendant" />
+        <div class="series">Champion</div>
+        <div class="title">Saint Michael Pendant</div>
+        <div class="pointer">The patron saint of warriors. Worn for strength, carried for protection.</div>
+        <a href="https://www.proclamationjewelry.com/products/saint-michael-gold-pendant" class="shop-now">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_DiamondCutFrancoChain_YellowGold_Hanging_cb29a8fb-a370-451e-b06b-f95134504468.jpg?v=1722435618" alt="4mm Diamond Cut Franco Chain 18k Yellow Gold" />
+        <div class="series">18k Franco</div>
+        <div class="title">4mm Diamond Cut Franco</div>
+        <div class="pointer">A chain that catches light with every movement. Solid 18k.</div>
+        <a href="https://www.proclamationjewelry.com/products/4mm-diamond-cut-franco-chain-18k-yellow-gold" class="shop-now">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="product-row">
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant.jpg?v=1775935835" alt="Voyager Gold Compass Pendant" />
+        <div class="series">Voyager</div>
+        <div class="title">Gold Compass Pendant</div>
+        <div class="pointer">For the man who sets his own direction and holds to it.</div>
+        <a href="https://www.proclamationjewelry.com/products/gold-compass-pendant" class="shop-now">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/David_and-Goliath_Gold_Pendant_Proclamation.jpg?v=1763570685" alt="Triumph Gold David and Goliath Pendant" />
+        <div class="series">Triumph</div>
+        <div class="title">David &amp; Goliath Pendant</div>
+        <div class="pointer">Faith over odds. The reminder that the smaller hand can win.</div>
+        <a href="https://www.proclamationjewelry.com/products/david-and-goliath-gold-pendant" class="shop-now">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="product-row">
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_Gold_Silver_Franco_Chain_Hang.jpg?v=1727451842" alt="4mm Gold Franco Chain" />
+        <div class="series">Franco</div>
+        <div class="title">4mm Gold Franco Chain</div>
+        <div class="pointer">The everyday gold. Built to stay on and carry the rest.</div>
+        <a href="https://www.proclamationjewelry.com/products/4mm-franco-chain-silver-gold" class="shop-now">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Faith_Gold_Cross_Pendant_Necklace_Proclamation_Jewelry.jpg?v=1775935803" alt="Faith Gold Cross Pendant" />
+        <div class="series">Faith</div>
+        <div class="title">Gold Cross Pendant</div>
+        <div class="pointer">Quiet devotion, worn close. A piece that carries belief.</div>
+        <a href="https://www.proclamationjewelry.com/products/faith-gold-cross-pendant" class="shop-now">Shop Now</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- FINAL CTA -->
+  <div class="final-cta">
+    <a href="https://www.proclamationjewelry.com/collections/all-gold-mens-jewelry" class="cta-btn">Shop All Gold</a>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="tagline">Forged for Legacy, Worn to Inspire</div>
+    <div class="info">
+      PROCLAMATION JEWELRY<br>
+      Houston, Texas<br><br>
+      <a href="#">View in Browser</a> &nbsp;|&nbsp; <a href="#">Email Preferences</a> &nbsp;|&nbsp; <a href="#">Unsubscribe</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
