@@ -1,6 +1,6 @@
 export type EmailType = 'promotional' | 'educational' | 'product-launch' | 'welcome' | 'abandoned-cart' | 'win-back';
 
-export type EmailStatus = 'pending' | 'in-progress' | 'done';
+export type EmailStatus = 'pending' | 'in-progress' | 'copy-ready' | 'approved' | 'changes-requested' | 'done';
 
 export interface CalendarEmail {
   id: string;
@@ -14,6 +14,10 @@ export interface CalendarEmail {
   emailCopyLink: string;
   finalDesignLink: string;
   notes: string;
+  productUrl: string;
+  collectionUrl: string;
+  offerCode: string;
+  creativeDirection: string;
 }
 
 export interface MonthCalendar {

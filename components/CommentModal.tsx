@@ -85,6 +85,44 @@ export function CommentModal({ email, clientSlug, comments, onClose, onCommentAd
               <p className="text-sm text-gray-700 mt-0.5">{email.notes}</p>
             </div>
           )}
+          {email.productUrl && (
+            <div>
+              <label className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Product URL</label>
+              <a
+                href={email.productUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-600 hover:underline block truncate mt-0.5"
+              >
+                {email.productUrl}
+              </a>
+            </div>
+          )}
+          {email.collectionUrl && (
+            <div>
+              <label className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Collection URL</label>
+              <a
+                href={email.collectionUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-600 hover:underline block truncate mt-0.5"
+              >
+                {email.collectionUrl}
+              </a>
+            </div>
+          )}
+          {email.offerCode && (
+            <div>
+              <label className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Offer / Code</label>
+              <p className="text-sm text-gray-700 mt-0.5">{email.offerCode}</p>
+            </div>
+          )}
+          {email.creativeDirection && (
+            <div>
+              <label className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Creative Direction</label>
+              <p className="text-sm text-gray-700 mt-0.5">{email.creativeDirection}</p>
+            </div>
+          )}
 
           {/* Links */}
           <div className="grid grid-cols-2 gap-4 pt-2">

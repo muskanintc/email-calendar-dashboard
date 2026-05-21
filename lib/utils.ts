@@ -43,6 +43,9 @@ export function getStatusColor(status: string): string {
     done: 'bg-emerald-100 text-emerald-700 border-emerald-300',
     pending: 'bg-amber-100 text-amber-700 border-amber-300',
     'in-progress': 'bg-blue-100 text-blue-700 border-blue-300',
+    'copy-ready': 'bg-violet-100 text-violet-700 border-violet-300',
+    approved: 'bg-emerald-100 text-emerald-700 border-emerald-300',
+    'changes-requested': 'bg-rose-100 text-rose-700 border-rose-300',
   };
   return colors[status] || 'bg-gray-100 text-gray-700';
 }
@@ -52,6 +55,9 @@ export function getStatusBorderHex(status: string): string {
     done: '#10b981',
     pending: '#f59e0b',
     'in-progress': '#3b82f6',
+    'copy-ready': '#8b5cf6',
+    approved: '#10b981',
+    'changes-requested': '#f43f5e',
   };
   return colors[status] || '#d1d5db';
 }
