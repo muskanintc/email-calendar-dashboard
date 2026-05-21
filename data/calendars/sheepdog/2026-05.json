@@ -1,0 +1,85 @@
+{
+  "client": "sheepdog",
+  "year": 2026,
+  "month": 5,
+  "emails": [
+    {
+      "id": "2026-05-06-trace-bluetooth-back-in-stock",
+      "date": "2026-05-06",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Back in Stock: TRACE Bluetooth Kit",
+      "product": "TRACE Complete Bluetooth Kit",
+      "shortDescription": "Limited restock. 3 USPs. Kit breakdown. Urgency close.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-05-07-most-popular-tactical-headset",
+      "date": "2026-05-07",
+      "day": "Thu",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Most Popular Tactical Headset",
+      "product": "3M PELTOR ComTac VIII Single Downlead",
+      "shortDescription": "Coyote Brown & OD Green sold out. Charcoal Grey limited. 4 features. Authority stats.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-05-08-cyclone2-flexo-bundle",
+      "date": "2026-05-08",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Exclusive Bundle: CYCLONE2 + N-ear Flexo",
+      "product": "CYCLONE2 N-ear Flexo Bundle",
+      "shortDescription": "\"Did you know\" angle. Most loved PTT bundled with Flexo earpiece. IP67 both pieces.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-05-11-triad-pro-did-you-know",
+      "date": "2026-05-11",
+      "day": "Mon",
+      "type": "educational",
+      "status": "done",
+      "theme": "Did You Know: TRIAD PRO PTT",
+      "product": "TRIAD PRO Waterproof PTT/Mic",
+      "shortDescription": "Re-promotion. 5 overlooked facts. Lifestyle images. Fresh angle on proven product.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-05-11-triad2-flexo-bundle",
+      "date": "2026-05-11",
+      "day": "Mon",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Exclusive Bundle: TRIAD2 + N-ear Flexo",
+      "product": "TRIAD2 N-ear Flexo Bundle",
+      "shortDescription": "Sheepdog exclusive bundle. Compact, IP68, QD, cord/earpiece options. Limited quantities urgency.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-05-19-tsunami-ptt",
+      "date": "2026-05-19",
+      "day": "Tue",
+      "type": "promotional",
+      "status": "done",
+      "theme": "New Arrival: TSUNAMI PTT/Mic",
+      "product": "TSUNAMI Waterproof PTT/Mic, Quick Disconnect",
+      "shortDescription": "New arrival. IP67, 6-pin QD, MOLLE or Alligator clip, 12 radio platforms. Ready to ship.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    }
+  ]
+}

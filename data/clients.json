@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "sheepdog",
+    "name": "Sheepdog",
+    "fullName": "Sheepdog Microphones",
+    "description": "Tactical microphones and headsets for law enforcement and military",
+    "color": "#1e3a5f",
+    "months": ["2026-04", "2026-05"]
+  },
+  {
+    "slug": "logox",
+    "name": "LogOX",
+    "fullName": "LogOX Forestry Tools",
+    "description": "Forestry tools and equipment for wood processing",
+    "color": "#2d5016",
+    "months": ["2026-04", "2026-05"]
+  },
+  {
+    "slug": "proclamation-jewelry",
+    "name": "Proclamation Jewelry",
+    "fullName": "Proclamation Jewelry",
+    "description": "Men's religious and statement jewelry",
+    "color": "#6b4c1e",
+    "months": ["2026-04"]
+  }
+]

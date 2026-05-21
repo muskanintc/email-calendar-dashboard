@@ -1,0 +1,98 @@
+{
+  "client": "sheepdog",
+  "year": 2026,
+  "month": 4,
+  "emails": [
+    {
+      "id": "2026-04-09-n-ear-choice-tac-ptt",
+      "date": "2026-04-09",
+      "day": "Thu",
+      "type": "promotional",
+      "status": "done",
+      "theme": "New Arrival: N-ear Choice TAC PTT",
+      "product": "N-ear Choice TAC PTT",
+      "shortDescription": "Product launch. Pass-through architecture, IP67, NATO NEXUS.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-12-why-operators-trust-sheepdog",
+      "date": "2026-04-12",
+      "day": "Sun",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Why Operators Trust Sheepdog",
+      "product": "General (brand trust)",
+      "shortDescription": "Social proof email. 5 verified reviews. Single CTA to store. Trust signals section.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-15-trace-bluetooth-kit",
+      "date": "2026-04-15",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "pending",
+      "theme": "Product Spotlight: TRACE Bluetooth Kit",
+      "product": "TRACE Bluetooth Kit",
+      "shortDescription": "+154% sales growth. Wireless/Bluetooth angle. Hottest trending product.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-18-acoustic-tube-vs-in-ear",
+      "date": "2026-04-18",
+      "day": "Sat",
+      "type": "educational",
+      "status": "done",
+      "theme": "Acoustic Tube vs In-Ear (HDLO / AWARE)",
+      "product": "Acoustic Tube earpieces vs HDLO / AWARE in-ear",
+      "shortDescription": "4-factor comparison: Routing, Durability, Audio Delivery, Compatibility.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-21-engage-tactical-ptt",
+      "date": "2026-04-21",
+      "day": "Tue",
+      "type": "educational",
+      "status": "done",
+      "theme": "Did You Know: ENGAGE Tactical PTT Mic",
+      "product": "ENGAGE Tactical PTT Mic (Straight Cord)",
+      "shortDescription": "\"Did you know\" themed spotlight. 4 surprises: dual connectors, 4 buttons, IP67, headset compatibility.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-24-most-deployed-gear-q1",
+      "date": "2026-04-24",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "pending",
+      "theme": "Most Deployed Gear: Q1 2026",
+      "product": "Top 6 sellers (HDLO Black, HDLO Clear, 360 Flexo, CYCLONE2, HDLO Covert, APX Adapter)",
+      "shortDescription": "Bestsellers/trending roundup. Data-backed \"most ordered by agencies this quarter.\"",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-28-triad-pro-ptt",
+      "date": "2026-04-28",
+      "day": "Tue",
+      "type": "promotional",
+      "status": "pending",
+      "theme": "Product Spotlight: TRIAD PRO PTT",
+      "product": "TRIAD PRO Waterproof PTT/Mic",
+      "shortDescription": "+410% unit growth. Fastest-growing PTT. Deep dive on why operators are switching.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "client": "logox",
+  "year": 2026,
+  "month": 4,
+  "emails": [
+    {
+      "id": "2026-04-01-pickox-pickaroon",
+      "date": "2026-04-01",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "pending",
+      "theme": "The Tool You Didn't Know You Needed",
+      "product": "PickOX Pickaroon Attachment, LogOX 3-in-1",
+      "shortDescription": "Turns the 3-in-1 into a 4-in-1. Spearing and moving rounds without bending over.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-05-spring-edition-rock-hauler",
+      "date": "2026-04-05",
+      "day": "Sun",
+      "type": "product-launch",
+      "status": "pending",
+      "theme": "NEW ARRIVAL: Spring Edition Rock Hauler",
+      "product": "Rhino Tool Systems Rock Hauler Landscaper's Cart",
+      "shortDescription": "New product arrival. Spring positioning.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-09-logox-3in1-spotlight",
+      "date": "2026-04-09",
+      "day": "Thu",
+      "type": "promotional",
+      "status": "done",
+      "theme": "LogOX 3-in-1 Multi-Tool Application Spotlight",
+      "product": "LogOX 3-in-1 Forestry Multitool",
+      "shortDescription": "Inspirational use cases. Show versatility of the 3-in-1 system.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-12-chainsaw-to-sawmill",
+      "date": "2026-04-12",
+      "day": "Sun",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Turn Your Existing Chainsaw Into a Portable Sawmill",
+      "product": "Granberg Bundles",
+      "shortDescription": "Promote Granberg portable sawmill bundles. LogOX tools complement the milling process.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-16-best-sellers",
+      "date": "2026-04-16",
+      "day": "Thu",
+      "type": "promotional",
+      "status": "pending",
+      "theme": "Best Sellers",
+      "product": "Multiple best-selling products",
+      "shortDescription": "Showcase top sellers across categories.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-22-mingo-marker",
+      "date": "2026-04-22",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "pending",
+      "theme": "Mingo Marker",
+      "product": "Mingo Marker bundles + individual products",
+      "shortDescription": "Promote bundles and individual Mingo Marker products.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-26-timberox-dand-lift",
+      "date": "2026-04-26",
+      "day": "Sun",
+      "type": "educational",
+      "status": "done",
+      "theme": "TimberOX Log Splitter & Dan-D Lift",
+      "product": "TimberOX Log Splitter, Dan-D Lift",
+      "shortDescription": "Educational angle. Teach the value and use cases of these tools.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    },
+    {
+      "id": "2026-04-29-chain-locker",
+      "date": "2026-04-29",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Chain Locker Series",
+      "product": "Chain Locker products",
+      "shortDescription": "Showcase the Chain Locker product line.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": ""
+    }
+  ]
+}

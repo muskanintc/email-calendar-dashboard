@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f9fafb;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Smooth scrolling for calendar */
+.calendar-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+.calendar-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.calendar-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.calendar-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.calendar-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

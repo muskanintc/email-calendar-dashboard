@@ -1,0 +1,72 @@
+{
+  "client": "logox",
+  "year": 2026,
+  "month": 5,
+  "emails": [
+    {
+      "id": "2026-05-04-harvest-to-hearth-stage1",
+      "date": "2026-05-04",
+      "day": "Mon",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Harvest to Hearth: Stage 1 — HARVEST",
+      "product": "LogOX Hauler, Hauler Upgrade Package, Belt Hauler Holster",
+      "shortDescription": "\"Your Back Does More Work Than Your Chainsaw.\" Conversion-focused with real stock urgency.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": "Series campaign: Stage 1 of 5"
+    },
+    {
+      "id": "2026-05-07-harvest-to-hearth-stage2",
+      "date": "2026-05-07",
+      "day": "Thu",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Harvest to Hearth: Stage 2 — SPLIT",
+      "product": "TimberOX Summit, Dan-D-Lift, LogOX Hauler",
+      "shortDescription": "TimberOX + Dan-D-Lift tandem positioning. Hauler completes the system. Seasonal urgency.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": "Series campaign: Stage 2 of 5"
+    },
+    {
+      "id": "2026-05-08-harvest-to-hearth-stage3",
+      "date": "2026-05-08",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Harvest to Hearth: Stage 3 — SEASON",
+      "product": "Woodhaven Firewood Racks (3ft to 16ft)",
+      "shortDescription": "\"Stack It Now or Burn Wet Wood in December.\" Stacking 101. 3 sizes showcased.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": "Series campaign: Stage 3 of 5"
+    },
+    {
+      "id": "2026-05-11-harvest-to-hearth-stage4",
+      "date": "2026-05-11",
+      "day": "Mon",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Harvest to Hearth: Stage 4 — CARRY (Father's Day Sale)",
+      "product": "WoodOX Sling, Hearth Bin",
+      "shortDescription": "\"Dad Does Not Need Another Tie.\" 15% off with code DAD26. Order by June 7 for delivery.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": "Series campaign: Stage 4 of 5. Father's Day Sale."
+    },
+    {
+      "id": "2026-05-20-harvest-to-hearth-stage5",
+      "date": "2026-05-20",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Harvest to Hearth: Stage 5 — HEARTH (Father's Day Sale)",
+      "product": "Hearth Bin, 3ft Rack, 4ft Rack, Heavy Duty Poker, Fire Starters, WoodOX Sling",
+      "shortDescription": "\"Where the Wood Meets the Fire.\" Series finale. Hearth Bin hero. 15% off with DAD26.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": "Series campaign: Stage 5 of 5. Father's Day Sale finale."
+    }
+  ]
+}
