@@ -87,6 +87,40 @@
       "collectionUrl": "",
       "offerCode": "",
       "creativeDirection": ""
+    },
+    {
+      "id": "2026-05-25-forester-package",
+      "date": "2026-05-25",
+      "day": "Sun",
+      "type": "promotional",
+      "status": "done",
+      "theme": "The Forester Package",
+      "product": "Forester Package (3-in-1 + PickOX + Holster + CarryOX)",
+      "shortDescription": "\"The Forester Package. Every Tool You Need.\" Bundle value prop. $395 vs $444, save $49. Visual product breakdown.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": "Bundle promotion. 4.9/5 stars, 404 reviews.",
+      "productUrl": "https://www.thelogox.com/products/the-logox-forester-package",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": ""
+    },
+    {
+      "id": "2026-05-28-logox-in-use-spotlight",
+      "date": "2026-05-28",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "done",
+      "theme": "LogOX in Use Spotlight — David Moore",
+      "product": "LogOX 3-in-1 Forestry MultiTool",
+      "shortDescription": "Instagram reel spotlight. Fresh 3-in-1 angle: $530 replacement value, survey data (86%/79%), killer reviews.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": "UGC spotlight + fresh product angle. @davidmoore_tuttlandco.",
+      "productUrl": "https://www.thelogox.com/products/logox-3-in-1",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "UGC spotlight + fresh product angle"
     }
   ]
 }
