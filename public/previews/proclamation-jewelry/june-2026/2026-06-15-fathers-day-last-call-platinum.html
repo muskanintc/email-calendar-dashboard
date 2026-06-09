@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Father's Day Last Call + Most Loved Platinum — Proclamation Jewelry</title>
+<style>
+  body { margin: 0; padding: 0; background: #f4f4f4; font-family: 'Optima', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; color: #333333; }
+  .email-wrapper { max-width: 600px; margin: 0 auto; background: #ffffff; }
+
+  /* SUBJECT LINE + PREVIEW TEXT (visible) */
+  .slpl-block { background: #0A0A0A; padding: 16px 24px; }
+  .slpl-block .sl-label { color: #D4AF37; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 4px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .slpl-block .sl-text { color: #ffffff; font-size: 14px; margin: 0 0 12px 0; line-height: 1.4; }
+  .slpl-block .pt-label { color: #D4AF37; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 4px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .slpl-block .pt-text { color: #cccccc; font-size: 12px; margin: 0; line-height: 1.4; }
+
+  /* URGENCY BANNER */
+  .urgency-banner { background: #B31B1B; padding: 20px 24px; text-align: center; }
+  .urgency-banner h1 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 22px; margin: 0 0 6px 0; letter-spacing: 1px; text-transform: uppercase; }
+  .urgency-banner p { color: #ffffff; font-size: 14px; margin: 0; opacity: 0.9; }
+
+  /* NICK'S INTRO */
+  .nick-section { padding: 28px 24px 20px; }
+  .nick-section p { font-size: 15px; line-height: 1.7; color: #333333; margin: 0 0 14px 0; }
+
+  /* CTA BUTTON */
+  .cta-wrap { text-align: center; padding: 8px 0 20px; }
+  .cta-btn { display: inline-block; background: #B31B1B; color: #ffffff; text-decoration: none; padding: 14px 36px; font-family: 'Trebuchet MS', sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+  .cta-btn.gold { background: #D4AF37; color: #0A0A0A; }
+
+  /* 3-COLUMN CATEGORY CARDS */
+  .category-row { display: flex; gap: 0; }
+  .category-card { flex: 1; text-align: center; position: relative; overflow: hidden; }
+  .category-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+  .category-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(10,10,10,0.85)); padding: 16px 8px 14px; }
+  .category-overlay h3 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 13px; margin: 0 0 8px 0; letter-spacing: 1.5px; text-transform: uppercase; }
+  .category-overlay a { color: #D4AF37; font-size: 11px; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; font-family: 'Trebuchet MS', sans-serif; font-weight: bold; }
+
+  /* PLATINUM SECTION */
+  .platinum-header { background: #0A0A0A; padding: 32px 24px; text-align: center; }
+  .platinum-header .eyebrow { color: #D4AF37; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 8px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .platinum-header h2 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 24px; margin: 0 0 6px 0; letter-spacing: 1px; }
+  .platinum-header .sub { color: #E4E4E4; font-size: 14px; margin: 0; line-height: 1.5; }
+
+  /* HERO PLATINUM PRODUCT */
+  .plat-hero { position: relative; }
+  .plat-hero img { width: 100%; display: block; }
+  .plat-hero-info { background: #0A0A0A; padding: 20px 24px; text-align: center; }
+  .plat-hero-info h3 { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 18px; margin: 0 0 6px 0; letter-spacing: 1px; }
+  .plat-hero-info p { color: #E4E4E4; font-size: 13px; margin: 0 0 16px 0; line-height: 1.6; }
+
+  /* NICK PLATINUM COPY */
+  .nick-plat { padding: 24px 24px 8px; }
+  .nick-plat p { font-size: 15px; line-height: 1.7; color: #333333; margin: 0 0 14px 0; }
+
+  /* 2-COLUMN PRODUCT GRID */
+  .product-grid { display: flex; gap: 0; }
+  .product-cell { flex: 1; background: #0A0A0A; text-align: center; border-right: 1px solid #1a1a1a; }
+  .product-cell:last-child { border-right: none; }
+  .product-cell img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+  .product-cell .info { padding: 14px 12px 16px; }
+  .product-cell .info h4 { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 13px; margin: 0 0 4px 0; letter-spacing: 0.5px; }
+  .product-cell .info p { color: #E4E4E4; font-size: 11px; margin: 0 0 12px 0; line-height: 1.5; }
+  .product-cell .info a { color: #D4AF37; font-size: 10px; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; font-family: 'Trebuchet MS', sans-serif; font-weight: bold; border: 1px solid #D4AF37; padding: 8px 16px; display: inline-block; }
+
+  /* SINGLE FEATURED */
+  .plat-single { background: #0A0A0A; text-align: center; }
+  .plat-single img { width: 60%; margin: 0 auto; display: block; padding-top: 20px; }
+  .plat-single .info { padding: 16px 24px 24px; }
+  .plat-single .info h4 { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 15px; margin: 0 0 4px 0; letter-spacing: 0.5px; }
+  .plat-single .info p { color: #E4E4E4; font-size: 12px; margin: 0 0 14px 0; line-height: 1.5; }
+  .plat-single .info a { color: #D4AF37; font-size: 10px; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; font-family: 'Trebuchet MS', sans-serif; font-weight: bold; border: 1px solid #D4AF37; padding: 8px 16px; display: inline-block; }
+
+  /* COLLECTION CTA */
+  .collection-cta { background: #0A0A0A; padding: 8px 24px 32px; text-align: center; }
+
+  /* TRUST BADGES */
+  .trust-section { background: #f8f8f8; padding: 24px; text-align: center; border-top: 1px solid #e0e0e0; }
+  .trust-row { display: flex; justify-content: center; gap: 32px; }
+  .trust-badge { text-align: center; }
+  .trust-badge .stars { color: #D4AF37; font-size: 16px; margin: 0 0 4px 0; }
+  .trust-badge .rating { font-family: 'Trebuchet MS', sans-serif; font-size: 18px; font-weight: bold; color: #0A0A0A; margin: 0 0 2px 0; }
+  .trust-badge .source { font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 2px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .trust-badge .count { font-size: 11px; color: #999; margin: 0; }
+
+  /* FOOTER */
+  .footer { background: #0A0A0A; padding: 24px; text-align: center; }
+  .footer p { color: #666; font-size: 11px; margin: 0 0 6px 0; line-height: 1.5; }
+  .footer a { color: #D4AF37; text-decoration: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 480px) {
+    .urgency-banner h1 { font-size: 18px; }
+    .category-row { flex-direction: column; }
+    .category-card img { height: 180px; }
+    .product-grid { flex-direction: column; }
+    .platinum-header h2 { font-size: 20px; }
+    .plat-single img { width: 80%; }
+    .trust-row { flex-direction: column; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+
+  <!-- ============================================
+       SUBJECT LINE + PREVIEW TEXT (visible at top)
+       ============================================ -->
+  <div class="slpl-block">
+    <p class="sl-label">Subject Line Options</p>
+    <p class="sl-text">1. Today's the last day. Order now for Father's Day.<br>
+    2. Last call. Platinum for the man who has everything.<br>
+    3. If you haven't ordered yet, this is it.</p>
+    <p class="pt-label">Preview Text Options</p>
+    <p class="pt-text">1. Chains, silver, and platinum. Order today for guaranteed Father's Day delivery.<br>
+    2. Our five most loved platinum pieces, and your last window to get them there in time.<br>
+    3. The gift he'll keep forever. But you need to move today.</p>
+  </div>
+
+  <!-- ============================================
+       URGENCY BANNER — Full width Cornell Red
+       ============================================ -->
+  <div class="urgency-banner">
+    <h1>Last Day to Order for Father's Day</h1>
+    <p>Order today. Delivered in time. Guaranteed.</p>
+  </div>
+
+  <!-- ============================================
+       NICK'S PERSONAL NOTE — Shipping deadline
+       ============================================ -->
+  <div class="nick-section">
+    <p>I know. You've been thinking about it.</p>
+
+    <p>But today's the day. If you want it in his hands by Father's Day, this is your last window for chains, silver, and platinum. We ship FedEx and UPS 2 Day, fully insured, signature required. But we need your order in today to make that happen.</p>
+
+    <p>If you already know what he'd love, go grab it. If you're still deciding, keep scrolling. I've got something for you.</p>
+  </div>
+
+  <!-- ============================================
+       3-COLUMN CATEGORY QUICK SHOP
+       ============================================ -->
+  <!-- DESIGN NOTE: Three categories side by side. Each is a product image
+       with a dark gradient overlay at the bottom showing the category name
+       and "Shop Now" link. On mobile, these stack vertically. -->
+  <div class="category-row">
+
+    <!-- CHAINS -->
+    <div class="category-card">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_GoldChain_10__02__16x9.jpg?v=1775933399&width=600" alt="Gold Franco Chain on model">
+      <div class="category-overlay">
+        <h3>Chains</h3>
+        <a href="https://www.proclamationjewelry.com/collections/diamond-cut-franco-chains">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- SILVER -->
+    <div class="category-card">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Silver_Saint_Michael_Necklace.jpg?v=1764047233&width=600" alt="Silver Saint Michael Pendant">
+      <div class="category-overlay">
+        <h3>Silver</h3>
+        <a href="https://www.proclamationjewelry.com/collections/silver-jewelry-for-men">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- PLATINUM -->
+    <div class="category-card">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Platinum_Miami_Cuban_Link_Chain_4mm.jpg?v=1764047267&width=600" alt="Platinum Miami Cuban Chain">
+      <div class="category-overlay">
+        <h3>Platinum</h3>
+        <a href="https://www.proclamationjewelry.com/collections/platinum-jewelry-for-men">Shop Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================
+       PLATINUM SECTION HEADER
+       ============================================ -->
+  <div class="platinum-header">
+    <p class="eyebrow">The Platinum Collection</p>
+    <h2>For the Man Who Deserves the Very Best</h2>
+    <p class="sub">Five of our most loved platinum pendants. Handcrafted. Set with diamonds. Built to last generations.</p>
+  </div>
+
+  <!-- ============================================
+       NICK'S PLATINUM COPY
+       ============================================ -->
+  <div class="nick-plat">
+    <p>People ask me all the time why we offer platinum when gold is our signature. The answer is simple. Some men want something rarer. Something heavier in the hand. Something that doesn't need polishing, doesn't tarnish, doesn't fade.</p>
+
+    <p>Platinum is the most durable precious metal we work with. Every pendant below is handcrafted in our studio, set with conflict free lab grown diamonds, and finished to a standard that most jewelers won't even attempt.</p>
+
+    <p>These are the five pieces our clients come back to again and again.</p>
+  </div>
+
+  <!-- ============================================
+       FEATURED: CHAMPION — Full width hero
+       ============================================ -->
+  <div class="plat-hero">
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Platinum_Pendant.jpg?v=1775933160&width=1200" alt="Champion Platinum Saint Michael Pendant">
+    <div class="plat-hero-info">
+      <h3>Champion</h3>
+      <p>Platinum Saint Michael Pendant. Archangel vanquishing Lucifer on the front. "Quis ut Deus" engraved on the reverse. Our most requested platinum piece.</p>
+      <a href="https://www.proclamationjewelry.com/products/champion-platinum-saint-michael-pendant" class="cta-btn gold">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- ============================================
+       2-COLUMN: ALPHA WOLF + VOYAGER
+       ============================================ -->
+  <div class="product-grid">
+
+    <div class="product-cell">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Alpha_Platinum_Wolf_Necklace_Pendant_Proclamation_Jewelry.jpg?v=1775932900&width=600" alt="Alpha Platinum Wolf Pendant">
+      <div class="info">
+        <h4>Alpha</h4>
+        <p>Platinum Wolf Pendant with Diamonds. Diamond eyes, dream catcher on the reverse.</p>
+        <a href="https://www.proclamationjewelry.com/products/alpha-platinum-wolf-pendant">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="product-cell">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Platinum_Compass_Pendant.jpg?v=1764047480&width=600" alt="Voyager Platinum Compass Pendant">
+      <div class="info">
+        <h4>Voyager</h4>
+        <p>Platinum Compass Pendant. Compass rose front, sailing ship on the reverse.</p>
+        <a href="https://www.proclamationjewelry.com/products/platinum-compass-pendant">Shop Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================
+       2-COLUMN: CARPE DIEM + EMPIRE
+       ============================================ -->
+  <div class="product-grid">
+
+    <div class="product-cell">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Platinum_Skull_Pendant_Carpe_Diem.jpg?v=1775935327&width=600" alt="Carpe Diem Platinum Skull Pendant">
+      <div class="info">
+        <h4>Carpe Diem</h4>
+        <p>Platinum Skull Pendant with Diamonds. "Seize the Day." Hourglass engraved on the reverse.</p>
+        <a href="https://www.proclamationjewelry.com/products/carpe-diem-platinum-skull-pendant">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="product-cell">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Empire_Platinum_Lion_Pendant.jpg?v=1775933700&width=600" alt="Empire Platinum Lion Pendant">
+      <div class="info">
+        <h4>Empire</h4>
+        <p>Platinum Lion Head Pendant with Diamonds. Power, leadership, the beast and king within.</p>
+        <a href="https://www.proclamationjewelry.com/products/empire-platinum-lion-pendant-diamonds">Shop Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================
+       COLLECTION CTA
+       ============================================ -->
+  <div class="collection-cta">
+    <a href="https://www.proclamationjewelry.com/collections/platinum-jewelry-for-men" class="cta-btn gold">Shop All Platinum</a>
+  </div>
+
+  <!-- ============================================
+       TRUST BADGES
+       ============================================ -->
+  <div class="trust-section">
+    <div class="trust-row">
+      <div class="trust-badge">
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="rating">4.8 / 5</p>
+        <p class="source">Trustpilot</p>
+        <p class="count">388 Reviews</p>
+      </div>
+      <div class="trust-badge">
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="rating">4.9 / 5</p>
+        <p class="source">Google Reviews</p>
+        <p class="count">335 Reviews</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <div class="footer">
+    <p>Proclamation Jewelry | Houston, TX</p>
+    <p>Handcrafted in the USA. FedEx/UPS 2 Day Shipping. Fully Insured.</p>
+    <p><a href="https://www.proclamationjewelry.com">proclamationjewelry.com</a></p>
+  </div>
+
+</div>
+</body>
+</html>
