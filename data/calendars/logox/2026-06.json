@@ -28,7 +28,7 @@
       "status": "done",
       "theme": "Fuel Angle: Cut Your Own, Save Thousands",
       "product": "LogOX 3-in-1 Forestry MultiTool",
-      "shortDescription": "What a typical household spent on heating oil this winter vs. cutting your own firewood. The 3-in-1 makes the work fast and easy on your back. Lead with dollar savings, close with the tool.",
+      "shortDescription": "What a typical household spent on heating fuel this winter ($1,390 avg per EIA) vs. cutting your own firewood. The 3-in-1 makes the work fast and easy on your back. Lead with dollar savings, close with the tool.",
       "emailCopyLink": "",
       "finalDesignLink": "",
       "notes": "Educational hook, conversion close. Fresh 3-in-1 angle.",
@@ -38,9 +38,26 @@
       "creativeDirection": "Educational hook, conversion close"
     },
     {
-      "id": "2026-06-11-genox-bushcraft-knife",
+      "id": "2026-06-11-fathers-day-reminder",
       "date": "2026-06-11",
       "day": "Thu",
+      "type": "promotional",
+      "status": "pending",
+      "theme": "Father's Day Sale Reminder",
+      "product": "WoodOX Sling, Hearth Bin",
+      "shortDescription": "1 week out. Code DAD26, 15% off Sling and Hearth Bin. Fresh messaging, not a copy of May emails. Gift angle: tools he'll use every winter, not just once. Urgency: Father's Day is next Sunday.",
+      "emailCopyLink": "",
+      "finalDesignLink": "",
+      "notes": "Fresh messaging, not a copy of May emails.",
+      "productUrl": "https://www.thelogox.com/products/woodox-sling",
+      "collectionUrl": "",
+      "offerCode": "DAD26 — 15% off Sling + Hearth Bin",
+      "creativeDirection": "Gift-framing, fresh messaging"
+    },
+    {
+      "id": "2026-06-14-genox-bushcraft-knife",
+      "date": "2026-06-14",
+      "day": "Sun",
       "type": "promotional",
       "status": "pending",
       "theme": "The GenOX Bushcraft Knife",
@@ -53,23 +70,6 @@
       "collectionUrl": "",
       "offerCode": "",
       "creativeDirection": "Limited quantity, scarcity angle"
-    },
-    {
-      "id": "2026-06-14-fathers-day-reminder",
-      "date": "2026-06-14",
-      "day": "Sun",
-      "type": "promotional",
-      "status": "pending",
-      "theme": "Father's Day Sale Reminder",
-      "product": "WoodOX Sling, Hearth Bin",
-      "shortDescription": "1 week out. Code DAD26, 15% off Sling and Hearth Bin. Fresh messaging. Gift angle: tools he'll use every winter, not just once. Urgency: Father's Day is next Sunday.",
-      "emailCopyLink": "",
-      "finalDesignLink": "",
-      "notes": "Fresh messaging, not a copy of May emails.",
-      "productUrl": "https://www.thelogox.com/products/woodox-sling",
-      "collectionUrl": "",
-      "offerCode": "DAD26 — 15% off Sling + Hearth Bin",
-      "creativeDirection": "Gift-framing, fresh messaging"
     },
     {
       "id": "2026-06-16-most-trending",
@@ -123,21 +123,21 @@
       "creativeDirection": "Cross-sell to existing owners"
     },
     {
-      "id": "2026-06-27-american-fire-lighter-kit",
+      "id": "2026-06-27-chain-locker-spotlight",
       "date": "2026-06-27",
       "day": "Sat",
       "type": "promotional",
       "status": "pending",
-      "theme": "The American Fire Lighter Kit",
-      "product": "American Fire Lighter Kit ($169.95)",
-      "shortDescription": "100% reusable fire lighter. No kindling, no paper, no wasted effort. Handcrafted ceramic jar + fire stone. $169.95 qualifies for free shipping. Never been featured.",
+      "theme": "Chain Locker Product Spotlight",
+      "product": "Chain Locker products",
+      "shortDescription": "Showcase the Chain Locker product line. Dedicated product spotlight to close the month.",
       "emailCopyLink": "",
       "finalDesignLink": "",
-      "notes": "New product, never featured. Close the month with something fresh.",
-      "productUrl": "https://www.thelogox.com/products/the-american-fire-lighter-kit",
+      "notes": "Product spotlight. Close the month with Chain Locker.",
+      "productUrl": "",
       "collectionUrl": "",
       "offerCode": "",
-      "creativeDirection": "New product, never featured"
+      "creativeDirection": "Product spotlight"
     }
   ]
 }
