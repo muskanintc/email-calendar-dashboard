@@ -1,0 +1,341 @@
+<!--
+=======================================================
+EMAIL: Summer Standouts — Most Loved Styles
+CLIENT: Proclamation Jewelry
+TYPE: Promotional
+DATE: 2026-06-19
+
+CONCEPT: Post Father's Day pivot to summer energy. Curated
+"lookbook" of the 5 most loved pieces this season, spanning
+pendants and rings. Each gets a dedicated card with a large
+product image, bold numbering, and selling copy. Clean,
+editorial, and different from the recent grid/alternating
+layouts.
+
+FEATURED PIECES (none were June email heroes):
+1. Spartan Gold Pendant — courage, discipline
+2. Empire Gold Lion Head Pendant — power, leadership
+3. RYU Gold Dragon Pendant with Diamonds — honor, wisdom
+4. Carpe Diem Gold Skull Pendant with Diamonds — seize the day
+5. Majesty Gold Crown Ring — statement ring
+
+LAYOUT: Typographic hero banner, Nick intro, vertical
+lookbook with centered product cards separated by gold
+dividers, "Shop All" footer CTA, trust signals.
+
+SUBJECT LINE OPTIONS:
+1. Five standouts. One unforgettable summer.
+2. The pieces that own this season.
+3. Your summer statement starts here.
+
+PREVIEW TEXT OPTIONS:
+1. From Spartan warrior to Empire king. Our most loved, all in one place.
+2. Five pieces. Five stories. All crafted for the man who leads.
+3. The creations that defined the season so far.
+
+IMAGES USED:
+1. Spartan_Gold_Pendant.jpg — Spartan Gold Helmet Pendant hero shot
+2. Gold_Lion_Pendant_Empire_Proclamation_Jewelry.png — Empire Gold Lion In Shield
+3. Proclamation_Jewelry_mens_gold_dragon_pendant.jpg — RYU Gold Dragon close up
+4. Gold_Skull_Pendant_Carpe_Diem.jpg — Carpe Diem Gold Skull front view
+5. mens_gold_ring_crown_14k_wedding_band.jpg — Majesty Gold Crown Ring on hand
+
+DESIGN NOTES:
+- Lookbook / editorial countdown layout (01 through 05)
+- Each product: large centered image + gold number badge + product name + single line copy + CTA
+- Thin gold horizontal rule dividers between products
+- Typographic hero (bold gold serif text, decorative lines)
+- Nick's founder voice throughout
+- Onyx Black bg, Royal Gold accents, Cornell Red CTAs
+- Mobile responsive (600px max, stacks naturally)
+- Trust badges: Trustpilot 4.8/5 (388 reviews) + Google 4.9/5 (335 reviews)
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Standouts — Proclamation Jewelry</title>
+<style>
+  body { margin: 0; padding: 0; background: #f5f5f5; -webkit-font-smoothing: antialiased; }
+  img { display: block; border: 0; max-width: 100%; height: auto; }
+  a { color: #D4AF37; text-decoration: none; }
+  table { border-collapse: collapse; }
+
+  .subject-lines {
+    background: #1A1A1A; border: 2px dashed #D4AF37; padding: 20px; margin: 20px auto; border-radius: 8px;
+    max-width: 600px; font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .subject-lines h3 { color: #D4AF37; margin-bottom: 10px; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 13px; letter-spacing: 2px; }
+  .subject-lines ol { padding-left: 20px; margin: 0 0 16px 0; }
+  .subject-lines li { margin-bottom: 6px; color: #E4E4E4; font-size: 14px; line-height: 1.5; }
+
+  .designer-note {
+    background: #1A1A1A; border: 2px dashed #D4AF37; padding: 20px; margin: 0 auto; color: #E4E4E4;
+    max-width: 600px; font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 13px; line-height: 1.6;
+    border-radius: 8px 8px 0 0;
+  }
+  .designer-note strong { color: #D4AF37; letter-spacing: 1px; }
+
+  .email-wrapper {
+    max-width: 600px; margin: 0 auto; background: #0A0A0A;
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .hero-section {
+    background: #0A0A0A; text-align: center; padding: 50px 30px 40px;
+    border-bottom: 1px solid #2A2A2A;
+  }
+  .hero-section .gold-line {
+    width: 60px; height: 2px; background: #D4AF37; margin: 0 auto 20px;
+  }
+  .hero-section h1 {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #D4AF37; font-size: 32px; letter-spacing: 6px;
+    margin: 0 0 12px; line-height: 1.2; font-weight: bold;
+  }
+  .hero-section .subtitle {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    color: #E4E4E4; font-size: 15px; letter-spacing: 3px;
+    text-transform: uppercase; margin: 0;
+  }
+  .hero-section .gold-line-bottom {
+    width: 60px; height: 2px; background: #D4AF37; margin: 20px auto 0;
+  }
+
+  .nick-intro {
+    padding: 36px 30px 30px; background: #0A0A0A;
+  }
+  .nick-intro p {
+    color: #E4E4E4; font-size: 15px; line-height: 1.7;
+    margin: 0 0 16px; font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .nick-intro p:last-child { margin-bottom: 0; }
+
+  .product-divider {
+    width: 80px; height: 1px; background: #D4AF37; margin: 0 auto;
+  }
+
+  .product-card {
+    background: #0A0A0A; text-align: center; padding: 40px 30px;
+  }
+  .product-card .number {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #D4AF37; font-size: 14px; letter-spacing: 4px;
+    margin: 0 0 20px; opacity: 0.7;
+  }
+  .product-card .product-img {
+    max-width: 320px; margin: 0 auto 24px; border-radius: 4px;
+  }
+  .product-card h2 {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #FFFFFF; font-size: 20px; letter-spacing: 3px;
+    margin: 0 0 12px; font-weight: bold;
+  }
+  .product-card .tagline {
+    color: #CCCCCC; font-size: 14px; line-height: 1.6;
+    margin: 0 0 24px; font-family: 'Optima', 'Palatino', Georgia, serif;
+    max-width: 400px; margin-left: auto; margin-right: auto;
+  }
+  .product-card .cta-btn {
+    display: inline-block; background: #B31B1B; color: #FFFFFF;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    padding: 14px 36px; text-decoration: none; border-radius: 2px;
+  }
+
+  .shop-all-section {
+    background: #111111; text-align: center; padding: 40px 30px;
+    border-top: 1px solid #2A2A2A;
+  }
+  .shop-all-section h3 {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #D4AF37; font-size: 16px; letter-spacing: 3px;
+    margin: 0 0 8px;
+  }
+  .shop-all-section p {
+    color: #CCCCCC; font-size: 14px; line-height: 1.6; margin: 0 0 20px;
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .shop-all-section .cta-btn {
+    display: inline-block; background: #D4AF37; color: #0A0A0A;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    padding: 14px 36px; text-decoration: none; border-radius: 2px;
+    font-weight: bold;
+  }
+
+  .trust-section {
+    background: #0A0A0A; text-align: center; padding: 30px;
+    border-top: 1px solid #2A2A2A;
+  }
+  .trust-section .trust-badge {
+    display: inline-block; margin: 0 15px; color: #D4AF37;
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    font-size: 13px; letter-spacing: 1px;
+  }
+  .trust-section .trust-badge .stars { font-size: 15px; display: block; margin-bottom: 4px; }
+
+  .footer {
+    background: #0A0A0A; text-align: center; padding: 24px 30px 30px;
+    border-top: 1px solid #2A2A2A;
+  }
+  .footer p {
+    color: #666666; font-size: 11px; line-height: 1.6; margin: 4px 0;
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .footer a { color: #D4AF37; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<!-- ======== SUBJECT LINES + PREVIEW TEXT (VISIBLE) ======== -->
+<div class="subject-lines">
+  <h3>SUBJECT LINE OPTIONS</h3>
+  <ol>
+    <li>Five standouts. One unforgettable summer.</li>
+    <li>The pieces that own this season.</li>
+    <li>Your summer statement starts here.</li>
+  </ol>
+  <h3>PREVIEW TEXT OPTIONS</h3>
+  <ol>
+    <li>From Spartan warrior to Empire king. Our most loved, all in one place.</li>
+    <li>Five pieces. Five stories. All crafted for the man who leads.</li>
+    <li>The creations that defined the season so far.</li>
+  </ol>
+</div>
+
+<!-- ======== DESIGNER NOTE ======== -->
+<div class="designer-note">
+  <strong>DESIGNER NOTE:</strong> Lookbook/editorial countdown layout. Each product gets a dedicated full width card with large centered image, gold number badge (01 through 05), product name, one line of copy, and CTA. Thin gold dividers between cards. Very clean, lots of breathing room. This is a DIFFERENT layout from recent emails (no grid, no alternating left/right, no category cards). Think vertical magazine scroll. All images from product pages. Trust badges at bottom.
+</div>
+
+<!-- ======== EMAIL STARTS ======== -->
+<div class="email-wrapper">
+
+  <!-- HERO BANNER -->
+  <div class="hero-section">
+    <div class="gold-line"></div>
+    <h1>SUMMER<br>STANDOUTS</h1>
+    <p class="subtitle">The 5 Most Loved Pieces This Season</p>
+    <div class="gold-line-bottom"></div>
+  </div>
+
+  <!-- NICK'S INTRO -->
+  <div class="nick-intro">
+    <p>Father's Day is behind us, and I couldn't be more grateful for every one of you who chose a Proclamation piece to honor the men in your lives.</p>
+
+    <p>Now summer's here. And I've been watching what you're all gravitating toward. The pieces that keep selling out, that keep showing up in your photos, that keep coming back for more.</p>
+
+    <p>These are the five standouts. The creations our clients can't stop talking about. If you've been waiting for a sign, this is it.</p>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PRODUCT 01: SPARTAN     -->
+  <!-- ======================== -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+
+  <div class="product-card">
+    <p class="number">01</p>
+    <!-- DESIGN NOTE: Spartan Gold Pendant, front view, helmet detail visible. Warm gold tones on dark. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/Spartan_Gold_Pendant.jpg" alt="Spartan Gold Pendant">
+    <h2>SPARTAN</h2>
+    <p class="tagline">King Leonidas knew that courage isn't the absence of fear. It's the decision to move forward anyway. Crafted in gold, worn by warriors.</p>
+    <a href="https://www.proclamationjewelry.com/products/spartan-yellow-gold" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PRODUCT 02: EMPIRE       -->
+  <!-- ======================== -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+
+  <div class="product-card">
+    <p class="number">02</p>
+    <!-- DESIGN NOTE: Empire Gold Lion pendant in shield. Bold, dramatic. Lion face detail prominent. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/Gold_Lion_Pendant_Empire_Proclamation_Jewelry.png" alt="Empire Gold Lion Head Pendant">
+    <h2>EMPIRE</h2>
+    <p class="tagline">The beast and the king within, cast in a single shield. This is the piece you reach for when you need to remind yourself who you are.</p>
+    <a href="https://www.proclamationjewelry.com/products/gold-lion-pendant" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PRODUCT 03: RYU          -->
+  <!-- ======================== -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+
+  <div class="product-card">
+    <p class="number">03</p>
+    <!-- DESIGN NOTE: RYU Gold Dragon pendant with diamonds. Asian-inspired artistry. Dragon coiled, diamond eyes visible. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_mens_gold_dragon_pendant.jpg" alt="RYU Gold Dragon Pendant with Diamonds">
+    <h2>RYU</h2>
+    <p class="tagline">Honor. Bravery. Wisdom. The dragon has stood for all three across centuries and cultures. This one's been flying off our bench all summer.</p>
+    <a href="https://www.proclamationjewelry.com/products/gold-dragon-pendant" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PRODUCT 04: CARPE DIEM   -->
+  <!-- ======================== -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+
+  <div class="product-card">
+    <p class="number">04</p>
+    <!-- DESIGN NOTE: Carpe Diem Gold Skull pendant with diamonds, front view. Skull detail, diamond border. Deep philosophical energy. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/Gold_Skull_Pendant_Carpe_Diem.jpg" alt="Carpe Diem Gold Skull Pendant with Diamonds">
+    <h2>CARPE DIEM</h2>
+    <p class="tagline">Seize the day. Not tomorrow. Not next week. Right now. The hourglass on the reverse is your reminder that time is the only thing you can't get back.</p>
+    <a href="https://www.proclamationjewelry.com/products/carpe-diem-yellow-gold" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PRODUCT 05: MAJESTY      -->
+  <!-- ======================== -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+
+  <div class="product-card">
+    <p class="number">05</p>
+    <!-- DESIGN NOTE: Majesty Gold Crown Ring on hand/finger. Fleur de lis detail visible. Statement piece, doubles as wedding band. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/mens_gold_ring_crown_14k_wedding_band.jpg" alt="Majesty Gold Crown Ring">
+    <h2>MAJESTY</h2>
+    <p class="tagline">A crown you wear every single day. Fleur de lis detailing. Works as a statement ring or a wedding band for the man who refuses to blend in.</p>
+    <a href="https://www.proclamationjewelry.com/products/majesty-gold-crown-ring" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- SHOP ALL COLLECTIONS -->
+  <div class="shop-all-section">
+    <h3>EXPLORE ALL COLLECTIONS</h3>
+    <p>From gold pendants to silver chains, platinum heirlooms to signature clasps. There's a story waiting for you.</p>
+    <a href="https://www.proclamationjewelry.com/collections" class="cta-btn">Shop All</a>
+  </div>
+
+  <!-- TRUST SIGNALS -->
+  <div class="trust-section">
+    <span class="trust-badge">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      Trustpilot 4.8/5 (388 Reviews)
+    </span>
+    <span class="trust-badge">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      Google 4.9/5 (335 Reviews)
+    </span>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p style="color: #D4AF37; font-size: 12px; letter-spacing: 2px; margin-bottom: 12px;">PROCLAMATION JEWELRY</p>
+    <p>Forged for Legacy, Worn to Inspire</p>
+    <p>Founded 2011 by Nick Miller &middot; Houston, TX</p>
+    <p style="margin-top: 12px;">
+      <a href="#">Unsubscribe</a> &middot;
+      <a href="#">Manage Preferences</a> &middot;
+      <a href="https://www.proclamationjewelry.com">Visit Website</a>
+    </p>
+  </div>
+
+</div>
+<!-- ======== EMAIL ENDS ======== -->
+
+</body>
+</html>
