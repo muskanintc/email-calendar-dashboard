@@ -1,0 +1,474 @@
+<!--
+=======================================================
+EMAIL: Father's Day — For Every Kind of Dad
+CLIENT: Proclamation Jewelry
+TYPE: Promotional (Father's Day Gift Guide)
+DATE: 2026-06-11 (sends June 13)
+
+CONCEPT: Personality-based gifting guide. Four "dad types"
+each matched to Proclamation pieces. Editorial magazine
+feel. Different from previous chain/collection emails.
+
+DAD TYPES (v2 — revised per client feedback 2026-06-12):
+1. The Adventure Dad → Voyager Compass Pendant (shown in its variations: Gold, Gold w/ Diamonds, Platinum, Silver)
+2. The Bold Dad → Empire Lion + Alpha Wolf (two beasts; Tiger removed per feedback)
+3. The Faith Dad → Saint Michael + Faith Cross (separate CTA per piece)
+4. The Legacy Dad → Memento Mori Gold Skull + Stoic 4 Virtues (skull replaces the tag; separate CTA per piece)
+
+LAYOUT: Typographic hero (no product image), Nick intro,
+alternating full-width dad-type cards, shipping deadline
+banner, trust signals.
+
+SUBJECT LINE OPTIONS:
+1. For every kind of dad, there's a piece.
+2. What kind of dad is yours?
+3. The Father's Day gift guide he actually wants.
+
+PREVIEW TEXT OPTIONS:
+1. Adventure. Bold. Faith. Legacy. Find his piece.
+2. Four dads. Four stories. One gift he'll never take off.
+3. A personality driven guide to the perfect Father's Day gift.
+
+DESIGN NOTES:
+- Magazine-style editorial gift guide
+- Alternating image/copy layout for each dad type
+- Typographic hero (bold gold text on black), NO hero product image
+- Warm gold accents on Onyx Black (#0A0A0A)
+- Shipping deadline banner in Cornell Red (#B31B1B)
+- Nick's founder voice throughout (warm, conversational, contractions)
+- Mobile responsive (stacks vertically)
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Father's Day Gift Guide — Proclamation Jewelry</title>
+<style>
+  body { margin: 0; padding: 0; background: #f5f5f5; -webkit-font-smoothing: antialiased; }
+  img { display: block; border: 0; max-width: 100%; height: auto; }
+  a { color: #D4AF37; text-decoration: none; }
+  table { border-collapse: collapse; }
+
+  .subject-lines {
+    background: #1A1A1A; border: 2px dashed #D4AF37; padding: 20px; margin: 20px auto; border-radius: 8px;
+    max-width: 600px; font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .subject-lines h3 { color: #D4AF37; margin-bottom: 10px; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 13px; letter-spacing: 2px; }
+  .subject-lines ol { padding-left: 20px; margin: 0 0 16px 0; }
+  .subject-lines li { margin-bottom: 6px; color: #E4E4E4; font-size: 14px; line-height: 1.5; }
+
+  .designer-note {
+    background: #1A1A1A; border: 2px dashed #D4AF37; padding: 20px; margin: 0 auto; color: #E4E4E4;
+    max-width: 600px; font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 13px; line-height: 1.6;
+    border-radius: 8px 8px 0 0;
+  }
+  .designer-note strong { color: #D4AF37; letter-spacing: 1px; }
+
+  .email-wrapper {
+    max-width: 600px; margin: 0 auto; background: #0A0A0A;
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    color: #E4E4E4;
+  }
+
+  .brand-bar {
+    text-align: center; padding: 32px 20px 20px;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 9px; letter-spacing: 8px; color: #D4AF37;
+    text-transform: uppercase;
+  }
+
+  .section-label {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 9px; letter-spacing: 5px; color: #D4AF37;
+    text-transform: uppercase; margin: 0 0 16px 0;
+  }
+
+  .nick-copy {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    font-size: 16px; line-height: 1.85; color: #E4E4E4;
+  }
+  .nick-copy p { margin: 0 0 18px 0; }
+
+  .cta-button {
+    display: inline-block; background: #D4AF37; color: #0A0A0A;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    padding: 16px 40px; text-decoration: none; font-weight: bold;
+  }
+
+  .cta-button-sm {
+    display: inline-block; background: #D4AF37; color: #0A0A0A;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    padding: 11px 26px; text-decoration: none; font-weight: bold;
+  }
+
+  .cta-button-outline {
+    display: inline-block; border: 1px solid #D4AF37; color: #D4AF37;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    padding: 12px 30px; text-decoration: none; background: transparent;
+  }
+
+  .dad-type-label {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 10px; letter-spacing: 5px; color: #D4AF37;
+    text-transform: uppercase; margin: 0 0 8px 0;
+  }
+
+  .dad-type-name {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 22px; letter-spacing: 3px; color: #FFFFFF;
+    text-transform: uppercase; margin: 0 0 16px 0; line-height: 1.3;
+  }
+
+  .dad-type-desc {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    font-size: 15px; line-height: 1.75; color: #CCCCCC; margin: 0 0 8px 0;
+  }
+
+  .product-name {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    font-size: 13px; letter-spacing: 1px; color: #D4AF37; margin: 12px 0 4px 0;
+  }
+
+  .product-metal {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    font-size: 11px; color: #888; margin: 0 0 16px 0;
+  }
+
+  .img-placeholder {
+    border: 1px dashed #D4AF37; padding: 48px 12px; text-align: center;
+    color: #888; font-size: 11px; font-family: 'Optima', 'Palatino', Georgia, serif;
+    margin-bottom: 12px; line-height: 1.5;
+  }
+
+  .gold-rule { border: 0; border-top: 1px solid #1A1A1A; margin: 0; }
+  .gold-rule-accent { display: block; border: 0; border-top: 1px solid #D4AF37; width: 60px; margin: 0 auto; }
+
+  .deadline-bar {
+    background: #B31B1B; text-align: center; padding: 18px 20px;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 11px; letter-spacing: 3px; color: #FFFFFF; text-transform: uppercase;
+  }
+
+  .footer { padding: 36px 36px 28px; border-top: 1px solid #1A1A1A; text-align: center; }
+  .footer p { color: #555; font-size: 11px; line-height: 1.8; margin: 0; font-family: 'Optima', 'Palatino', Georgia, serif; }
+  .footer a { color: #777; font-size: 11px; }
+
+  @media only screen and (max-width: 600px) {
+    .nick-copy { font-size: 15px !important; }
+    .content-pad { padding-left: 24px !important; padding-right: 24px !important; }
+    .hero-headline { font-size: 28px !important; letter-spacing: 3px !important; }
+    .dad-type-name { font-size: 18px !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== SUBJECT LINES & PREVIEW TEXT ===== -->
+<div class="subject-lines">
+  <h3>Subject Line Options</h3>
+  <ol>
+    <li>For every kind of dad, there's a piece.</li>
+    <li>What kind of dad is yours?</li>
+    <li>The Father's Day gift guide he actually wants.</li>
+  </ol>
+  <h3>Preview Text Options</h3>
+  <ol>
+    <li>Adventure. Bold. Faith. Legacy. Find his piece.</li>
+    <li>Four dads. Four stories. One gift he'll never take off.</li>
+    <li>A personality driven guide to the perfect Father's Day gift.</li>
+  </ol>
+</div>
+
+<!-- ===== DESIGNER NOTE ===== -->
+<div class="designer-note">
+  <p style="margin:0;"><strong>DESIGN DIRECTION</strong><br>
+  Magazine style editorial gift guide. Typographic hero (bold gold text on black, no product image). Four "dad type" sections alternate layout: odd sections lead with image, even sections lead with copy. Each section is its own mini feature. Deadline banner in Cornell Red near the bottom. Nick's warm founder voice. Should feel like a curated editorial spread, not a product grid.<br><br>
+  <strong>SECTION NOTES (v2):</strong><br>
+  • <strong>Adventure / Voyager</strong> — show the Voyager as a small collection: the gold-with-diamond hero up top, then a three-up variation strip (Gold with Diamonds / Platinum / Silver) so it's clear the same piece comes in his metal. One "Shop the Voyager" CTA.<br>
+  • <strong>Bold</strong> — two beast picks, Empire Lion and Alpha Wolf, each with its own Shop Now.<br>
+  • <strong>Faith</strong> — Saint Michael and the Faith Cross as two cards, each with its own Shop Now.<br>
+  • <strong>Legacy</strong> — Memento Mori Gold Skull and Stoic 4 Virtues, each with its own Shop Now. <strong>[NEEDS INFO: Memento Mori Gold Skull product image URL — catalog only has the tag version. Drop the gold skull image and I'll place it.]</strong></p>
+</div>
+
+
+<!-- ================================================================
+     EMAIL START
+     ================================================================ -->
+<table class="email-wrapper" width="600" cellpadding="0" cellspacing="0" role="presentation">
+
+  <!-- BRAND BAR -->
+  <tr><td class="brand-bar">
+    PROCLAMATION JEWELRY
+  </td></tr>
+
+  <!-- HERO: Typographic (no product image) -->
+  <tr><td style="padding: 60px 40px 48px; text-align: center; background: #0A0A0A;">
+    <!-- DESIGN NOTE: Pure typography hero. Gold text on black. No product image. Let the words breathe. Consider subtle gold line accent above/below the headline. -->
+    <p class="section-label" style="margin-bottom: 20px;">Father's Day Gift Guide</p>
+    <h1 class="hero-headline" style="font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 34px; letter-spacing: 5px; color: #FFFFFF; text-transform: uppercase; margin: 0 0 24px 0; line-height: 1.25;">
+      FOR EVERY<br>KIND OF DAD
+    </h1>
+    <hr class="gold-rule-accent" style="margin: 0 auto 24px auto;">
+    <p style="font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 15px; color: #AAAAAA; line-height: 1.7; margin: 0; max-width: 420px; display: inline-block;">
+      Four personalities. Four collections of meaning. One Father's Day gift he'll wear for the rest of his life.
+    </p>
+  </td></tr>
+
+  <tr><td><hr class="gold-rule"></td></tr>
+
+  <!-- NICK INTRO -->
+  <tr><td class="content-pad" style="padding: 40px 40px 32px;">
+    <div class="nick-copy">
+      <p>I've been thinking about what makes a Father's Day gift actually matter.</p>
+      <p>Not the kind he opens, smiles at, and puts in a drawer. The kind that stops him for a second. The kind he reaches for every morning because it means something only he understands.</p>
+      <p>That's what we build here. And every father I've met carries a different story. So I put together four collections based on the kind of man your dad is. Find his, and you'll find the piece he'll never take off.</p>
+    </div>
+  </td></tr>
+
+  <tr><td><hr class="gold-rule"></td></tr>
+
+  <!-- ============================================
+       DAD TYPE 1: THE ADVENTURE DAD — VOYAGER (with variations)
+       ============================================ -->
+  <tr><td style="padding: 0;">
+    <!-- DESIGN NOTE: Full-width gold-with-diamond hero, then copy, then a three-up variation strip showing the same piece in different metals. -->
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant_Single_Diamond.png?v=1778681476" alt="Voyager Gold Compass Pendant with Diamond" width="600" style="width:100%; display:block;">
+  </td></tr>
+  <tr><td class="content-pad" style="padding: 32px 40px 24px;">
+    <p class="dad-type-label">Dad Type 01</p>
+    <h2 class="dad-type-name">The Adventure Dad</h2>
+    <p class="dad-type-desc">He's the one who taught you to read a map before you could read a book. Every weekend was a new trail, a new lake, a new something. His idea of rest is planning the next trip.</p>
+    <p class="dad-type-desc">The Voyager was made for him. A compass rose on the front. A sailing ship crossing the globe on the reverse. A hand set diamond at center, pointing true north. And he can wear it his way, because the Voyager comes in gold, gold with diamonds, platinum, and silver.</p>
+    <p class="product-name">Voyager Compass Pendant</p>
+    <p class="product-metal">Gold &middot; Gold with Diamonds &middot; Platinum &middot; Silver</p>
+  </td></tr>
+  <!-- Variation strip: same piece, different metals -->
+  <tr><td class="content-pad" style="padding: 0 40px 8px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="33%" style="vertical-align: top; padding-right: 2%; text-align: center;">
+          <a href="https://www.proclamationjewelry.com/products/voyager-gold-compass-pendant-diamond"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant_Necklace.jpg" alt="Voyager Gold with Diamonds" width="170" style="width:100%; display:block; margin-bottom: 8px;"></a>
+          <p class="product-metal" style="text-align:center; margin:0;">Gold with Diamonds</p>
+        </td>
+        <td width="33%" style="vertical-align: top; padding: 0 1%; text-align: center;">
+          <a href="https://www.proclamationjewelry.com/products/platinum-compass-pendant"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Platinum_Compass_Pendant.jpg" alt="Voyager Platinum" width="170" style="width:100%; display:block; margin-bottom: 8px;"></a>
+          <p class="product-metal" style="text-align:center; margin:0;">Platinum</p>
+        </td>
+        <td width="33%" style="vertical-align: top; padding-left: 2%; text-align: center;">
+          <a href="https://www.proclamationjewelry.com/products/silver-compass-pendant"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Silver_Compass_Pendant.jpg" alt="Voyager Silver" width="170" style="width:100%; display:block; margin-bottom: 8px;"></a>
+          <p class="product-metal" style="text-align:center; margin:0;">Silver</p>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+  <tr><td style="padding: 18px 40px 40px; text-align: center;">
+    <a href="https://www.proclamationjewelry.com/products/voyager-compass-pendant-gold" class="cta-button">Shop the Voyager</a>
+  </td></tr>
+
+  <tr><td><hr class="gold-rule"></td></tr>
+
+  <!-- ============================================
+       DAD TYPE 2: THE BOLD DAD — EMPIRE LION + ALPHA WOLF
+       ============================================ -->
+  <tr><td class="content-pad" style="padding: 32px 40px 24px;">
+    <!-- DESIGN NOTE: Copy first, then two product cards side by side, each with its own Shop Now. -->
+    <p class="dad-type-label">Dad Type 02</p>
+    <h2 class="dad-type-name">The Bold Dad</h2>
+    <p class="dad-type-desc">He doesn't follow the room. He changes it. The first one to speak up, the last one to back down. Every decision is definitive. Every move is intentional.</p>
+    <p class="dad-type-desc">Some men carry a beast for a reason. The Empire Lion, the king who answers to no one, command and power worn at the chest. Or the Alpha Wolf, fearless and loyal, the one who protects the pack at any cost. Pick the one that matches the man.</p>
+  </td></tr>
+  <!-- Two beast picks, each with its own CTA -->
+  <tr><td class="content-pad" style="padding: 0 40px 40px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="48%" style="vertical-align: top; padding-right: 2%; text-align: center;">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Gold_Lion_Pendant_Empire_Proclamation_Jewelry.png" alt="Empire Lion Pendant in Gold" width="250" style="width:100%; display:block; margin-bottom: 12px;">
+          <p class="product-name" style="font-size: 12px;">Empire Lion Pendant</p>
+          <p class="product-metal">Gold</p>
+          <a href="https://www.proclamationjewelry.com/products/gold-lion-pendant" class="cta-button-sm">Shop Now</a>
+        </td>
+        <td width="48%" style="vertical-align: top; padding-left: 2%; text-align: center;">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Alpha_Platinum_Wolf_Necklace_Pendant_Proclamation_Jewelry.jpg" alt="Alpha Wolf Pendant in Platinum" width="250" style="width:100%; display:block; margin-bottom: 12px;">
+          <p class="product-name" style="font-size: 12px;">Alpha Wolf Pendant</p>
+          <p class="product-metal">Platinum</p>
+          <a href="https://www.proclamationjewelry.com/products/alpha-platinum-wolf-pendant" class="cta-button-sm">Shop Now</a>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <tr><td><hr class="gold-rule"></td></tr>
+
+  <!-- ============================================
+       DAD TYPE 3: THE FAITH DAD — SAINT MICHAEL + FAITH CROSS (separate CTAs)
+       ============================================ -->
+  <tr><td style="padding: 0;">
+    <!-- DESIGN NOTE: Full-width image first (Saint Michael), copy below. Two product cards, each with its own CTA. -->
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160" alt="Saint Michael Pendant in Gold" width="600" style="width:100%; display:block;">
+  </td></tr>
+  <tr><td class="content-pad" style="padding: 32px 40px 20px;">
+    <p class="dad-type-label">Dad Type 03</p>
+    <h2 class="dad-type-name">The Faith Dad</h2>
+    <p class="dad-type-desc">Before every big moment, he bows his head. Not because he's uncertain. Because he knows where his strength comes from. His faith is quiet, unwavering, and woven into everything he does.</p>
+    <p class="dad-type-desc">Saint Michael captures that devotion, the archangel vanquishing darkness, with "Quis ut Deus" (Who is like God) engraved on the reverse. Or the Faith Cross, a quieter symbol of hope and sacrifice he can keep close. Two pieces, the same conviction he carries.</p>
+  </td></tr>
+  <!-- Two product picks, each with its own CTA -->
+  <tr><td class="content-pad" style="padding: 0 40px 40px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="48%" style="vertical-align: top; padding-right: 2%; text-align: center;">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160" alt="Saint Michael Pendant in Gold" width="250" style="width:100%; display:block; margin-bottom: 12px;">
+          <p class="product-name" style="font-size: 12px;">Saint Michael Pendant</p>
+          <p class="product-metal">Gold</p>
+          <a href="https://www.proclamationjewelry.com/products/saint-michael-gold-pendant" class="cta-button-sm">Shop Now</a>
+        </td>
+        <td width="48%" style="vertical-align: top; padding-left: 2%; text-align: center;">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Faith_Gold_Cross_Pendant_Necklace_Proclamation_Jewelry.jpg?v=1775935803" alt="Faith Cross Pendant in Gold" width="250" style="width:100%; display:block; margin-bottom: 12px;">
+          <p class="product-name" style="font-size: 12px;">Faith Cross Pendant</p>
+          <p class="product-metal">Gold</p>
+          <a href="https://www.proclamationjewelry.com/products/faith-gold-cross-pendant" class="cta-button-sm">Shop Now</a>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <tr><td><hr class="gold-rule"></td></tr>
+
+  <!-- ============================================
+       DAD TYPE 4: THE LEGACY DAD — MEMENTO MORI GOLD SKULL + STOIC (separate CTAs)
+       ============================================ -->
+  <tr><td class="content-pad" style="padding: 32px 40px 24px;">
+    <!-- DESIGN NOTE: Copy first, then two product cards. Each card its own CTA. -->
+    <p class="dad-type-label">Dad Type 04</p>
+    <h2 class="dad-type-name">The Legacy Dad</h2>
+    <p class="dad-type-desc">He plays the long game. Not for himself, but for everyone who comes after him. Every decision he makes, he's thinking two generations ahead. He reads the Stoics. He quotes Marcus Aurelius at the dinner table. He lives by principles, not trends.</p>
+    <p class="dad-type-desc">Memento Mori. Remember you must die. It sounds heavy, but he understands it perfectly: make every moment count, because none of them are guaranteed. The gold skull carries that truth. Pair it with the Stoic 4 Virtues, a compass rose engraved with Courage, Justice, Wisdom, and Temperance. These are the pieces that match the depth of his character.</p>
+  </td></tr>
+  <!-- Two product picks, each with its own CTA -->
+  <tr><td class="content-pad" style="padding: 0 40px 40px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="48%" style="vertical-align: top; padding-right: 2%; text-align: center;">
+          <!-- [NEEDS INFO]: Memento Mori Gold Skull Pendant product image. Placeholder below until client provides it. -->
+          <div class="img-placeholder">[NEEDS INFO]<br>Memento Mori<br>Gold Skull image</div>
+          <p class="product-name" style="font-size: 12px;">Memento Mori Gold Skull</p>
+          <p class="product-metal">Gold</p>
+          <a href="https://www.proclamationjewelry.com/products/memento-mori-gold-skull-pendant" class="cta-button-sm">Shop Now</a>
+        </td>
+        <td width="48%" style="vertical-align: top; padding-left: 2%; text-align: center;">
+          <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Silver_Stoic_Pendant_4_Virtues_Proclamation_Jewelry.jpg?v=1764047333" alt="Stoic 4 Virtues Pendant" width="250" style="width:100%; display:block; margin-bottom: 12px;">
+          <p class="product-name" style="font-size: 12px;">Stoic 4 Virtues</p>
+          <p class="product-metal">Gold and Silver</p>
+          <a href="https://www.proclamationjewelry.com/products/stoic-4-virtues-pendant-silver" class="cta-button-sm">Shop Now</a>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <tr><td><hr class="gold-rule"></td></tr>
+
+  <!-- SHIPPING DEADLINE BANNER -->
+  <tr><td class="deadline-bar">
+    <!-- DESIGN NOTE: Cornell Red (#B31B1B) banner. Bold, clear, no ambiguity. -->
+    Order by June 15 for guaranteed Father's Day delivery
+  </td></tr>
+
+  <!-- CLOSING + FULL COLLECTION CTA -->
+  <tr><td class="content-pad" style="padding: 40px 40px 36px; text-align: center;">
+    <p style="font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 15px; color: #AAAAAA; line-height: 1.75; margin: 0 0 24px 0;">
+      Not sure which one he is? Browse the full collection and let the piece find you.
+    </p>
+    <a href="https://www.proclamationjewelry.com/collections/all" class="cta-button-outline">Browse All Creations</a>
+  </td></tr>
+
+  <tr><td><hr class="gold-rule"></td></tr>
+
+  <!-- TRUST SIGNALS -->
+  <tr><td class="content-pad" style="padding: 32px 40px; text-align: center;">
+    <!-- DESIGN NOTE: Small, elegant trust badges in a row. Gold icons on black. -->
+    <p style="font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 9px; letter-spacing: 4px; color: #D4AF37; text-transform: uppercase; margin: 0 0 16px 0;">Trusted Worldwide</p>
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="33%" style="text-align: center; padding: 8px;">
+          <p style="font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 20px; color: #D4AF37; margin: 0;">&#9733; 4.8</p>
+          <p style="font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 10px; color: #888; margin: 4px 0 0;">Trustpilot (388)</p>
+        </td>
+        <td width="33%" style="text-align: center; padding: 8px;">
+          <p style="font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 20px; color: #D4AF37; margin: 0;">&#9733; 4.9</p>
+          <p style="font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 10px; color: #888; margin: 4px 0 0;">Google (335)</p>
+        </td>
+        <td width="33%" style="text-align: center; padding: 8px;">
+          <p style="font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 11px; color: #D4AF37; margin: 0;">Est. 2011</p>
+          <p style="font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 10px; color: #888; margin: 4px 0 0;">Houston, TX</p>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <!-- FOOTER -->
+  <tr><td class="footer">
+    <p>Proclamation Jewelry &middot; Houston, TX</p>
+    <p style="margin-top: 8px;">
+      <a href="https://www.proclamationjewelry.com">Website</a> &middot;
+      <a href="#">Unsubscribe</a> &middot;
+      <a href="#">View in Browser</a>
+    </p>
+    <p style="margin-top: 12px; color: #444; font-size: 10px;">
+      Forged for Legacy, Worn to Inspire
+    </p>
+  </td></tr>
+
+</table>
+
+<!-- ===== HIGH-RES IMAGE LIST FOR DESIGNER ===== -->
+<!--
+ALL IMAGES USED (high-res, downloadable):
+
+ADVENTURE / VOYAGER
+1. Voyager Gold Compass Pendant (Single Diamond) — hero:
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant_Single_Diamond.png?v=1778681476
+2. Voyager Gold with Diamonds (variation):
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant_Necklace.jpg
+3. Voyager Platinum (variation):
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Platinum_Compass_Pendant.jpg
+4. Voyager Silver (variation):
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Silver_Compass_Pendant.jpg
+
+BOLD / BEASTS
+5. Empire Lion Pendant (Gold):
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Gold_Lion_Pendant_Empire_Proclamation_Jewelry.png
+6. Alpha Wolf Pendant (Platinum):
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Alpha_Platinum_Wolf_Necklace_Pendant_Proclamation_Jewelry.jpg
+
+FAITH
+7. Saint Michael Pendant (Gold):
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160
+8. Faith Cross Pendant (Gold):
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Faith_Gold_Cross_Pendant_Necklace_Proclamation_Jewelry.jpg?v=1775935803
+
+LEGACY
+9. Memento Mori Gold Skull Pendant — [NEEDS INFO: image URL not in catalog, only the tag version exists. Please provide the gold skull image.]
+10. Stoic 4 Virtues Pendant:
+   https://cdn.shopify.com/s/files/1/0247/5725/files/Silver_Stoic_Pendant_4_Virtues_Proclamation_Jewelry.jpg?v=1764047333
+
+PRODUCT URLS:
+- Voyager (gold): https://www.proclamationjewelry.com/products/voyager-compass-pendant-gold
+- Voyager (gold w/ diamonds): https://www.proclamationjewelry.com/products/voyager-gold-compass-pendant-diamond
+- Voyager (platinum): https://www.proclamationjewelry.com/products/platinum-compass-pendant
+- Voyager (silver): https://www.proclamationjewelry.com/products/silver-compass-pendant
+- Empire Lion (gold): https://www.proclamationjewelry.com/products/gold-lion-pendant
+- Alpha Wolf (platinum): https://www.proclamationjewelry.com/products/alpha-platinum-wolf-pendant
+- Saint Michael (gold): https://www.proclamationjewelry.com/products/saint-michael-gold-pendant
+- Faith Cross (gold): https://www.proclamationjewelry.com/products/faith-gold-cross-pendant
+- Memento Mori Gold Skull: https://www.proclamationjewelry.com/products/memento-mori-gold-skull-pendant
+- Stoic 4 Virtues: https://www.proclamationjewelry.com/products/stoic-4-virtues-pendant-silver
+-->
+
+</body>
+</html>
