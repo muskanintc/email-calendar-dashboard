@@ -1,60 +1,61 @@
+<!--
+=======================================================
+EMAIL: Father's Day Last Call — Most Loved Platinum
+CLIENT: Proclamation Jewelry
+TYPE: Promotional (Urgency + Platinum best-sellers)
+DATE: 2026-06-15
+
+v2 (per client feedback 2026-06-13):
+- Simple deadline hero ("today is the last day, order today for guaranteed delivery") + a platinum jewelry banner image. Dropped the long Nick intro and the 3-category quick-shop row.
+- Focus = best-selling platinum PIECES (not just pendants). "For the man who deserves the very best."
+- Five products swapped to client's picks:
+  1. 2.5mm Platinum Franco Chain
+  2. 2mm Platinum Franco Chain
+  3. Imperium Platinum Skull Pendant with Diamonds (featured)
+  4. 4mm Platinum Miami Cuban Link Chain
+  5. Stoic 4 Virtues Platinum Pendant
+- Body copy rewritten to client's language (platinum = most durable, handcrafted, conflict-free lab-grown diamonds, "five pieces clients come back to").
+
+NOTE: The 2.5mm Platinum Franco product page currently uses white-metal franco photography (same as the silver franco). Designer may swap if a dedicated platinum 2.5mm shot exists.
+
+SUBJECT / PREVIEW: see SLPL block below.
+=======================================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Father's Day Last Call + Most Loved Platinum — Proclamation Jewelry</title>
+<title>Father's Day Last Call — Most Loved Platinum — Proclamation Jewelry</title>
 <style>
   body { margin: 0; padding: 0; background: #f4f4f4; font-family: 'Optima', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; color: #333333; }
   .email-wrapper { max-width: 600px; margin: 0 auto; background: #ffffff; }
 
-  /* SUBJECT LINE + PREVIEW TEXT (visible) */
   .slpl-block { background: #0A0A0A; padding: 16px 24px; }
   .slpl-block .sl-label { color: #D4AF37; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 4px 0; font-family: 'Trebuchet MS', sans-serif; }
   .slpl-block .sl-text { color: #ffffff; font-size: 14px; margin: 0 0 12px 0; line-height: 1.4; }
   .slpl-block .pt-label { color: #D4AF37; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 4px 0; font-family: 'Trebuchet MS', sans-serif; }
   .slpl-block .pt-text { color: #cccccc; font-size: 12px; margin: 0; line-height: 1.4; }
 
-  /* URGENCY BANNER */
-  .urgency-banner { background: #B31B1B; padding: 20px 24px; text-align: center; }
-  .urgency-banner h1 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 22px; margin: 0 0 6px 0; letter-spacing: 1px; text-transform: uppercase; }
-  .urgency-banner p { color: #ffffff; font-size: 14px; margin: 0; opacity: 0.9; }
+  .urgency-banner { background: #B31B1B; padding: 18px 24px; text-align: center; }
+  .urgency-banner h1 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 20px; margin: 0 0 6px 0; letter-spacing: 1px; text-transform: uppercase; }
+  .urgency-banner p { color: #ffffff; font-size: 14px; margin: 0; opacity: 0.92; }
 
-  /* NICK'S INTRO */
-  .nick-section { padding: 28px 24px 20px; }
-  .nick-section p { font-size: 15px; line-height: 1.7; color: #333333; margin: 0 0 14px 0; }
+  .hero-img { position: relative; }
+  .hero-img img { width: 100%; display: block; }
+  .hero-overlay { background: #0A0A0A; padding: 26px 24px; text-align: center; }
+  .hero-overlay .eyebrow { color: #D4AF37; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 10px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .hero-overlay h2 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 24px; margin: 0; letter-spacing: 1px; line-height: 1.25; }
 
-  /* CTA BUTTON */
-  .cta-wrap { text-align: center; padding: 8px 0 20px; }
-  .cta-btn { display: inline-block; background: #B31B1B; color: #ffffff; text-decoration: none; padding: 14px 36px; font-family: 'Trebuchet MS', sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
-  .cta-btn.gold { background: #D4AF37; color: #0A0A0A; }
+  .nick-plat { padding: 26px 24px 10px; }
+  .nick-plat p { font-size: 15px; line-height: 1.7; color: #333333; margin: 0 0 14px 0; }
 
-  /* 3-COLUMN CATEGORY CARDS */
-  .category-row { display: flex; gap: 0; }
-  .category-card { flex: 1; text-align: center; position: relative; overflow: hidden; }
-  .category-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
-  .category-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(10,10,10,0.85)); padding: 16px 8px 14px; }
-  .category-overlay h3 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 13px; margin: 0 0 8px 0; letter-spacing: 1.5px; text-transform: uppercase; }
-  .category-overlay a { color: #D4AF37; font-size: 11px; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; font-family: 'Trebuchet MS', sans-serif; font-weight: bold; }
-
-  /* PLATINUM SECTION */
-  .platinum-header { background: #0A0A0A; padding: 32px 24px; text-align: center; }
-  .platinum-header .eyebrow { color: #D4AF37; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 8px 0; font-family: 'Trebuchet MS', sans-serif; }
-  .platinum-header h2 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 24px; margin: 0 0 6px 0; letter-spacing: 1px; }
-  .platinum-header .sub { color: #E4E4E4; font-size: 14px; margin: 0; line-height: 1.5; }
-
-  /* HERO PLATINUM PRODUCT */
   .plat-hero { position: relative; }
   .plat-hero img { width: 100%; display: block; }
   .plat-hero-info { background: #0A0A0A; padding: 20px 24px; text-align: center; }
   .plat-hero-info h3 { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 18px; margin: 0 0 6px 0; letter-spacing: 1px; }
   .plat-hero-info p { color: #E4E4E4; font-size: 13px; margin: 0 0 16px 0; line-height: 1.6; }
 
-  /* NICK PLATINUM COPY */
-  .nick-plat { padding: 24px 24px 8px; }
-  .nick-plat p { font-size: 15px; line-height: 1.7; color: #333333; margin: 0 0 14px 0; }
-
-  /* 2-COLUMN PRODUCT GRID */
   .product-grid { display: flex; gap: 0; }
   .product-cell { flex: 1; background: #0A0A0A; text-align: center; border-right: 1px solid #1a1a1a; }
   .product-cell:last-child { border-right: none; }
@@ -64,18 +65,9 @@
   .product-cell .info p { color: #E4E4E4; font-size: 11px; margin: 0 0 12px 0; line-height: 1.5; }
   .product-cell .info a { color: #D4AF37; font-size: 10px; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; font-family: 'Trebuchet MS', sans-serif; font-weight: bold; border: 1px solid #D4AF37; padding: 8px 16px; display: inline-block; }
 
-  /* SINGLE FEATURED */
-  .plat-single { background: #0A0A0A; text-align: center; }
-  .plat-single img { width: 60%; margin: 0 auto; display: block; padding-top: 20px; }
-  .plat-single .info { padding: 16px 24px 24px; }
-  .plat-single .info h4 { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 15px; margin: 0 0 4px 0; letter-spacing: 0.5px; }
-  .plat-single .info p { color: #E4E4E4; font-size: 12px; margin: 0 0 14px 0; line-height: 1.5; }
-  .plat-single .info a { color: #D4AF37; font-size: 10px; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; font-family: 'Trebuchet MS', sans-serif; font-weight: bold; border: 1px solid #D4AF37; padding: 8px 16px; display: inline-block; }
-
-  /* COLLECTION CTA */
+  .cta-btn { display: inline-block; background: #D4AF37; color: #0A0A0A; text-decoration: none; padding: 14px 36px; font-family: 'Trebuchet MS', sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
   .collection-cta { background: #0A0A0A; padding: 8px 24px 32px; text-align: center; }
 
-  /* TRUST BADGES */
   .trust-section { background: #f8f8f8; padding: 24px; text-align: center; border-top: 1px solid #e0e0e0; }
   .trust-row { display: flex; justify-content: center; gap: 32px; }
   .trust-badge { text-align: center; }
@@ -84,19 +76,14 @@
   .trust-badge .source { font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 2px 0; font-family: 'Trebuchet MS', sans-serif; }
   .trust-badge .count { font-size: 11px; color: #999; margin: 0; }
 
-  /* FOOTER */
   .footer { background: #0A0A0A; padding: 24px; text-align: center; }
   .footer p { color: #666; font-size: 11px; margin: 0 0 6px 0; line-height: 1.5; }
   .footer a { color: #D4AF37; text-decoration: none; }
 
-  /* RESPONSIVE */
   @media (max-width: 480px) {
-    .urgency-banner h1 { font-size: 18px; }
-    .category-row { flex-direction: column; }
-    .category-card img { height: 180px; }
+    .urgency-banner h1 { font-size: 17px; }
+    .hero-overlay h2 { font-size: 20px; }
     .product-grid { flex-direction: column; }
-    .platinum-header h2 { font-size: 20px; }
-    .plat-single img { width: 80%; }
     .trust-row { flex-direction: column; gap: 16px; }
   }
 </style>
@@ -104,168 +91,98 @@
 <body>
 <div class="email-wrapper">
 
-  <!-- ============================================
-       SUBJECT LINE + PREVIEW TEXT (visible at top)
-       ============================================ -->
+  <!-- SUBJECT LINE + PREVIEW TEXT (visible) -->
   <div class="slpl-block">
     <p class="sl-label">Subject Line Options</p>
-    <p class="sl-text">1. Today's the last day. Order now for Father's Day.<br>
-    2. Last call. Platinum for the man who has everything.<br>
-    3. If you haven't ordered yet, this is it.</p>
+    <p class="sl-text">1. Five platinum pieces. One last day to order.<br>
+    2. He deserves platinum. You have until today.<br>
+    3. The most durable metal we work with, and why it matters.</p>
     <p class="pt-label">Preview Text Options</p>
-    <p class="pt-text">1. Chains, silver, and platinum. Order today for guaranteed Father's Day delivery.<br>
-    2. Our five most loved platinum pieces, and your last window to get them there in time.<br>
-    3. The gift he'll keep forever. But you need to move today.</p>
+    <p class="pt-text">1. Last day for guaranteed Father's Day delivery. Our best selling platinum, handcrafted and diamond set.<br>
+    2. Two Franco chains, a Miami Cuban, a diamond skull, and the Stoic. The platinum he keeps for life.<br>
+    3. Order today. Handcrafted platinum, conflict free lab grown diamonds.</p>
   </div>
 
-  <!-- ============================================
-       URGENCY BANNER — Full width Cornell Red
-       ============================================ -->
+  <!-- URGENCY / DEADLINE -->
   <div class="urgency-banner">
-    <h1>Last Day to Order for Father's Day</h1>
-    <p>Order today. Delivered in time. Guaranteed.</p>
+    <h1>Today Is the Last Day to Order for Father's Day</h1>
+    <p>Order today for guaranteed delivery.</p>
   </div>
 
-  <!-- ============================================
-       NICK'S PERSONAL NOTE — Shipping deadline
-       ============================================ -->
-  <div class="nick-section">
-    <p>I know. You've been thinking about it.</p>
-
-    <p>But today's the day. If you want it in his hands by Father's Day, this is your last window for chains, silver, and platinum. We need your order in today to make that happen.</p>
-
-    <p>If you already know what he'd love, go grab it. If you're still deciding, keep scrolling. I've got something for you.</p>
-  </div>
-
-  <!-- ============================================
-       3-COLUMN CATEGORY QUICK SHOP
-       ============================================ -->
-  <!-- DESIGN NOTE: Three categories side by side. Each is a product image
-       with a dark gradient overlay at the bottom showing the category name
-       and "Shop Now" link. On mobile, these stack vertically. -->
-  <div class="category-row">
-
-    <!-- CHAINS -->
-    <div class="category-card">
-      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_GoldChain_10__02__16x9.jpg?v=1775933399&width=600" alt="Gold Franco Chain on model">
-      <div class="category-overlay">
-        <h3>Chains</h3>
-        <a href="https://www.proclamationjewelry.com/collections/diamond-cut-franco-chains">Shop Now</a>
-      </div>
+  <!-- PLATINUM HERO BANNER (image + positioning) -->
+  <!-- DESIGN NOTE: Full-width platinum jewelry beauty shot. Designer may swap for a lifestyle/on-model platinum image. -->
+  <div class="hero-img">
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_Franco_Platinum_Proclamation_Jewelry_Lion_Clasp.jpg?v=1741060508" alt="Platinum Franco chain with signature clasp">
+    <div class="hero-overlay">
+      <p class="eyebrow">Most Loved Platinum</p>
+      <h2>For the Man Who Deserves the Very Best</h2>
     </div>
-
-    <!-- SILVER -->
-    <div class="category-card">
-      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Silver_Saint_Michael_Necklace.jpg?v=1764047233&width=600" alt="Silver Saint Michael Pendant">
-      <div class="category-overlay">
-        <h3>Silver</h3>
-        <a href="https://www.proclamationjewelry.com/collections/silver-jewelry-for-men">Shop Now</a>
-      </div>
-    </div>
-
-    <!-- PLATINUM -->
-    <div class="category-card">
-      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Platinum_Miami_Cuban_Link_Chain_4mm.jpg?v=1764047267&width=600" alt="Platinum Miami Cuban Chain">
-      <div class="category-overlay">
-        <h3>Platinum</h3>
-        <a href="https://www.proclamationjewelry.com/collections/platinum-jewelry-for-men">Shop Now</a>
-      </div>
-    </div>
-
   </div>
 
-  <!-- ============================================
-       PLATINUM SECTION HEADER
-       ============================================ -->
-  <div class="platinum-header">
-    <p class="eyebrow">The Platinum Collection</p>
-    <h2>For the Man Who Deserves the Very Best</h2>
-    <p class="sub">Five of our most loved platinum pendants. Handcrafted. Set with diamonds. Built to last generations.</p>
-  </div>
-
-  <!-- ============================================
-       NICK'S PLATINUM COPY
-       ============================================ -->
+  <!-- BODY COPY (client language) -->
   <div class="nick-plat">
-    <p>People ask me all the time why we offer platinum when gold is our signature. The answer is simple. Some men want something rarer. Something heavier in the hand. Something that doesn't need polishing, doesn't tarnish, doesn't fade.</p>
-
-    <p>Platinum is the most durable precious metal we work with. Every pendant below is handcrafted in our studio, set with conflict free lab grown diamonds, and finished to a standard that most jewelers won't even attempt.</p>
-
+    <p>Platinum is the most durable precious metal we work with.</p>
+    <p>Every piece below is handcrafted in our studio, set with conflict free lab grown diamonds, and finished to a standard most jewelers won't even attempt.</p>
     <p>These are the five pieces our clients come back to again and again.</p>
   </div>
 
-  <!-- ============================================
-       FEATURED: CHAMPION — Full width hero
-       ============================================ -->
+  <!-- FEATURED: IMPERIUM (full width) -->
   <div class="plat-hero">
-    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Platinum_Pendant.jpg?v=1775933160&width=1200" alt="Champion Platinum Saint Michael Pendant">
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Usurper_Platinum_Skull_Diamond_Pendant.jpg?v=1741357337" alt="Imperium Platinum Skull Pendant with Diamonds">
     <div class="plat-hero-info">
-      <h3>Champion</h3>
-      <p>Platinum Saint Michael Pendant. Archangel vanquishing Lucifer on the front. "Quis ut Deus" engraved on the reverse. Our most requested platinum piece.</p>
-      <a href="https://www.proclamationjewelry.com/products/champion-platinum-saint-michael-pendant" class="cta-btn gold">Shop Now</a>
+      <h3>Imperium</h3>
+      <p>Platinum Skull Pendant with Diamonds. A crowned skull that stands for dominion over oneself, with a throne engraved on the reverse. Our boldest platinum statement, fully diamond set.</p>
+      <a href="https://www.proclamationjewelry.com/products/imperium-platinum-skull-pendant" class="cta-btn">Shop Now</a>
     </div>
   </div>
 
-  <!-- ============================================
-       2-COLUMN: ALPHA WOLF + VOYAGER
-       ============================================ -->
+  <!-- 2-COLUMN: 2.5mm FRANCO + 2mm FRANCO -->
   <div class="product-grid">
-
     <div class="product-cell">
-      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Alpha_Platinum_Wolf_Necklace_Pendant_Proclamation_Jewelry.jpg?v=1775932900&width=600" alt="Alpha Platinum Wolf Pendant">
+      <!-- DESIGN NOTE: 2.5mm Platinum Franco product page uses white-metal franco photography on-site. -->
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_Silver_Franco_Chain_Necklace.jpg?v=1722964125" alt="2.5mm Platinum Franco Chain">
       <div class="info">
-        <h4>Alpha</h4>
-        <p>Platinum Wolf Pendant with Diamonds. Diamond eyes, dream catcher on the reverse.</p>
-        <a href="https://www.proclamationjewelry.com/products/alpha-platinum-wolf-pendant">Shop Now</a>
+        <h4>2.5mm Platinum Franco</h4>
+        <p>Slim, sharp, and built to last a lifetime. Platinum never tarnishes.</p>
+        <a href="https://www.proclamationjewelry.com/products/2-5mm-platinum-franco-chain-necklace">Shop Now</a>
       </div>
     </div>
-
     <div class="product-cell">
-      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Platinum_Compass_Pendant.jpg?v=1764047480&width=600" alt="Voyager Platinum Compass Pendant">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Franco_Regular_Platinum_2mm.jpg?v=1765811069" alt="2mm Platinum Franco Chain">
       <div class="info">
-        <h4>Voyager</h4>
-        <p>Platinum Compass Pendant. Compass rose front, sailing ship on the reverse.</p>
-        <a href="https://www.proclamationjewelry.com/products/platinum-compass-pendant">Shop Now</a>
+        <h4>2mm Platinum Franco</h4>
+        <p>Our finest everyday platinum chain. Understated, and made to wear forever.</p>
+        <a href="https://www.proclamationjewelry.com/products/2mm-platinum-franco-chain-necklace">Shop Now</a>
       </div>
     </div>
-
   </div>
 
-  <!-- ============================================
-       2-COLUMN: CARPE DIEM + EMPIRE
-       ============================================ -->
+  <!-- 2-COLUMN: 4mm MIAMI CUBAN + STOIC -->
   <div class="product-grid">
-
     <div class="product-cell">
-      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Platinum_Skull_Pendant_Carpe_Diem.jpg?v=1775935327&width=600" alt="Carpe Diem Platinum Skull Pendant">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Platinum_Miami_Cuban_Link_Chain_4mm.jpg?v=1741062085" alt="4mm Platinum Miami Cuban Link Chain">
       <div class="info">
-        <h4>Carpe Diem</h4>
-        <p>Platinum Skull Pendant with Diamonds. "Seize the Day." Hourglass engraved on the reverse.</p>
-        <a href="https://www.proclamationjewelry.com/products/carpe-diem-platinum-skull-pendant">Shop Now</a>
+        <h4>4mm Platinum Miami Cuban</h4>
+        <p>Heavier links, serious presence. The Miami Cuban in pure platinum.</p>
+        <a href="https://www.proclamationjewelry.com/products/4mm-miami-cuban-link-chain-platinum-necklace">Shop Now</a>
       </div>
     </div>
-
     <div class="product-cell">
-      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Empire_Platinum_Lion_Pendant.jpg?v=1775933700&width=600" alt="Empire Platinum Lion Pendant">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Stoic_Penadnt_Platinum.jpg?v=1741361843" alt="Stoic 4 Virtues Platinum Pendant">
       <div class="info">
-        <h4>Empire</h4>
-        <p>Platinum Lion Head Pendant with Diamonds. Power, leadership, the beast and king within.</p>
-        <a href="https://www.proclamationjewelry.com/products/empire-platinum-lion-pendant-diamonds">Shop Now</a>
+        <h4>Stoic 4 Virtues</h4>
+        <p>Platinum pendant. A compass rose for Courage, Justice, Wisdom, and Temperance, with Marcus Aurelius on the reverse.</p>
+        <a href="https://www.proclamationjewelry.com/products/stoic-4-virtues-platinum-pendant">Shop Now</a>
       </div>
     </div>
-
   </div>
 
-  <!-- ============================================
-       COLLECTION CTA
-       ============================================ -->
+  <!-- COLLECTION CTA -->
   <div class="collection-cta">
-    <a href="https://www.proclamationjewelry.com/collections/platinum-jewelry-for-men" class="cta-btn gold">Shop All Platinum</a>
+    <a href="https://www.proclamationjewelry.com/collections/platinum-jewelry-for-men" class="cta-btn">Shop All Platinum</a>
   </div>
 
-  <!-- ============================================
-       TRUST BADGES
-       ============================================ -->
+  <!-- TRUST BADGES -->
   <div class="trust-section">
     <div class="trust-row">
       <div class="trust-badge">
@@ -283,9 +200,7 @@
     </div>
   </div>
 
-  <!-- ============================================
-       FOOTER
-       ============================================ -->
+  <!-- FOOTER -->
   <div class="footer">
     <p>Proclamation Jewelry | Houston, TX</p>
     <p>Handcrafted in the USA.</p>
@@ -293,5 +208,23 @@
   </div>
 
 </div>
+
+<!--
+ALL IMAGES USED (high-res):
+1. Hero (Platinum Franco w/ clasp): https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_Franco_Platinum_Proclamation_Jewelry_Lion_Clasp.jpg?v=1741060508
+2. Imperium Platinum Skull (Diamonds): https://cdn.shopify.com/s/files/1/0247/5725/files/Usurper_Platinum_Skull_Diamond_Pendant.jpg?v=1741357337
+3. 2.5mm Platinum Franco: https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_Silver_Franco_Chain_Necklace.jpg?v=1722964125  (white-metal franco; product-page image)
+4. 2mm Platinum Franco: https://cdn.shopify.com/s/files/1/0247/5725/files/Franco_Regular_Platinum_2mm.jpg?v=1765811069
+5. 4mm Platinum Miami Cuban: https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Platinum_Miami_Cuban_Link_Chain_4mm.jpg?v=1741062085
+6. Stoic 4 Virtues Platinum: https://cdn.shopify.com/s/files/1/0247/5725/files/Proclamation_Jewelry_Stoic_Penadnt_Platinum.jpg?v=1741361843
+
+PRODUCT URLS:
+- 2.5mm Platinum Franco: https://www.proclamationjewelry.com/products/2-5mm-platinum-franco-chain-necklace
+- 2mm Platinum Franco: https://www.proclamationjewelry.com/products/2mm-platinum-franco-chain-necklace
+- 4mm Platinum Miami Cuban: https://www.proclamationjewelry.com/products/4mm-miami-cuban-link-chain-platinum-necklace
+- Imperium Platinum Skull: https://www.proclamationjewelry.com/products/imperium-platinum-skull-pendant
+- Stoic 4 Virtues Platinum: https://www.proclamationjewelry.com/products/stoic-4-virtues-platinum-pendant
+-->
+
 </body>
 </html>
