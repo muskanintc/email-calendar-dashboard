@@ -96,7 +96,7 @@ SUBJECT / PREVIEW: see block below.
 <!-- ===== DESIGNER NOTE ===== -->
 <div class="designer-note">
   <p style="margin:0;"><strong>DESIGN DIRECTION</strong><br>
-  Data-driven social proof email. Three real best sellers, ranked 1 to 3 from actual sales. Clean white background, LogOX brand colors (orange #F37021, dark blue #24374A). Hero is a lifestyle/in-use banner (placeholder below, swap for a real in-the-field shot). Each product card shows the product render, a short why-it-sells line, price, and its own Shop Now. Reviews from "Fellow Woodsmen". Tiered rewards reminder near the end. Trust badges in footer.</p>
+  Data-driven social proof email. Three real best sellers, ranked 1 to 3 from actual sales. Clean white background, LogOX brand colors (orange #F37021, dark blue #24374A). Hero is a lifestyle/in-use banner (placeholder below, swap for a real in-the-field shot). Each product card shows the product render, a short why-it-sells line, a real review pulled from that product's page, price, and its own Shop Now. Forester Package is on sale ($444 to $395, save $49). No tiered-rewards block (that's a flow, not this campaign). Trust badges in footer. NOTE: TimberOX and 3-in-1 reviews are real, pulled from the product pages. Forester has no server-rendered review to auto-pull, so its review slot is a designer placeholder.</p>
 </div>
 
 <table class="email-wrapper" width="600" cellpadding="0" cellspacing="0" role="presentation">
@@ -138,6 +138,10 @@ SUBJECT / PREVIEW: see block below.
   <tr><td class="content-pad" style="padding: 0 36px 28px;">
     <p class="prod-name">TimberOX Summit 30-Ton Log Splitter</p>
     <p class="prod-copy">The heavy hitter. 30 tons of splitting force that powers through the rounds most splitters bounce off of. When people are serious about their firewood, this is the one they reach for.</p>
+    <div class="review-card" style="margin:0 0 16px;">
+      <p class="review-text">"This machine is shockingly fast, and set up with a bucking table and a trailer it simply slings split firewood. The care taken in its design is evident, and the working height is fantastic."</p>
+      <p class="review-name">Jon &mdash; verified review, TimberOX product page</p>
+    </div>
     <p class="prod-price">$5,995</p>
     <a href="https://www.thelogox.com/products/timberox" class="cta-button">Shop Now</a>
   </td></tr>
@@ -154,6 +158,10 @@ SUBJECT / PREVIEW: see block below.
   <tr><td class="content-pad" style="padding: 0 36px 28px;">
     <p class="prod-name">LogOX 3-in-1 Forestry MultiTool</p>
     <p class="prod-copy">The one that started it all, and still a top seller. Lift, roll, and cant your logs without wrecking your back. Three tools in one, and the reason so many woodlots keep one within arm's reach.</p>
+    <div class="review-card" style="margin:0 0 16px;">
+      <p class="review-text">"Simply the strongest canthook I've ever used, and a back saving beast when it comes to picking up logs!"</p>
+      <p class="review-name">Josh D. &mdash; verified review, 3-in-1 product page</p>
+    </div>
     <p class="prod-price">$289</p>
     <a href="https://www.thelogox.com/products/logox-3-in-1" class="cta-button">Shop Now</a>
   </td></tr>
@@ -169,46 +177,17 @@ SUBJECT / PREVIEW: see block below.
   </td></tr>
   <tr><td class="content-pad" style="padding: 0 36px 28px;">
     <p class="prod-name">LogOX Forester Package</p>
-    <p class="prod-copy">The complete setup, bundled. Everything you need to lift, move, and process logs in one package, which is exactly why it keeps landing in carts. The smartest way to gear up at once.</p>
-    <p class="prod-price">$395</p>
-    <a href="https://www.thelogox.com/products/forester-package" class="cta-button">Shop Now</a>
+    <p class="prod-copy">The complete setup, bundled. Everything you need to lift, move, and process logs in one package, which is exactly why it keeps landing in carts. The smartest way to gear up at once, and right now it's on sale.</p>
+    <!-- DESIGNER NOTE: pull the top review from the Forester Package product page and drop it in here (matching the review-card style above). No server-rendered review was available to auto-pull. -->
+    <div class="review-card" style="margin:0 0 16px;">
+      <p class="review-text" style="color:#999;">[DESIGNER: insert top review from the Forester Package product page here]</p>
+      <p class="review-name">From thelogox.com/products/forester-package</p>
+    </div>
+    <p class="prod-price"><span style="color:#999; text-decoration:line-through; font-size:16px; font-weight:400;">$444</span> &nbsp;$395 &nbsp;<span style="color:#F37021; font-size:13px; font-weight:800; letter-spacing:1px;">SAVE $49</span></p>
+    <a href="https://www.thelogox.com/products/forester-package" class="cta-button">Shop the Sale</a>
   </td></tr>
 
   <tr><td><hr class="divider"></td></tr>
-
-  <!-- TIERED REWARDS -->
-  <tr><td class="content-pad" style="padding: 32px 36px 28px;">
-    <p class="section-head">The More You Haul, the More You Get</p>
-    <div class="reward-box">
-      <p class="reward-line">
-        <strong>$150+</strong> &nbsp;Free shipping<br>
-        <strong>$250+</strong> &nbsp;Free gifts in the box<br>
-        <strong>$500+</strong> &nbsp;Free LogOX trucker hat
-      </p>
-    </div>
-  </td></tr>
-
-  <tr><td><hr class="divider"></td></tr>
-
-  <!-- REVIEWS -->
-  <tr><td class="content-pad" style="padding: 32px 36px 28px;">
-    <p class="section-head">Heard From Fellow Woodsmen</p>
-
-    <div class="review-card">
-      <p class="review-text">"Quality Products. I have most all of the LogOX products and they are well made, work well and very useful. Also made in the USA!"</p>
-      <p class="review-name">Paul R.</p>
-    </div>
-
-    <div class="review-card">
-      <p class="review-text">"Saves my back every single time. I don't know how I worked my woodlot without the 3-in-1. Buy it, you won't regret it."</p>
-      <p class="review-name">Dustin S.</p>
-    </div>
-
-    <div class="review-card">
-      <p class="review-text">"The Forester Package was the right call. Got everything at once and was working the same afternoon it arrived."</p>
-      <p class="review-name">Christopher W.</p>
-    </div>
-  </td></tr>
 
   <!-- SHOP ALL CTA -->
   <tr><td style="padding: 0 36px 36px; text-align: center;">
