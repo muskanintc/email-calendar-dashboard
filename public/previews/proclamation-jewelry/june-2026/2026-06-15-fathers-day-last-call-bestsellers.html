@@ -1,0 +1,228 @@
+<!--
+=======================================================
+EMAIL: Father's Day Last Call — Best Sellers
+CLIENT: Proclamation Jewelry
+TYPE: Promotional (Urgency + Best Sellers)
+DATE: 2026-06-15
+
+v3 (per client feedback 2026-06-15):
+- Focus changed from PLATINUM to BEST SELLERS. No platinum messaging.
+- Five client-specified best sellers:
+  1. CHAMPION, Gold Saint Michael Pendant (featured)  /products/saint-michael-gold-pendant
+  2. 5mm Diamond Cut Franco Chain, 14k Yellow Gold     /products/5mm-diamond-cut-franco-chain-14k-gold
+  3. 5mm Silver Franco Chain                           /products/5mm-franco-chain-silver
+  4. Voyager, Gold Compass Pendant                     /products/gold-compass-pendant
+  5. 3.5mm Diamond Cut Franco Chain, 14k Yellow Gold (USA Made)  /products/3-5mm-diamond-cut-franco-chain-14k-yellow-gold-usa
+- Kept: last day / order today for guaranteed delivery framing, Nick founder voice, Shop Now CTAs, no pricing.
+- Collection CTA -> /collections/bestsellers
+- Replaces 2026-06-15-fathers-day-last-call-platinum.html
+=======================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Father's Day Last Call — Best Sellers — Proclamation Jewelry</title>
+<style>
+  body { margin: 0; padding: 0; background: #f4f4f4; font-family: 'Optima', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; color: #333333; }
+  .email-wrapper { max-width: 600px; margin: 0 auto; background: #ffffff; }
+
+  .slpl-block { background: #0A0A0A; padding: 16px 24px; }
+  .slpl-block .sl-label { color: #D4AF37; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 4px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .slpl-block .sl-text { color: #ffffff; font-size: 14px; margin: 0 0 12px 0; line-height: 1.4; }
+  .slpl-block .pt-label { color: #D4AF37; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 4px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .slpl-block .pt-text { color: #cccccc; font-size: 12px; margin: 0; line-height: 1.4; }
+
+  .urgency-banner { background: #B31B1B; padding: 18px 24px; text-align: center; }
+  .urgency-banner h1 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 20px; margin: 0 0 6px 0; letter-spacing: 1px; text-transform: uppercase; }
+  .urgency-banner p { color: #ffffff; font-size: 14px; margin: 0; opacity: 0.92; }
+
+  .hero-img { position: relative; }
+  .hero-img img { width: 100%; display: block; }
+  .hero-overlay { background: #0A0A0A; padding: 26px 24px; text-align: center; }
+  .hero-overlay .eyebrow { color: #D4AF37; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 10px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .hero-overlay h2 { color: #ffffff; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 24px; margin: 0; letter-spacing: 1px; line-height: 1.25; }
+
+  .nick-note { padding: 26px 24px 10px; }
+  .nick-note p { font-size: 15px; line-height: 1.7; color: #333333; margin: 0 0 14px 0; }
+
+  .feature-hero { position: relative; }
+  .feature-hero img { width: 100%; display: block; }
+  .feature-info { background: #0A0A0A; padding: 20px 24px; text-align: center; }
+  .feature-info .rank { color: #D4AF37; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 8px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .feature-info h3 { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 18px; margin: 0 0 6px 0; letter-spacing: 1px; }
+  .feature-info p { color: #E4E4E4; font-size: 13px; margin: 0 0 16px 0; line-height: 1.6; }
+
+  .product-grid { display: flex; gap: 0; }
+  .product-cell { flex: 1; background: #0A0A0A; text-align: center; border-right: 1px solid #1a1a1a; }
+  .product-cell:last-child { border-right: none; }
+  .product-cell img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+  .product-cell .info { padding: 14px 12px 16px; }
+  .product-cell .info h4 { color: #D4AF37; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 13px; margin: 0 0 4px 0; letter-spacing: 0.5px; }
+  .product-cell .info p { color: #E4E4E4; font-size: 11px; margin: 0 0 12px 0; line-height: 1.5; }
+  .product-cell .info a { color: #D4AF37; font-size: 10px; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; font-family: 'Trebuchet MS', sans-serif; font-weight: bold; border: 1px solid #D4AF37; padding: 8px 16px; display: inline-block; }
+
+  .cta-btn { display: inline-block; background: #D4AF37; color: #0A0A0A; text-decoration: none; padding: 14px 36px; font-family: 'Trebuchet MS', sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+  .collection-cta { background: #0A0A0A; padding: 8px 24px 32px; text-align: center; }
+
+  .trust-section { background: #f8f8f8; padding: 24px; text-align: center; border-top: 1px solid #e0e0e0; }
+  .trust-row { display: flex; justify-content: center; gap: 32px; }
+  .trust-badge { text-align: center; }
+  .trust-badge .stars { color: #D4AF37; font-size: 16px; margin: 0 0 4px 0; }
+  .trust-badge .rating { font-family: 'Trebuchet MS', sans-serif; font-size: 18px; font-weight: bold; color: #0A0A0A; margin: 0 0 2px 0; }
+  .trust-badge .source { font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 2px 0; font-family: 'Trebuchet MS', sans-serif; }
+  .trust-badge .count { font-size: 11px; color: #999; margin: 0; }
+
+  .footer { background: #0A0A0A; padding: 24px; text-align: center; }
+  .footer p { color: #666; font-size: 11px; margin: 0 0 6px 0; line-height: 1.5; }
+  .footer a { color: #D4AF37; text-decoration: none; }
+
+  @media (max-width: 480px) {
+    .urgency-banner h1 { font-size: 17px; }
+    .hero-overlay h2 { font-size: 20px; }
+    .product-grid { flex-direction: column; }
+    .trust-row { flex-direction: column; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+
+  <!-- SUBJECT LINE + PREVIEW TEXT (visible) -->
+  <div class="slpl-block">
+    <p class="sl-label">Subject Line Options</p>
+    <p class="sl-text">1. The five he is most likely to actually wear.<br>
+    2. Last day to order. Start with our best sellers.<br>
+    3. Our most loved pieces, and the clock is running.</p>
+    <p class="pt-label">Preview Text Options</p>
+    <p class="pt-text">1. Order today for guaranteed Father's Day delivery. The pieces clients reach for first.<br>
+    2. Saint Michael, the Franco chains, the Voyager compass. Our best sellers.<br>
+    3. When you are not sure what he wants, start with what everyone buys.</p>
+  </div>
+
+  <!-- URGENCY / DEADLINE -->
+  <div class="urgency-banner">
+    <h1>Today Is the Last Day to Order for Father's Day</h1>
+    <p>Order today for guaranteed delivery.</p>
+  </div>
+
+  <!-- HERO BANNER -->
+  <!-- DESIGN NOTE: Full-width gold chain beauty shot. Designer may swap for an on-model lifestyle best seller image. -->
+  <div class="hero-img">
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_DiamondCutFrancoChain_YellowGold_Hanging.jpg?v=1722436150" alt="Proclamation best selling gold Franco chain">
+    <div class="hero-overlay">
+      <p class="eyebrow">Our Best Sellers</p>
+      <h2>The Pieces He Will Actually Wear</h2>
+    </div>
+  </div>
+
+  <!-- NICK FOUNDER NOTE (best sellers framing) -->
+  <div class="nick-note">
+    <p>If you are not sure where to start, start here.</p>
+    <p>These are the five pieces that move more than anything else we make. The ones clients come back for, gift, and then buy again for themselves. Handcrafted in our Houston studio and built to be worn every day for the rest of his life.</p>
+    <p>Order today and it arrives in time for Father's Day.</p>
+  </div>
+
+  <!-- FEATURED: CHAMPION SAINT MICHAEL (full width, #1) -->
+  <div class="feature-hero">
+    <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160" alt="CHAMPION, Gold Saint Michael Pendant">
+    <div class="feature-info">
+      <p class="rank">Best Seller No. 1</p>
+      <h3>CHAMPION, Gold Saint Michael</h3>
+      <p>The protector. Saint Michael the Archangel, hand sculpted in solid gold. The piece more fathers ask for by name than any other.</p>
+      <a href="https://www.proclamationjewelry.com/products/saint-michael-gold-pendant" class="cta-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- 2-COLUMN: 5mm GOLD FRANCO + VOYAGER COMPASS -->
+  <div class="product-grid">
+    <div class="product-cell">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_DiamondCutFrancoChain_YellowGold_Hanging.jpg?v=1722436150" alt="5mm Diamond Cut Franco Chain, 14k Yellow Gold">
+      <div class="info">
+        <h4>5mm Gold Franco Chain</h4>
+        <p>Diamond cut, 14k yellow gold. Heavy, brilliant, and impossible to ignore.</p>
+        <a href="https://www.proclamationjewelry.com/products/5mm-diamond-cut-franco-chain-14k-gold">Shop Now</a>
+      </div>
+    </div>
+    <div class="product-cell">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant.jpg?v=1775935835" alt="Voyager, Gold Compass Pendant">
+      <div class="info">
+        <h4>Voyager Gold Compass</h4>
+        <p>For the man who finds his own way. A working compass rose in solid gold.</p>
+        <a href="https://www.proclamationjewelry.com/products/gold-compass-pendant">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2-COLUMN: 5mm SILVER FRANCO + 3.5mm GOLD FRANCO USA -->
+  <div class="product-grid">
+    <div class="product-cell">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_Silver_Franco_Chain_Necklace.jpg?v=1722964594" alt="5mm Silver Franco Chain">
+      <div class="info">
+        <h4>5mm Silver Franco Chain</h4>
+        <p>The same bold Franco profile in solid silver. A best seller on its own.</p>
+        <a href="https://www.proclamationjewelry.com/products/5mm-franco-chain-silver">Shop Now</a>
+      </div>
+    </div>
+    <div class="product-cell">
+      <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3.5mm_DiamondCutFrancoChain_YellowGold_Hanging.jpg?v=1764940093" alt="3.5mm Diamond Cut Franco Chain, 14k Yellow Gold, USA Made">
+      <div class="info">
+        <h4>3.5mm Gold Franco, USA Made</h4>
+        <p>Diamond cut, 14k yellow gold, made in the USA. A refined everyday flex.</p>
+        <a href="https://www.proclamationjewelry.com/products/3-5mm-diamond-cut-franco-chain-14k-yellow-gold-usa">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLLECTION CTA -->
+  <div class="collection-cta">
+    <a href="https://www.proclamationjewelry.com/collections/bestsellers" class="cta-btn">Shop All Best Sellers</a>
+  </div>
+
+  <!-- TRUST BADGES -->
+  <div class="trust-section">
+    <div class="trust-row">
+      <div class="trust-badge">
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="rating">4.8 / 5</p>
+        <p class="source">Trustpilot</p>
+        <p class="count">388 Reviews</p>
+      </div>
+      <div class="trust-badge">
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="rating">4.9 / 5</p>
+        <p class="source">Google Reviews</p>
+        <p class="count">335 Reviews</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>Proclamation Jewelry | Houston, TX</p>
+    <p>Handcrafted in the USA.</p>
+    <p><a href="https://www.proclamationjewelry.com">proclamationjewelry.com</a></p>
+  </div>
+
+</div>
+
+<!--
+ALL IMAGES USED (high-res):
+1. Hero + 5mm Gold Franco: https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_DiamondCutFrancoChain_YellowGold_Hanging.jpg?v=1722436150
+2. CHAMPION Saint Michael (featured): https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160
+3. Voyager Gold Compass: https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant.jpg?v=1775935835
+4. 5mm Silver Franco: https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_Silver_Franco_Chain_Necklace.jpg?v=1722964594
+5. 3.5mm Gold Franco USA: https://cdn.shopify.com/s/files/1/0247/5725/files/3.5mm_DiamondCutFrancoChain_YellowGold_Hanging.jpg?v=1764940093
+
+PRODUCT URLS:
+- CHAMPION Saint Michael: https://www.proclamationjewelry.com/products/saint-michael-gold-pendant
+- 5mm Diamond Cut Franco 14k Gold: https://www.proclamationjewelry.com/products/5mm-diamond-cut-franco-chain-14k-gold
+- 5mm Silver Franco: https://www.proclamationjewelry.com/products/5mm-franco-chain-silver
+- Voyager Gold Compass: https://www.proclamationjewelry.com/products/gold-compass-pendant
+- 3.5mm Diamond Cut Franco 14k Gold USA: https://www.proclamationjewelry.com/products/3-5mm-diamond-cut-franco-chain-14k-yellow-gold-usa
+- Collection (Best Sellers): https://www.proclamationjewelry.com/collections/bestsellers
+-->
+
+</body>
+</html>
