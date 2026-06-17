@@ -110,17 +110,17 @@
       "date": "2026-06-18",
       "day": "Wed",
       "type": "promotional",
-      "status": "pending",
+      "status": "copy-ready",
       "theme": "STOIC PENDANT: YouTube Feature",
       "product": "Stoic 4 Virtues Pendant (Gold, Silver, Platinum)",
-      "shortDescription": "Stoic 4 Virtues Pendant YouTube feature. Compass rose front, Marcus Aurelius quote on back. Tie to YouTube content. Philosophical depth.",
-      "emailCopyLink": "",
+      "shortDescription": "Stoic 4 Virtues Pendant YouTube feature. Hero = the behind-the-scenes video thumbnail. Compass rose front, four virtues (Wisdom/Owl, Courage/Lion, Justice/Scales, Temperance/Cup), Marcus Aurelius engraving on the back. Offered in gold, silver, and platinum.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/june-2026/2026-06-18-stoic-youtube-feature.html",
       "finalDesignLink": "",
-      "notes": "YouTube content spotlight. Stoic wisdom meets wearable art.",
-      "productUrl": "https://www.proclamationjewelry.com/products/stoic-4-virtues-pendant",
+      "notes": "YouTube content spotlight. Video: youtube.com/watch?v=bO-6oQw_mcQ (thumbnail = hero). Nick founder voice, no pricing. Gold/Silver/Platinum each own Shop Now.",
+      "productUrl": "https://www.proclamationjewelry.com/products/stoic-4-virtues-yellow-gold-pendant",
       "collectionUrl": "",
       "offerCode": "",
-      "creativeDirection": "Stoic 4 Virtues YouTube feature. Compass rose, Marcus Aurelius quote. Philosophical depth. Silver, gold, platinum. Tie to YouTube content."
+      "creativeDirection": "YouTube feature. Thumbnail hero links to video. Compass rose + Marcus Aurelius quote. Philosophical depth. Gold/Silver/Platinum cards, separate Shop Now each. Nick founder voice, no pricing, no dashes."
     },
     {
       "id": "2026-06-21-summer-standouts-silver",
