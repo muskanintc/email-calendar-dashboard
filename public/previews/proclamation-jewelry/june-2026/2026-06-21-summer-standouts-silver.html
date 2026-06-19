@@ -1,0 +1,281 @@
+<!--
+=======================================================
+EMAIL: Summer Standouts — Most Loved Silver
+CLIENT: Proclamation Jewelry
+TYPE: Promotional
+DATE: 2026-06-21
+
+CONCEPT: Silver edition of the Summer Standouts campaign (companion to the
+6/19 gold edition). Editorial "Most Loved" countdown of the 5 most loved silver
+pieces. Layout inspiration: David Yurman "Most Loved: The Father's Day Edit"
+(clean, curated, product-forward). Same dark editorial shell as the gold
+edition for campaign consistency, recolored gold -> SILVER accents to signal
+the silver edit.
+
+FEATURED PIECES (client-provided, Jun 19) — pendants first, then chains by width:
+1. CHAMPION, Silver Saint Michael Pendant  /products/silver-saint-michael-pendant
+2. Faith, Silver Cross Pendant              /products/faith-silver-cross-pendant
+3. 5mm Silver Franco Chain                  /products/5mm-franco-chain-silver
+4. 4mm Silver Franco Chain                  /products/4mm-franco-chain-silver
+5. 3mm Silver Franco Chain                  /products/3mm-franco-chain-silver
+
+RULES APPLIED:
+- Nick's founder voice throughout. CTA always "Shop Now." Separate CTA per piece.
+- NO pricing. No hyphens/dashes in copy. Men's audience.
+- All images from the product pages (verified). Chains: Italian, solid sterling,
+  rhodium plated, .925 hallmark (verified from product pages).
+- Silver accent (#C9CED4) replaces gold; CTAs stay Cornell Red (#B31B1B).
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Standouts: Most Loved Silver — Proclamation Jewelry</title>
+<style>
+  body { margin: 0; padding: 0; background: #f5f5f5; -webkit-font-smoothing: antialiased; }
+  img { display: block; border: 0; max-width: 100%; height: auto; }
+  a { color: #C9CED4; text-decoration: none; }
+  table { border-collapse: collapse; }
+
+  .subject-lines {
+    background: #1A1A1A; border: 2px dashed #C9CED4; padding: 20px; margin: 20px auto; border-radius: 8px;
+    max-width: 600px; font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .subject-lines h3 { color: #C9CED4; margin-bottom: 10px; font-family: 'Trajan Pro', 'Times New Roman', serif; font-size: 13px; letter-spacing: 2px; }
+  .subject-lines ol { padding-left: 20px; margin: 0 0 16px 0; }
+  .subject-lines li { margin-bottom: 6px; color: #E4E4E4; font-size: 14px; line-height: 1.5; }
+
+  .designer-note {
+    background: #1A1A1A; border: 2px dashed #C9CED4; padding: 20px; margin: 0 auto; color: #E4E4E4;
+    max-width: 600px; font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 13px; line-height: 1.6;
+    border-radius: 8px 8px 0 0;
+  }
+  .designer-note strong { color: #C9CED4; letter-spacing: 1px; }
+
+  .email-wrapper {
+    max-width: 600px; margin: 0 auto; background: #0A0A0A;
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .hero-section {
+    background: #0A0A0A; text-align: center; padding: 50px 30px 40px;
+    border-bottom: 1px solid #2A2A2A;
+  }
+  .hero-section .eyebrow {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #C9CED4; font-size: 12px; letter-spacing: 5px; margin: 0 0 18px; text-transform: uppercase;
+  }
+  .hero-section .gold-line {
+    width: 60px; height: 2px; background: #C9CED4; margin: 0 auto 20px;
+  }
+  .hero-section h1 {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #E9ECF0; font-size: 32px; letter-spacing: 6px;
+    margin: 0 0 12px; line-height: 1.2; font-weight: bold;
+  }
+  .hero-section .subtitle {
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+    color: #B9BEC6; font-size: 15px; letter-spacing: 3px;
+    text-transform: uppercase; margin: 0;
+  }
+  .hero-section .gold-line-bottom {
+    width: 60px; height: 2px; background: #C9CED4; margin: 20px auto 0;
+  }
+
+  .nick-intro { padding: 36px 30px 30px; background: #0A0A0A; }
+  .nick-intro p {
+    color: #E4E4E4; font-size: 15px; line-height: 1.7;
+    margin: 0 0 16px; font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .nick-intro p:last-child { margin-bottom: 0; }
+
+  .product-divider { width: 80px; height: 1px; background: #C9CED4; margin: 0 auto; }
+
+  .product-card { background: #0A0A0A; text-align: center; padding: 40px 30px; }
+  .product-card .number {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #C9CED4; font-size: 14px; letter-spacing: 4px; margin: 0 0 20px; opacity: 0.8;
+  }
+  .product-card .product-img { max-width: 320px; margin: 0 auto 24px; border-radius: 4px; }
+  .product-card h2 {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #FFFFFF; font-size: 20px; letter-spacing: 3px; margin: 0 0 12px; font-weight: bold;
+  }
+  .product-card .tagline {
+    color: #CCCCCC; font-size: 14px; line-height: 1.6; margin: 0 0 24px;
+    font-family: 'Optima', 'Palatino', Georgia, serif; max-width: 400px; margin-left: auto; margin-right: auto;
+  }
+  .product-card .cta-btn {
+    display: inline-block; background: #B31B1B; color: #FFFFFF;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    padding: 14px 36px; text-decoration: none; border-radius: 2px;
+  }
+
+  .shop-all-section { background: #111111; text-align: center; padding: 40px 30px; border-top: 1px solid #2A2A2A; }
+  .shop-all-section h3 {
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    color: #C9CED4; font-size: 16px; letter-spacing: 3px; margin: 0 0 8px;
+  }
+  .shop-all-section p {
+    color: #CCCCCC; font-size: 14px; line-height: 1.6; margin: 0 0 20px;
+    font-family: 'Optima', 'Palatino', Georgia, serif;
+  }
+  .shop-all-section .cta-btn {
+    display: inline-block; background: #C9CED4; color: #0A0A0A;
+    font-family: 'Trajan Pro', 'Times New Roman', serif;
+    font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    padding: 14px 36px; text-decoration: none; border-radius: 2px; font-weight: bold;
+  }
+
+  .trust-section { background: #0A0A0A; text-align: center; padding: 30px; border-top: 1px solid #2A2A2A; }
+  .trust-section .trust-badge {
+    display: inline-block; margin: 0 15px; color: #C9CED4;
+    font-family: 'Optima', 'Palatino', Georgia, serif; font-size: 13px; letter-spacing: 1px;
+  }
+  .trust-section .trust-badge .stars { font-size: 15px; display: block; margin-bottom: 4px; }
+
+  .footer { background: #0A0A0A; text-align: center; padding: 24px 30px 30px; border-top: 1px solid #2A2A2A; }
+  .footer p { color: #666666; font-size: 11px; line-height: 1.6; margin: 4px 0; font-family: 'Optima', 'Palatino', Georgia, serif; }
+  .footer a { color: #C9CED4; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<!-- ======== SUBJECT LINES + PREVIEW TEXT (VISIBLE) ======== -->
+<div class="subject-lines">
+  <h3>SUBJECT LINE OPTIONS</h3>
+  <ol>
+    <li>Most loved, in silver.</li>
+    <li>The silver pieces men keep coming back for.</li>
+    <li>Summer standouts: the silver edit.</li>
+  </ol>
+  <h3>PREVIEW TEXT OPTIONS</h3>
+  <ol>
+    <li>Saint Michael, the Faith cross, and our Italian silver Franco chains.</li>
+    <li>Solid sterling silver. Stamped .925. The most loved of the season.</li>
+    <li>Five silver standouts, all in one place.</li>
+  </ol>
+</div>
+
+<!-- ======== DESIGNER NOTE ======== -->
+<div class="designer-note">
+  <strong>DESIGNER NOTE:</strong> Silver edition of Summer Standouts (companion to the 6/19 gold edition). Editorial "Most Loved" countdown, 01 through 05. Same dark shell as the gold edition, recolored to SILVER accents (#C9CED4) to signal the silver edit. Layout inspiration: David Yurman "Most Loved" edit. Each piece: large centered product image, silver number badge, name, one or two lines of copy, and its own Shop Now. Thin silver dividers between cards. Pendants first (Saint Michael, Faith), then the three Franco chains by width. All images from product pages. No pricing.
+</div>
+
+<!-- ======== EMAIL STARTS ======== -->
+<div class="email-wrapper">
+
+  <!-- HERO BANNER -->
+  <div class="hero-section">
+    <p class="eyebrow">Most Loved</p>
+    <div class="gold-line"></div>
+    <h1>SUMMER<br>STANDOUTS</h1>
+    <p class="subtitle">The Silver Edit</p>
+    <div class="gold-line-bottom"></div>
+  </div>
+
+  <!-- NICK'S INTRO -->
+  <div class="nick-intro">
+    <p>Gold gets a lot of the attention around here. But silver has a following all its own, and this summer it has been moving like never before.</p>
+
+    <p>I pulled the five silver pieces you keep coming back for. Two pendants with real meaning behind them, and the Italian Franco chains we cannot keep on the bench.</p>
+
+    <p>Solid sterling. Stamped .925. Built to be worn every day. These are the silver standouts of the season.</p>
+  </div>
+
+  <!-- PRODUCT 01: CHAMPION SAINT MICHAEL -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+  <div class="product-card">
+    <p class="number">01</p>
+    <!-- DESIGN NOTE: Silver Saint Michael pendant, front view, archangel detail. Cool silver tones on dark. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Silver_Pendant.jpg?v=1774449141" alt="CHAMPION Silver Saint Michael Pendant">
+    <h2>CHAMPION</h2>
+    <p class="tagline">Saint Michael the Archangel, the protector. Courage, faith, and divine justice in solid sterling silver. The piece men reach for when they want their protection worn where they can see it.</p>
+    <a href="https://www.proclamationjewelry.com/products/silver-saint-michael-pendant" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- PRODUCT 02: FAITH CROSS -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+  <div class="product-card">
+    <p class="number">02</p>
+    <!-- DESIGN NOTE: Faith Silver Cross pendant, front view. Clean, understated cross detail. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/Faith_Silver_Cross_Necklace_Pendant_for_men.jpg?v=1779282839" alt="Faith Silver Cross Pendant">
+    <h2>FAITH</h2>
+    <p class="tagline">A clean sterling silver cross, worn close. Faith made visible, and the sacrifice at the center of it. Understated enough for every day, meaningful enough to never take off.</p>
+    <a href="https://www.proclamationjewelry.com/products/faith-silver-cross-pendant" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- PRODUCT 03: 5MM SILVER FRANCO -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+  <div class="product-card">
+    <p class="number">03</p>
+    <!-- DESIGN NOTE: 5mm Silver Franco Chain, full necklace shot. Show the heavier link weight. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_Silver_Franco_Chain_Necklace.jpg?v=1722964594" alt="5mm Silver Franco Chain">
+    <h2>5MM SILVER FRANCO</h2>
+    <p class="tagline">The boldest of the three. Crafted in Italy, solid sterling silver, rhodium plated for shine and protection, stamped with the .925 hallmark. Wear it on its own or anchor a pendant to it.</p>
+    <a href="https://www.proclamationjewelry.com/products/5mm-franco-chain-silver" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- PRODUCT 04: 4MM SILVER FRANCO -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+  <div class="product-card">
+    <p class="number">04</p>
+    <!-- DESIGN NOTE: 4mm Silver Franco Chain, full necklace shot. The everyday width. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_Silver_Franco_Chain_Necklace.jpg?v=1722964396" alt="4mm Silver Franco Chain">
+    <h2>4MM SILVER FRANCO</h2>
+    <p class="tagline">The everyday width. The same Italian sterling build, rhodium plated and .925 stamped. Substantial without shouting. The one most men end up living in.</p>
+    <a href="https://www.proclamationjewelry.com/products/4mm-franco-chain-silver" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- PRODUCT 05: 3MM SILVER FRANCO -->
+  <div style="padding: 0 30px;"><div class="product-divider"></div></div>
+  <div class="product-card">
+    <p class="number">05</p>
+    <!-- DESIGN NOTE: 3mm Silver Franco Chain, full necklace shot. The understated width. -->
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_Silver_Franco_Chain_Necklace.jpg?v=1722964125" alt="3mm Silver Franco Chain">
+    <h2>3MM SILVER FRANCO</h2>
+    <p class="tagline">The understated one. Solid sterling, Italian made, rhodium plated. Sits clean under a collar or frames a smaller pendant without ever taking over.</p>
+    <a href="https://www.proclamationjewelry.com/products/3mm-franco-chain-silver" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- SHOP ALL SILVER -->
+  <div class="shop-all-section">
+    <h3>EXPLORE THE SILVER FRANCO CHAINS</h3>
+    <p>Every width and length in our Italian sterling silver Franco chains. Find the one that becomes yours.</p>
+    <a href="https://www.proclamationjewelry.com/collections/silver-chains" class="cta-btn">Shop Silver Chains</a>
+  </div>
+
+  <!-- TRUST SIGNALS -->
+  <div class="trust-section">
+    <span class="trust-badge">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      Trustpilot 4.8/5 (388 Reviews)
+    </span>
+    <span class="trust-badge">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      Google 4.9/5 (335 Reviews)
+    </span>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p style="color: #C9CED4; font-size: 12px; letter-spacing: 2px; margin-bottom: 12px;">PROCLAMATION JEWELRY</p>
+    <p>Forged for Legacy, Worn to Inspire</p>
+    <p>Founded 2011 by Nick Miller &middot; Houston, TX</p>
+    <p style="margin-top: 12px;">
+      <a href="#">Unsubscribe</a> &middot;
+      <a href="#">Manage Preferences</a> &middot;
+      <a href="https://www.proclamationjewelry.com">Visit Website</a>
+    </p>
+  </div>
+
+</div>
+<!-- ======== EMAIL ENDS ======== -->
+
+</body>
+</html>
