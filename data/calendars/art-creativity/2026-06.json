@@ -21,25 +21,8 @@
       "creativeDirection": "Pool party theme, 2x2 colorful grid layout, pastel bg cards, wavy dividers, very colorful and fun"
     },
     {
-      "id": "2026-06-12-summer-of-play",
+      "id": "2026-06-12-bubble-toys-collection",
       "date": "2026-06-12",
-      "day": "Fri",
-      "type": "promotional",
-      "status": "done",
-      "theme": "Summer of Play",
-      "product": "Over-the-Door Basketball Hoop, Inflatable Ring Toss, Giant Inflatable Bowling",
-      "shortDescription": "Three backyard and party games for summer play, alternating side-by-side layout.",
-      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/june-2026/2026-06-12-summer-of-play.html",
-      "finalDesignLink": "",
-      "notes": "",
-      "productUrl": "",
-      "collectionUrl": "https://artcreativity.com/collections/outdoor-play-for-kids",
-      "offerCode": "Free shipping $30+",
-      "creativeDirection": "Yellow hero, alternating image/copy cards, party/confetti vibes, summer birthday theme"
-    },
-    {
-      "id": "2026-06-19-bubble-toys-collection",
-      "date": "2026-06-19",
       "day": "Fri",
       "type": "promotional",
       "status": "done",
@@ -53,6 +36,23 @@
       "collectionUrl": "https://artcreativity.com/collections/bubble-toys",
       "offerCode": "Free shipping $30+",
       "creativeDirection": "Vertical storytelling scroll, each product = full-width image + copy + real review card, pastel accent sections, bubble dividers"
+    },
+    {
+      "id": "2026-06-19-summer-of-play",
+      "date": "2026-06-19",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Summer of Play",
+      "product": "Over-the-Door Basketball Hoop, Inflatable Ring Toss, Giant Inflatable Bowling",
+      "shortDescription": "Three backyard and party games for summer play, alternating side-by-side layout.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/june-2026/2026-06-12-summer-of-play.html",
+      "finalDesignLink": "",
+      "notes": "",
+      "productUrl": "",
+      "collectionUrl": "https://artcreativity.com/collections/outdoor-play-for-kids",
+      "offerCode": "Free shipping $30+",
+      "creativeDirection": "Yellow hero, alternating image/copy cards, party/confetti vibes, summer birthday theme"
     }
   ]
 }
