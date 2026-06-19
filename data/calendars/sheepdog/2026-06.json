@@ -94,33 +94,33 @@
       "day": "Tue",
       "type": "promotional",
       "status": "pending",
-      "theme": "One PTT. Two Ports. Every Setup.",
-      "product": "ENGAGE Tactical PTT",
-      "shortDescription": "Dual-port versatility: 3.5mm earpiece + NEXUS headset. Bridges covert earpiece on patrol and ComTac headset for tactical ops.",
+      "theme": "TSUNAMI Giveaway: Announcement",
+      "product": "TSUNAMI",
+      "shortDescription": "TSUNAMI giveaway kickoff. Announce the giveaway, how to enter, and what they can win. ENGAGE dual-port email displaced to a later slot.",
       "emailCopyLink": "",
       "finalDesignLink": "",
-      "notes": "",
+      "notes": "NEEDS INFO: giveaway prize details, entry mechanism, end date.",
       "productUrl": "https://sheepdogmics.com/collections/engage",
       "collectionUrl": "https://sheepdogmics.com/collections/engage",
       "offerCode": "",
-      "creativeDirection": "Dual-port focus, covert-to-tactical versatility"
+      "creativeDirection": "Giveaway announcement, build entries and awareness."
     },
     {
       "id": "2026-06-28-tbd",
       "date": "2026-06-28",
       "day": "Sat",
-      "type": "",
+      "type": "promotional",
       "status": "pending",
-      "theme": "TBD",
-      "product": "TBD",
-      "shortDescription": "Slot reserved. Theme to be confirmed.",
+      "theme": "TSUNAMI Giveaway: Last Call",
+      "product": "TSUNAMI",
+      "shortDescription": "TSUNAMI giveaway last call. Final reminder to enter before it closes.",
       "emailCopyLink": "",
       "finalDesignLink": "",
-      "notes": "",
+      "notes": "NEEDS INFO: giveaway end date/time, entry mechanism.",
       "productUrl": "",
       "collectionUrl": "",
       "offerCode": "",
-      "creativeDirection": ""
+      "creativeDirection": "Urgency, final push to enter."
     }
   ]
 }

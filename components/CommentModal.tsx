@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { CalendarEmail, Comment } from '@/lib/types';
-import { getEmailTypeColor, getStatusColor } from '@/lib/utils';
+import { getEmailTypeColor, getStatusColor, getStatusLabel } from '@/lib/utils';
 import { supabase } from '@/lib/supabase';
 
 interface Props {
@@ -51,7 +51,7 @@ export function CommentModal({ email, clientSlug, comments, onClose, onCommentAd
                 {email.type}
               </span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium border ${getStatusColor(email.status)}`}>
-                {email.status}
+                {getStatusLabel(email.status)}
               </span>
             </div>
             <h3 className="text-lg font-bold text-gray-900 leading-snug">{email.theme}</h3>
@@ -210,7 +210,8 @@ export function CommentModal({ email, clientSlug, comments, onClose, onCommentAd
               <button
                 type="submit"
                 disabled={submitting || !authorName.trim() || !commentText.trim()}
-                className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                className="px-4 py-2 text-white text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed transition-colors font-mono-brand tracking-[0.04em]"
+                style={{ background: 'var(--ink)' }}
               >
                 {submitting ? 'Posting...' : 'Post Comment'}
               </button>

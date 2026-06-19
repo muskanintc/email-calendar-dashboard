@@ -62,6 +62,18 @@ export function getStatusBorderHex(status: string): string {
   return colors[status] || '#d1d5db';
 }
 
+export function getStatusLabel(status: string): string {
+  const labels: Record<string, string> = {
+    done: 'Sent',
+    'copy-ready': 'Copy Ready',
+    approved: 'Approved',
+    pending: 'Pending',
+    'in-progress': 'In Progress',
+    'changes-requested': 'Changes',
+  };
+  return labels[status] || status;
+}
+
 export function getEmailTypeLabel(type: string): string {
   const labels: Record<string, string> = {
     promotional: 'promo',
