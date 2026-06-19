@@ -22,5 +22,37 @@
     "description": "Men's religious and statement jewelry",
     "color": "#6b4c1e",
     "months": ["2026-04", "2026-05"]
+  },
+  {
+    "slug": "harmony-house-foods",
+    "name": "Harmony House",
+    "fullName": "Harmony House Foods",
+    "description": "Premium freeze-dried and dehydrated foods, organic line, non-GMO",
+    "color": "#3d7a44",
+    "months": ["2026-06"]
+  },
+  {
+    "slug": "wearever",
+    "name": "Wearever",
+    "fullName": "Wearever Incontinence",
+    "description": "Affordable, reusable absorbent underwear for active seniors",
+    "color": "#1A2450",
+    "months": ["2026-05", "2026-06"]
+  },
+  {
+    "slug": "art-creativity",
+    "name": "Art Creativity",
+    "fullName": "ArtCreativity",
+    "description": "Bright, playful children's toys: outdoor play, bubble toys, party games and arts & crafts",
+    "color": "#E8412B",
+    "months": ["2026-05", "2026-06"]
+  },
+  {
+    "slug": "zero9-holsters",
+    "name": "Zero9",
+    "fullName": "Zero9 Holsters",
+    "description": "Tactical holsters, mounts and munitions cases for law enforcement and military",
+    "color": "#1c1c1c",
+    "months": ["2026-06"]
   }
 ]

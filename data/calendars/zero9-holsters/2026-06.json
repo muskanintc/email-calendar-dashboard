@@ -1,0 +1,24 @@
+{
+  "client": "zero9-holsters",
+  "year": 2026,
+  "month": 6,
+  "emails": [
+    {
+      "id": "2026-06-19-double-40mm-pic-rail-mount",
+      "date": "2026-06-19",
+      "day": "Fri",
+      "type": "product-launch",
+      "status": "copy-ready",
+      "theme": "Double 40MM Case: New Pic Rail Mount",
+      "product": "Double 40MM Case, Pic Rail Mount (Special Munitions Cases line)",
+      "shortDescription": "Product launch for the new Pic Rail Mount option on the Double 40MM Case.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/zero9-holsters/june-2026/2026-06-19-double-40mm-pic-rail-mount.html",
+      "finalDesignLink": "",
+      "notes": "",
+      "productUrl": "https://zero9holsters.com/products/double-40mm-reload-case?variant=Double-40MM-Case-Pic-Rail-Mount",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "Functional, spec-forward voice for LE/military buyers. Two product-page images. New mounting option / new variant launch."
+    }
+  ]
+}

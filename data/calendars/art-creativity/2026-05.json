@@ -1,0 +1,24 @@
+{
+  "client": "art-creativity",
+  "year": 2026,
+  "month": 5,
+  "emails": [
+    {
+      "id": "2026-05-28-kick-off-summer-fun-buy-more-save-more",
+      "date": "2026-05-28",
+      "day": "Thu",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Kick Off Summer Fun: Buy More, Save More",
+      "product": "Best sellers (Squishy Treats, Traffic Light Lamp, School Bus, Monster Trucks, Bubble Fire Engine, Bubble Lawn Mower)",
+      "shortDescription": "Tiered discount on best sellers with a summer kickoff theme.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/may-2026/2026-05-28-kick-off-summer-fun-buy-more-save-more.html",
+      "finalDesignLink": "",
+      "notes": "",
+      "productUrl": "",
+      "collectionUrl": "https://artcreativity.com/collections/best-sellers",
+      "offerCode": "Tiered: $75/10%, $150/15%, $300/20%",
+      "creativeDirection": "Melissa & Doug style, bright and playful, product-focused, summer vibes, high-converting"
+    }
+  ]
+}

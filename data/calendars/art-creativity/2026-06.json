@@ -1,0 +1,58 @@
+{
+  "client": "art-creativity",
+  "year": 2026,
+  "month": 6,
+  "emails": [
+    {
+      "id": "2026-06-05-splash-into-summer-pool-toys",
+      "date": "2026-06-05",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Splash Into Summer: Pool Toys",
+      "product": "Bubble Lawn Mower, Bubble Leaf Blower, Sailing Boats, Foam Rockets",
+      "shortDescription": "Pool toys and outdoor summer play, bubble toys feature.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/june-2026/2026-06-05-splash-into-summer-pool-toys.html",
+      "finalDesignLink": "",
+      "notes": "",
+      "productUrl": "",
+      "collectionUrl": "https://artcreativity.com/collections/summer-collection",
+      "offerCode": "Tiered: $75/10%, $150/15%, $300/20%",
+      "creativeDirection": "Pool party theme, 2x2 colorful grid layout, pastel bg cards, wavy dividers, very colorful and fun"
+    },
+    {
+      "id": "2026-06-12-summer-of-play",
+      "date": "2026-06-12",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Summer of Play",
+      "product": "Over-the-Door Basketball Hoop, Inflatable Ring Toss, Giant Inflatable Bowling",
+      "shortDescription": "Three backyard and party games for summer play, alternating side-by-side layout.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/june-2026/2026-06-12-summer-of-play.html",
+      "finalDesignLink": "",
+      "notes": "",
+      "productUrl": "",
+      "collectionUrl": "https://artcreativity.com/collections/outdoor-play-for-kids",
+      "offerCode": "Free shipping $30+",
+      "creativeDirection": "Yellow hero, alternating image/copy cards, party/confetti vibes, summer birthday theme"
+    },
+    {
+      "id": "2026-06-19-bubble-toys-collection",
+      "date": "2026-06-19",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Bubble Toys Collection",
+      "product": "Bubble Lawn Mower, Bubble Train, Light-Up Bubble Wand",
+      "shortDescription": "Bubble toys collection, three products with real customer reviews, vertical storytelling layout.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/june-2026/2026-06-12-bubble-toys-collection.html",
+      "finalDesignLink": "",
+      "notes": "",
+      "productUrl": "",
+      "collectionUrl": "https://artcreativity.com/collections/bubble-toys",
+      "offerCode": "Free shipping $30+",
+      "creativeDirection": "Vertical storytelling scroll, each product = full-width image + copy + real review card, pastel accent sections, bubble dividers"
+    }
+  ]
+}
