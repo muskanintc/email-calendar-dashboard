@@ -37,10 +37,12 @@ export function StatsBar({ emails }: Props) {
           <p className="text-[38px] font-semibold text-violet-700" style={{ letterSpacing: '-0.035em', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>{copyReady}</p>
         </div>
       )}
-      <div className="border-t pt-4" style={{ borderColor: 'var(--ink)' }}>
-        <p className="font-mono-brand text-[10.5px] font-medium tracking-[0.14em] uppercase mb-3 text-amber-600">Pending</p>
-        <p className="text-[38px] font-semibold text-amber-700" style={{ letterSpacing: '-0.035em', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>{pending}</p>
-      </div>
+      {pending > 0 && (
+        <div className="border-t pt-4" style={{ borderColor: 'var(--ink)' }}>
+          <p className="font-mono-brand text-[10.5px] font-medium tracking-[0.14em] uppercase mb-3 text-amber-600">Pending</p>
+          <p className="text-[38px] font-semibold text-amber-700" style={{ letterSpacing: '-0.035em', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>{pending}</p>
+        </div>
+      )}
       {changesRequested > 0 && (
         <div className="border-t pt-4" style={{ borderColor: 'var(--ink)' }}>
           <p className="font-mono-brand text-[10.5px] font-medium tracking-[0.14em] uppercase mb-3 text-rose-600">Changes Req.</p>
