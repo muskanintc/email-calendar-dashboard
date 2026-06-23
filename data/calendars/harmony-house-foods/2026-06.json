@@ -72,8 +72,25 @@
       "creativeDirection": "Blog + Sale email. Organic line spotlight. Clean, green, family focused imagery."
     },
     {
+      "id": "2026-06-24-orchard-fruit-medley-summer",
+      "date": "2026-06-24",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "You Have Never Used Fruit Like This Before",
+      "product": "Organic Vegetable Pantry Stuffer, Orchard Fruit Medley",
+      "shortDescription": "Beyond smoothies. Think salsas, summer cocktails, and desserts that steal the show.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/2026-06-24-orchard-fruit-medley-summer.html",
+      "finalDesignLink": "",
+      "notes": "SALE + BLOG. Blog: Unexpected Ways to Use the Orchard Fruit Medley this Summer. 15% OFF: Organic Vegetable Pantry Stuffer, Orchard Fruit Medley.",
+      "productUrl": "https://www.harmonyhousefoods.com/products/orchard-fruit-medley-4-jars-quart-size",
+      "collectionUrl": "",
+      "offerCode": "15% OFF",
+      "creativeDirection": "Blog + Sale email. Creative fruit usage imagery, summer entertaining vibe."
+    },
+    {
       "id": "2026-06-20-bestseller-backpacking-kit",
-      "date": "2026-06-20",
+      "date": "2026-06-27",
       "day": "Sat",
       "type": "promotional",
       "status": "approved",
@@ -87,23 +104,6 @@
       "collectionUrl": "",
       "offerCode": "",
       "creativeDirection": "Best-seller spotlight. Hero product imagery, outdoor and adventure lifestyle."
-    },
-    {
-      "id": "2026-06-24-orchard-fruit-medley-summer",
-      "date": "2026-06-24",
-      "day": "Wed",
-      "type": "promotional",
-      "status": "pending",
-      "theme": "You Have Never Used Fruit Like This Before",
-      "product": "Organic Vegetable Pantry Stuffer, Orchard Fruit Medley",
-      "shortDescription": "Beyond smoothies. Think salsas, summer cocktails, and desserts that steal the show.",
-      "emailCopyLink": "",
-      "finalDesignLink": "",
-      "notes": "SALE + BLOG. Blog: Unexpected Ways to Use the Orchard Fruit Medley this Summer. 15% OFF: Organic Vegetable Pantry Stuffer, Orchard Fruit Medley.",
-      "productUrl": "",
-      "collectionUrl": "",
-      "offerCode": "15% OFF",
-      "creativeDirection": "Blog + Sale email. Creative fruit usage imagery, summer entertaining vibe."
     },
     {
       "id": "2026-06-28-bestseller-dried-bell-peppers",
