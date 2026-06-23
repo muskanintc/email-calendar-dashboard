@@ -1,0 +1,41 @@
+{
+  "client": "wearever",
+  "year": 2026,
+  "month": 5,
+  "emails": [
+    {
+      "id": "2026-05-22-memorial-day-weekend-sale",
+      "date": "2026-05-22",
+      "day": "Thu",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Memorial Day Sale Announcement",
+      "product": "All products",
+      "shortDescription": "Memorial Day Weekend Sale May 22-25. Tiered discounts: 10% off $0-$49.99, 15% off $50-$99.99, 20% off $100+. Auto discount at checkout, no code. Free shipping on orders over $60.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/wearever/may-2026/2026-05-22-memorial-day-weekend-sale.html",
+      "finalDesignLink": "",
+      "notes": "Cannot be combined with other coupons or offers. Patriotic theme with U.S. flag elements.",
+      "productUrl": "",
+      "collectionUrl": "https://www.weareverincontinence.com/collections/all-products",
+      "offerCode": "Tiered: 10% off $0–$49.99, 15% off $50–$99.99, 20% off $100+. Auto discount, no code. Free shipping $60+.",
+      "creativeDirection": "Patriotic theme, U.S. flag elements, Navy/Golden palette."
+    },
+    {
+      "id": "2026-05-25-memorial-day-sale-last-call",
+      "date": "2026-05-25",
+      "day": "Sun",
+      "type": "promotional",
+      "status": "done",
+      "theme": "Memorial Day Sale Last Call",
+      "product": "All products",
+      "shortDescription": "Final push for Memorial Day Weekend Sale. Same tiered discount. Ends at 11:59 PM today. Limited sizes angle.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/wearever/may-2026/2026-05-25-memorial-day-sale-last-call.html",
+      "finalDesignLink": "",
+      "notes": "Urgency-driven. Same offer structure as announcement.",
+      "productUrl": "",
+      "collectionUrl": "https://www.weareverincontinence.com/collections/all-products",
+      "offerCode": "Same tiered discount. Ends 11:59 PM today.",
+      "creativeDirection": "Urgency-driven, same patriotic theme, Red CTA."
+    }
+  ]
+}
