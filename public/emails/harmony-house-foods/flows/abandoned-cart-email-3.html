@@ -1,0 +1,237 @@
+<!--
+===============================================================
+HARMONY HOUSE FOODS — ABANDONED CART FLOW
+===============================================================
+Email 3 of 3
+Trigger: 48 hours after cart abandonment
+Goal: Create urgency and final push without discount
+Tone: Direct, honest urgency, warm closing
+
+LAYOUT (different from Email 1 and 2):
+Logo → Bold urgency headline (orange accent) → Cart items (dynamic) →
+Quick value reminders (3 horizontal icons) → FOMO callout →
+Final nudge copy → CTA → Trust grid (3 icons) → Footer
+
+Email 1: White hero, gentle nudge, free shipping strip
+Email 2: Navy hero, social proof, reviews, brand story
+Email 3: Orange urgency accent, value icons, FOMO, direct closing
+===============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abandoned Cart Email 3 — Harmony House Foods</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f0e8; font-family:Arial, Helvetica, sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f0e8;">
+<tr><td align="center">
+<table width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff; max-width:600px;">
+
+
+<!-- ============================================================ -->
+<!-- SUBJECT LINE & PREVIEW TEXT OPTIONS (VISIBLE) -->
+<!-- ============================================================ -->
+<tr><td style="padding:20px 25px; background-color:#f0f4ff; border-bottom:3px solid #1B3A5C;">
+
+  <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Subject Line Options</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333333; line-height:1.6;">1. Your cart won't wait much longer.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333333; line-height:1.6;">2. Last chance. Your items are still here.</p>
+  <p style="margin:0 0 16px 0; font-size:14px; color:#333333; line-height:1.6;">3. Before your cart clears out.</p>
+
+  <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Preview Text Options</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333333; line-height:1.6;">1. These items are popular and stock can run low. Don't miss out.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333333; line-height:1.6;">2. Skip the chopping. Ditch food waste. Your pantry will thank you.</p>
+  <p style="margin:0 0 0 0; font-size:14px; color:#333333; line-height:1.6;">3. Your cart resets soon. Finish checking out today.</p>
+
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- LOGO -->
+<!-- ============================================================ -->
+<tr><td align="center" style="padding:25px 0 15px 0; background-color:#ffffff;">
+  <img src="https://www.harmonyhousefoods.com/cdn/shop/files/logo_453089b8-ec5d-4fcf-9594-6a4b9c9debaa.png?v=1762757611"
+       alt="Harmony House Foods" width="180" style="display:block;" />
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- URGENCY HEADLINE -->
+<!-- ============================================================ -->
+<!--
+DESIGN NOTE: Different from Email 1 and 2.
+White background, but with an orange accent line above the headline.
+Bold, direct. Not alarmist, but clear this is the last reminder.
+-->
+<tr><td style="padding:10px 30px 0 30px; text-align:center; background-color:#ffffff;">
+  <div style="width:60px; height:4px; background-color:#E8842C; margin:0 auto 20px auto; border-radius:2px;"></div>
+  <h1 style="margin:0 0 12px 0; font-size:26px; font-weight:800; color:#1B3A5C; line-height:1.2; font-family:Georgia, 'Times New Roman', serif;">
+    Your Kitchen Essentials Are Still Here
+  </h1>
+  <p style="margin:0; font-size:15px; color:#555555; line-height:1.7;">
+    These items are popular and stock can run low. Complete your order before your cart resets.
+  </p>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- ABANDONED CART PRODUCT BLOCK (DYNAMIC) -->
+<!-- ============================================================ -->
+<!--
+DESIGN NOTE: Same dynamic product block as Email 1 and 2.
+This time with a subtle orange left border to signal urgency.
+-->
+<tr><td style="padding:25px 20px 15px 20px; background-color:#ffffff;">
+
+  <!-- DYNAMIC PRODUCT CARD (repeat per cart item) -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="border-left:4px solid #E8842C; background-color:#f9f9f9; border-radius:0 10px 10px 0; overflow:hidden; margin-bottom:10px;">
+  <tr>
+    <td width="35%" style="padding:15px; text-align:center; vertical-align:middle;">
+      <img src="https://www.harmonyhousefoods.com/cdn/shop/files/19020_Bean___Legume_Sampler_1.png?v=1764040947&width=600"
+           alt="{{ item.product_name }}" width="140" style="display:block; margin:0 auto; max-width:100%;" />
+    </td>
+    <td width="65%" style="padding:15px 20px; vertical-align:middle;">
+      <p style="margin:0 0 6px 0; font-size:16px; font-weight:700; color:#1B3A5C;">{{ item.product_name }}</p>
+      <p style="margin:0 0 10px 0; font-size:15px; color:#333333; font-weight:600;">${{ item.price }}</p>
+      <p style="margin:0; font-size:12px; color:#888888;">Qty: {{ item.quantity }}</p>
+    </td>
+  </tr>
+  </table>
+
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- CTA AFTER CART ITEMS -->
+<!-- ============================================================ -->
+<tr><td align="center" style="padding:10px 30px 20px 30px; background-color:#ffffff;">
+  <a href="{{ checkout_url }}" style="display:inline-block; background-color:#E8842C; color:#ffffff; font-size:16px; font-weight:700; text-decoration:none; padding:16px 44px; border-radius:30px; text-transform:uppercase; letter-spacing:1px;">
+    Finish Checking Out
+  </a>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- QUICK VALUE REMINDERS (3 horizontal icons) -->
+<!-- ============================================================ -->
+<!--
+DESIGN NOTE: Three small value props in a horizontal row.
+Different from the trust grid at the bottom.
+These are product-specific benefits, not brand-level trust.
+Orange accent icons or emoji.
+-->
+<tr><td style="padding:10px 15px 20px 15px; background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="33%" align="center" style="padding:10px 5px;">
+      <p style="margin:0 0 6px 0; font-size:24px;">&#127874;</p>
+      <p style="margin:0; font-size:12px; font-weight:700; color:#1B3A5C; line-height:1.4;">Skip the<br/>Chopping</p>
+    </td>
+    <td width="33%" align="center" style="padding:10px 5px;">
+      <p style="margin:0 0 6px 0; font-size:24px;">&#9851;&#65039;</p>
+      <p style="margin:0; font-size:12px; font-weight:700; color:#1B3A5C; line-height:1.4;">Ditch<br/>Food Waste</p>
+    </td>
+    <td width="33%" align="center" style="padding:10px 5px;">
+      <p style="margin:0 0 6px 0; font-size:24px;">&#127793;</p>
+      <p style="margin:0; font-size:12px; font-weight:700; color:#1B3A5C; line-height:1.4;">Eat Fresh<br/>Anytime</p>
+    </td>
+  </tr>
+  </table>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- FINAL NUDGE COPY -->
+<!-- ============================================================ -->
+<tr><td style="padding:10px 35px 15px 35px; text-align:center; background-color:#ffffff;">
+  <p style="margin:0; font-size:15px; color:#333333; line-height:1.7;">
+    Your future self (and your pantry) will thank you. Stock up once and have real, premium produce ready for weeks. No shopping. No waste. Just meals that come together in minutes.
+  </p>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- FREE SHIPPING REMINDER -->
+<!-- ============================================================ -->
+<tr><td style="padding:14px 25px; background-color:#e8f0f8; text-align:center;">
+  <p style="margin:0; font-size:14px; font-weight:700; color:#1B3A5C;">
+    &#128666; Don't forget: FREE Shipping on Orders $99+
+  </p>
+</td></tr>
+
+
+
+
+<!-- ============================================================ -->
+<!-- SOFT CLOSING -->
+<!-- ============================================================ -->
+<tr><td style="padding:5px 35px 20px 35px; text-align:center; background-color:#ffffff;">
+  <p style="margin:0; font-size:13px; color:#888888; line-height:1.6;">
+    Your cart resets soon and you'll need to start over. Don't miss out on having your pantry stocked and ready for anything.
+  </p>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- TRUST GRID: 3 ICONS (keep in every email) -->
+<!-- ============================================================ -->
+<tr><td style="padding:10px 20px 25px 20px; background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="33%" align="center" valign="top" style="padding:5px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f9; border-radius:12px;">
+      <tr><td align="center" style="padding:20px 10px;">
+        <div style="width:40px; height:40px; background-color:#dce4ee; border-radius:8px; margin:0 auto 10px auto; line-height:40px; font-size:20px;">&#127807;</div>
+        <p style="margin:0 0 4px 0; font-size:13px; font-weight:800; color:#1B3A5C; text-transform:uppercase; letter-spacing:0.5px;">Premium<br/>Ingredients</p>
+        <p style="margin:0; font-size:11px; color:#888888; line-height:1.4;">Rehydrate quickly<br/>for everyday use</p>
+      </td></tr>
+      </table>
+    </td>
+    <td width="33%" align="center" valign="top" style="padding:5px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f9; border-radius:12px;">
+      <tr><td align="center" style="padding:20px 10px;">
+        <div style="width:40px; height:40px; background-color:#dce4ee; border-radius:8px; margin:0 auto 10px auto; line-height:40px; font-size:20px;">&#128666;</div>
+        <p style="margin:0 0 4px 0; font-size:13px; font-weight:800; color:#1B3A5C; text-transform:uppercase; letter-spacing:0.5px;">Fast, Fresh<br/>Delivery</p>
+        <p style="margin:0; font-size:11px; color:#888888; line-height:1.4;">Quick order<br/>processing</p>
+      </td></tr>
+      </table>
+    </td>
+    <td width="33%" align="center" valign="top" style="padding:5px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f9; border-radius:12px;">
+      <tr><td align="center" style="padding:20px 10px;">
+        <div style="width:40px; height:40px; background-color:#dce4ee; border-radius:8px; margin:0 auto 10px auto; line-height:40px; font-size:20px;">&#128104;&#8205;&#127859;</div>
+        <p style="margin:0 0 4px 0; font-size:13px; font-weight:800; color:#1B3A5C; text-transform:uppercase; letter-spacing:0.5px;">Crafted<br/>Recipes</p>
+        <p style="margin:0; font-size:11px; color:#888888; line-height:1.4;">Nutrition meets<br/>flavor</p>
+      </td></tr>
+      </table>
+    </td>
+  </tr>
+  </table>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- FOOTER -->
+<!-- ============================================================ -->
+<tr><td style="padding:20px 30px; text-align:center; background-color:#1B3A5C;">
+  <p style="margin:0 0 10px 0; font-size:12px; color:#ffffff;">
+    &copy; 2026 Harmony House Foods. All rights reserved.
+  </p>
+  <p style="margin:0; font-size:11px; color:#999999; line-height:1.6;">
+    <a href="#" style="color:#cccccc; text-decoration:underline;">Unsubscribe</a> &nbsp;|&nbsp;
+    <a href="#" style="color:#cccccc; text-decoration:underline;">My Account</a> &nbsp;|&nbsp;
+    <a href="#" style="color:#cccccc; text-decoration:underline;">Privacy Policy</a>
+  </p>
+</td></tr>
+
+
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>

@@ -16,11 +16,12 @@ export function MonthNav({ calendars, currentIndex, onChange }: Props) {
         <button
           key={`${cal.year}-${cal.month}`}
           onClick={() => onChange(idx)}
-          className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
-            idx === currentIndex
-              ? 'bg-gray-900 text-white shadow-sm'
-              : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-          }`}
+          className="px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors font-mono-brand tracking-[0.02em]"
+          style={{
+            background: idx === currentIndex ? 'var(--ink)' : 'var(--paper)',
+            color: idx === currentIndex ? 'var(--paper)' : 'var(--muted)',
+            border: `1px solid ${idx === currentIndex ? 'var(--ink)' : 'var(--hair)'}`,
+          }}
         >
           {getMonthName(cal.month)} {cal.year}
         </button>

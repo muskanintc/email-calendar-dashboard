@@ -46,18 +46,32 @@ export function CalendarDashboard({ calendars, clientName, clientSlug, brandColo
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="text-white py-6 px-6" style={{ backgroundColor: brandColor }}>
-        <div className="max-w-7xl mx-auto">
-          <a href="/" className="text-white/70 text-sm hover:text-white mb-1 inline-block">
-            &larr; All Clients
-          </a>
-          <h1 className="text-2xl font-bold">{clientName}</h1>
-          <p className="text-white/80 text-sm mt-0.5">Email Marketing Calendar</p>
+    <div className="min-h-screen" style={{ background: 'var(--paper)' }}>
+      {/* Topbar */}
+      <div className="border-b" style={{ borderColor: 'var(--ink)' }}>
+        <div className="max-w-7xl mx-auto px-8 py-2.5 flex justify-between font-mono-brand text-[11px] tracking-[0.06em]" style={{ color: 'var(--muted)' }}>
+          <span className="font-medium uppercase" style={{ color: 'var(--ink)' }}>{clientName} - Email Calendar</span>
+          <span>Interconnections</span>
         </div>
-      </header>
+      </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-6">
+      {/* Header */}
+      <div className="max-w-7xl mx-auto px-8 pt-6 pb-6 border-b" style={{ borderColor: 'var(--hair)' }}>
+        <a href="/" className="font-mono-brand text-[12px] tracking-[0.04em] hover:text-[var(--accent)] transition-colors inline-block mb-3" style={{ color: 'var(--muted)' }}>
+          &larr; All Clients
+        </a>
+        <div className="flex items-end justify-between">
+          <div>
+            <span className="font-mono-brand text-[11.5px] font-medium tracking-[0.08em] block mb-2" style={{ color: 'var(--accent)' }}>
+              Email Calendar
+            </span>
+            <h1 className="text-[28px] font-semibold" style={{ letterSpacing: '-0.025em', lineHeight: '1.05' }}>{clientName}</h1>
+          </div>
+          <p className="text-sm" style={{ color: 'var(--muted)' }}>Email Marketing Calendar</p>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-8 py-6">
         <MonthNav
           calendars={sortedCalendars}
           currentIndex={currentIndex}

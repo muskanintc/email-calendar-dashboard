@@ -1,0 +1,335 @@
+<!--
+=============================================================
+  SHEEPDOG — Email Wireframe
+  Date: June 12, 2026
+  Theme: Go Wireless. Stay Connected.
+  Product: Motorola APX Bluetooth Adapter with Wireless PTT
+  Type: Promotional
+  Template: promotional.md
+  Layout: "How It Works" step flow + feature stack
+=============================================================
+
+  SUBJECT LINE OPTIONS:
+  1. Your AirPods just became tactical gear.
+  2. The setup that replaced every wire on the team.
+  3. One button. Zero wires. You're live.
+
+  PREVIEW TEXT OPTIONS:
+  1. Pair your earbuds. Press PTT. That's it.
+  2. Works with AirPods, Beats, and Shokz out of the box.
+  3. The wireless setup teams are switching to right now.
+
+  DESIGNER NOTES:
+  - Layout: "How It Works" 3-step flow (new layout, not used in previous emails)
+  - 4 product images available from Shopify CDN (no lifestyle shots on this page)
+  - Mobile-first, single column stacks cleanly
+  - Archivo Black for headlines, Archivo for body
+  - Dark hero section, alternating light/dark feature blocks
+  - CTA placed early (after intro, before features)
+  - No radio compatibility grid per client rules
+  - Confirm image assignments with product page before final design
+=============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go Wireless. Stay Connected.</title>
+<style>
+  body { margin: 0; padding: 0; background-color: #f5f5f5; font-family: 'Archivo', Arial, sans-serif; }
+  .email-wrapper { max-width: 600px; margin: 0 auto; background: #ffffff; }
+  .hero { background-color: #282828; text-align: center; padding: 0; }
+  .hero img { width: 100%; display: block; }
+  .hero-text { padding: 40px 30px 10px; }
+  .hero h1 { font-family: 'Archivo Black', Arial, sans-serif; color: #ffffff; font-size: 32px; margin: 0 0 6px; letter-spacing: 1px; text-transform: uppercase; line-height: 1.15; }
+  .hero-sub { font-family: 'Archivo', Arial, sans-serif; color: #999999; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 20px; }
+  .intro { background-color: #282828; padding: 0 30px 36px; text-align: center; }
+  .intro p { color: #cccccc; font-size: 15px; line-height: 1.65; margin: 0 0 24px; }
+  .cta-btn { display: inline-block; background-color: #DE2A2A; color: #ffffff; font-family: 'Archivo Black', Arial, sans-serif; font-size: 14px; text-decoration: none; padding: 14px 36px; letter-spacing: 1.5px; text-transform: uppercase; border-radius: 0; }
+  .section-light { background-color: #ffffff; padding: 40px 30px; }
+  .section-dark { background-color: #282828; padding: 40px 30px; }
+  .section-gray { background-color: #f5f5f5; padding: 40px 30px; }
+  .section-title { font-family: 'Archivo Black', Arial, sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; color: #DE2A2A; margin: 0 0 8px; text-align: center; }
+  .section-headline { font-family: 'Archivo Black', Arial, sans-serif; font-size: 22px; color: #282828; margin: 0 0 30px; text-align: center; text-transform: uppercase; line-height: 1.25; }
+  .section-headline-white { font-family: 'Archivo Black', Arial, sans-serif; font-size: 22px; color: #ffffff; margin: 0 0 30px; text-align: center; text-transform: uppercase; line-height: 1.25; }
+
+  /* 3-Step How It Works */
+  .steps-row { display: flex; gap: 16px; justify-content: center; }
+  .step-card { flex: 1; text-align: center; max-width: 170px; }
+  .step-number { font-family: 'Archivo Black', Arial, sans-serif; font-size: 36px; color: #DE2A2A; margin: 0; line-height: 1; }
+  .step-label { font-family: 'Archivo Black', Arial, sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #282828; margin: 8px 0 6px; }
+  .step-desc { font-size: 13px; color: #666666; line-height: 1.5; margin: 0; }
+
+  /* Feature Stack */
+  .feature-row { display: flex; align-items: center; gap: 20px; margin-bottom: 28px; }
+  .feature-row:last-child { margin-bottom: 0; }
+  .feature-icon { flex-shrink: 0; width: 56px; height: 56px; background-color: #DE2A2A; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .feature-icon span { color: #ffffff; font-size: 22px; }
+  .feature-content { flex: 1; }
+  .feature-label { font-family: 'Archivo Black', Arial, sans-serif; font-size: 14px; text-transform: uppercase; color: #ffffff; margin: 0 0 4px; }
+  .feature-desc { font-size: 13px; color: #aaaaaa; line-height: 1.5; margin: 0; }
+
+  /* Kit Section */
+  .kit-grid { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .kit-item { text-align: center; flex: 1; min-width: 140px; max-width: 170px; padding: 20px 12px; background: #ffffff; border: 1px solid #e5e5e5; }
+  .kit-item img { width: 80px; height: 80px; object-fit: contain; display: block; margin: 0 auto 12px; }
+  .kit-item-label { font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; color: #282828; letter-spacing: 0.5px; }
+
+  /* Compatibility */
+  .compat-line { text-align: center; font-size: 14px; color: #cccccc; line-height: 1.6; }
+  .compat-line strong { color: #ffffff; }
+
+  /* Footer */
+  .footer { background-color: #282828; padding: 30px; text-align: center; border-top: 1px solid #333333; }
+  .footer-links { font-size: 12px; color: #999999; margin: 0 0 16px; }
+  .footer-links a { color: #DE2A2A; text-decoration: none; }
+  .footer-badge { font-family: 'Archivo Black', Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #666666; margin: 16px 0 12px; }
+  .footer-contact { font-size: 11px; color: #666666; margin: 4px 0; }
+  .footer-social { margin: 16px 0; }
+  .footer-social a { display: inline-block; margin: 0 8px; color: #999999; text-decoration: none; font-size: 13px; }
+  .footer-brand { font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; color: #444444; letter-spacing: 2px; margin-top: 16px; }
+
+  @media only screen and (max-width: 480px) {
+    .hero h1 { font-size: 26px; }
+    .hero-text { padding: 30px 20px 10px; }
+    .intro { padding: 0 20px 30px; }
+    .section-light, .section-dark, .section-gray { padding: 30px 20px; }
+    .steps-row { flex-direction: column; align-items: center; gap: 24px; }
+    .step-card { max-width: 280px; }
+    .feature-row { flex-direction: column; text-align: center; gap: 10px; }
+    .kit-grid { flex-direction: column; align-items: center; }
+    .kit-item { max-width: 280px; width: 100%; }
+    .section-headline, .section-headline-white { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+
+  <!-- ============================================
+       SLPL (Subject Line + Preview Text)
+       ============================================ -->
+  <div style="background-color: #282828; padding: 12px 30px; text-align: center; border-bottom: 1px solid #333333;">
+    <p style="margin: 0; font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #DE2A2A;">
+      SL: Your AirPods just became tactical gear.
+    </p>
+    <p style="margin: 4px 0 0; font-size: 11px; color: #666666;">
+      PL: Pair your earbuds. Press PTT. That's it.
+    </p>
+  </div>
+
+  <!-- ============================================
+       HERO — Dark bg, product image, bold headline
+       ============================================
+       IMAGE: motorola-apx-bluetooth-adapter-with-wireless-ptt-4397918.png
+       (Full kit shot: adapter + wireless PTT + cable)
+       Designer: Confirm this is the best hero image.
+       Consider a custom dark gradient overlay if image has white bg.
+  -->
+  <div class="hero">
+    <div class="hero-text">
+      <p class="hero-sub">Motorola APX Series</p>
+      <h1>Go Wireless.<br>Stay Connected.</h1>
+    </div>
+    <div style="padding: 0 40px 30px;">
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/motorola-apx-bluetooth-adapter-with-wireless-ptt-4397918.png?v=1770110709"
+           alt="Motorola APX Bluetooth Adapter with Wireless PTT Kit"
+           style="max-width: 380px; width: 100%; display: block; margin: 0 auto;">
+    </div>
+  </div>
+
+  <!-- ============================================
+       INTRO + EARLY CTA
+       ============================================ -->
+  <div class="intro">
+    <p>
+      Your radio. Your earbuds. No wires. No earpiece.<br>
+      The Air Pro Wireless Combo Kit pairs with your AirPods, Beats, or Shokz
+      and turns your Motorola APX into a fully covert comm setup.
+    </p>
+    <p>
+      Built for plainclothes, undercover, and low visibility operations
+      where looking wired in is not an option.
+    </p>
+    <a href="https://sheepdogmics.com/products/motorola-apx-bluetooth-adapter-wireless-ptt" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- ============================================
+       HOW IT WORKS — 3-Step Flow
+       ============================================
+       Designer: Use numbered circles or icon illustrations.
+       Each step is a card. Horizontal on desktop, stacked on mobile.
+  -->
+  <div class="section-light">
+    <p class="section-title">How It Works</p>
+    <p class="section-headline">Three Steps. You're Live.</p>
+
+    <div class="steps-row">
+      <div class="step-card">
+        <p class="step-number">1</p>
+        <p class="step-label">Pair</p>
+        <p class="step-desc">Connect your wireless earbuds to the Bluetooth adapter. AirPods, Beats, Shokz. Whatever you run.</p>
+      </div>
+      <div class="step-card">
+        <p class="step-number">2</p>
+        <p class="step-label">Connect</p>
+        <p class="step-desc">Plug the adapter into your Motorola APX radio. Kill switch controls Bluetooth on or off instantly.</p>
+      </div>
+      <div class="step-card">
+        <p class="step-number">3</p>
+        <p class="step-label">Go</p>
+        <p class="step-desc">Press the wireless PTT from your pocket, sleeve, or MOLLE. Transmit through your earbuds. No wires visible.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       PRODUCT IMAGE — Detail Shot
+       ============================================
+       IMAGE: motorola-apx-bluetooth-adapter-with-wireless-ptt-8906988.png
+       Designer: Use as a full-width detail/close-up break between sections.
+  -->
+  <div style="background-color: #f5f5f5; padding: 0; text-align: center;">
+    <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/motorola-apx-bluetooth-adapter-with-wireless-ptt-8906988.png?v=1770110709"
+         alt="Motorola APX Bluetooth Adapter Detail"
+         style="max-width: 400px; width: 85%; display: block; margin: 0 auto; padding: 30px 0;">
+  </div>
+
+  <!-- ============================================
+       FEATURES — Stacked icon rows on dark bg
+       ============================================
+       Designer: Use simple white icons in red circles.
+       Stacked vertically for mobile-first scan.
+  -->
+  <div class="section-dark">
+    <p class="section-title">Built For The Field</p>
+    <p class="section-headline-white">Why Teams Are Running This</p>
+
+    <div style="max-width: 440px; margin: 0 auto;">
+
+      <div class="feature-row">
+        <div class="feature-icon"><span>⚡</span></div>
+        <div class="feature-content">
+          <p class="feature-label">Kill Switch Control</p>
+          <p class="feature-desc">ON/OFF switch activates Bluetooth instantly. Flip it off and you're back on standard radio comms. No disconnecting. No fumbling.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-icon"><span>🔇</span></div>
+        <div class="feature-content">
+          <p class="feature-label">Bump Free PTT</p>
+          <p class="feature-desc">Flush button design prevents accidental transmissions. Press deliberately or don't press at all. No hot mics.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-icon"><span>🔋</span></div>
+        <div class="feature-content">
+          <p class="feature-label">Rechargeable Battery</p>
+          <p class="feature-desc">The wireless PTT runs on a rechargeable battery built for extended shifts. Charging cable included.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-icon"><span>📍</span></div>
+        <div class="feature-content">
+          <p class="feature-label">Optional MOLLE Mount</p>
+          <p class="feature-desc">Secure the PTT to your plate carrier or vest. Or run it loose in a pocket for deep cover work. Your call.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================
+       KIT BREAKDOWN — What's Included
+       ============================================
+       IMAGES: Use remaining product images for individual components.
+       motorola-apx-...-1438334.png (likely adapter close-up)
+       motorola-apx-...-3490578.png (likely PTT or cable detail)
+       Designer: If product images are all full-kit shots,
+       crop individual components or use icons instead.
+  -->
+  <div class="section-light">
+    <p class="section-title">What's Included</p>
+    <p class="section-headline">Everything You Need. Nothing You Don't.</p>
+
+    <div class="kit-grid">
+      <div class="kit-item">
+        <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/motorola-apx-bluetooth-adapter-with-wireless-ptt-1438334.png?v=1770110709"
+             alt="Motorola APX Bluetooth Adapter" style="width: 80px; height: 80px; object-fit: contain; display: block; margin: 0 auto 12px;">
+        <p class="kit-item-label">Motorola APX<br>Bluetooth Adapter</p>
+      </div>
+      <div class="kit-item">
+        <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/motorola-apx-bluetooth-adapter-with-wireless-ptt-3490578.png?v=1770110709"
+             alt="Remote Wireless PTT Button" style="width: 80px; height: 80px; object-fit: contain; display: block; margin: 0 auto 12px;">
+        <p class="kit-item-label">Remote Wireless<br>PTT Button</p>
+      </div>
+      <div class="kit-item">
+        <!-- Designer: Use icon or photo of USB cable -->
+        <div style="width: 80px; height: 80px; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; background: #f5f5f5; border-radius: 4px;">
+          <span style="font-size: 28px; color: #282828;">🔌</span>
+        </div>
+        <p class="kit-item-label">Wireless PTT<br>Charging Cable</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       COMPATIBILITY — Single line per client rules
+       ============================================ -->
+  <div class="section-dark" style="padding: 30px;">
+    <p style="text-align: center; margin: 0;">
+      <span style="font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #DE2A2A;">Compatible Radios</span>
+    </p>
+    <p class="compat-line" style="margin: 10px 0 0;">
+      <strong>Motorola APX NEXT, APX 900 through APX 8000, XPR 6000 and 7000 Series, SRX2200</strong>
+    </p>
+    <p class="compat-line" style="margin: 6px 0 0; font-size: 12px;">
+      Full compatibility list on the product page.
+    </p>
+  </div>
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <div style="background-color: #1a1a1a; padding: 40px 30px; text-align: center;">
+    <p style="font-family: 'Archivo Black', Arial, sans-serif; font-size: 20px; color: #ffffff; text-transform: uppercase; margin: 0 0 6px; line-height: 1.25;">
+      No Wires. No Earpiece.<br>Full Comms.
+    </p>
+    <p style="font-size: 14px; color: #888888; margin: 0 0 24px;">
+      Pair your earbuds. Press PTT. You're live.
+    </p>
+    <a href="https://sheepdogmics.com/products/motorola-apx-bluetooth-adapter-wireless-ptt" class="cta-btn">Shop Now</a>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <div class="footer">
+    <p class="footer-links">
+      Free Shipping &nbsp;|&nbsp; Dedicated Support &nbsp;|&nbsp; Easy Returns
+    </p>
+    <p class="footer-badge">
+      SHEEPDOG Accepts Government Purchase Orders
+    </p>
+    <p class="footer-contact">Customer Service: 702 475 5225</p>
+    <div class="footer-social">
+      <!-- Designer: Instagram + Facebook icons -->
+      <a href="#">Instagram</a> &nbsp;&nbsp; <a href="#">Facebook</a>
+    </div>
+    <p style="font-size: 10px; color: #555555; margin: 12px 0 0;">
+      SHEEPDOG &nbsp; 8638 Sky Pointe Dr, Las Vegas, Nevada 89131
+    </p>
+    <p style="font-size: 10px; color: #555555; margin: 8px 0 0;">
+      <a href="#" style="color: #777777; text-decoration: underline;">Email Preferences</a> &nbsp;|&nbsp;
+      <a href="#" style="color: #777777; text-decoration: underline;">View in Browser</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>

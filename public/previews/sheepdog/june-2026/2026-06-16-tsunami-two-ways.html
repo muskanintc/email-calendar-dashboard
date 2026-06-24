@@ -1,0 +1,332 @@
+<!--
+=============================================================
+  SHEEPDOG — Email Wireframe
+  Date: June 16, 2026
+  Theme: TSUNAMI: One PTT. Two Ways to Run It.
+  Product: TSUNAMI Waterproof PTT/Mic (MOLLE + Alligator)
+  Type: Promotional
+  Template: promotional.md
+  Layout: Split comparison (MOLLE vs Alligator scenario)
+=============================================================
+
+  SUBJECT LINE OPTIONS:
+  1. One PTT. Two ways to run it.
+  2. Plate carrier or patrol shirt. TSUNAMI runs both.
+  3. How are you wearing your TSUNAMI?
+
+  PREVIEW TEXT OPTIONS:
+  1. MOLLE carrier or uniform shirt. Same PTT. Your call.
+  2. Two clip options. Two setups. One waterproof mic.
+  3. Pick your setup. TSUNAMI handles the rest.
+
+  DESIGNER NOTES:
+  - Layout: Split comparison (new layout, not used before)
+  - Two scenario columns: MOLLE vs Alligator side by side on desktop, stacked on mobile
+  - 6 product images from Shopify CDN (3 MOLLE, 2 alligator, 1 lifestyle)
+  - May 19 TSUNAMI email used 5 different images (local files) — avoid visual overlap
+  - Mobile-first, columns stack on small screens
+  - Archivo Black for headlines, Archivo for body
+  - CTA placed early (after hero intro)
+  - Scenario-driven copy, NOT a feature dump
+  - No radio compatibility grid per client rules
+  - Both clips are 360-degree rotating per client feedback
+  - QD = simple setup/removal (push-pull), NOT radio swapping
+=============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSUNAMI: One PTT. Two Ways to Run It.</title>
+<style>
+  body { margin: 0; padding: 0; background-color: #f5f5f5; font-family: 'Archivo', Arial, sans-serif; }
+  .email-wrapper { max-width: 600px; margin: 0 auto; background: #ffffff; }
+
+  /* Hero */
+  .hero { background-color: #282828; text-align: center; padding: 40px 30px 10px; }
+  .hero-tag { font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #DE2A2A; margin: 0 0 12px; }
+  .hero h1 { font-family: 'Archivo Black', Arial, sans-serif; color: #ffffff; font-size: 30px; margin: 0 0 8px; text-transform: uppercase; line-height: 1.15; letter-spacing: 0.5px; }
+  .hero-sub { color: #999999; font-size: 15px; line-height: 1.6; margin: 0 0 28px; }
+
+  /* CTA */
+  .cta-btn { display: inline-block; background-color: #DE2A2A; color: #ffffff; font-family: 'Archivo Black', Arial, sans-serif; font-size: 14px; text-decoration: none; padding: 14px 36px; letter-spacing: 1.5px; text-transform: uppercase; }
+
+  /* Section helpers */
+  .section-title { font-family: 'Archivo Black', Arial, sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; color: #DE2A2A; margin: 0 0 8px; text-align: center; }
+  .section-headline { font-family: 'Archivo Black', Arial, sans-serif; font-size: 22px; color: #282828; margin: 0 0 24px; text-align: center; text-transform: uppercase; line-height: 1.25; }
+  .section-headline-white { font-family: 'Archivo Black', Arial, sans-serif; font-size: 22px; color: #ffffff; margin: 0 0 24px; text-align: center; text-transform: uppercase; line-height: 1.25; }
+
+  /* Split Comparison */
+  .split-row { display: flex; gap: 0; }
+  .split-col { flex: 1; padding: 32px 20px; text-align: center; }
+  .split-left { background-color: #1a1a1a; }
+  .split-right { background-color: #282828; }
+  .split-badge { display: inline-block; font-family: 'Archivo Black', Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #ffffff; background-color: #DE2A2A; padding: 5px 14px; margin-bottom: 16px; }
+  .split-img { width: 100%; max-width: 220px; display: block; margin: 0 auto 16px; }
+  .split-name { font-family: 'Archivo Black', Arial, sans-serif; font-size: 15px; color: #ffffff; text-transform: uppercase; margin: 0 0 10px; }
+  .split-scenario { font-size: 13px; color: #aaaaaa; line-height: 1.6; margin: 0 0 16px; }
+  .split-detail { font-size: 12px; color: #888888; line-height: 1.6; margin: 0; }
+  .split-detail strong { color: #cccccc; }
+
+  /* Shared Specs */
+  .spec-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+  .spec-card { flex: 1; min-width: 120px; max-width: 140px; text-align: center; padding: 20px 10px; background: #f5f5f5; }
+  .spec-value { font-family: 'Archivo Black', Arial, sans-serif; font-size: 18px; color: #282828; margin: 0 0 4px; }
+  .spec-label { font-size: 11px; color: #666666; text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+
+  /* QD Section */
+  .qd-block { max-width: 440px; margin: 0 auto; text-align: center; }
+  .qd-block p { font-size: 14px; color: #cccccc; line-height: 1.65; margin: 0 0 12px; }
+
+  /* Earpiece Pairing */
+  .pairing-text { text-align: center; font-size: 14px; color: #666666; line-height: 1.65; max-width: 440px; margin: 0 auto 24px; }
+
+  /* Footer */
+  .footer { background-color: #282828; padding: 30px; text-align: center; border-top: 1px solid #333333; }
+  .footer-links { font-size: 12px; color: #999999; margin: 0 0 16px; }
+  .footer-links a { color: #DE2A2A; text-decoration: none; }
+  .footer-badge { font-family: 'Archivo Black', Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #666666; margin: 16px 0 12px; }
+  .footer-contact { font-size: 11px; color: #666666; margin: 4px 0; }
+  .footer-social { margin: 16px 0; }
+  .footer-social a { display: inline-block; margin: 0 8px; color: #999999; text-decoration: none; font-size: 13px; }
+
+  @media only screen and (max-width: 480px) {
+    .hero { padding: 30px 20px 10px; }
+    .hero h1 { font-size: 24px; }
+    .split-row { flex-direction: column; }
+    .split-col { padding: 28px 24px; }
+    .spec-row { flex-direction: column; align-items: center; }
+    .spec-card { max-width: 280px; width: 100%; }
+    .section-headline, .section-headline-white { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+
+  <!-- ============================================
+       SLPL (Subject Line + Preview Text)
+       ============================================ -->
+  <div style="background-color: #282828; padding: 12px 30px; text-align: center; border-bottom: 1px solid #333333;">
+    <p style="margin: 0; font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #DE2A2A;">
+      SL: One PTT. Two ways to run it.
+    </p>
+    <p style="margin: 4px 0 0; font-size: 11px; color: #666666;">
+      PL: MOLLE carrier or uniform shirt. Same PTT. Your call.
+    </p>
+  </div>
+
+  <!-- ============================================
+       HERO — Product image + headline
+       ============================================
+       IMAGE: tsunami-...-molle-clip-5788930.png
+       (Full product shot, MOLLE variant)
+       Designer: Use dark bg, product centered.
+       May 19 email used TSUNAMI.png flat lay — this is a different image.
+  -->
+  <div class="hero">
+    <p class="hero-tag">TSUNAMI PTT/Mic</p>
+    <h1>One PTT.<br>Two Ways to Run It.</h1>
+    <p class="hero-sub">
+      Same waterproof mic. Same 360 degree rotating clip.<br>
+      Two setups built for how you actually work.
+    </p>
+    <div style="padding: 0 20px 8px;">
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/tsunami-waterproof-ip67-pttmic-quick-disconnect-molle-clip-5788930.png?v=1770110709"
+           alt="TSUNAMI Waterproof PTT/Mic"
+           style="max-width: 360px; width: 100%; display: block; margin: 0 auto;">
+    </div>
+  </div>
+
+  <!-- ============================================
+       EARLY CTA
+       ============================================ -->
+  <div style="background-color: #282828; padding: 0 30px 36px; text-align: center;">
+    <a href="https://sheepdogmics.com/collections/tsunami-ptt" class="cta-btn">Shop TSUNAMI</a>
+  </div>
+
+  <!-- ============================================
+       SPLIT COMPARISON — MOLLE vs Alligator
+       ============================================
+       Designer: Two columns, side by side on desktop.
+       Each column gets a product image, scenario copy, and details.
+       Stacks vertically on mobile (MOLLE first, then Alligator).
+
+       LEFT IMAGE: tsunami-...-molle-clip-8369056.png (MOLLE detail)
+       RIGHT IMAGE: tsunami-...-alligator-clip-5296351.png (Alligator product)
+  -->
+  <div style="background-color: #1a1a1a; padding: 32px 20px 0; text-align: center;">
+    <p class="section-title">Choose Your Setup</p>
+    <p class="section-headline-white" style="margin-bottom: 0;">Same PTT. Different Mission.</p>
+  </div>
+
+  <div class="split-row">
+    <!-- MOLLE Setup -->
+    <div class="split-col split-left">
+      <span class="split-badge">MOLLE Clip</span>
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/tsunami-waterproof-ip67-pttmic-quick-disconnect-molle-clip-8369056.png?v=1770110709"
+           alt="TSUNAMI with MOLLE Clip" class="split-img">
+      <p class="split-name">The Tactical Setup</p>
+      <p class="split-scenario">
+        Locks directly to your plate carrier or tactical vest. 360 degree rotation lets you position the mic exactly where you need it. Stays locked through movement, contact, vehicle transitions.
+      </p>
+      <p class="split-detail">
+        <strong>Built for:</strong> SWAT entries. High risk warrants. Field ops where your carrier is your loadout.
+      </p>
+      <p class="split-detail" style="margin-top: 8px;">
+        <strong>Rotation:</strong> Stops every 60 degrees. Locks in place.
+      </p>
+    </div>
+
+    <!-- Alligator Setup -->
+    <div class="split-col split-right">
+      <span class="split-badge">Alligator Clip</span>
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/tsunami-waterproof-ip67-pttmic-quick-disconnect-alligator-clip-5296351.png?v=1770110709"
+           alt="TSUNAMI with Alligator Clip" class="split-img">
+      <p class="split-name">The Patrol Setup</p>
+      <p class="split-scenario">
+        Clips to uniform shirts and external carriers. 360 degree rotation means you can angle the mic on your chest, shoulder, or collar. Fast on, fast off between assignments.
+      </p>
+      <p class="split-detail">
+        <strong>Built for:</strong> Daily patrol. Court details. Bike units. Any shift where a plate carrier is too much gear.
+      </p>
+      <p class="split-detail" style="margin-top: 8px;">
+        <strong>Rotation:</strong> Full 360 degrees. Clip and position freely.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============================================
+       LIFESTYLE IMAGE — Break
+       ============================================
+       IMAGE: tsunami-...-alligator-clip-2456332.jpg
+       (Lifestyle shot, .jpg format — likely officer in field)
+       Designer: Full width, edge to edge.
+  -->
+  <div style="background-color: #282828; padding: 0; text-align: center;">
+    <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/tsunami-waterproof-ip67-pttmic-quick-disconnect-alligator-clip-2456332.jpg?v=1770110709"
+         alt="TSUNAMI PTT in the field"
+         style="width: 100%; display: block;">
+  </div>
+
+  <!-- ============================================
+       SHARED SPECS — What Both Setups Get
+       ============================================
+       Designer: 3 stat cards in a row. Clean, minimal.
+  -->
+  <div style="background-color: #ffffff; padding: 40px 30px;">
+    <p class="section-title">Both Setups. Same Specs.</p>
+    <p class="section-headline">What Every TSUNAMI Comes With</p>
+
+    <div class="spec-row">
+      <div class="spec-card">
+        <p class="spec-value">IP67</p>
+        <p class="spec-label">Water and Dust Proof</p>
+      </div>
+      <div class="spec-card">
+        <p class="spec-value">32"</p>
+        <p class="spec-label">PTT/Mic Cord</p>
+      </div>
+      <div class="spec-card">
+        <p class="spec-value">3.5mm</p>
+        <p class="spec-label">Earpiece Port</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       QD SECTION — Quick Disconnect
+       ============================================
+       Using approved QD copy from feedback.md
+       IMAGE: tsunami-...-molle-clip-6128775.png (detail shot)
+  -->
+  <div style="background-color: #282828; padding: 40px 30px;">
+    <p class="section-title">Quick Disconnect</p>
+    <p class="section-headline-white">Detach in Seconds. No Re-routing.</p>
+
+    <div style="text-align: center; margin-bottom: 24px;">
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/tsunami-waterproof-ip67-pttmic-quick-disconnect-molle-clip-6128775.png?v=1770110709"
+           alt="TSUNAMI 6-Pin Quick Disconnect"
+           style="max-width: 300px; width: 80%; display: block; margin: 0 auto;">
+    </div>
+
+    <div class="qd-block">
+      <p>
+        Includes a 6 Pin Quick Disconnect (QD) radio adapter for simple setup and removal, using our simple "push pull" design. QD is ideal for those who prioritize speed and efficiency.
+      </p>
+      <p>
+        The mic detaches from the radio adapter without unplugging the entire setup. Your cable stays routed through your plate carrier, MOLLE, or uniform. Swap accessories, replace a damaged mic, or disconnect at end of shift. No re-routing. Less wear on your radio.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============================================
+       EARPIECE PAIRING
+       ============================================
+       Suggest AWARE earpieces (client moving from HDLO to AWARE)
+  -->
+  <div style="background-color: #f5f5f5; padding: 40px 30px; text-align: center;">
+    <p class="section-title">Pair It</p>
+    <p class="section-headline">Runs With Any 3.5mm Earpiece</p>
+
+    <p class="pairing-text">
+      TSUNAMI works with any 3.5mm listen only earpiece. Pair it with Sheepdog AWARE for a low profile, secure fit setup that disappears under your hair or collar.
+    </p>
+    <p class="pairing-text" style="margin-bottom: 0;">
+      8 inch earpiece cord keeps the connection tight and clean. No excess cable.
+    </p>
+  </div>
+
+  <!-- ============================================
+       REVIEW QUOTE
+       ============================================ -->
+  <div style="background-color: #282828; padding: 30px; text-align: center;">
+    <p style="font-size: 15px; color: #cccccc; font-style: italic; line-height: 1.6; margin: 0 0 8px; max-width: 420px; margin-left: auto; margin-right: auto;">
+      "Sheepdog has a nice quality product here. They have really done their research."
+    </p>
+    <p style="font-size: 11px; color: #666666; text-transform: uppercase; letter-spacing: 1px; margin: 0;">
+      Verified Customer
+    </p>
+  </div>
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <div style="background-color: #1a1a1a; padding: 40px 30px; text-align: center;">
+    <p style="font-family: 'Archivo Black', Arial, sans-serif; font-size: 20px; color: #ffffff; text-transform: uppercase; margin: 0 0 6px; line-height: 1.25;">
+      Pick Your Clip. Run Your Setup.
+    </p>
+    <p style="font-size: 14px; color: #888888; margin: 0 0 24px;">
+      Available for Motorola, Harris, Kenwood, Icom, and Tait radios.
+    </p>
+    <a href="https://sheepdogmics.com/collections/tsunami-ptt" class="cta-btn">Shop TSUNAMI</a>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <div class="footer">
+    <p class="footer-links">
+      Free Shipping &nbsp;|&nbsp; Dedicated Support &nbsp;|&nbsp; Easy Returns
+    </p>
+    <p class="footer-badge">
+      SHEEPDOG Accepts Government Purchase Orders
+    </p>
+    <p class="footer-contact">Customer Service: 702 475 5225</p>
+    <div class="footer-social">
+      <a href="#">Instagram</a> &nbsp;&nbsp; <a href="#">Facebook</a>
+    </div>
+    <p style="font-size: 10px; color: #555555; margin: 12px 0 0;">
+      SHEEPDOG &nbsp; 8638 Sky Pointe Dr, Las Vegas, Nevada 89131
+    </p>
+    <p style="font-size: 10px; color: #555555; margin: 8px 0 0;">
+      <a href="#" style="color: #777777; text-decoration: underline;">Email Preferences</a> &nbsp;|&nbsp;
+      <a href="#" style="color: #777777; text-decoration: underline;">View in Browser</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>

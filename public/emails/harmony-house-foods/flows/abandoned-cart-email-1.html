@@ -1,0 +1,230 @@
+<!--
+===============================================================
+HARMONY HOUSE FOODS — ABANDONED CART FLOW
+===============================================================
+Email 1 of 3
+Trigger: 1 hour after cart abandonment
+Goal: Gentle nudge to return and complete purchase while cart is top of mind
+Tone: Warm, helpful, zero pressure
+
+LAYOUT:
+Logo → Friendly headline → Cart items (dynamic) → Free shipping callout →
+CTA → Trust grid (3 icons) → Soft closing → Footer
+
+NOTE FOR KLAVIYO:
+All {{ }} variables are dynamic Klaviyo merge tags.
+Product block pulls from the abandoned cart event.
+===============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abandoned Cart Email 1 — Harmony House Foods</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f0e8; font-family:Arial, Helvetica, sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f0e8;">
+<tr><td align="center">
+<table width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff; max-width:600px;">
+
+
+<!-- ============================================================ -->
+<!-- SUBJECT LINE & PREVIEW TEXT OPTIONS (VISIBLE) -->
+<!-- ============================================================ -->
+<tr><td style="padding:20px 25px; background-color:#f0f4ff; border-bottom:3px solid #1B3A5C;">
+
+  <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Subject Line Options</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333333; line-height:1.6;">1. You left something good behind.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333333; line-height:1.6;">2. Your cart is waiting for you.</p>
+  <p style="margin:0 0 16px 0; font-size:14px; color:#333333; line-height:1.6;">3. Forgot something? We saved it.</p>
+
+  <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Preview Text Options</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333333; line-height:1.6;">1. No prep. No waste. Your shelf-stable produce is still in your cart.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333333; line-height:1.6;">2. Good news: everything you picked is still available.</p>
+  <p style="margin:0 0 0 0; font-size:14px; color:#333333; line-height:1.6;">3. Complete your order and get free shipping on $99+.</p>
+
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- LOGO -->
+<!-- ============================================================ -->
+<tr><td align="center" style="padding:25px 0 15px 0; background-color:#ffffff;">
+  <!--
+  DESIGN NOTE: Use the full HHF logo (same as existing abandoned cart email),
+  not the favicon. Navy on white.
+  -->
+  <img src="https://www.harmonyhousefoods.com/cdn/shop/files/logo_453089b8-ec5d-4fcf-9594-6a4b9c9debaa.png?v=1762757611"
+       alt="Harmony House Foods" width="180" style="display:block;" />
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- HERO HEADLINE -->
+<!-- ============================================================ -->
+<!--
+DESIGN NOTE: No banner image. Clean white background with navy text.
+Centered. Friendly, not alarming. Warm emoji or small cart icon optional.
+-->
+<tr><td style="padding:20px 30px 10px 30px; text-align:center; background-color:#ffffff;">
+  <h1 style="margin:0 0 12px 0; font-size:26px; font-weight:800; color:#1B3A5C; line-height:1.2; font-family:Georgia, 'Times New Roman', serif;">
+    Your Fresh Meals Are Waiting
+  </h1>
+  <p style="margin:0; font-size:15px; color:#555555; line-height:1.7; max-width:440px; display:inline-block;">
+    You're one step closer to making healthy meals easier every day. We saved your cart.
+  </p>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- ABANDONED CART PRODUCT BLOCK (DYNAMIC) -->
+<!-- ============================================================ -->
+<!--
+DESIGN NOTE: Dynamic product block. Klaviyo populates from cart event.
+Each item: product image (left), product name + price (right).
+Rounded card style on light gray background.
+Show up to 3 items. If more, show "and X more items in your cart."
+
+KLAVIYO SETUP:
+Use the "Added to Cart" or "Started Checkout" event.
+Loop through {{ event.items }} to render each product.
+-->
+<tr><td style="padding:20px 20px 10px 20px; background-color:#ffffff;">
+
+  <!-- DYNAMIC PRODUCT CARD (repeat per cart item) -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f9f9f9; border-radius:10px; overflow:hidden; margin-bottom:10px;">
+  <tr>
+    <td width="35%" style="padding:15px; text-align:center; vertical-align:middle;">
+      <!-- KLAVIYO: {{ item.image_url }} -->
+      <img src="https://www.harmonyhousefoods.com/cdn/shop/files/19020_Bean___Legume_Sampler_1.png?v=1764040947&width=600"
+           alt="{{ item.product_name }}" width="140" style="display:block; margin:0 auto; max-width:100%;" />
+    </td>
+    <td width="65%" style="padding:15px 20px; vertical-align:middle;">
+      <!-- KLAVIYO: {{ item.product_name }} -->
+      <p style="margin:0 0 6px 0; font-size:16px; font-weight:700; color:#1B3A5C;">{{ item.product_name }}</p>
+      <!-- KLAVIYO: {{ item.price }} -->
+      <p style="margin:0 0 10px 0; font-size:15px; color:#333333; font-weight:600;">${{ item.price }}</p>
+      <p style="margin:0; font-size:12px; color:#888888;">Qty: {{ item.quantity }}</p>
+    </td>
+  </tr>
+  </table>
+  <!-- END DYNAMIC PRODUCT CARD -->
+
+  <!--
+  DESIGN NOTE: If multiple cart items, stack these cards vertically.
+  Max 3 visible. If more, add text: "+ X more items in your cart"
+  -->
+
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- CTA AFTER CART ITEMS -->
+<!-- ============================================================ -->
+<tr><td align="center" style="padding:10px 30px 20px 30px; background-color:#ffffff;">
+  <a href="{{ checkout_url }}" style="display:inline-block; background-color:#1B3A5C; color:#ffffff; font-size:16px; font-weight:700; text-decoration:none; padding:16px 44px; border-radius:30px; text-transform:uppercase; letter-spacing:1px;">
+    Complete Your Order
+  </a>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- FREE SHIPPING CALLOUT -->
+<!-- ============================================================ -->
+<!--
+DESIGN NOTE: Full-width strip. Light blue or cream background.
+Truck icon or shipping box icon on the left. Bold text.
+-->
+<tr><td style="padding:16px 25px; background-color:#e8f0f8; text-align:center;">
+  <p style="margin:0; font-size:15px; font-weight:700; color:#1B3A5C;">
+    &#128666; FREE Shipping on Orders $99+
+  </p>
+</td></tr>
+
+
+
+
+<!-- ============================================================ -->
+<!-- WHY-BUY MESSAGING -->
+<!-- ============================================================ -->
+<tr><td style="padding:10px 35px 25px 35px; text-align:center; background-color:#ffffff;">
+  <p style="margin:0 0 10px 0; font-size:15px; color:#333333; line-height:1.7;">
+    No more last minute trips to the grocery store. Keep premium vegetables, fruits, beans, and more on hand whenever you need them for quick, convenient meals.
+  </p>
+  <p style="margin:0; font-size:14px; color:#666666; line-height:1.7;">
+    Fresh produce that's ready when you are. No chopping. No waste. Just real food.
+  </p>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- TRUST GRID: 3 ICONS (keep in every email) -->
+<!-- ============================================================ -->
+<!--
+DESIGN NOTE: Exact same 3-icon grid from the existing abandoned cart email.
+Card style with light gray background, rounded corners, icon above text.
+Use the same icons as the current email (leaf, truck, chef hat).
+-->
+<tr><td style="padding:0 20px 25px 20px; background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="33%" align="center" valign="top" style="padding:5px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f9; border-radius:12px;">
+      <tr><td align="center" style="padding:20px 10px;">
+        <!-- DESIGN NOTE: Use leaf icon from existing email -->
+        <div style="width:40px; height:40px; background-color:#dce4ee; border-radius:8px; margin:0 auto 10px auto; line-height:40px; font-size:20px;">&#127807;</div>
+        <p style="margin:0 0 4px 0; font-size:13px; font-weight:800; color:#1B3A5C; text-transform:uppercase; letter-spacing:0.5px;">Premium<br/>Ingredients</p>
+        <p style="margin:0; font-size:11px; color:#888888; line-height:1.4;">Rehydrate quickly<br/>for everyday use</p>
+      </td></tr>
+      </table>
+    </td>
+    <td width="33%" align="center" valign="top" style="padding:5px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f9; border-radius:12px;">
+      <tr><td align="center" style="padding:20px 10px;">
+        <!-- DESIGN NOTE: Use truck icon from existing email -->
+        <div style="width:40px; height:40px; background-color:#dce4ee; border-radius:8px; margin:0 auto 10px auto; line-height:40px; font-size:20px;">&#128666;</div>
+        <p style="margin:0 0 4px 0; font-size:13px; font-weight:800; color:#1B3A5C; text-transform:uppercase; letter-spacing:0.5px;">Fast, Fresh<br/>Delivery</p>
+        <p style="margin:0; font-size:11px; color:#888888; line-height:1.4;">Quick order<br/>processing</p>
+      </td></tr>
+      </table>
+    </td>
+    <td width="33%" align="center" valign="top" style="padding:5px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f9; border-radius:12px;">
+      <tr><td align="center" style="padding:20px 10px;">
+        <!-- DESIGN NOTE: Use chef hat icon from existing email -->
+        <div style="width:40px; height:40px; background-color:#dce4ee; border-radius:8px; margin:0 auto 10px auto; line-height:40px; font-size:20px;">&#128104;&#8205;&#127859;</div>
+        <p style="margin:0 0 4px 0; font-size:13px; font-weight:800; color:#1B3A5C; text-transform:uppercase; letter-spacing:0.5px;">Crafted<br/>Recipes</p>
+        <p style="margin:0; font-size:11px; color:#888888; line-height:1.4;">Nutrition meets<br/>flavor</p>
+      </td></tr>
+      </table>
+    </td>
+  </tr>
+  </table>
+</td></tr>
+
+
+<!-- ============================================================ -->
+<!-- FOOTER -->
+<!-- ============================================================ -->
+<tr><td style="padding:20px 30px; text-align:center; background-color:#1B3A5C;">
+  <p style="margin:0 0 10px 0; font-size:12px; color:#ffffff;">
+    &copy; 2026 Harmony House Foods. All rights reserved.
+  </p>
+  <p style="margin:0; font-size:11px; color:#999999; line-height:1.6;">
+    <a href="#" style="color:#cccccc; text-decoration:underline;">Unsubscribe</a> &nbsp;|&nbsp;
+    <a href="#" style="color:#cccccc; text-decoration:underline;">My Account</a> &nbsp;|&nbsp;
+    <a href="#" style="color:#cccccc; text-decoration:underline;">Privacy Policy</a>
+  </p>
+  <!-- DESIGN NOTE: Facebook + Instagram icons, same as existing email -->
+</td></tr>
+
+
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>
