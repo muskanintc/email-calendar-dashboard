@@ -76,7 +76,7 @@
       "date": "2026-06-24",
       "day": "Wed",
       "type": "promotional",
-      "status": "approved",
+      "status": "done",
       "theme": "You Have Never Used Fruit Like This Before",
       "product": "Organic Vegetable Pantry Stuffer, Orchard Fruit Medley",
       "shortDescription": "Beyond smoothies. Think salsas, summer cocktails, and desserts that steal the show.",
@@ -93,7 +93,7 @@
       "date": "2026-06-27",
       "day": "Sat",
       "type": "promotional",
-      "status": "approved",
+      "status": "scheduled",
       "theme": "Our Best Seller, and It's Not Hard to See Why",
       "product": "Backpacking Kit (18 ZIP Pouches), SKU 19040",
       "shortDescription": "Best-seller spotlight. Backpacking Kit (18 ZIP pouches of dried veggies and beans). Swapped in for the sold-out Trail-Ready pack. #1 best seller, Backpacker Magazine Editor's Choice. Zip open, simmer and season, or just soak. Made for the trail.",
@@ -104,23 +104,6 @@
       "collectionUrl": "",
       "offerCode": "",
       "creativeDirection": "Best-seller spotlight. Hero product imagery, outdoor and adventure lifestyle."
-    },
-    {
-      "id": "2026-06-28-bestseller-dried-bell-peppers",
-      "date": "2026-06-30",
-      "day": "Tue",
-      "type": "promotional",
-      "status": "copy-ready",
-      "theme": "36 Ounces of Flavor Your Kitchen Has Been Missing",
-      "product": "Dried Bell Peppers (36 oz)",
-      "shortDescription": "The bell pepper that upgrades everything. Soups, stir fries, omelets, pastas, you name it.",
-      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/2026-06-30-dried-bell-peppers-bestseller.html",
-      "finalDesignLink": "",
-      "notes": "BEST-SELLER FEATURE. SKU 10054. Highlight versatility across cuisines and dishes.",
-      "productUrl": "",
-      "collectionUrl": "",
-      "offerCode": "",
-      "creativeDirection": "Best-seller spotlight. Vibrant bell pepper imagery, recipe and cooking lifestyle."
     }
   ]
 }

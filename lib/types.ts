@@ -1,6 +1,6 @@
 export type EmailType = 'promotional' | 'educational' | 'product-launch' | 'welcome' | 'abandoned-cart' | 'win-back';
 
-export type EmailStatus = 'pending' | 'in-progress' | 'copy-ready' | 'approved' | 'changes-requested' | 'done';
+export type EmailStatus = 'pending' | 'in-progress' | 'copy-ready' | 'approved' | 'changes-requested' | 'scheduled' | 'done';
 
 export interface CalendarEmail {
   id: string;

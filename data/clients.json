@@ -5,7 +5,10 @@
     "fullName": "Sheepdog Microphones",
     "description": "Tactical microphones and headsets for law enforcement and military",
     "color": "#1e3a5f",
-    "months": ["2026-04", "2026-05"]
+    "months": [
+      "2026-04",
+      "2026-05"
+    ]
   },
   {
     "slug": "logox",
@@ -13,7 +16,10 @@
     "fullName": "LogOX Forestry Tools",
     "description": "Forestry tools and equipment for wood processing",
     "color": "#2d5016",
-    "months": ["2026-04", "2026-05"]
+    "months": [
+      "2026-04",
+      "2026-05"
+    ]
   },
   {
     "slug": "proclamation-jewelry",
@@ -21,7 +27,10 @@
     "fullName": "Proclamation Jewelry",
     "description": "Men's religious and statement jewelry",
     "color": "#6b4c1e",
-    "months": ["2026-04", "2026-05"]
+    "months": [
+      "2026-04",
+      "2026-05"
+    ]
   },
   {
     "slug": "harmony-house-foods",
@@ -29,7 +38,10 @@
     "fullName": "Harmony House Foods",
     "description": "Premium freeze-dried and dehydrated foods, organic line, non-GMO",
     "color": "#3d7a44",
-    "months": ["2026-06"]
+    "months": [
+      "2026-06",
+      "2026-07"
+    ]
   },
   {
     "slug": "wearever",
@@ -37,7 +49,10 @@
     "fullName": "Wearever Incontinence",
     "description": "Affordable, reusable absorbent underwear for active seniors",
     "color": "#1A2450",
-    "months": ["2026-05", "2026-06"]
+    "months": [
+      "2026-05",
+      "2026-06"
+    ]
   },
   {
     "slug": "art-creativity",
@@ -45,7 +60,10 @@
     "fullName": "ArtCreativity",
     "description": "Bright, playful children's toys: outdoor play, bubble toys, party games and arts & crafts",
     "color": "#E8412B",
-    "months": ["2026-05", "2026-06"]
+    "months": [
+      "2026-05",
+      "2026-06"
+    ]
   },
   {
     "slug": "zero9-holsters",
@@ -53,6 +71,8 @@
     "fullName": "Zero9 Holsters",
     "description": "Tactical holsters, mounts and munitions cases for law enforcement and military",
     "color": "#1c1c1c",
-    "months": ["2026-06"]
+    "months": [
+      "2026-06"
+    ]
   }
 ]

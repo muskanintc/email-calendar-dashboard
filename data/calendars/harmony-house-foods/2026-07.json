@@ -1,0 +1,24 @@
+{
+  "client": "harmony-house-foods",
+  "year": 2026,
+  "month": 7,
+  "emails": [
+    {
+      "id": "2026-06-28-bestseller-dried-bell-peppers",
+      "date": "2026-07-11",
+      "day": "Sat",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "36 Ounces of Flavor Your Kitchen Has Been Missing",
+      "product": "Dried Bell Peppers (36 oz)",
+      "shortDescription": "The bell pepper that upgrades everything. Soups, stir fries, omelets, pastas, you name it.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/2026-06-30-dried-bell-peppers-bestseller.html",
+      "finalDesignLink": "",
+      "notes": "BEST-SELLER FEATURE. SKU 10054. Highlight versatility across cuisines and dishes.",
+      "productUrl": "",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "Best-seller spotlight. Vibrant bell pepper imagery, recipe and cooking lifestyle."
+    }
+  ]
+}
