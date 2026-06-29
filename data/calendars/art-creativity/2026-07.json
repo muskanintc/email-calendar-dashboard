@@ -1,0 +1,24 @@
+{
+  "client": "art-creativity",
+  "year": 2026,
+  "month": 7,
+  "emails": [
+    {
+      "id": "2026-07-01-patriotic-party-collection",
+      "date": "2026-07-01",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "Light Up the 4th: Patriotic Party Collection",
+      "product": "USA Button Pins (48), Patriotic Tattoos (144), USA Face Paint Kit, Patriotic Accessories Set",
+      "shortDescription": "4th of July and America's 250th. Patriotic Party Collection for events, party favors, parades, and backyard celebrations.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/july-2026/2026-07-01-patriotic-party-collection.html",
+      "finalDesignLink": "",
+      "notes": "Client provided theme + 4 products Jun 29.",
+      "productUrl": "",
+      "collectionUrl": "https://artcreativity.com/collections/patriotic",
+      "offerCode": "None (free shipping $30+ only)",
+      "creativeDirection": "Patriotic red/white/blue, navy hero with America's 250th tag, 4 stacked product cards (alternating image side) each with green Shop Now, red collection CTA band, trust signals, conversational closer."
+    }
+  ]
+}
