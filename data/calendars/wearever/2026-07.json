@@ -1,0 +1,41 @@
+{
+  "client": "wearever",
+  "year": 2026,
+  "month": 7,
+  "emails": [
+    {
+      "id": "2026-07-03-july4th-sale-announcement",
+      "date": "2026-07-03",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "4th of July Sale: 20% Off All Orders (America's 250th)",
+      "product": "Best sellers (men + women): Classic Regular Brief, Maximum Full Cut Panty, Maximum Briefs, Maximum H-Fly Boxer Brief, Super Full Cut Panty, Cotton Comfort Panty",
+      "shortDescription": "4th of July weekend sale announcement. 20% off all orders Fri July 3 morning through Sun July 5 night. America's 250th, proudly American, US flag banner. 6 best sellers in a grid, each with its own Shop Now.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/wearever/july-2026/2026-07-03-july4th-sale-announcement.html",
+      "finalDesignLink": "",
+      "notes": "Offer mechanism shown as auto-discount no code (matches prior 2026 sales) - confirm before send. New absorbency verbiage used. No pricing, no SKUs, not overnight.",
+      "productUrl": "",
+      "collectionUrl": "https://www.weareverincontinence.com/collections/all-products",
+      "offerCode": "20% off all orders, auto at checkout (no code). Fri-Sun. Cannot be combined.",
+      "creativeDirection": "Patriotic flag hero + bold 20% OFF block, 2-col best-seller grid (6, men+women, varied colors), proudly American trust strip. Navy/red/white."
+    },
+    {
+      "id": "2026-07-05-july4th-sale-last-call",
+      "date": "2026-07-05",
+      "day": "Sun",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "4th of July Sale Last Call: 20% Off Ends Tonight",
+      "product": "Full Coverage Regular Trunk Boxer Brief, Regular 2-in-1 Boxer, Nylon Panty With Lace Sides, Cotton Comfort Panty (each with a real customer review)",
+      "shortDescription": "Final hours of the America's 250th weekend sale. 20% off ends Sun July 5, 11:59 PM. Stacked review cards with real verified customer reviews per product. Distinct layout from the Jul 3 announcement.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/wearever/july-2026/2026-07-05-july4th-sale-last-call.html",
+      "finalDesignLink": "",
+      "notes": "Real reviews pulled from product pages (no overnight quotes used). Confirm offer is auto-discount no code. No pricing, no SKUs.",
+      "productUrl": "",
+      "collectionUrl": "https://www.weareverincontinence.com/collections/all-products",
+      "offerCode": "20% off all orders, auto at checkout (no code). Ends Sun 11:59 PM. Cannot be combined.",
+      "creativeDirection": "Red 'Final Hours' urgency hero + flag, 4 stacked full-width review cards (image + real review, alternating sides), each with Shop Now."
+    }
+  ]
+}
