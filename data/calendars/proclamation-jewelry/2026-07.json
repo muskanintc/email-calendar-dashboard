@@ -1,0 +1,24 @@
+{
+  "client": "proclamation-jewelry",
+  "year": 2026,
+  "month": 7,
+  "emails": [
+    {
+      "id": "2026-07-02-4th-july-gold-chains-usa",
+      "date": "2026-07-02",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "4th of July Special: Gold Chains Made in the USA",
+      "product": "Diamond Cut Franco Chains USA Made: 18k (3mm, 2mm), 14k (4.5mm, 3mm); Signature + Lion clasps upsell",
+      "shortDescription": "4th of July, solid gold chains made in the USA. Intro (Miami Cuban, Franco, Hermes, Rope, lifetime warranty), 18k (3mm+2mm) and 14k (4.5mm+3mm) with Explore More CTAs, plus Upgrade to Signature or King's Clasps section. Nick voice, no pricing.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/july-2026/2026-07-02-4th-july-gold-chains-usa.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 1. All featured chains are Diamond Cut Franco USA Made (match mm/karat + Made in USA theme). Explore More -> /collections/mens-chains metal-filtered. Clasps: signature-clasps + lion-clasps collections. No pricing, no sign off.",
+      "productUrl": "https://www.proclamationjewelry.com/collections/mens-chains",
+      "collectionUrl": "https://www.proclamationjewelry.com/collections/mens-chains",
+      "offerCode": "",
+      "creativeDirection": "Black/gold Proclamation aesthetic, Trajan Pro headings, text brand bar. Hero + intro, 18k 2-card row + Explore More, 14k 2-card row + Explore More, gold clasp image + Signature/Lion clasp CTAs, USA/lifetime-warranty trust line. Shop Now CTAs."
+    }
+  ]
+}
