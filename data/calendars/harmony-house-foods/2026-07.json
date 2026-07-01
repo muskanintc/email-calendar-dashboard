@@ -21,6 +21,23 @@
       "creativeDirection": "HHF green/cream palette. Hero (all 7 jars) + 2-col 7-variety grid + jar trio + shelf-stable benefits checklist. Unique layout vs Jun 30 bell peppers jug spotlight."
     },
     {
+      "id": "2026-07-04-250th-most-loved",
+      "date": "2026-07-04",
+      "day": "Sat",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "Celebrating 250 Years of Independence: Our Most Loved",
+      "product": "Best sellers: Dried Vegetable Soup, Vegetable Sampler (15 zip), Backpacking Kit (18 zip), Deluxe Sampler (32 zip), Organic Vegetable Pantry Stuffer, Deluxe Fruit Assortment",
+      "shortDescription": "4th of July / 250th anniversary email featuring the most loved best sellers (6 products) for celebrations and pantry stocking. Patriotic hero, HHF green product CTAs, 2-col grid each with Shop Now.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/2026-07-04-250th-most-loved.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 1. 250 years of American independence theme. Organic Pantry Stuffer described as USDA Certified Organic. Hero CTA -> /collections/best-sellers. No invented price.",
+      "productUrl": "https://www.harmonyhousefoods.com/collections/best-sellers",
+      "collectionUrl": "https://www.harmonyhousefoods.com/collections/best-sellers",
+      "offerCode": "",
+      "creativeDirection": "Patriotic (navy #3C3B6E / red #B22234 / cream), red-white-blue stripe, 6-product best-seller grid with individual Shop Now, independence stocking band. Distinct from Jul 2 mushroom spotlight."
+    },
+    {
       "id": "2026-06-28-bestseller-dried-bell-peppers",
       "date": "2026-07-11",
       "day": "Sat",
