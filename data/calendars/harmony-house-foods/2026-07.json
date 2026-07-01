@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-02-mushroom-pantry-stuffer",
+      "date": "2026-07-02",
+      "day": "Thu",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "Mushroom Pantry Stuffer: Seven Varieties, One Jar-Packed Pantry",
+      "product": "Mushroom Pantry Stuffer (7 Varieties, Quart Size)",
+      "shortDescription": "Product spotlight on the Mushroom Pantry Stuffer (7 one-quart jars: Maitake, Shiitake, Oyster, Royal Trumpet, Champignon, Portabella, Lion's Mane). No blog promo, product is the whole focus. Meet-the-7-varieties grid, jar trio, shelf-stable benefits.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/2026-07-02-mushroom-pantry-stuffer.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 1: focus entirely on the product, do NOT promote the blog. Linked post did not arrive in Slack; built from product page. No invented price.",
+      "productUrl": "https://www.harmonyhousefoods.com/products/mushroom-pantry-stuffer-7-varieties-quart-size",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "HHF green/cream palette. Hero (all 7 jars) + 2-col 7-variety grid + jar trio + shelf-stable benefits checklist. Unique layout vs Jun 30 bell peppers jug spotlight."
+    },
+    {
       "id": "2026-06-28-bestseller-dried-bell-peppers",
       "date": "2026-07-11",
       "day": "Sat",
