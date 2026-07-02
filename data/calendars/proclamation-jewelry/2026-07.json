@@ -19,6 +19,23 @@
       "collectionUrl": "https://www.proclamationjewelry.com/collections/mens-chains",
       "offerCode": "",
       "creativeDirection": "Black/gold Proclamation aesthetic, Trajan Pro headings, text brand bar. Hero + intro, 18k 2-card row + Explore More, 14k 2-card row + Explore More, gold clasp image + Signature/Lion clasp CTAs, USA/lifetime-warranty trust line. Shop Now CTAs."
+    },
+    {
+      "id": "2026-07-04-last-chance-final-pieces",
+      "date": "2026-07-04",
+      "day": "Sat",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "Last Chance: The Final Pieces (America's 250th, not restocking)",
+      "product": "Spartan, Memento Mori (skull), Vita (diamond skull), The Tiger (gold+silver each)",
+      "shortDescription": "4th of July / 250th last-chance email echoing the May Memorial Day final-pieces winner (new layout/copy). These designs are retiring and not being restocked. Nick voice, no pricing, separate Shop Now per piece.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/july-2026/2026-07-04-last-chance-final-pieces.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 2 (repeat of May Memorial Day). Final list: Spartan, Memento Mori, Vita (=Skull, gold-skull-pendant-diamonds + silver-skull-pendant), Tiger. Flower of Life EXCLUDED per client (pages 404). Tiger not hero; Memento Mori skull not tag. Nick voice, no pricing.",
+      "productUrl": "https://www.proclamationjewelry.com/collections/all-mens-pendants",
+      "collectionUrl": "https://www.proclamationjewelry.com/collections/all-mens-pendants",
+      "offerCode": "",
+      "creativeDirection": "Black/gold Proclamation, Trajan Pro, brand bar. Hero 'The Final Pieces' + last-chance intro, 3 pendant sections (Spartan, Memento Mori, Tiger) each gold+silver with Shop Gold/Shop Silver, closing urgency CTA. Distinct layout from May."
     }
   ]
 }
