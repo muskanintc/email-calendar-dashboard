@@ -1,15 +1,14 @@
 <!--
 =======================================================
-ZERO9 HOLSTERS — Email | Saturday, July 4, 2026
-HAPPY 4TH OF JULY / CELEBRATING 250 YEARS OF INDEPENDENCE
-Promote: BUILD YOUR BUNDLE & SAVE 10% (homepage section).
-Offer rules (from client + homepage screenshot): add at least 3 products to the bundle to
-save 10%. Applies to all products (Radio Cases, Flashlight Cases, Body Cam Cases, etc.).
-DOES NOT apply to Swag and Tacvent 2.0. Bundle builder lives on the homepage, so include a
-GIF walkthrough of how to find and use it (spec'd as a designer note + numbered steps fallback).
-VOICE: Zero9 functional, spec forward, LE/military audience. No hype. NO pricing.
-NO "Limited Lifetime Warranty" anywhere (standing client rule).
-Homepage: https://zero9holsters.com/  Collections: portable-radio-cases, flashlight-cases, body-cam-cases.
+ZERO9 HOLSTERS — Email | Saturday, July 4, 2026  (REV 2)
+HAPPY 4TH OF JULY / 250 YEARS — BUILD YOUR BUNDLE & SAVE 10%
+Feedback (Jul 2): (1) removed the "Start With a Category" cards at the bottom (Build Your
+Bundle has no subcategory pages; those links go to collections and confuse customers).
+(2) Banner reworked to be visual: American flag background with multiple product renders
+(radio, flashlight, body cam cases). (3) After the How-To, a single "Build Your Bundle Now"
+CTA, and removed the "three cases or more" line before it.
+Offer: add at least 3 cases, save 10%. Excludes Swag and Tacvent 2.0. Builder lives on homepage.
+VOICE: Zero9 functional. NO pricing. NO warranty mention. Homepage: https://zero9holsters.com/
 =======================================================
 -->
 <!DOCTYPE html>
@@ -19,7 +18,7 @@ Homepage: https://zero9holsters.com/  Collections: portable-radio-cases, flashli
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Build Your Bundle and Save 10% | Zero9 Holsters</title>
 <style>
-  @media only screen and (max-width:600px){ .col3{display:block !important; width:100% !important; margin:0 0 14px 0 !important;} }
+  @media only screen and (max-width:600px){ .col3{display:block !important; width:100% !important; margin:0 0 10px 0 !important;} }
 </style>
 </head>
 <body style="margin:0; padding:0; background-color:#0A0A0A; font-family:Arial, Helvetica, sans-serif;">
@@ -48,17 +47,23 @@ Homepage: https://zero9holsters.com/  Collections: portable-radio-cases, flashli
   <img src="https://zero9holsters.com/cdn/shop/files/Z9_Logo.png?v=1768663935&width=600" alt="Zero9 Holsters" style="max-width:150px; height:auto;" />
 </td></tr>
 
-<!-- ==================== PATRIOTIC STRIPE ==================== -->
+<!-- ==================== HERO: FLAG + PRODUCT RENDERS ==================== -->
 <tr><td style="padding:0;">
-  <table width="100%" cellpadding="0" cellspacing="0"><tr>
-    <td height="5" style="background-color:#E62826; font-size:0; line-height:0;">&nbsp;</td>
-    <td height="5" style="background-color:#FFFFFF; font-size:0; line-height:0;">&nbsp;</td>
-    <td height="5" style="background-color:#0350A2; font-size:0; line-height:0;">&nbsp;</td>
+  <div style="background:#111418; border:2px dashed #E62826; margin:0; padding:14px 18px; color:#C7CDD4; font-size:12px; line-height:1.6;">
+    <strong style="color:#E62826;">DESIGNER, HERO BANNER:</strong> Compose a single hero graphic with a subtle American flag in the background (dark, low-contrast so text and products read on top) and the three product renders below arranged as a group. The static version below (flag band + render row) is the fallback if a composite is not built.
+  </div>
+  <!-- Flag band -->
+  <img src="https://images.pexels.com/photos/1202723/pexels-photo-1202723.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="American flag" style="width:100%; max-width:600px; height:auto; display:block;" />
+  <!-- Product render row over dark -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#111418;"><tr>
+    <td width="33%" valign="middle" style="padding:16px 6px; text-align:center;"><img src="https://cdn.shopify.com/s/files/1/0695/1879/files/R7BLK.jpg" alt="Zero9 radio case" style="width:100%; max-width:150px; height:auto;" /></td>
+    <td width="33%" valign="middle" style="padding:16px 6px; text-align:center;"><img src="https://cdn.shopify.com/s/files/1/0695/1879/products/IMG_4504.jpg" alt="Zero9 flashlight case" style="width:100%; max-width:150px; height:auto;" /></td>
+    <td width="33%" valign="middle" style="padding:16px 6px; text-align:center;"><img src="https://cdn.shopify.com/s/files/1/0695/1879/files/Transcend40BLK.jpg" alt="Zero9 body cam case" style="width:100%; max-width:150px; height:auto;" /></td>
   </tr></table>
 </td></tr>
 
-<!-- ==================== HERO ==================== -->
-<tr><td style="background-color:#111418; padding:34px 30px 28px; text-align:center;">
+<!-- ==================== HERO COPY ==================== -->
+<tr><td style="background-color:#111418; padding:8px 30px 28px; text-align:center;">
   <p style="margin:0 0 10px; color:#E62826; font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:bold;">Happy 4th of July</p>
   <h1 style="margin:0 0 12px; color:#FFFFFF; font-size:27px; line-height:1.25; font-weight:bold;">Celebrating 250 Years<br>of Independence</h1>
   <p style="margin:0 auto 22px; max-width:450px; color:#C7CDD4; font-size:15px; line-height:1.7;">
@@ -87,14 +92,14 @@ Homepage: https://zero9holsters.com/  Collections: portable-radio-cases, flashli
   <p style="margin:0 auto 0; max-width:440px; color:#AEB4BC; font-size:14px; line-height:1.7;">The bundle builder lives right on the Zero9 homepage. It takes about a minute.</p>
 </td></tr>
 
-<!-- GIF designer note + fallback static frame -->
+<!-- GIF designer note -->
 <tr><td style="padding:14px 30px 6px;">
   <div style="background:#111418; border:2px dashed #E62826; padding:16px 18px; color:#C7CDD4; font-size:12px; line-height:1.6;">
-    <strong style="color:#E62826;">DESIGNER, ANIMATED GIF:</strong> Embed a short screen recording (GIF) of the homepage walkthrough, matching the on-site "BUILD YOUR BUNDLE &amp; SAVE 10%" module: open the homepage, land on the Build Your Bundle section, tap a category tab (Radio Cases / Flashlight Cases / Body Cam Cases), press the red plus on three products, then the "Build My Bundle" button lights up. Keep it 3 to 5 seconds, looping. Use the section's existing dark UI with the red accents.
+    <strong style="color:#E62826;">DESIGNER, ANIMATED GIF:</strong> Embed a short screen recording (GIF) of the homepage walkthrough, matching the on-site "BUILD YOUR BUNDLE &amp; SAVE 10%" module: open the homepage, land on the Build Your Bundle section, tap a category tab, press the red plus on three products, then the "Build My Bundle" button lights up. Keep it 3 to 5 seconds, looping.
   </div>
 </td></tr>
 
-<!-- Numbered steps (fallback + reinforces the GIF) -->
+<!-- Numbered steps -->
 <tr><td style="padding:16px 34px 6px;">
   <table width="100%" cellpadding="0" cellspacing="0">
     <tr><td style="padding:6px 0; color:#FFFFFF; font-size:14px; line-height:1.6;"><span style="color:#E62826; font-weight:bold;">1.</span>&nbsp; Go to the Zero9 homepage and find "Build Your Bundle &amp; Save 10%."</td></tr>
@@ -104,34 +109,9 @@ Homepage: https://zero9holsters.com/  Collections: portable-radio-cases, flashli
   </table>
 </td></tr>
 
-<!-- ==================== CATEGORY CARDS ==================== -->
-<tr><td style="padding:24px 24px 6px; text-align:center;">
-  <h2 style="margin:0 0 4px; color:#FFFFFF; font-size:18px; font-weight:bold;">Start With a Category</h2>
-</td></tr>
-<tr><td style="padding:8px 20px 6px;">
-  <table width="100%" cellpadding="0" cellspacing="0"><tr>
-    <td class="col3" width="33%" valign="top" style="padding:6px; text-align:center;">
-      <img src="https://cdn.shopify.com/s/files/1/0695/1879/files/R7BLK.jpg" alt="Zero9 portable radio case" style="width:100%; max-width:175px; height:auto; border-radius:4px;" />
-      <p style="margin:8px 0 8px; color:#FFFFFF; font-size:13px; font-weight:bold;">Radio Cases</p>
-      <a href="https://zero9holsters.com/collections/portable-radio-cases" style="display:inline-block; color:#E62826; font-size:12px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; text-decoration:none; border-bottom:1px solid #E62826; padding-bottom:2px;">Shop Radio</a>
-    </td>
-    <td class="col3" width="33%" valign="top" style="padding:6px; text-align:center;">
-      <img src="https://cdn.shopify.com/s/files/1/0695/1879/products/IMG_4504.jpg" alt="Zero9 flashlight case" style="width:100%; max-width:175px; height:auto; border-radius:4px;" />
-      <p style="margin:8px 0 8px; color:#FFFFFF; font-size:13px; font-weight:bold;">Flashlight Cases</p>
-      <a href="https://zero9holsters.com/collections/flashlight-cases" style="display:inline-block; color:#E62826; font-size:12px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; text-decoration:none; border-bottom:1px solid #E62826; padding-bottom:2px;">Shop Flashlight</a>
-    </td>
-    <td class="col3" width="33%" valign="top" style="padding:6px; text-align:center;">
-      <img src="https://cdn.shopify.com/s/files/1/0695/1879/files/Transcend40BLK.jpg" alt="Zero9 body cam case" style="width:100%; max-width:175px; height:auto; border-radius:4px;" />
-      <p style="margin:8px 0 8px; color:#FFFFFF; font-size:13px; font-weight:bold;">Body Cam Cases</p>
-      <a href="https://zero9holsters.com/collections/body-cam-cases" style="display:inline-block; color:#E62826; font-size:12px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; text-decoration:none; border-bottom:1px solid #E62826; padding-bottom:2px;">Shop Body Cam</a>
-    </td>
-  </tr></table>
-</td></tr>
-
-<!-- ==================== CLOSING CTA ==================== -->
-<tr><td align="center" style="padding:22px 30px 30px;">
-  <p style="margin:0 0 14px; color:#AEB4BC; font-size:14px; line-height:1.7;">Three cases or more, ten percent off. Build yours on the homepage.</p>
-  <a href="https://zero9holsters.com/" style="display:inline-block; background-color:#E62826; color:#FFFFFF; text-decoration:none; padding:14px 44px; font-size:14px; font-weight:bold; letter-spacing:2px; border-radius:3px;">BUILD YOUR BUNDLE</a>
+<!-- ==================== SINGLE CTA ==================== -->
+<tr><td align="center" style="padding:24px 30px 30px;">
+  <a href="https://zero9holsters.com/" style="display:inline-block; background-color:#E62826; color:#FFFFFF; text-decoration:none; padding:15px 46px; font-size:15px; font-weight:bold; letter-spacing:2px; border-radius:3px;">BUILD YOUR BUNDLE NOW</a>
 </td></tr>
 
 <!-- ==================== TRUST BAR ==================== -->
