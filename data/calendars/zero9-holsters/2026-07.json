@@ -1,0 +1,24 @@
+{
+  "client": "zero9-holsters",
+  "year": 2026,
+  "month": 7,
+  "emails": [
+    {
+      "id": "2026-07-04-build-your-bundle",
+      "date": "2026-07-04",
+      "day": "Sat",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "Happy 4th of July: Build Your Bundle & Save 10%",
+      "product": "Build Your Bundle (Radio Cases, Flashlight Cases, Body Cam Cases; excludes Swag + Tacvent 2.0)",
+      "shortDescription": "4th of July / 250 years. Promote the homepage Build Your Bundle & Save 10% module: add at least 3 cases, save 10%, excludes Swag and Tacvent 2.0. GIF walkthrough of the homepage section + numbered steps, category cards (Radio/Flashlight/Body Cam). Functional voice, no pricing, no warranty.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/zero9-holsters/july-2026/2026-07-04-build-your-bundle.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 2 + homepage screenshot. Bundle builder on homepage. Add at least 3 to fill bundle. Offer excludes Swag + Tacvent 2.0. DESIGNER: embed short GIF screen-recording of the homepage bundle walkthrough.",
+      "productUrl": "https://zero9holsters.com/",
+      "collectionUrl": "https://zero9holsters.com/",
+      "offerCode": "Build Your Bundle: add 3+ cases, save 10%. Excludes Swag + Tacvent 2.0.",
+      "creativeDirection": "Zero9 black/red/blue, functional voice. Patriotic stripe, measured 250th hero, red 10% OFF bundle block, GIF walkthrough + 4 numbered steps, 3 category cards, Handcrafted Cleveland + 4.9 stars trust bar. No pricing, no warranty."
+    }
+  ]
+}
