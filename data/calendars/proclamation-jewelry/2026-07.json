@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-04-made-in-usa-best-sellers",
+      "date": "2026-07-04",
+      "day": "Sat",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "Proudly American: Made in USA Best Sellers",
+      "product": "Best sellers by metal. Gold: Champion Saint Michael, Voyager Compass w/ Diamonds, Stoic 4 Virtues. Silver: Champion Saint Michael, Faith Cross, Spartan. Platinum: Destiny Cross w/ Diamonds, Stoic 4 Virtues.",
+      "shortDescription": "Second July 4th email (morning send, pairs with the Final Pieces evening last-chance email). Proudly American / Made in USA angle across gold, silver, platinum. Layout replicates client-attached MORETHAN90 reference (hero + offer strip, stacked product cards w/ stars + Shop Now grouped by metal, Built to Last feature, footer nav). Client brief Jul 3.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/july-2026/2026-07-04-made-in-usa-best-sellers.html",
+      "finalDesignLink": "",
+      "notes": "All 8 pendants verified live + in stock 2026-07-03. Made in USA. No pricing. Star rows are design elements (no invented review counts).",
+      "productUrl": "",
+      "collectionUrl": "https://www.proclamationjewelry.com/collections/all-mens-pendants",
+      "offerCode": "",
+      "creativeDirection": "Replicate attached MORETHAN90 layout in Proclamation black/gold Trajan Pro; hero + gold trust strip; Gold/Silver/Platinum sections each with product cards (image, name, star row, Shop Now); Built to Last feature; footer nav"
+    },
+    {
       "id": "2026-07-02-4th-july-gold-chains-usa",
       "date": "2026-07-02",
       "day": "Wed",
