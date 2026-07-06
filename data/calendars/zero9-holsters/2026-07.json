@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-08-body-cam-case-exo-argus",
+      "date": "2026-07-08",
+      "day": "Wed",
+      "type": "product-launch",
+      "status": "copy-ready",
+      "theme": "New Arrival: Body Cam Case for EXO / ARGUS",
+      "product": "Body Cam Case - EXO/ARGUS (fits Utility/Coreforce EXO, Kustom Signals ARGUS, LensLock Eagle 13)",
+      "shortDescription": "Product launch for the new Body Cam Case. Ruggedized protection vs magnet mounts; three mount options (Tek-Lok duty belt, Molle-Loks vest/pack, Shirt Pocket UltiClips); eight colorways. Functional Zero9 voice, no pricing, no warranty mention. Hero EXOBlk.jpg + real ColorID swatch chart.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/zero9-holsters/july-2026/2026-07-08-body-cam-case-exo-argus.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 6. Product verified live + in stock via .js 2026-07-06 (all variants available). Images 200. Fits standalone EXO platform, not cell-phone-based systems. Colors: Black, OD Green, Ranger Green, Coyote, FDE, Silver Tan, Wolf Grey, Basketweave.",
+      "productUrl": "https://zero9holsters.com/products/body-cam-case-exo-argus",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "Zero9 black/red aesthetic, Tomorrow/DM Sans fallback. New Arrival eyebrow, EXOBlk hero, Shop Now CTA first half, Built to Fit compatibility list, 3-col mount options, colorways with real ColorID chart, second Shop Now, Handcrafted Cleveland + 4.9 star trust bar. Distinct layout from Jul 4 bundle."
+    },
+    {
       "id": "2026-07-04-build-your-bundle",
       "date": "2026-07-04",
       "day": "Sat",
