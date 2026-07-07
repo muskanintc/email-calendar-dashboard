@@ -9,9 +9,9 @@ INTEGRATION: on submit, add the email to the "Welcome Flow" list/segment in the 
   success state, so subscribers must open the email to get it.
 VOICE: rugged, plain spoken. No hyphens/dashes in copy. No pricing. Never "patented traction."
 BRAND: bg #161311, card #211D1A, accent #F26522, text #EDE8E2, muted #A79E95.
-Single layout: roofer photo (image_11) as the full modal background with a dark scrim,
-content centered. This file previews the popup live over a dimmed page, with copy options
-and designer/integration notes below.
+Single layout: split modal, image left (roofer on a steep roof, image_11) + form right.
+This file previews the popup live over a dimmed page, with copy options and
+designer/integration notes below.
 =======================================================
 -->
 <!DOCTYPE html>
@@ -23,18 +23,18 @@ and designer/integration notes below.
 <style>
   body{ margin:0; font-family:Arial, Helvetica, sans-serif; background:#3a3430; }
   /* dimmed page behind the modal (looks like the site behind the popup) */
-  .page-dim{ position:relative; min-height:660px; background:
-      linear-gradient(rgba(10,9,8,0.74), rgba(10,9,8,0.74)),
+  .page-dim{ position:relative; min-height:640px; background:
+      linear-gradient(rgba(10,9,8,0.72), rgba(10,9,8,0.72)),
       url('https://www.cougarpaws.com/cdn/shop/files/22d116da-a826-4fb3-9ca3-98947bec4f36.png?v=1779197277') center/cover no-repeat; }
   .overlay{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:20px; }
-  /* single popup: roofer photo as the full background, content over a dark scrim */
-  .modal{ width:100%; max-width:460px; border-radius:12px; overflow:hidden; box-sizing:border-box;
-      box-shadow:0 24px 60px rgba(0,0,0,0.6); position:relative; text-align:center; padding:42px 36px 30px;
-      background:
-      linear-gradient(rgba(14,13,12,0.58), rgba(14,13,12,0.88)),
-      url('https://www.cougarpaws.com/cdn/shop/files/image_11.png?v=1776707754') center/cover no-repeat; }
+  /* split popup: image left, form right */
+  .modal{ width:100%; max-width:720px; background:#161311; border-radius:12px; overflow:hidden;
+      box-shadow:0 24px 60px rgba(0,0,0,0.6); position:relative; display:flex; }
   .modal .close{ position:absolute; top:12px; right:16px; color:#EDE8E2; font-size:24px;
       text-decoration:none; line-height:1; opacity:.85; z-index:2; }
+  .m-img{ width:44%; background:
+      url('https://www.cougarpaws.com/cdn/shop/files/image_11.png?v=1776707754') center/cover no-repeat; }
+  .m-body{ width:56%; padding:38px 34px 30px; box-sizing:border-box; text-align:center; }
   .eyebrow{ margin:0 0 10px; color:#F26522; font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:bold; }
   .headline{ margin:0 0 6px; color:#EDE8E2; font-size:34px; line-height:1.05; font-weight:800; }
   .headline .pct{ color:#F26522; }
@@ -53,31 +53,35 @@ and designer/integration notes below.
   .section h2{ color:#F26522; font-size:16px; letter-spacing:2px; text-transform:uppercase; }
   .section, .section p, .section li{ color:#EDE8E2; font-size:14px; line-height:1.7; }
   @media only screen and (max-width:600px){
+    .modal{ display:block; }
+    .m-img{ width:100%; height:160px; }
+    .m-body{ width:100%; }
     .headline{ font-size:28px; }
-    .modal{ padding:34px 24px 26px; }
   }
 </style>
 </head>
 <body>
 
-<!-- ==================== POPUP (LIVE PREVIEW): roofer background + form ==================== -->
+<!-- ==================== POPUP (LIVE PREVIEW): image left + form right ==================== -->
 <div class="page-dim">
   <div class="overlay">
     <div class="modal">
       <a href="#" class="close" aria-label="Close">&times;</a>
-      <!-- DESIGN NOTE: full background = roofer on a steep roof (image_11). Dark scrim keeps the text legible. -->
-      <img src="https://www.cougarpaws.com/cdn/shop/files/Cougar_paws_Logo_Tran.png?v=1687121291" alt="Cougar Paws" style="max-width:150px; height:auto; display:block; margin:0 auto 18px;" />
-      <p class="eyebrow">Join The Crew</p>
-      <h1 class="headline">GET <span class="pct">10% OFF</span><br>YOUR FIRST PAIR</h1>
-      <p class="sub">Join our list for exclusive offers and first word on new arrivals. Drop your email below.</p>
-      <!-- FORM: designer/dev wires this to the ESP "Welcome Flow" list -->
-      <form action="#" method="post">
-        <input class="field" type="email" name="email" placeholder="Your email address" required />
-        <button class="btn" type="submit">CLAIM 10% OFF</button>
-      </form>
-      <a href="#" class="decline">No thanks, I like paying full price</a>
-      <p class="trust">The Original Roofing Boot since 1996 &nbsp;&bull;&nbsp; 4.9 / 5</p>
-      <p class="fine">By signing up you agree to receive email from Cougar Paws. Unsubscribe anytime. One discount per new subscriber.</p>
+      <div class="m-img"><!-- DESIGN NOTE: roofer on a steep roof (image_11). --></div>
+      <div class="m-body">
+        <img src="https://www.cougarpaws.com/cdn/shop/files/Cougar_paws_Logo_Tran.png?v=1687121291" alt="Cougar Paws" style="max-width:150px; height:auto; display:block; margin:0 auto 18px;" />
+        <p class="eyebrow">Join The Crew</p>
+        <h1 class="headline">GET <span class="pct">10% OFF</span><br>YOUR FIRST PAIR</h1>
+        <p class="sub">Join our list for exclusive offers and first word on new arrivals. Drop your email below.</p>
+        <!-- FORM: designer/dev wires this to the ESP "Welcome Flow" list -->
+        <form action="#" method="post">
+          <input class="field" type="email" name="email" placeholder="Your email address" required />
+          <button class="btn" type="submit">CLAIM 10% OFF</button>
+        </form>
+        <a href="#" class="decline">No thanks, I like paying full price</a>
+        <p class="trust">The Original Roofing Boot since 1996 &nbsp;&bull;&nbsp; 4.9 / 5</p>
+        <p class="fine">By signing up you agree to receive email from Cougar Paws. Unsubscribe anytime. One discount per new subscriber.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -138,7 +142,7 @@ and designer/integration notes below.
     <li><strong>Integration:</strong> submit adds the email to the ESP "Welcome Flow" list/segment. That enrollment triggers Welcome Emails 1 to 3. The 10% code is WELCOME10 (confirm exact code + any minimum/exclusions with client).</li>
     <li><strong>Success:</strong> swap the form for the success state above. Do NOT show the code on screen. Point them to their inbox and invite them to explore the site. The code arrives in Welcome Email 1.</li>
     <li><strong>Accessibility:</strong> real close button, focus trap inside the modal, escape to close, labelled email input.</li>
-    <li><strong>Images used:</strong> roofer on a steep roof (image_11) as the modal background; boot on a shingle roof (22d116da) fills the dimmed page behind the popup. Both are live site images. Swap freely.</li>
+    <li><strong>Images used:</strong> roofer on a steep roof (image_11) fills the left image panel; boot on a shingle roof (22d116da) fills the dimmed page behind the popup. Both are live site images. Swap freely.</li>
     <li><strong>[NEEDS INFO]</strong> confirm the discount code and whether a minimum order or product exclusions apply.</li>
   </ul>
 </div>
