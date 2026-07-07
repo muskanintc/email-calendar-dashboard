@@ -1,0 +1,168 @@
+<!--
+=======================================================
+COUGAR PAWS — Website Signup Popup | Created 2026-07-07
+GOAL: capture email, deliver 10% off, enroll subscriber in the 3 email WELCOME FLOW.
+Brief (client, Jul 7): popup with an email address field and the offer in the headline.
+INTEGRATION: on submit, add the email to the "Welcome Flow" list/segment in the ESP
+  (Klaviyo/Mailchimp/etc). That list trigger fires Welcome Emails 1 to 3. Code WELCOME10
+  (placeholder, confirm) is delivered by email in Welcome Email 1 ONLY. It is NOT shown on the
+  success state, so subscribers must open the email to get it.
+VOICE: rugged, plain spoken. No hyphens/dashes in copy. No pricing. Never "patented traction."
+BRAND: bg #161311, card #211D1A, accent #F26522, text #EDE8E2, muted #A79E95.
+This file previews the popup live (Variant A) over a dimmed page, with Variant B and
+designer/integration notes below.
+=======================================================
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome 10% Popup — Cougar Paws</title>
+<style>
+  body{ margin:0; font-family:Arial, Helvetica, sans-serif; background:#3a3430; }
+  /* dimmed page behind the modal */
+  .page-dim{ position:relative; min-height:640px; background:
+      linear-gradient(rgba(10,9,8,0.72), rgba(10,9,8,0.72)),
+      url('https://www.cougarpaws.com/cdn/shop/files/image_11.png?v=1776707754') center/cover no-repeat; }
+  .overlay{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:20px; }
+  .modal{ width:100%; max-width:720px; background:#161311; border-radius:12px; overflow:hidden;
+      box-shadow:0 24px 60px rgba(0,0,0,0.6); position:relative; display:flex; }
+  .modal .close{ position:absolute; top:12px; right:16px; color:#EDE8E2; font-size:24px;
+      text-decoration:none; line-height:1; opacity:.8; z-index:2; }
+  .m-img{ width:44%; background:
+      url('https://www.cougarpaws.com/cdn/shop/files/22d116da-a826-4fb3-9ca3-98947bec4f36.png?v=1779197277') center/cover no-repeat; }
+  .m-body{ width:56%; padding:38px 34px 30px; box-sizing:border-box; text-align:center; }
+  .eyebrow{ margin:0 0 10px; color:#F26522; font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:bold; }
+  .headline{ margin:0 0 6px; color:#EDE8E2; font-size:34px; line-height:1.05; font-weight:800; }
+  .headline .pct{ color:#F26522; }
+  .sub{ margin:12px auto 22px; max-width:320px; color:#A79E95; font-size:14px; line-height:1.6; }
+  .field{ width:100%; box-sizing:border-box; padding:14px 16px; font-size:15px; color:#161311;
+      background:#EDE8E2; border:0; border-radius:6px; margin:0 0 12px; }
+  .field::placeholder{ color:#6E655D; }
+  .btn{ display:block; width:100%; box-sizing:border-box; background:#F26522; color:#161311;
+      text-decoration:none; padding:15px 20px; font-size:15px; font-weight:bold; letter-spacing:2px;
+      border:0; border-radius:6px; cursor:pointer; }
+  .fine{ margin:14px 0 0; color:#6E655D; font-size:11px; line-height:1.5; }
+  .decline{ display:inline-block; margin:14px 0 0; color:#A79E95; font-size:12px; text-decoration:underline; }
+  .trust{ margin:16px 0 0; color:#A79E95; font-size:11px; letter-spacing:1px; }
+  /* variant B + notes styling */
+  .section{ max-width:760px; margin:0 auto; padding:34px 24px; }
+  .section h2{ color:#F26522; font-size:16px; letter-spacing:2px; text-transform:uppercase; }
+  .section, .section p, .section li{ color:#EDE8E2; font-size:14px; line-height:1.7; }
+  .card-b{ position:relative; max-width:420px; margin:16px auto 0; border-radius:12px; overflow:hidden;
+      text-align:center; background:
+      linear-gradient(rgba(14,13,12,0.68), rgba(14,13,12,0.82)),
+      url('https://www.cougarpaws.com/cdn/shop/files/image_11.png?v=1776707754') center/cover no-repeat; padding:40px 30px; }
+  @media only screen and (max-width:600px){
+    .modal{ display:block; }
+    .m-img{ width:100%; height:150px; }
+    .m-body{ width:100%; }
+    .headline{ font-size:28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== VARIANT A (LIVE PREVIEW): split image + form ==================== -->
+<div class="page-dim">
+  <div class="overlay">
+    <div class="modal">
+      <a href="#" class="close" aria-label="Close">&times;</a>
+      <div class="m-img"><!-- DESIGN NOTE: boot gripping a shingle roof. Swap for hero roofer if preferred. --></div>
+      <div class="m-body">
+        <img src="https://www.cougarpaws.com/cdn/shop/files/Cougar_paws_Logo_Tran.png?v=1687121291" alt="Cougar Paws" style="max-width:150px; height:auto; display:block; margin:0 auto 18px;" />
+        <p class="eyebrow">Join The Crew</p>
+        <h1 class="headline">GET <span class="pct">10% OFF</span><br>YOUR FIRST PAIR</h1>
+        <p class="sub">Join our list for 10% off your first pair, plus exclusive offers and first word on new arrivals. Drop your email below.</p>
+        <!-- FORM: designer/dev wires this to the ESP "Welcome Flow" list -->
+        <form action="#" method="post">
+          <input class="field" type="email" name="email" placeholder="Your email address" required />
+          <button class="btn" type="submit">CLAIM 10% OFF</button>
+        </form>
+        <a href="#" class="decline">No thanks, I like paying full price</a>
+        <p class="trust">The Original Roofing Boot since 1996 &nbsp;&bull;&nbsp; 4.9 / 5</p>
+        <p class="fine">By signing up you agree to receive email from Cougar Paws. Unsubscribe anytime. One discount per new subscriber.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SUCCESS STATE (copy for after submit) ==================== -->
+<div class="section">
+  <h2>Success State (shown after email submit)</h2>
+  <div style="background:#211D1A; border:2px solid #F26522; border-radius:10px; padding:28px 24px; text-align:center; max-width:420px; margin:14px auto 0;">
+    <p style="margin:0 0 8px; color:#EDE8E2; font-size:22px; font-weight:800;">You're in. Welcome to the crew.</p>
+    <p style="margin:0 0 20px; color:#A79E95; font-size:14px; line-height:1.6;">Keep an eye on your inbox. Your 10% welcome code is on its way. While you wait, take a look around.</p>
+    <a href="https://www.cougarpaws.com/collections/all-roofing-boots-shoes" style="display:inline-block; background:#F26522; color:#161311; text-decoration:none; padding:13px 34px; font-size:14px; font-weight:bold; letter-spacing:2px; border-radius:6px;">EXPLORE THE BOOTS</a>
+  </div>
+  <p style="color:#A79E95; font-size:13px; margin-top:12px;">Note: the code is delivered by email only, not shown on screen. Welcome Email 1 carries the code.</p>
+</div>
+
+<!-- ==================== VARIANT B: full image background, centered ==================== -->
+<div class="section">
+  <h2>Layout Variant B — full image background</h2>
+  <p style="color:#A79E95;">Same copy, single column over a full bleed roofer image. Good for mobile first and simpler builds.</p>
+  <div class="card-b">
+    <img src="https://www.cougarpaws.com/cdn/shop/files/Cougar_paws_Logo_Tran.png?v=1687121291" alt="Cougar Paws" style="max-width:150px; height:auto; display:block; margin:0 auto 16px;" />
+    <p style="margin:0 0 8px; color:#F26522; font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:bold;">Join The Crew</p>
+    <h1 style="margin:0 0 10px; color:#EDE8E2; font-size:30px; line-height:1.1; font-weight:800;">GET <span style="color:#F26522;">10% OFF</span> YOUR FIRST PAIR</h1>
+    <p style="margin:0 auto 20px; max-width:320px; color:#D9D2CA; font-size:14px; line-height:1.6;">10% off your first pair, exclusive offers, and early word on new arrivals. Enter your email below.</p>
+    <input class="field" type="email" placeholder="Your email address" style="max-width:320px; margin-left:auto; margin-right:auto;" />
+    <a href="#" style="display:inline-block; background:#F26522; color:#161311; text-decoration:none; padding:14px 40px; font-size:14px; font-weight:bold; letter-spacing:2px; border-radius:6px;">GET MY CODE</a>
+    <p style="margin:14px 0 0; color:#A79E95; font-size:11px;">Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<!-- ==================== HEADLINE + CTA OPTIONS ==================== -->
+<div class="section">
+  <h2>Headline Options (offer led)</h2>
+  <ul>
+    <li>GET 10% OFF YOUR FIRST PAIR</li>
+    <li>10% OFF + FIRST DIBS ON NEW GEAR</li>
+    <li>YOUR FIRST PAIR, 10% OFF</li>
+  </ul>
+  <h2 style="margin-top:22px;">Subline Options (why join the list)</h2>
+  <ul>
+    <li>Join our list for 10% off your first pair, plus exclusive offers and first word on new arrivals. Drop your email below.</li>
+    <li>Be first to know about new gear and get subscriber only deals. Enter your email and your 10% welcome code is on us.</li>
+    <li>Sign up for exclusive discounts and new arrival alerts. Your 10% off is the welcome gift for joining.</li>
+    <li>Get 10% off today, then stay in the loop on new boots, gear drops, and offers made for the trade.</li>
+  </ul>
+  <h2 style="margin-top:22px;">Eyebrow Options</h2>
+  <ul>
+    <li>Join The Crew</li>
+    <li>Get On The List</li>
+    <li>10% Off + First Dibs</li>
+  </ul>
+  <h2 style="margin-top:22px;">Button Options</h2>
+  <ul>
+    <li>CLAIM 10% OFF</li>
+    <li>GET MY CODE</li>
+    <li>SEND MY 10%</li>
+  </ul>
+  <h2 style="margin-top:22px;">Success State Options (no code shown, points to inbox)</h2>
+  <ul>
+    <li><strong>You're in. Welcome to the crew.</strong> &mdash; Keep an eye on your inbox. Your 10% welcome code is on its way. While you wait, take a look around. [Explore The Boots]</li>
+    <li><strong>You're on the list.</strong> &mdash; Your welcome code is heading to your inbox right now. Go find your grip. [Shop All Boots]</li>
+    <li><strong>Welcome to the crew.</strong> &mdash; Check your email for your 10% welcome code. Meanwhile, see what the pros are working in. [Browse The Lineup]</li>
+  </ul>
+</div>
+
+<!-- ==================== DESIGNER + DEV NOTES ==================== -->
+<div class="section">
+  <h2>Notes for Designer / Developer</h2>
+  <ul>
+    <li><strong>One field only:</strong> email address. Fewer fields means more signups. Add name only if the client insists.</li>
+    <li><strong>Trigger:</strong> desktop show after ~5 seconds or 40% scroll. Mobile on exit intent or after ~8 seconds. Do not fire on the cart or checkout pages.</li>
+    <li><strong>Frequency:</strong> set a cookie so it does not reappear for a subscriber, and suppress for ~14 days after a dismiss.</li>
+    <li><strong>Integration:</strong> submit adds the email to the ESP "Welcome Flow" list/segment. That enrollment triggers Welcome Emails 1 to 3. The 10% code is WELCOME10 (confirm exact code + any minimum/exclusions with client).</li>
+    <li><strong>Success:</strong> swap the form for the success state above. Do NOT show the code on screen. Point them to their inbox and invite them to explore the site. The code arrives in Welcome Email 1.</li>
+    <li><strong>Accessibility:</strong> real close button, focus trap inside the modal, escape to close, labelled email input.</li>
+    <li><strong>Images used:</strong> boot on shingle roof (Variant A panel), roofer on roof (Variant B background). Both are live site images. Swap freely.</li>
+    <li><strong>[NEEDS INFO]</strong> confirm the discount code and whether a minimum order or product exclusions apply.</li>
+  </ul>
+</div>
+
+</body>
+</html>

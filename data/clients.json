@@ -1,5 +1,15 @@
 [
   {
+    "slug": "cougar-paws",
+    "name": "Cougar Paws",
+    "fullName": "Cougar Paws, Inc.",
+    "description": "Professional roofing boots and job site gear. The Original Roofing Boot since 1996",
+    "color": "#F26522",
+    "months": [
+      "2026-07"
+    ]
+  },
+  {
     "slug": "sheepdog",
     "name": "Sheepdog",
     "fullName": "Sheepdog Microphones",
