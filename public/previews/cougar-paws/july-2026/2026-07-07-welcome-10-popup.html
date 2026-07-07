@@ -33,7 +33,7 @@ designer/integration notes below.
   .modal .close{ position:absolute; top:12px; right:16px; color:#EDE8E2; font-size:24px;
       text-decoration:none; line-height:1; opacity:.85; z-index:2; }
   .m-img{ width:44%; background:
-      url('https://www.cougarpaws.com/cdn/shop/files/image_11.png?v=1776707754') center/cover no-repeat; }
+      url('https://www.cougarpaws.com/cdn/shop/files/image_11.png?v=1776707754') center bottom/cover no-repeat; }
   .m-body{ width:56%; padding:38px 34px 30px; box-sizing:border-box; text-align:center; }
   .eyebrow{ margin:0 0 10px; color:#F26522; font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:bold; }
   .headline{ margin:0 0 6px; color:#EDE8E2; font-size:34px; line-height:1.05; font-weight:800; }
@@ -72,7 +72,7 @@ designer/integration notes below.
         <img src="https://www.cougarpaws.com/cdn/shop/files/Cougar_paws_Logo_Tran.png?v=1687121291" alt="Cougar Paws" style="max-width:150px; height:auto; display:block; margin:0 auto 18px;" />
         <p class="eyebrow">Join The Crew</p>
         <h1 class="headline">GET <span class="pct">10% OFF</span><br>YOUR FIRST PAIR</h1>
-        <p class="sub">Join our list for exclusive offers and first word on new arrivals. Drop your email below.</p>
+        <p class="sub">Be first to know about new gear and get subscriber only deals straight to your inbox.</p>
         <!-- FORM: designer/dev wires this to the ESP "Welcome Flow" list -->
         <form action="#" method="post">
           <input class="field" type="email" name="email" placeholder="Your email address" required />
@@ -86,50 +86,23 @@ designer/integration notes below.
   </div>
 </div>
 
-<!-- ==================== SUCCESS STATE (copy for after submit) ==================== -->
-<div class="section">
-  <h2>Success State (shown after email submit)</h2>
-  <div style="background:#211D1A; border:2px solid #F26522; border-radius:10px; padding:28px 24px; text-align:center; max-width:420px; margin:14px auto 0;">
-    <p style="margin:0 0 8px; color:#EDE8E2; font-size:22px; font-weight:800;">You're in. Welcome to the crew.</p>
-    <p style="margin:0 0 20px; color:#A79E95; font-size:14px; line-height:1.6;">Keep an eye on your inbox. Your 10% welcome code is on its way. While you wait, take a look around.</p>
-    <a href="https://www.cougarpaws.com/collections/all-roofing-boots-shoes" style="display:inline-block; background:#F26522; color:#161311; text-decoration:none; padding:13px 34px; font-size:14px; font-weight:bold; letter-spacing:2px; border-radius:6px;">EXPLORE THE BOOTS</a>
+<!-- ==================== SUCCESS STATE (after submit — same split layout, same image) ==================== -->
+<p style="text-align:center; color:#F26522; font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:bold; margin:30px 0 -8px;">Success State (after email submit)</p>
+<div class="page-dim">
+  <div class="overlay">
+    <div class="modal">
+      <a href="#" class="close" aria-label="Close">&times;</a>
+      <div class="m-img"><!-- DESIGN NOTE: same image as the popup (roofer, image_11), anchored so the boot stays in frame. --></div>
+      <div class="m-body">
+        <img src="https://www.cougarpaws.com/cdn/shop/files/Cougar_paws_Logo_Tran.png?v=1687121291" alt="Cougar Paws" style="max-width:150px; height:auto; display:block; margin:0 auto 18px;" />
+        <p class="eyebrow">You're In</p>
+        <h1 class="headline">WELCOME TO<br>THE CREW</h1>
+        <p class="sub">Keep an eye on your inbox. Your welcome code is on its way. While you wait, take a look around.</p>
+        <a href="https://www.cougarpaws.com/collections/all-roofing-boots-shoes" class="btn" style="text-decoration:none;">EXPLORE THE BOOTS</a>
+        <p class="fine">The code is delivered by email only, not shown here. Welcome Email 1 carries it.</p>
+      </div>
+    </div>
   </div>
-  <p style="color:#A79E95; font-size:13px; margin-top:12px;">Note: the code is delivered by email only, not shown on screen. Welcome Email 1 carries the code.</p>
-</div>
-
-<!-- ==================== HEADLINE + CTA OPTIONS ==================== -->
-<div class="section">
-  <h2>Headline Options (offer led)</h2>
-  <ul>
-    <li>GET 10% OFF YOUR FIRST PAIR</li>
-    <li>10% OFF + FIRST DIBS ON NEW GEAR</li>
-    <li>YOUR FIRST PAIR, 10% OFF</li>
-  </ul>
-  <h2 style="margin-top:22px;">Subline Options (why join the list — offer already in headline, do not repeat it)</h2>
-  <ul>
-    <li>Join our list for exclusive offers and first word on new arrivals. Drop your email below.</li>
-    <li>Be first to know about new gear and get subscriber only deals straight to your inbox. Enter your email below.</li>
-    <li>Sign up for exclusive discounts and new arrival alerts. Drop your email and we will do the rest.</li>
-    <li>Stay in the loop on new boots, gear drops, and offers made for the trade. Just add your email.</li>
-  </ul>
-  <h2 style="margin-top:22px;">Eyebrow Options</h2>
-  <ul>
-    <li>Join The Crew</li>
-    <li>Get On The List</li>
-    <li>10% Off + First Dibs</li>
-  </ul>
-  <h2 style="margin-top:22px;">Button Options</h2>
-  <ul>
-    <li>CLAIM 10% OFF</li>
-    <li>GET MY CODE</li>
-    <li>SEND MY 10%</li>
-  </ul>
-  <h2 style="margin-top:22px;">Success State Options (no code shown, points to inbox)</h2>
-  <ul>
-    <li><strong>You're in. Welcome to the crew.</strong> &mdash; Keep an eye on your inbox. Your 10% welcome code is on its way. While you wait, take a look around. [Explore The Boots]</li>
-    <li><strong>You're on the list.</strong> &mdash; Your welcome code is heading to your inbox right now. Go find your grip. [Shop All Boots]</li>
-    <li><strong>Welcome to the crew.</strong> &mdash; Check your email for your 10% welcome code. Meanwhile, see what the pros are working in. [Browse The Lineup]</li>
-  </ul>
 </div>
 
 <!-- ==================== DESIGNER + DEV NOTES ==================== -->
