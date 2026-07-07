@@ -19,6 +19,23 @@
       "collectionUrl": "https://artcreativity.com/collections/patriotic",
       "offerCode": "None (free shipping $30+ only)",
       "creativeDirection": "Patriotic red/white/blue, navy hero with America's 250th tag, 4 stacked product cards (alternating image side) each with green Shop Now, red collection CTA band, trust signals, conversational closer."
+    },
+    {
+      "id": "2026-07-10-summer-best-sellers",
+      "date": "2026-07-10",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "The Toys Keeping Kids Busy All Summer (Best Sellers)",
+      "product": "Bubble Lawn Mower, Bump & Go Light Up Car, Yellow School Bus (11\" friction), Traffic Light Lamp with Remote",
+      "shortDescription": "Best-seller feature with a fresh summer fun angle per client brief Jul 7. Four favorites for sunny days and rainy afternoons: Bubble Lawn Mower (outdoor), Bump & Go Light Up Car (sensory), Yellow School Bus (back-to-school tie-in), Traffic Light Lamp (red light green light game + room decor). Buy More Save More bookended.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/july-2026/2026-07-10-summer-best-sellers.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 7. All 4 verified live + in stock via .js 2026-07-07, images 200. No pricing, no hyphens/dashes in copy. Alternating mint/white product rows, distinct from Jul 1 patriotic layout.",
+      "productUrl": "",
+      "collectionUrl": "",
+      "offerCode": "Buy More Save More: $75->10%, $150->15%, $300->20%",
+      "creativeDirection": "Nunito, white bg, sky-blue hero + yellow eyebrow, yellow offer banner (top bookend), 4 alternating mint/white product cards each with green rounded Shop Now, text-only offer reminder (no stacked CTA), 3-up trust bar, conversational closer."
     }
   ]
 }
