@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-08-mens-chains-ranked-youtube",
+      "date": "2026-07-08",
+      "day": "Tue",
+      "type": "educational",
+      "status": "copy-ready",
+      "theme": "Ranking the 5 Most Popular Men's Chains (YouTube Spotlight)",
+      "product": "Diamond Cut Rope, Round Box, Miami Cuban Link, Hermes, Diamond Cut Franco chains",
+      "shortDescription": "YouTube spotlight of Nick Miller's video 'Jewelry Designer Ranks Men's Chains (Most Are Junk)'. Video thumbnail hero with play overlay linked to the video, founder hook intro, then the five chain collections as the lineup (image + Shop Now to each collection), closing Watch the Ranking CTA. Nick founder voice, no sign-off, no pricing, no karat range. Lifestyle images from each collection's product pages.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/july-2026/2026-07-08-mens-chains-ranked-youtube.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 8 + 2 layout-inspo PNGs. Video fehnJwo-G_8. Collections + images verified live 200 Jul 8. Ranking order NOT fabricated (video reveals worst-to-best); the five presented as the lineup. Dark/gold Proclamation template.",
+      "productUrl": "https://www.youtube.com/watch?v=fehnJwo-G_8",
+      "collectionUrl": "https://www.proclamationjewelry.com/collections/diamond-cut-rope-chains",
+      "offerCode": "",
+      "creativeDirection": "Dark #0A0A0A / gold #D4AF37, Trajan/Georgia serif. YouTube thumbnail hero (maxresdefault) + gold play circle, big serif 'The 5 Most Popular Men's Chains, Ranked', founder hook, Watch the Ranking gold CTA; 'The Five in the Ranking' alternating image/text rows (Rope, Round Box, Cuban, Hermes, Franco) each with Shop Now to its collection; closing box + Watch CTA; wordmark footer. Designer: swap any non-on-model chain shots for true lifestyle where available."
+    },
+    {
       "id": "2026-07-04-made-in-usa-best-sellers",
       "date": "2026-07-04",
       "day": "Sat",
