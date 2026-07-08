@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-10-handcuff-case",
+      "date": "2026-07-10",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "Standard Handcuff Case",
+      "product": "Standard Handcuff Case (fits most standard hinged or chain handcuffs, non ASP)",
+      "shortDescription": "Feature the Standard Handcuff Case, built to the client's attached layout (Bleu de Chanel editorial reference: dark hero with big word + ghosted repeat, numbered 01/02/03 callouts, 4 numbered feature cards with buttons, image strip, closing CTA, full bleed panel, logo footer). Rewritten in Zero9 functional/spec voice. Molded Kydex; Standard or Double Standard; Tek-Lok (duty belt) or Molle-Loks (MOLLE vest); eight finishes. No pricing, no warranty.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/zero9-holsters/july-2026/2026-07-10-handcuff-case.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 8 + exact-layout PNG (Bleu de Chanel). Product verified live + in stock via .js 2026-07-08 (all variants available). 6 images 200. Fits most standard hinged/chain non-ASP cuffs; oversized/leg-iron blades and old small Peerless do not fit. Layout replicated in Zero9 black/white/red, functional voice.",
+      "productUrl": "https://zero9holsters.com/products/handcuff-case",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "Replicate attached Bleu de Chanel editorial layout in Zero9 black #0A0A0A / white / red #E62826. Big word hero (CUFF CASE) with ghosted repeats, NewCuffs hero, outlined Shop Now, FIT AND HOLD section with StdCuffBlk + 01/02/03 callouts, BUILD YOURS section with CuffColors + 4 numbered feature cards (Fit/Finishes/Mounting/Single or Double) each with Shop Now, ON DUTY 4-up image strip, closing statement + red Shop Now, full-bleed NewCuffs panel, logo footer."
+    },
+    {
       "id": "2026-07-08-body-cam-case-exo-argus",
       "date": "2026-07-08",
       "day": "Wed",
