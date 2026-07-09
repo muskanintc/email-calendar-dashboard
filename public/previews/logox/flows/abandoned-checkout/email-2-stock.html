@@ -3,13 +3,10 @@
 FLOW: Abandoned Checkout — Email 2 of 3
 CLIENT: LogOX
 TRIGGER: ~24 hours after Email 1, order still not placed
-PURPOSE: Second touch. Present the same incentives as Abandoned Cart Email 2 + stock/demand.
+PURPOSE: Second touch. Lead with the offer, stock as reinforcement.
 OFFER: $10 off orders $150+ with code LOG10-XXX (stacks with bundles). Tiered bonuses:
        $150 = Free US shipping on LogOX brand products, $250 = 2x LogOX gifts, $500 = Team LogOX trucker hat
-A/B LAYOUT VARIANTS (both in this file):
-  VARIANT A (V1): stock copy first, then the offer (mirrors the Abandoned Cart layout).
-  VARIANT B (V2): offer shown first (recommended for a second touch), stock as reinforcement, reworked copy.
-Client asked (Jul 9) to make v2 distinct and lead with the offer, keeping v1 for comparison.
+LAYOUT: Offer-first (client approved Variant B / v2 on Jul 9; v1 removed per client).
 =======================================================
 -->
 
@@ -18,14 +15,12 @@ Client asked (Jul 9) to make v2 distinct and lead with the offer, keeping v1 for
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abandoned Checkout Email 2 (A/B) | LogOX</title>
+<title>Abandoned Checkout Email 2 | LogOX</title>
 <style>
   .subject-lines { background:#24374A; border:2px dashed #F37021; padding:20px; margin:20px auto; border-radius:8px; max-width:600px; font-family:'PT Sans', Arial, sans-serif; }
   .subject-lines h3 { color:#F37021; margin-bottom:10px; font-size:13px; letter-spacing:1px; font-weight:bold; }
   .subject-lines ol { padding-left:20px; margin:0 0 16px 0; }
   .subject-lines li { margin-bottom:6px; color:#FFFFFF; font-size:14px; line-height:1.5; }
-  .variant-label { max-width:600px; margin:26px auto 6px auto; background:#F37021; color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:14px; font-weight:bold; letter-spacing:1px; padding:12px 16px; border-radius:6px; }
-  .variant-label span { display:block; font-weight:normal; font-size:12px; margin-top:3px; opacity:.95; }
   .designer-note { background:#24374A; border:2px dashed #F37021; padding:16px; margin:0; color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:13px; line-height:1.6; }
   .designer-note strong { color:#F37021; }
   @media only screen and (max-width:600px) { .email-container { width:100% !important; } .content-pad { padding-left:16px !important; padding-right:16px !important; } }
@@ -33,7 +28,7 @@ Client asked (Jul 9) to make v2 distinct and lead with the offer, keeping v1 for
 </head>
 <body style="margin:0; padding:0; background-color:#F5F5F3; font-family:'PT Sans', Arial, sans-serif; -webkit-text-size-adjust:100%;">
 
-<!-- SUBJECT LINES & PREVIEW TEXT (visible at top, shared across both variants) -->
+<!-- SUBJECT LINES & PREVIEW TEXT (visible at top) -->
 <div class="subject-lines">
   <h3>Subject Line Options</h3>
   <ol>
@@ -50,109 +45,9 @@ Client asked (Jul 9) to make v2 distinct and lead with the offer, keeping v1 for
 </div>
 
 
-<!-- =================================================================== -->
-<!-- VARIANT A (V1) — stock first, then offer (original)                 -->
-<!-- =================================================================== -->
-<div class="variant-label">VARIANT A (V1)<span>Stock copy first, then the offer. Mirrors the Abandoned Cart layout.</span></div>
-
 <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#F5F5F3;">
 <tr>
-<td align="center" style="padding:12px 10px 20px 10px;">
-<table class="email-container" width="600" cellpadding="0" cellspacing="0" style="max-width:600px; width:100%; background:#FFFFFF; border-radius:6px;">
-
-<!-- LOGO -->
-<tr><td align="center" style="padding:18px;">
-  <div class="designer-note"><p style="margin:0;"><strong>DESIGNER NOTE:</strong> LogOX full color logo centered on white.</p></div>
-</td></tr>
-
-<!-- BLUE HERO + LIFESTYLE IMAGES -->
-<tr><td align="center" style="background-color:#2E6FB5; padding:36px 34px 30px 34px;">
-  <h1 style="color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:28px; line-height:1.2; margin:0 0 16px 0; font-weight:900;">We're holding your order for you</h1>
-  <div class="designer-note" style="border-color:#FFFFFF;"><p style="margin:0; color:#FFFFFF;"><strong style="color:#FFFFFF;">DESIGNER NOTE:</strong> Same three real LogOX lifestyle photos as the Abandoned Cart reference (chainsaw + LogOX in the field, tool on the splitting table, three person team photo). Rounded corners, arranged as in reference.</p></div>
-</td></tr>
-
-<!-- STOCK COPY -->
-<tr><td class="content-pad" style="padding:26px 34px 6px 34px;">
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:16px; line-height:1.75; margin:0 0 14px 0; text-align:center; font-weight:bold;">Some of our most popular tools do not sit around long, especially this time of year.</p>
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:0 0 14px 0; text-align:center;">When a best seller sells out, a restock can take weeks. The setup in your checkout is in stock and ready to ship today, so finishing your order is the surest way to get it in your hands before the busy season hits.</p>
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:0; text-align:center;">If you're still debating between tools, weighing value bundles, or just have a question, we can help. Email us at <a href="mailto:info@thelogox.com" style="color:#2E6FB5; text-decoration:underline;">info@thelogox.com</a> or give us a call at 877-695-6469 ext 1.</p>
-</td></tr>
-
-<!-- DYNAMIC CHECKOUT PRODUCT BLOCK -->
-<tr><td align="center" style="padding:22px 34px 6px 34px;">
-  <div class="designer-note"><p style="margin:0;"><strong>DYNAMIC BLOCK:</strong> Started Checkout line items (image, name, QTY). Reference shows WoodOX Sling, QTY 1.</p></div>
-</td></tr>
-<tr><td align="center" style="padding:18px 34px 24px 34px;">
-  <table cellpadding="0" cellspacing="0" style="margin:0 auto;"><tr><td align="center" style="background-color:#F37021; padding:15px 46px; border-radius:5px;">
-    <a href="{{ checkout_url }}" style="color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:15px; text-decoration:none; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">Return to Checkout</a>
-  </td></tr></table>
-</td></tr>
-
-<!-- INCENTIVES -->
-<tr><td class="content-pad" style="padding:24px 34px 4px 34px; background:#F5F5F3;">
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.6; margin:0 0 6px 0; text-align:center;">Because we want you to experience our gear, <strong>here are some special incentives for you</strong></p>
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:22px; line-height:1.35; margin:8px 0 0 0; font-weight:900; text-align:center;">Save $10 on any order of $150 or more with your special promo code LOG10-XXX</p>
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:14px; line-height:1.7; margin:12px 0 0 0; text-align:center;">This can be combined with our value bundles and other offers to help you get more value out of your order.</p>
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:14px; line-height:1.7; margin:10px 0 0 0; text-align:center;">We also offer tiered bonuses based on your order total.</p>
-</td></tr>
-<!-- TIERED BONUSES -->
-<tr><td class="content-pad" style="padding:14px 34px 8px 34px; background:#F5F5F3;">
-  <table width="100%" cellpadding="0" cellspacing="0"><tr>
-    <td width="33%" valign="top" align="center" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background:#2E6FB5; border-radius:8px;"><tr><td align="center" style="padding:16px 10px;"><p style="margin:0 0 4px 0; color:#FFFFFF; font-size:15px; font-weight:900;">SPEND $150</p><p style="margin:0; color:#FFFFFF; font-size:11px; line-height:1.4; letter-spacing:.5px;">GET FREE US SHIPPING ON LOGOX BRAND PRODUCTS</p></td></tr></table></td>
-    <td width="33%" valign="top" align="center" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background:#2E6FB5; border-radius:8px;"><tr><td align="center" style="padding:16px 10px;"><p style="margin:0 0 4px 0; color:#FFFFFF; font-size:15px; font-weight:900;">SPEND $250</p><p style="margin:0; color:#FFFFFF; font-size:11px; line-height:1.4; letter-spacing:.5px;">GET 2X LOGOX GIFTS</p></td></tr></table></td>
-    <td width="33%" valign="top" align="center" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background:#2E6FB5; border-radius:8px;"><tr><td align="center" style="padding:16px 10px;"><p style="margin:0 0 4px 0; color:#FFFFFF; font-size:15px; font-weight:900;">SPEND $500</p><p style="margin:0; color:#FFFFFF; font-size:11px; line-height:1.4; letter-spacing:.5px;">GET A TEAM LOGOX TRUCKER HAT</p></td></tr></table></td>
-  </tr></table>
-</td></tr>
-
-<!-- MADE IN USA TRUST LINE -->
-<tr><td class="content-pad" style="padding:18px 34px 6px 34px; background:#F5F5F3;">
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.7; margin:0; text-align:center;"><strong>Everything we sell on our website is proudly made in the USA and built to last.</strong> Thousands of landowners, homesteaders, and tree care professionals trust LogOX tools year after year for firewood and forestry work.</p>
-</td></tr>
-<tr><td align="center" style="padding:16px 34px 24px 34px; background:#F5F5F3;">
-  <table cellpadding="0" cellspacing="0" style="margin:0 auto;"><tr><td align="center" style="background-color:#F37021; padding:15px 46px; border-radius:5px;">
-    <a href="{{ checkout_url }}" style="color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:15px; text-decoration:none; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">Return to Checkout</a>
-  </td></tr></table>
-</td></tr>
-
-<!-- AS FEATURED IN -->
-<tr><td class="content-pad" style="padding:6px 34px 0 34px;">
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:22px; line-height:1.3; margin:0 0 14px 0; font-weight:900; text-align:center;">As Featured In</p>
-  <table width="100%" cellpadding="0" cellspacing="0"><tr>
-    <td width="50%" valign="top" style="padding:8px;"><table width="100%" cellpadding="0" cellspacing="0" style="background:#F5F5F3; border-radius:8px;"><tr><td style="padding:18px;"><p style="margin:0 0 12px 0; color:#24374A; font-size:14px; line-height:1.6; font-style:italic;">"A great investment for someone looking to make cutting and moving firewood easier, while saving your back in the process."</p><div class="designer-note" style="padding:8px;"><p style="margin:0; font-size:11px;"><strong>LOGO:</strong> Firewood for Life logo (as in reference).</p></div></td></tr></table></td>
-    <td width="50%" valign="top" style="padding:8px;"><table width="100%" cellpadding="0" cellspacing="0" style="background:#F5F5F3; border-radius:8px;"><tr><td style="padding:18px;"><p style="margin:0 0 12px 0; color:#24374A; font-size:14px; line-height:1.6;">Electromyography (EMG) data from ergonomic testing concluded that <strong>using the LogOX Hauler resulted in reductions of up to 93% in back strain, 89% in quadricep strain, and 76% in bicep strain,</strong> when lifting and walking with log rounds, compared to doing so by hand.</p><div class="designer-note" style="padding:8px;"><p style="margin:0; font-size:11px;"><strong>LOGO:</strong> Fairfield University, School of Engineering (as in reference).</p></div></td></tr></table></td>
-  </tr></table>
-</td></tr>
-
-<!-- 90 DAY GUARANTEE + FOUNDER QUOTE -->
-<tr><td class="content-pad" style="padding:24px 34px 6px 34px; background:#F5F5F3;">
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:22px; line-height:1.35; margin:0 0 14px 0; font-weight:900; text-align:center;">Every order is covered by a 90 day satisfaction guarantee.</p>
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:0 0 12px 0; font-style:italic; text-align:center;">How can I confidently offer such a comprehensive satisfaction guarantee?</p>
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:0 0 16px 0; text-align:center;">Because I know that just like our 70,000+ customers over nearly a decade, our ergonomically designed American made products will change your life for the better. Use them once and no one will be able to pry them out of your hands, let alone make you want to return them.</p>
-  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:14px; line-height:1.5; margin:0; text-align:center;">&#8212; Austin Roberts<br>LogOX Cofounder and General Manager</p>
-</td></tr>
-
-<!-- FOOTER -->
-<tr><td align="center" style="padding:20px 0 0 0; background:#F5F5F3;">
-  <div class="designer-note" style="border-radius:0;"><p style="margin:0;"><strong>DESIGNER NOTE (FOOTER, identical across all emails):</strong> Forest treeline silhouette, dark blue band with white LogOX logo, trust badge row (BBB A+ rating, ISA Member, Made in USA LogOX, TCIA Member, SBA WOSB Certified), social icons, address line.</p></div>
-</td></tr>
-<tr><td align="center" style="padding:14px 20px 24px 20px; background:#24374A;">
-  <p style="color:#9DB3CE; font-family:'PT Sans', Arial, sans-serif; font-size:11px; line-height:1.6; margin:0;">LogOX LLC &nbsp; 484 Salter Hill Rd, Arlington, Vermont 05250<br>No longer want to receive these emails? <a href="#" style="color:#9DB3CE; text-decoration:underline;">Unsubscribe</a></p>
-</td></tr>
-
-</table>
-</td>
-</tr>
-</table>
-
-
-<!-- =================================================================== -->
-<!-- VARIANT B (V2) — offer first (recommended)                          -->
-<!-- =================================================================== -->
-<div class="variant-label">VARIANT B (V2) &nbsp;&#8212;&nbsp; RECOMMENDED<span>Offer shown first, stock as reinforcement, reworked copy. Best practice for a second touch: lead with the reason to come back now.</span></div>
-
-<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#F5F5F3;">
-<tr>
-<td align="center" style="padding:12px 10px 20px 10px;">
+<td align="center" style="padding:20px 10px;">
 <table class="email-container" width="600" cellpadding="0" cellspacing="0" style="max-width:600px; width:100%; background:#FFFFFF; border-radius:6px;">
 
 <!-- LOGO -->
@@ -197,7 +92,7 @@ Client asked (Jul 9) to make v2 distinct and lead with the offer, keeping v1 for
   <div class="designer-note"><p style="margin:0;"><strong>DYNAMIC BLOCK:</strong> Started Checkout line items (image, name, QTY). Reference shows WoodOX Sling, QTY 1.</p></div>
 </td></tr>
 
-<!-- STOCK REINFORCEMENT (reworded, tighter) -->
+<!-- STOCK REINFORCEMENT -->
 <tr><td class="content-pad" style="padding:18px 34px 6px 34px; background:#F5F5F3;">
   <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:16px; line-height:1.7; margin:0 0 10px 0; text-align:center; font-weight:bold;">One more reason not to wait.</p>
   <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:0; text-align:center;">Our best sellers move fast this time of year, and once one sells out a restock can take weeks. What's in your checkout is in stock and ready to ship today. Lock it in while the code is active and it's still on the shelf.</p>
@@ -229,7 +124,7 @@ Client asked (Jul 9) to make v2 distinct and lead with the offer, keeping v1 for
 
 <!-- FOOTER -->
 <tr><td align="center" style="padding:20px 0 0 0; background:#F5F5F3;">
-  <div class="designer-note" style="border-radius:0;"><p style="margin:0;"><strong>DESIGNER NOTE (FOOTER, identical across all emails):</strong> Forest treeline silhouette, dark blue band with white LogOX logo, trust badge row, social icons, address line.</p></div>
+  <div class="designer-note" style="border-radius:0;"><p style="margin:0;"><strong>DESIGNER NOTE (FOOTER, identical across all emails):</strong> Forest treeline silhouette, dark blue band with white LogOX logo, trust badge row (BBB A+ rating, ISA Member, Made in USA LogOX, TCIA Member, SBA WOSB Certified), social icons, address line.</p></div>
 </td></tr>
 <tr><td align="center" style="padding:14px 20px 24px 20px; background:#24374A;">
   <p style="color:#9DB3CE; font-family:'PT Sans', Arial, sans-serif; font-size:11px; line-height:1.6; margin:0;">LogOX LLC &nbsp; 484 Salter Hill Rd, Arlington, Vermont 05250<br>No longer want to receive these emails? <a href="#" style="color:#9DB3CE; text-decoration:underline;">Unsubscribe</a></p>
