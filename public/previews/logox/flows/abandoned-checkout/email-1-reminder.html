@@ -1,0 +1,202 @@
+<!--
+=======================================================
+FLOW: Abandoned Checkout — Email 1 of 3
+CLIENT: LogOX
+TRIGGER: ~1 hour after checkout started, order not placed (Klaviyo "Started Checkout")
+PURPOSE: Warm reminder + reassurance in founder voice, risk free trust, Need a Hand support
+OFFER: None in Email 1 (matches Abandoned Cart Email 1). Trust signals only.
+LAYOUT: Same as Abandoned Cart Email 1 (client reference screenshot). Copy rewritten for checkout.
+=======================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abandoned Checkout Email 1 | LogOX</title>
+<style>
+  .subject-lines {
+    background:#24374A; border:2px dashed #F37021; padding:20px; margin:20px auto; border-radius:8px;
+    max-width:600px; font-family:'PT Sans', Arial, sans-serif;
+  }
+  .subject-lines h3 { color:#F37021; margin-bottom:10px; font-size:13px; letter-spacing:1px; font-weight:bold; }
+  .subject-lines ol { padding-left:20px; margin:0 0 16px 0; }
+  .subject-lines li { margin-bottom:6px; color:#FFFFFF; font-size:14px; line-height:1.5; }
+  .designer-note {
+    background:#24374A; border:2px dashed #F37021; padding:16px; margin:0; color:#FFFFFF;
+    font-family:'PT Sans', Arial, sans-serif; font-size:13px; line-height:1.6;
+  }
+  .designer-note strong { color:#F37021; }
+  @media only screen and (max-width:600px) {
+    .email-container { width:100% !important; }
+    .content-pad { padding-left:16px !important; padding-right:16px !important; }
+  }
+</style>
+</head>
+<body style="margin:0; padding:0; background-color:#F5F5F3; font-family:'PT Sans', Arial, sans-serif; -webkit-text-size-adjust:100%;">
+
+<!-- SUBJECT LINES & PREVIEW TEXT (visible at top) -->
+<div class="subject-lines">
+  <h3>Subject Line Options</h3>
+  <ol>
+    <li>You were one step from done.</li>
+    <li>Your LogOX order is still waiting.</li>
+    <li>Did something give you pause at checkout?</li>
+  </ol>
+  <h3>Preview Text Options</h3>
+  <ol>
+    <li>We saved your order so you can pick up right where you left off.</li>
+    <li>Made in the USA, backed by a lifetime warranty and a 90 day guarantee.</li>
+    <li>Reply or call us. We are happy to help you get across the line.</li>
+  </ol>
+</div>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#F5F5F3;">
+<tr>
+<td align="center" style="padding:20px 10px;">
+<table class="email-container" width="600" cellpadding="0" cellspacing="0" style="max-width:600px; width:100%; background:#FFFFFF; border-radius:6px;">
+
+
+<!-- LOGO -->
+<tr>
+<td align="center" style="padding:18px;">
+  <div class="designer-note"><p style="margin:0;"><strong>DESIGNER NOTE:</strong> LogOX full color logo (blue bull + LogOX wordmark) centered on white, as in the Abandoned Cart reference.</p></div>
+</td>
+</tr>
+
+
+<!-- BLUE HERO -->
+<tr>
+<td align="center" style="background-color:#2E6FB5; padding:44px 34px;">
+  <div class="designer-note" style="border-color:#FFFFFF; margin-bottom:14px;"><p style="margin:0; color:#FFFFFF;"><strong style="color:#FFFFFF;">DESIGNER NOTE:</strong> Textured royal blue hero band (stone texture as in reference).</p></div>
+  <h1 style="color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:30px; line-height:1.2; margin:0 0 16px 0; font-weight:900;">
+    You were about to check out.
+  </h1>
+  <p style="color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:16px; line-height:1.7; margin:0;">
+    Looks like you were about to check out but didn't hit place order. If something gave you pause, I totally understand. Every piece of LogOX gear was built to solve problems I ran into doing the work myself. It is tough out there, and your tools should make it easier, not harder.
+  </p>
+</td>
+</tr>
+
+
+<!-- DYNAMIC CHECKOUT PRODUCT BLOCK -->
+<tr>
+<td align="center" style="padding:26px 34px 6px 34px;">
+  <div class="designer-note"><p style="margin:0;"><strong>DYNAMIC BLOCK:</strong> Pull the line items from the Klaviyo Started Checkout event (product image, name, QTY), exactly like the Abandoned Cart layout. Reference shows: WoodOX Sling, QTY 1.</p></div>
+</td>
+</tr>
+
+<!-- CTA -->
+<tr>
+<td align="center" style="padding:20px 34px 26px 34px;">
+  <table cellpadding="0" cellspacing="0" style="margin:0 auto;">
+  <tr><td align="center" style="background-color:#F37021; padding:15px 46px; border-radius:5px;">
+    <a href="{{ checkout_url }}" style="color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:15px; text-decoration:none; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">Return to Checkout</a>
+  </td></tr>
+  </table>
+</td>
+</tr>
+
+
+<!-- RISK FREE INTRO -->
+<tr>
+<td class="content-pad" style="padding:24px 34px 6px 34px; background:#F5F5F3;">
+  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:0 0 16px 0; text-align:center;">
+    We know shopping for forestry tools and equipment isn't always a quick decision, especially when you're investing in gear you plan to use for years.
+  </p>
+  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:20px; line-height:1.35; margin:0; font-weight:900; text-align:center;">
+    That's why we've made trying out our products risk free:
+  </p>
+</td>
+</tr>
+
+<!-- 3 BADGES -->
+<tr>
+<td class="content-pad" style="padding:16px 34px 8px 34px; background:#F5F5F3;">
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="33%" valign="top" align="center" style="padding:6px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #2E6FB5; border-radius:8px;"><tr><td align="center" style="padding:16px 10px;">
+        <div style="width:34px; height:34px; line-height:34px; border-radius:50%; background:#F37021; color:#FFFFFF; font-size:18px; font-weight:bold; margin:0 auto 10px auto;">&#10003;</div>
+        <p style="margin:0; color:#24374A; font-size:13px; line-height:1.5; font-weight:bold;">Everything on our website is Made in the USA</p>
+      </td></tr></table>
+    </td>
+    <td width="33%" valign="top" align="center" style="padding:6px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #2E6FB5; border-radius:8px;"><tr><td align="center" style="padding:16px 10px;">
+        <div style="width:34px; height:34px; line-height:34px; border-radius:50%; background:#F37021; color:#FFFFFF; font-size:18px; font-weight:bold; margin:0 auto 10px auto;">&#10003;</div>
+        <p style="margin:0; color:#24374A; font-size:13px; line-height:1.5; font-weight:bold;">Free US Shipping on LogOX Brand product orders of $150 or more</p>
+      </td></tr></table>
+    </td>
+    <td width="33%" valign="top" align="center" style="padding:6px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #2E6FB5; border-radius:8px;"><tr><td align="center" style="padding:16px 10px;">
+        <div style="width:34px; height:34px; line-height:34px; border-radius:50%; background:#F37021; color:#FFFFFF; font-size:18px; font-weight:bold; margin:0 auto 10px auto;">&#10003;</div>
+        <p style="margin:0; color:#24374A; font-size:13px; line-height:1.5; font-weight:bold;">Ironclad 90 day 100% satisfaction guarantee. If it's not right for you, we'll make it right</p>
+      </td></tr></table>
+    </td>
+  </tr>
+  </table>
+</td>
+</tr>
+
+<!-- FAMILY OWNED -->
+<tr>
+<td class="content-pad" style="padding:16px 34px 8px 34px; background:#F5F5F3;">
+  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:0; text-align:center;">
+    As a family owned small business, we're dedicated to assisting you on the same firewood heating journey we're on as wood burners. We appreciate your business and are always here to help.
+  </p>
+</td>
+</tr>
+
+
+<!-- NEED A HAND (kept as is, per brief) -->
+<tr>
+<td class="content-pad" style="padding:22px 34px 4px 34px; background:#F5F5F3;">
+  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:20px; line-height:1.35; margin:0 0 10px 0; font-weight:900; text-align:center;">
+    Need a hand before checking out?
+  </p>
+  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:0; text-align:center;">
+    If a page didn't load while browsing, checkout felt confusing, or you just have a question, please reply to this email or give us a call at 877-695-6469 ext 2 and we'll be happy to help.
+  </p>
+  <p style="color:#24374A; font-family:'PT Sans', Arial, sans-serif; font-size:15px; line-height:1.75; margin:16px 0 0 0; text-align:center;">
+    We take pride in providing some of the best products on the market and an outstanding customer service experience with every order. We'll hold your order for a bit while you decide. You can pick it back up by clicking the button below.
+  </p>
+</td>
+</tr>
+
+<!-- FINAL CTA -->
+<tr>
+<td align="center" style="padding:20px 34px 30px 34px; background:#F5F5F3;">
+  <table cellpadding="0" cellspacing="0" style="margin:0 auto;">
+  <tr><td align="center" style="background-color:#F37021; padding:15px 46px; border-radius:5px;">
+    <a href="{{ checkout_url }}" style="color:#FFFFFF; font-family:'PT Sans', Arial, sans-serif; font-size:15px; text-decoration:none; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">Return to Checkout</a>
+  </td></tr>
+  </table>
+</td>
+</tr>
+
+
+<!-- FOOTER -->
+<tr>
+<td align="center" style="padding:0;">
+  <div class="designer-note" style="border-radius:0;"><p style="margin:0;"><strong>DESIGNER NOTE (FOOTER, identical across all 3 emails):</strong> Forest treeline silhouette, then dark blue band with white LogOX logo, trust badge row (BBB A+ rating, ISA Member, Made in USA LogOX, TCIA Member, SBA WOSB Certified), social icons (Instagram, Facebook, X, Pinterest), then address line below.</p></div>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding:14px 20px 24px 20px; background:#24374A;">
+  <p style="color:#9DB3CE; font-family:'PT Sans', Arial, sans-serif; font-size:11px; line-height:1.6; margin:0;">
+    LogOX LLC &nbsp; 484 Salter Hill Rd, Arlington, Vermont 05250<br>
+    No longer want to receive these emails? <a href="#" style="color:#9DB3CE; text-decoration:underline;">Unsubscribe</a>
+  </p>
+</td>
+</tr>
+
+
+</table>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
