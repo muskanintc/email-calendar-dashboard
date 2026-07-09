@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-09-tsunami-any-conditions",
+      "date": "2026-07-09",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "TSUNAMI: Runs in Any Conditions (IP67 field reliability)",
+      "product": "TSUNAMI Waterproof (IP67) PTT/Mic, Quick Disconnect (MOLLE + Alligator clip)",
+      "shortDescription": "Fresh Tsunami angle per client (already ran new arrival, two ways, MEG giveaway, FAQ). Field CONDITIONS / reliability theme: IP67 seal keeps it transmitting through rain, sweat, mud and long shifts. Three condition cards (Rain / Sweat / Mud and Dust), spec row (IP67, 32in cord, 3.5mm port), clean-setup section (360 rotating MOLLE + Alligator clips, QD push-pull), 3.5mm/AWARE pairing, real-review placeholder, final CTA. Both clips verified in stock via Shopify JSON; all images from Tsunami product pages, verified 200.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/sheepdog/july-2026/2026-07-09-tsunami-any-conditions.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 9: promote Tsunami rest of month with a NEW theme (not feature list/FAQ). Rules honored: no 'Rugged. Waterproof.' subhead; IP67 described directly, no comparison; QD = setup/removal not radio swap; MOLLE = plate carriers/tactical vests, Alligator = uniform shirts/external carriers; no radio grid; no sold-out language; product-page images only; no hyphens/dashes. Review block is a placeholder to pull a real Tsunami review. Copy-ready Jul 9.",
+      "productUrl": "https://sheepdogmics.com/collections/tsunami-ptt",
+      "collectionUrl": "https://sheepdogmics.com/collections/tsunami-ptt",
+      "offerCode": "",
+      "creativeDirection": "Sheepdog charcoal #282828 / red #DE2A2A, Archivo Black headings. Field/lifestyle hero, early CTA, 3 red-top condition cards, spec row, clean-setup (product image + 360 clip + QD copy), pairing, review placeholder, final CTA, standard footer."
+    },
+    {
       "id": "2026-07-04-independence-day-best-sellers",
       "date": "2026-07-04",
       "day": "Sat",

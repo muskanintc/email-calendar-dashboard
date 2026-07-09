@@ -1,0 +1,248 @@
+<!--
+=============================================================
+  SHEEPDOG — Email Wireframe
+  Date: July 9, 2026
+  Theme: TSUNAMI: Runs in Any Conditions (IP67 field reliability)
+  Product: TSUNAMI Waterproof (IP67) PTT/Mic (MOLLE + Alligator)
+  Type: Promotional (reliability / real-world-use angle)
+  Template: promotional.md
+=============================================================
+
+  FRESH ANGLE (per client): Tsunami has been promoted a lot
+  (new arrival, "two ways to run it", MEG giveaway, FAQ elsewhere).
+  This is a NEW theme: field CONDITIONS / reliability. Lead on how
+  the IP67 seal keeps it transmitting through rain, sweat, mud, and
+  long shifts. Clip options + QD are supporting, not the hero.
+
+  SUBJECT LINE OPTIONS:
+  1. Rain doesn't end the call.
+  2. Wet shift. Clear comms.
+  3. Sealed for the conditions you work in.
+
+  PREVIEW TEXT OPTIONS:
+  1. IP67 sealed. Rain, sweat, mud. TSUNAMI keeps transmitting.
+  2. The PTT built to run through the whole shift, wet or dry.
+  3. When the weather turns, your comms hold.
+
+  DESIGNER NOTES:
+  - New theme vs prior Tsunami sends (new arrival, two ways, giveaway). Conditions/reliability angle.
+  - All images pulled from the TSUNAMI product pages (Shopify CDN), verified 200.
+  - Hero uses the field/lifestyle shot (alligator-clip-2456332.jpg).
+  - Per client: do NOT use "Rugged. Waterproof." as a sub-headline. IP67 described directly, no comparison to lower ratings.
+  - QD = simple setup and removal (push-pull), NOT radio swapping.
+  - Both clips 360-degree rotating. MOLLE = plate carriers and tactical vests. Alligator = uniform shirts and external carriers.
+  - No radio compatibility grid. One brief compatibility line only.
+  - No "sold out" language. Positive framing only.
+  - Review block is a placeholder: pull a REAL review from the TSUNAMI product page. Do not invent.
+  - Archivo Black headings, Archivo body. Mobile-first, cards stack.
+=============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSUNAMI: Runs in Any Conditions</title>
+<style>
+  body { margin: 0; padding: 0; background-color: #f5f5f5; font-family: 'Archivo', Arial, sans-serif; }
+  .email-wrapper { max-width: 600px; margin: 0 auto; background: #ffffff; }
+
+  .hero { background-color: #282828; text-align: center; padding: 40px 30px 10px; }
+  .hero-tag { font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #DE2A2A; margin: 0 0 12px; }
+  .hero h1 { font-family: 'Archivo Black', Arial, sans-serif; color: #ffffff; font-size: 30px; margin: 0 0 8px; text-transform: uppercase; line-height: 1.15; letter-spacing: 0.5px; }
+  .hero-sub { color: #999999; font-size: 15px; line-height: 1.6; margin: 0 0 28px; }
+
+  .cta-btn { display: inline-block; background-color: #DE2A2A; color: #ffffff; font-family: 'Archivo Black', Arial, sans-serif; font-size: 14px; text-decoration: none; padding: 14px 36px; letter-spacing: 1.5px; text-transform: uppercase; }
+
+  .section-title { font-family: 'Archivo Black', Arial, sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; color: #DE2A2A; margin: 0 0 8px; text-align: center; }
+  .section-headline { font-family: 'Archivo Black', Arial, sans-serif; font-size: 22px; color: #282828; margin: 0 0 24px; text-align: center; text-transform: uppercase; line-height: 1.25; }
+  .section-headline-white { font-family: 'Archivo Black', Arial, sans-serif; font-size: 22px; color: #ffffff; margin: 0 0 24px; text-align: center; text-transform: uppercase; line-height: 1.25; }
+
+  /* Conditions cards */
+  .cond-card { background-color: #1f1f1f; padding: 26px 24px; text-align: center; border-top: 3px solid #DE2A2A; }
+  .cond-label { font-family: 'Archivo Black', Arial, sans-serif; font-size: 15px; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 10px; }
+  .cond-copy { font-size: 13px; color: #aaaaaa; line-height: 1.65; margin: 0; }
+
+  /* Specs */
+  .spec-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+  .spec-card { flex: 1; min-width: 120px; max-width: 140px; text-align: center; padding: 20px 10px; background: #f5f5f5; }
+  .spec-value { font-family: 'Archivo Black', Arial, sans-serif; font-size: 18px; color: #282828; margin: 0 0 4px; }
+  .spec-label { font-size: 11px; color: #666666; text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+
+  .block-text { font-size: 14px; color: #cccccc; line-height: 1.65; margin: 0 auto 12px; max-width: 440px; }
+  .pairing-text { text-align: center; font-size: 14px; color: #666666; line-height: 1.65; max-width: 440px; margin: 0 auto 12px; }
+
+  .footer { background-color: #282828; padding: 30px; text-align: center; border-top: 1px solid #333333; }
+  .footer-links { font-size: 12px; color: #999999; margin: 0 0 16px; }
+  .footer-links a { color: #DE2A2A; text-decoration: none; }
+  .footer-badge { font-family: 'Archivo Black', Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #666666; margin: 16px 0 12px; }
+  .footer-contact { font-size: 11px; color: #666666; margin: 4px 0; }
+  .footer-social a { display: inline-block; margin: 0 8px; color: #999999; text-decoration: none; font-size: 13px; }
+  .designer-note { background:#111; border:1px dashed #DE2A2A; color:#ddd; font-size:12px; line-height:1.55; padding:12px 14px; margin:0; text-align:left; }
+  .designer-note strong { color:#DE2A2A; }
+
+  @media only screen and (max-width: 480px) {
+    .hero { padding: 30px 20px 10px; }
+    .hero h1 { font-size: 24px; }
+    .cond-row { display: block !important; }
+    .cond-col { display: block !important; width: 100% !important; }
+    .spec-row { flex-direction: column; align-items: center; }
+    .spec-card { max-width: 280px; width: 100%; }
+    .section-headline, .section-headline-white { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+
+  <!-- SLPL (visible) -->
+  <div style="background-color: #282828; padding: 12px 30px; text-align: center; border-bottom: 1px solid #333333;">
+    <p style="margin: 0; font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #DE2A2A;">
+      SL: Rain doesn't end the call.
+    </p>
+    <p style="margin: 4px 0 0; font-size: 11px; color: #666666;">
+      PL: IP67 sealed. Rain, sweat, mud. TSUNAMI keeps transmitting.
+    </p>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="hero-tag">TSUNAMI PTT/Mic</p>
+    <h1>Rain Doesn't<br>End The Call.</h1>
+    <p class="hero-sub">
+      Sealed to IP67. Rain, sweat, mud, dust.<br>
+      The TSUNAMI keeps transmitting through the shift.
+    </p>
+    <div style="padding: 0;">
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/tsunami-waterproof-ip67-pttmic-quick-disconnect-alligator-clip-2456332.jpg?v=1770110709"
+           alt="TSUNAMI PTT in the field"
+           style="width: 100%; display: block; margin: 0 auto;">
+    </div>
+  </div>
+
+  <!-- EARLY CTA -->
+  <div style="background-color: #282828; padding: 30px 30px 36px; text-align: center;">
+    <a href="https://sheepdogmics.com/collections/tsunami-ptt" class="cta-btn">Shop TSUNAMI</a>
+  </div>
+
+  <!-- CONDITIONS -->
+  <div style="background-color: #1a1a1a; padding: 40px 30px 8px; text-align: center;">
+    <p class="section-title">Built For The Conditions</p>
+    <p class="section-headline-white" style="margin-bottom: 20px;">The Weather Turns. Your Comms Hold.</p>
+  </div>
+
+  <!-- 3 condition cards: desktop row via table, stack on mobile -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="cond-row" style="background-color:#1a1a1a;">
+    <tr>
+      <td class="cond-col" width="33.33%" valign="top" style="padding:0 6px;">
+        <div class="cond-card">
+          <p class="cond-label">Rain</p>
+          <p class="cond-copy">Downpours, wet gear, foot pursuits in the rain. The sealed housing keeps water out, so your transmit stays clear.</p>
+        </div>
+      </td>
+      <td class="cond-col" width="33.33%" valign="top" style="padding:0 6px;">
+        <div class="cond-card">
+          <p class="cond-label">Sweat</p>
+          <p class="cond-copy">Twelve hour shifts. Summer heat. The IP67 seal shrugs off sweat and humidity that kill consumer mics.</p>
+        </div>
+      </td>
+      <td class="cond-col" width="33.33%" valign="top" style="padding:0 6px;">
+        <div class="cond-card">
+          <p class="cond-label">Mud and Dust</p>
+          <p class="cond-copy">Dirt roads, dusty ranges, muddy ground. Dust proof and washable. Rinse it off and get back to work.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- SPECS -->
+  <div style="background-color: #ffffff; padding: 40px 30px;">
+    <p class="section-title">The Numbers</p>
+    <p class="section-headline">Sealed. Corded. Ready.</p>
+    <div class="spec-row">
+      <div class="spec-card">
+        <p class="spec-value">IP67</p>
+        <p class="spec-label">Water and Dust Proof</p>
+      </div>
+      <div class="spec-card">
+        <p class="spec-value">32"</p>
+        <p class="spec-label">PTT/Mic Cord</p>
+      </div>
+      <div class="spec-card">
+        <p class="spec-value">3.5mm</p>
+        <p class="spec-label">Earpiece Port</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLEAN SETUP (supporting: clip + QD) -->
+  <div style="background-color: #282828; padding: 40px 30px;">
+    <p class="section-title">Clean Setup, Either Way</p>
+    <p class="section-headline-white">Clip It. Route It. Run It.</p>
+
+    <div style="text-align: center; margin-bottom: 24px;">
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/tsunami-waterproof-ip67-pttmic-quick-disconnect-molle-clip-5788930.png?v=1770110709"
+           alt="TSUNAMI Waterproof PTT/Mic"
+           style="max-width: 320px; width: 90%; display: block; margin: 0 auto;">
+    </div>
+
+    <p class="block-text" style="text-align:center;">
+      Runs two ways. The <strong style="color:#fff;">MOLLE clip</strong> locks to plate carriers and tactical vests. The <strong style="color:#fff;">Alligator clip</strong> holds on uniform shirts and external carriers. Both rotate a full 360 degrees, so you angle the mic exactly where you want it.
+    </p>
+    <p class="block-text" style="text-align:center;">
+      Includes a 6 Pin Quick Disconnect (QD) radio adapter for simple setup and removal, using our simple "push pull" design. The mic detaches without unplugging the whole setup. Your cable stays routed. No re-routing at end of shift.
+    </p>
+  </div>
+
+  <!-- PAIRING -->
+  <div style="background-color: #f5f5f5; padding: 40px 30px; text-align: center;">
+    <p class="section-title">Pair It</p>
+    <p class="section-headline">Runs With Any 3.5mm Earpiece</p>
+    <p class="pairing-text">
+      TSUNAMI works with any 3.5mm listen only earpiece. Pair it with Sheepdog AWARE for a low profile setup that stays out of sight under your hair or collar.
+    </p>
+  </div>
+
+  <!-- REVIEW (placeholder, pull real) -->
+  <div style="background-color: #282828; padding: 24px 30px;">
+    <div class="designer-note">
+      <strong>DESIGNER NOTE:</strong> Insert one real 5 star review pulled from the TSUNAMI product page (verified customer). Do not invent a quote. Format: short italic quote + "Verified Customer" label, matching prior Sheepdog emails.
+    </div>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div style="background-color: #1a1a1a; padding: 40px 30px; text-align: center;">
+    <p style="font-family: 'Archivo Black', Arial, sans-serif; font-size: 20px; color: #ffffff; text-transform: uppercase; margin: 0 0 6px; line-height: 1.25;">
+      Seal Your Comms. Run The Shift.
+    </p>
+    <p style="font-size: 14px; color: #888888; margin: 0 0 24px;">
+      Available for Motorola, Harris, Kenwood, Icom, and Tait radios.
+    </p>
+    <a href="https://sheepdogmics.com/collections/tsunami-ptt" class="cta-btn">Shop TSUNAMI</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="footer-links">
+      Free Shipping &nbsp;|&nbsp; Dedicated Support &nbsp;|&nbsp; Easy Returns
+    </p>
+    <p class="footer-badge">
+      SHEEPDOG Accepts Government Purchase Orders
+    </p>
+    <p class="footer-contact">Customer Service: 702 475 5225</p>
+    <div class="footer-social">
+      <a href="#">Instagram</a> &nbsp;&nbsp; <a href="#">Facebook</a>
+    </div>
+    <p style="font-size: 10px; color: #555555; margin: 12px 0 0;">
+      SHEEPDOG &nbsp; 8638 Sky Pointe Dr, Las Vegas, Nevada 89131
+    </p>
+    <p style="font-size: 10px; color: #555555; margin: 8px 0 0;">
+      <a href="#" style="color: #777777; text-decoration: underline;">Email Preferences</a> &nbsp;|&nbsp;
+      <a href="#" style="color: #777777; text-decoration: underline;">View in Browser</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
