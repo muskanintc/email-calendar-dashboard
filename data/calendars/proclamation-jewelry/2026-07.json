@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-12-champion-most-loved",
+      "date": "2026-07-12",
+      "day": "Sun",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "The Champion (Saint Michael): Our Most Loved for a Reason",
+      "product": "CHAMPION Saint Michael Pendant in all three metals: Gold, Silver, Platinum",
+      "shortDescription": "Champion (Saint Michael) spotlight per client brief Jul 10. 'Our most loved for a reason' hero + Nick founder intro, early Shop the Champion CTA, a three-reason block (the meaning / 'Quis ut Deus' back engraving, the close-up detail + Made in USA, a metal for every man), then a Choose Your Metal section with the three variants each on its own product-page image + separate Shop Now (Gold, Silver, Platinum), Made in USA + lifetime warranty trust line, wordmark footer. Nick voice, no pricing, no karat range, no sign-off. All 3 product pages + images verified live 200 Jul 10.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/july-2026/2026-07-12-champion-most-loved.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 10: Champion pendant, 'our most loved for a reason' + list reasons, show all gold/silver/platinum variants. Gold /products/saint-michael-gold-pendant, Silver /products/silver-saint-michael-pendant, Platinum /products/champion-platinum-saint-michael-pendant (all 200). Reasons grounded in real product copy; no invented review counts.",
+      "productUrl": "https://www.proclamationjewelry.com/products/saint-michael-gold-pendant",
+      "collectionUrl": "https://www.proclamationjewelry.com/products/saint-michael-gold-pendant",
+      "offerCode": "",
+      "creativeDirection": "Dark #0A0A0A / gold #D4AF37, Trajan Pro (fallback Georgia). Gold pendant hero, 'Our Most Loved, For a Reason' headline, founder intro, gold Shop the Champion CTA; 'Why Men Keep Choosing It' three numbered reasons; 'Choose Your Metal' three stacked variant cards (Gold/Silver/Platinum) each with product-page image + outlined Shop Now; Made in USA + lifetime warranty line; wordmark footer. No pricing, no karat range, no sign-off."
+    },
+    {
       "id": "2026-07-09-mens-chains-ranked-youtube",
       "date": "2026-07-09",
       "day": "Thu",
