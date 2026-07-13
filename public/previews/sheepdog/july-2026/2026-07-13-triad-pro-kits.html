@@ -1,0 +1,264 @@
+<!--
+=============================================================
+  SHEEPDOG — Email Wireframe
+  Date: July 13, 2026
+  Theme: TRIAD PRO Kits — Two Kits, One Sealed Mic (IP68)
+  Product: TRIAD PRO PTT/Mic, IP68, Quick Disconnect
+           Kit 1: Acoustic Tube Earpiece
+           Kit 2: N-ear 360 Flexo Bundle (Sheepdog Exclusive)
+  Collection: https://sheepdogmics.com/collections/triad-pro-kits
+  Type: Promotional (product education / pick-your-setup angle)
+  Template: promotional.md
+=============================================================
+
+  ANGLE (per client brief Jul 9): Feature the TRIAD PRO PTT mic,
+  offered in two kits. Distinct layout from the Jul 9 Tsunami send:
+  a TWO-KIT CHOOSER (side-by-side kit cards, each with its own
+  Shop Now), built around the sealed IP68 mic.
+
+  SUBJECT LINE OPTIONS:
+  1. Sealed to 1.5m. Pick your kit.
+  2. Two Triad Pro kits. One sealed mic.
+  3. IP68 comms, your way.
+
+  PREVIEW TEXT OPTIONS:
+  1. Triad Pro PTT, IP68 sealed. Acoustic Tube or N-ear Flexo bundle.
+  2. Submersible to 1.5m for 30 minutes. Choose your earpiece.
+  3. One waterproof mic. Two ways to run it.
+
+  DESIGNER NOTES:
+  - New layout vs Jul 9 Tsunami (that used 3 condition cards). This is a two-kit chooser.
+  - All images pulled from the two TRIAD PRO kit product pages (Shopify CDN), verified live via collection products.json. No cross-page or external images.
+  - IP68 RULE: lead with the submersion spec (1.5m for 30 minutes). Describe IP68 only. Do NOT mention or compare to IP67.
+  - QD = simple setup and removal (push-pull), NOT radio swapping.
+  - Clip is an Alligator clip that attaches anywhere including MOLLE webbing. Alligator = uniform shirts and external carriers. No "duty belts" or "collars."
+  - No radio compatibility grid. One brief compatibility line only.
+  - No "sold out" language. Positive framing only.
+  - No pricing.
+  - Review block is a placeholder: pull a REAL review from a TRIAD PRO kit product page. Do not invent.
+  - Archivo Black headings, Archivo body. Mobile-first, kit cards stack on mobile.
+  - Real specs used (from product pages): IP68 1.5m/30min, -4F to 122F, 20in straight cord, ~5oz, side PTT, built-in loud speaker, 6 Pin QD, 3.5mm audio port.
+=============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRIAD PRO Kits — Pick Your Setup</title>
+<style>
+  body { margin: 0; padding: 0; background-color: #f5f5f5; font-family: 'Archivo', Arial, sans-serif; }
+  .email-wrapper { max-width: 600px; margin: 0 auto; background: #ffffff; }
+
+  .hero { background-color: #282828; text-align: center; padding: 40px 30px 0; }
+  .hero-tag { font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #DE2A2A; margin: 0 0 12px; }
+  .hero h1 { font-family: 'Archivo Black', Arial, sans-serif; color: #ffffff; font-size: 30px; margin: 0 0 8px; text-transform: uppercase; line-height: 1.15; letter-spacing: 0.5px; }
+  .hero-sub { color: #999999; font-size: 15px; line-height: 1.6; margin: 0 0 26px; }
+
+  .cta-btn { display: inline-block; background-color: #DE2A2A; color: #ffffff; font-family: 'Archivo Black', Arial, sans-serif; font-size: 14px; text-decoration: none; padding: 14px 36px; letter-spacing: 1.5px; text-transform: uppercase; }
+  .cta-btn-sm { display: inline-block; background-color: #DE2A2A; color: #ffffff; font-family: 'Archivo Black', Arial, sans-serif; font-size: 12px; text-decoration: none; padding: 11px 26px; letter-spacing: 1px; text-transform: uppercase; }
+
+  .section-title { font-family: 'Archivo Black', Arial, sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; color: #DE2A2A; margin: 0 0 8px; text-align: center; }
+  .section-headline { font-family: 'Archivo Black', Arial, sans-serif; font-size: 22px; color: #282828; margin: 0 0 16px; text-align: center; text-transform: uppercase; line-height: 1.25; }
+  .section-headline-white { font-family: 'Archivo Black', Arial, sans-serif; font-size: 22px; color: #ffffff; margin: 0 0 16px; text-align: center; text-transform: uppercase; line-height: 1.25; }
+
+  .lead { font-size: 14px; color: #cccccc; line-height: 1.7; margin: 0 auto 8px; max-width: 460px; text-align: center; }
+
+  /* Kit chooser cards */
+  .kit-card { background-color: #ffffff; border: 1px solid #e2e2e2; border-top: 3px solid #DE2A2A; }
+  .kit-name { font-family: 'Archivo Black', Arial, sans-serif; font-size: 16px; color: #282828; text-transform: uppercase; letter-spacing: 0.5px; margin: 18px 20px 6px; line-height: 1.25; }
+  .kit-ear { font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; color: #DE2A2A; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 20px 10px; }
+  .kit-copy { font-size: 13px; color: #666666; line-height: 1.65; margin: 0 20px 18px; }
+
+  /* Spec strip */
+  .spec-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; max-width: 520px; margin: 0 auto; }
+  .spec-card { flex: 1; min-width: 120px; max-width: 150px; text-align: center; padding: 18px 10px; background: #1f1f1f; }
+  .spec-value { font-family: 'Archivo Black', Arial, sans-serif; font-size: 17px; color: #ffffff; margin: 0 0 4px; }
+  .spec-label { font-size: 10px; color: #999999; text-transform: uppercase; letter-spacing: 1px; margin: 0; line-height: 1.4; }
+
+  .block-text { font-size: 14px; color: #cccccc; line-height: 1.7; margin: 0 auto 12px; max-width: 460px; text-align: center; }
+
+  .footer { background-color: #282828; padding: 30px; text-align: center; border-top: 1px solid #333333; }
+  .footer-links { font-size: 12px; color: #999999; margin: 0 0 16px; }
+  .footer-links a { color: #DE2A2A; text-decoration: none; }
+  .footer-badge { font-family: 'Archivo Black', Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #666666; margin: 16px 0 12px; }
+  .footer-contact { font-size: 11px; color: #666666; margin: 4px 0; }
+  .footer-social a { display: inline-block; margin: 0 8px; color: #999999; text-decoration: none; font-size: 13px; }
+  .designer-note { background:#111; border:1px dashed #DE2A2A; color:#ddd; font-size:12px; line-height:1.55; padding:12px 14px; margin:0; text-align:left; }
+  .designer-note strong { color:#DE2A2A; }
+
+  @media only screen and (max-width: 480px) {
+    .hero { padding: 30px 20px 0; }
+    .hero h1 { font-size: 24px; }
+    .kit-col { display: block !important; width: 100% !important; padding: 0 0 18px !important; }
+    .spec-row { flex-direction: column; align-items: center; }
+    .spec-card { max-width: 280px; width: 100%; }
+    .section-headline, .section-headline-white { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+
+  <!-- SLPL (visible) -->
+  <div style="background-color: #282828; padding: 12px 30px; text-align: center; border-bottom: 1px solid #333333;">
+    <p style="margin: 0; font-family: 'Archivo Black', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #DE2A2A;">
+      SL: Sealed to 1.5m. Pick your kit.
+    </p>
+    <p style="margin: 4px 0 0; font-size: 11px; color: #666666;">
+      PL: Triad Pro PTT, IP68 sealed. Acoustic Tube or N-ear Flexo bundle.
+    </p>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="hero-tag">TRIAD PRO PTT/Mic</p>
+    <h1>One Sealed Mic.<br>Two Kits.</h1>
+    <p class="hero-sub">
+      The TRIAD PRO is submersible to 1.5m for 30 minutes.<br>
+      Pick the earpiece that fits how you work.
+    </p>
+    <div style="padding: 0;">
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/bolo-pttmicrophone-waterproof-ip68-quick-disconnect-3997960.png?v=1767872889"
+           alt="TRIAD PRO IP68 waterproof PTT microphone"
+           style="width: 100%; display: block; margin: 0 auto;">
+    </div>
+  </div>
+
+  <!-- EARLY CTA -->
+  <div style="background-color: #282828; padding: 28px 30px 34px; text-align: center;">
+    <a href="https://sheepdogmics.com/collections/triad-pro-kits" class="cta-btn">Shop Triad Pro Kits</a>
+  </div>
+
+  <!-- IP68 (lead with submersion) -->
+  <div style="background-color: #1a1a1a; padding: 40px 30px 30px; text-align: center;">
+    <p class="section-title">Built To Get Wet</p>
+    <p class="section-headline-white">Sealed To IP68.</p>
+    <p class="lead">
+      Drop it in water to 1.5 meters and leave it there for 30 minutes. The TRIAD PRO keeps working. Rain, sweat, a full duty day in the weather. The sealed housing keeps your transmit clean.
+    </p>
+  </div>
+
+  <!-- SPEC STRIP -->
+  <div style="background-color: #1a1a1a; padding: 0 30px 40px;">
+    <div class="spec-row">
+      <div class="spec-card">
+        <p class="spec-value">1.5m / 30min</p>
+        <p class="spec-label">IP68 Submersion</p>
+      </div>
+      <div class="spec-card">
+        <p class="spec-value">20"</p>
+        <p class="spec-label">Straight Cord</p>
+      </div>
+      <div class="spec-card">
+        <p class="spec-value">-4&deg; to 122&deg;F</p>
+        <p class="spec-label">Operating Range</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TWO-KIT CHOOSER -->
+  <div style="background-color: #ffffff; padding: 40px 30px 8px; text-align: center;">
+    <p class="section-title">Two Ways To Run It</p>
+    <p class="section-headline">Pick Your Kit.</p>
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+    <tr>
+      <!-- KIT 1 -->
+      <td class="kit-col" width="50%" valign="top" style="padding: 0 8px 0 0;">
+        <div class="kit-card">
+          <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/triad-pro-pttmic-ip68-quick-disconnect-acoustic-tube-earpiece-4037687.png?v=1778900467"
+               alt="TRIAD PRO IP68 kit with Acoustic Tube earpiece"
+               style="width: 100%; display: block;">
+          <p class="kit-name">Triad Pro Kit</p>
+          <p class="kit-ear">Acoustic Tube Earpiece</p>
+          <p class="kit-copy">
+            The proven clear tube setup. Comfortable for long shifts, easy to clean, and simple to run under the ear. Ships with the sealed TRIAD PRO mic and a 6 Pin Quick Disconnect radio adapter.
+          </p>
+          <div style="text-align:center; padding: 0 20px 22px;">
+            <a href="https://sheepdogmics.com/products/triad-pro-acoustic-tube-earpiece" class="cta-btn-sm">Shop This Kit</a>
+          </div>
+        </div>
+      </td>
+      <!-- KIT 2 -->
+      <td class="kit-col" width="50%" valign="top" style="padding: 0 0 0 8px;">
+        <div class="kit-card">
+          <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/triad-pro-pttmic-ip68-quick-disconnect-n-ear-flexo-bundle-2268405.jpg?v=1783144508"
+               alt="TRIAD PRO IP68 kit with N-ear 360 Flexo earpiece"
+               style="width: 100%; display: block;">
+          <p class="kit-name">Triad Pro Kit</p>
+          <p class="kit-ear">N-ear 360 Flexo Bundle</p>
+          <p class="kit-copy">
+            Bundled with the N-ear 360 Flexo, a Sheepdog exclusive earpiece designed in Denmark. Low profile, built to keep your ear open to your surroundings, on a braided cable. Same sealed TRIAD PRO mic and 6 Pin Quick Disconnect adapter.
+          </p>
+          <div style="text-align:center; padding: 0 20px 22px;">
+            <a href="https://sheepdogmics.com/products/triad-pro-n-ear-flexo-bundle" class="cta-btn-sm">Shop This Kit</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- CLEAN SETUP (clip + QD) -->
+  <div style="background-color: #282828; padding: 40px 30px;">
+    <p class="section-title">Clean Setup</p>
+    <p class="section-headline-white">Clip It. Route It. Run It.</p>
+
+    <div style="text-align: center; margin-bottom: 24px;">
+      <img src="https://cdn.shopify.com/s/files/1/0414/6407/0299/files/triad-pro-pttmic-ip68-quick-disconnect-acoustic-tube-earpiece-5471008.png?v=1778900467"
+           alt="TRIAD PRO PTT/Mic with Alligator clip"
+           style="max-width: 320px; width: 90%; display: block; margin: 0 auto;">
+    </div>
+
+    <p class="block-text">
+      The Alligator clip holds on uniform shirts and external carriers, and attaches anywhere you have MOLLE webbing. The tactile side PTT is easy to find without looking, and the built in loud speaker keeps traffic clear.
+    </p>
+    <p class="block-text">
+      Includes a 6 Pin Quick Disconnect (QD) radio adapter for simple setup and removal, using our simple "push pull" design. The mic detaches without unplugging the whole setup. Your cable stays routed. No re-routing at end of shift.
+    </p>
+  </div>
+
+  <!-- REVIEW (placeholder, pull real) -->
+  <div style="background-color: #1a1a1a; padding: 24px 30px;">
+    <div class="designer-note">
+      <strong>DESIGNER NOTE:</strong> Insert one real review pulled from a TRIAD PRO kit product page (verified customer). Do not invent a quote. Format: short italic quote + "Verified Customer" label, matching prior Sheepdog emails.
+    </div>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div style="background-color: #282828; padding: 40px 30px; text-align: center;">
+    <p style="font-family: 'Archivo Black', Arial, sans-serif; font-size: 20px; color: #ffffff; text-transform: uppercase; margin: 0 0 6px; line-height: 1.25;">
+      Sealed Mic. Your Earpiece.
+    </p>
+    <p style="font-size: 14px; color: #888888; margin: 0 0 24px;">
+      Available for Motorola, Harris, Kenwood, and more.
+    </p>
+    <a href="https://sheepdogmics.com/collections/triad-pro-kits" class="cta-btn">Shop Triad Pro Kits</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="footer-links">
+      Free Shipping &nbsp;|&nbsp; Dedicated Support &nbsp;|&nbsp; Easy Returns
+    </p>
+    <p class="footer-badge">
+      SHEEPDOG Accepts Government Purchase Orders
+    </p>
+    <p class="footer-contact">Customer Service: 702 475 5225</p>
+    <div class="footer-social">
+      <a href="#">Instagram</a> &nbsp;&nbsp; <a href="#">Facebook</a>
+    </div>
+    <p style="font-size: 10px; color: #555555; margin: 12px 0 0;">
+      SHEEPDOG &nbsp; 8638 Sky Pointe Dr, Las Vegas, Nevada 89131
+    </p>
+    <p style="font-size: 10px; color: #555555; margin: 8px 0 0;">
+      <a href="#" style="color: #777777; text-decoration: underline;">Email Preferences</a> &nbsp;|&nbsp;
+      <a href="#" style="color: #777777; text-decoration: underline;">View in Browser</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
