@@ -1,0 +1,301 @@
+<!--
+=============================================================
+  HARMONY HOUSE FOODS — Email Wireframe
+  Date: July 15, 2026
+  Type: Promotional (weekly Blog + Sale, 15% OFF)
+  Theme: Soak Up Summer Adventures With Fruit Medleys
+  Blog: https://harmonyhousefoods.com/blogs/news/soak-up-summer-adventures-with-fruit-medleys
+  On-Sale collection: https://www.harmonyhousefoods.com/collections/on-sale
+  Template: promotional.md
+=============================================================
+
+  SALE ITEMS (all 15% OFF this week. live Shopify price = 15%-off price,
+  regular = price / 0.85. All product pages + images verified HTTP 200):
+   1. Berry Medley (4 Jars, Quart)        $76.46  (reg $89.95)
+   2. Tropical Fruit Medley (4 Jars, Qt)  $76.46  (reg $89.95)
+   3. Orchard Fruit Medley (4 Jars, Qt)   $76.46  (reg $89.95)
+   4. Deluxe Sampler (32 ZIP Pouches)     $93.46  (reg $109.95)
+   5. Beach House Essentials (23 ct)     $195.46  (reg $229.95)
+   6. Fireside Favorites (33 ZIP Pouches)$110.46  (reg $129.95)
+
+  RULES HONORED:
+  - Full brand name "Harmony House Foods" everywhere (feedback #16).
+  - NONE of these 6 items are USDA Certified Organic, so that phrasing is
+    intentionally NOT used here (feedback #5 applies only to the organic line).
+  - Products before recipes, sale items in the first scroll (feedback #3).
+  - Each product is its own large standalone card with its own CTA. No
+    3-in-a-row grid (feedback #25). Layout alternates image side per card.
+  - Every price shown as a MARKDOWN: regular struck through, then 15%-off
+    price (feedback #21).
+  - Sale banner carries a "Shop the Sale" button to /collections/on-sale
+    (feedback #22). Hero has an image + CTA (feedback #18, #19).
+  - Blog section teases only the FIRST TWO medleys (Berry, Tropical) with
+    usage ideas, then a single "Read the Blog" CTA deep-linked to the exact
+    post (feedback #20, #23). No "read the blog" text above the button
+    (feedback #9). Blog usage ideas are distinct from the product cards to
+    avoid repetition.
+  - Hi-res STOCK recipe/lifestyle photos (Unsplash, designer can swap),
+    all verified 200 (feedback #2, #24). Product images are full-res Shopify
+    CDN, no small width params (feedback #10).
+  - Fresh layout, different from prior July emails (feedback #8).
+  - No hyphens or dashes in copy.
+
+  SUBJECT LINE OPTIONS (hooky, do not repeat the banner):
+  1. Vacation in every bite
+  2. Your cooler just got an upgrade
+  3. Summer tastes better freeze dried
+
+  PREVIEW TEXT OPTIONS:
+  1. Berries, mango, and peaches ready whenever the adventure is. 15% off this week.
+  2. Grab and go fruit for the trail, the beach, and the backyard.
+  3. Three summer medleys plus our best selling kits, all on sale now.
+
+  DESIGNER NOTES:
+  - Product images: Shopify CDN, verified 200. Hero + 2 blog photos: Unsplash
+    stock (verified 200), swap for HHF lifestyle shots if available.
+  - All 6 product page links verified 200. "Shop the Sale" and footer links live.
+  - Palette: HHF green #3d7a44 / #2F5E36, gold #C9A24B, cream #F3E7C6 / #F5F0E8,
+    warm text #5A5245 / #2B2B2B. Arial body, Georgia serif headings.
+  - Cards stack full width on mobile; image always sits above copy on small screens.
+=============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony House Foods — Soak Up Summer With Fruit Medleys</title>
+<style>
+  body { margin:0; padding:0; background:#F5F0E8; font-family:Arial, sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#FFFFFF; }
+  .serif { font-family:Georgia, 'Times New Roman', serif; }
+  .btn { display:inline-block; background:#C9A24B; color:#2B2B2B; font-family:Arial,sans-serif; font-size:13px; font-weight:bold; letter-spacing:1.5px; text-transform:uppercase; text-decoration:none; padding:13px 30px; }
+  .btn-green { display:inline-block; background:#3d7a44; color:#FFFFFF; font-family:Arial,sans-serif; font-size:12px; font-weight:bold; letter-spacing:1.5px; text-transform:uppercase; text-decoration:none; padding:12px 26px; }
+  .price-old { color:#9a9a9a; text-decoration:line-through; font-size:15px; }
+  .price-new { color:#3d7a44; font-weight:bold; font-size:20px; }
+  .save { display:inline-block; background:#E7EFE3; color:#2F5E36; font-size:11px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; padding:3px 9px; margin-left:6px; }
+  .kicker { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#C9A24B; font-weight:bold; margin:0 0 8px; }
+  .card-name { font-size:21px; color:#2F5E36; margin:0 0 8px; line-height:1.2; }
+  .card-copy { font-size:14px; color:#5A5245; line-height:1.6; margin:0 0 14px; }
+  .sec-head { font-size:24px; color:#2F5E36; margin:0 0 6px; line-height:1.25; }
+  .sec-sub { font-size:14px; color:#5A5245; line-height:1.6; margin:0 auto; max-width:440px; }
+  @media only screen and (max-width:480px) {
+    .col { display:block !important; width:100% !important; }
+    .col-img { padding:0 0 4px 0 !important; }
+    .card-name { font-size:19px; }
+    .sec-head { font-size:20px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== SLPL (visible) ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F3E7C6;">
+    <tr><td style="padding:12px 26px;">
+      <p style="margin:0; font-size:11px; color:#5A5245; line-height:1.6;"><strong style="color:#2F5E36;">SL:</strong> Vacation in every bite &nbsp; | &nbsp; Your cooler just got an upgrade &nbsp; | &nbsp; Summer tastes better freeze dried</p>
+      <p style="margin:6px 0 0; font-size:11px; color:#5A5245; line-height:1.6;"><strong style="color:#2F5E36;">PL:</strong> Berries, mango, and peaches ready whenever the adventure is. 15% off this week. &nbsp; | &nbsp; Grab and go fruit for the trail, the beach, and the backyard.</p>
+    </td></tr>
+  </table>
+
+  <!-- ===== SALE BANNER ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#2F5E36;">
+    <tr><td align="center" style="padding:18px 26px;">
+      <p class="serif" style="margin:0; color:#F3E7C6; font-size:22px; font-weight:bold; letter-spacing:1px;">SUMMER SALE &nbsp;&bull;&nbsp; 15% OFF</p>
+      <p style="margin:6px 0 14px; color:#9DBFA3; font-size:12px; letter-spacing:1px;">This week only, on the medleys and kits below</p>
+      <a href="https://www.harmonyhousefoods.com/collections/on-sale" class="btn">Shop The Sale</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== HERO ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr><td>
+      <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=1200&q=80" alt="Fresh summer fruit" style="width:100%; display:block;">
+    </td></tr>
+    <tr><td align="center" style="background:#FFFFFF; padding:30px 30px 26px;">
+      <p class="kicker">Soak Up Summer</p>
+      <h1 class="serif" style="margin:0 0 12px; font-size:28px; color:#2F5E36; line-height:1.2;">Adventure Ready Fruit, No Cooler Required</h1>
+      <p style="margin:0 auto 20px; font-size:15px; color:#5A5245; line-height:1.65; max-width:460px;">Freeze dried berries, tropical fruit, and orchard favorites that toss in a pack and last all season. Light to carry, ready when you are, and just plain fruity goodness with nothing added. Take them from the trail to the beach to the backyard.</p>
+      <a href="https://www.harmonyhousefoods.com/collections/on-sale" class="btn-green">Shop All On Sale</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== SECTION 1: FRUIT MEDLEYS ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F5F0E8;">
+    <tr><td align="center" style="padding:32px 30px 20px;">
+      <p class="kicker">The Summer Three</p>
+      <h2 class="sec-head serif">Pick Your Medley</h2>
+      <p class="sec-sub">Each pack is four full quart jars, all natural, ready to snack straight from the jar.</p>
+    </td></tr>
+  </table>
+
+  <!-- Card 1: Berry Medley (image left) -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr>
+      <td class="col col-img" width="45%" valign="middle" style="padding:24px 12px 24px 24px;">
+        <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/50116_Berry_Medley_1.png?v=1763046466" alt="Harmony House Foods Berry Medley, 4 quart jars" style="width:100%; display:block;">
+      </td>
+      <td class="col" width="55%" valign="middle" style="padding:8px 24px 24px 12px;">
+        <p class="kicker">Berry Medley</p>
+        <h3 class="card-name serif">Strawberry, Blueberry, Raspberry</h3>
+        <p class="card-copy">Four quart jars of freeze dried berries, two of strawberry plus blueberry and raspberry. Sweet, crisp, and made for stirring into yogurt, oatmeal, and trail mix. All natural, just plain fruity goodness.</p>
+        <p style="margin:0 0 14px;"><span class="price-old">$89.95</span> &nbsp; <span class="price-new">$76.46</span><span class="save">Save 15%</span></p>
+        <a href="https://www.harmonyhousefoods.com/products/berry-medley-4-jars-quart-size" class="btn-green">Shop Berry Medley</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Card 2: Tropical Fruit Medley (image right) -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F3E7C6;">
+    <tr>
+      <td class="col" width="55%" valign="middle" style="padding:24px 12px 24px 24px;">
+        <p class="kicker">Tropical Fruit Medley</p>
+        <h3 class="card-name serif">Pineapple, Mango, Banana</h3>
+        <p class="card-copy">A full gallon across four quart jars of freeze dried pineapple dices, mango dices, and banana slices. Vacation in every bite, perfect for smoothie bowls, fruit salads, and snacking by the water.</p>
+        <p style="margin:0 0 14px;"><span class="price-old">$89.95</span> &nbsp; <span class="price-new">$76.46</span><span class="save">Save 15%</span></p>
+        <a href="https://www.harmonyhousefoods.com/products/tropical-fruit-medley-4-jars-quart-size" class="btn-green">Shop Tropical Medley</a>
+      </td>
+      <td class="col col-img" width="45%" valign="middle" style="padding:24px 24px 24px 12px;">
+        <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/50114_Tropical_Fruit_Medley.png?v=1776720479" alt="Harmony House Foods Tropical Fruit Medley, 4 quart jars" style="width:100%; display:block;">
+      </td>
+    </tr>
+  </table>
+
+  <!-- Card 3: Orchard Fruit Medley (image left) -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr>
+      <td class="col col-img" width="45%" valign="middle" style="padding:24px 12px 24px 24px;">
+        <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/50112_Orchard_Fruit_Medley_1.png?v=1763045631" alt="Harmony House Foods Orchard Fruit Medley, 4 quart jars" style="width:100%; display:block;">
+      </td>
+      <td class="col" width="55%" valign="middle" style="padding:8px 24px 24px 12px;">
+        <p class="kicker">Orchard Fruit Medley</p>
+        <h3 class="card-name serif">Apple, Peach, Cherry</h3>
+        <p class="card-copy">Four quart jars of apple dices, peach dices, and whole cherries, all unsweetened and natural. Orchard flavor for baking, oatmeal, and afternoon handfuls that never bruise in the bag.</p>
+        <p style="margin:0 0 14px;"><span class="price-old">$89.95</span> &nbsp; <span class="price-new">$76.46</span><span class="save">Save 15%</span></p>
+        <a href="https://www.harmonyhousefoods.com/products/orchard-fruit-medley-4-jars-quart-size" class="btn-green">Shop Orchard Medley</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ===== SECTION 2: KITS ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#2F5E36;">
+    <tr><td align="center" style="padding:32px 30px 22px;">
+      <p class="kicker" style="color:#C9A24B;">Stock The Whole Trip</p>
+      <h2 class="sec-head serif" style="color:#F3E7C6;">Kits That Keep The Pantry Ready</h2>
+      <p class="sec-sub" style="color:#9DBFA3;">Fruit is just the start. These best sellers keep every meal covered, from the campsite to the beach house.</p>
+    </td></tr>
+  </table>
+
+  <!-- Card 4: Deluxe Sampler (image right) -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr>
+      <td class="col" width="55%" valign="middle" style="padding:24px 12px 24px 24px;">
+        <p class="kicker">Deluxe Sampler</p>
+        <h3 class="card-name serif">32 ZIP Pouches, Our Bestseller</h3>
+        <p class="card-copy">A proven customer favorite. Thirty two resealable one cup ZIP pouches of premium vegetables, beans, and more, and you can see exactly what you are buying. The easy way to taste the range and stock the shelf.</p>
+        <p style="margin:0 0 14px;"><span class="price-old">$109.95</span> &nbsp; <span class="price-new">$93.46</span><span class="save">Save 15%</span></p>
+        <a href="https://www.harmonyhousefoods.com/products/deluxe-sampler-32-zip-pouches" class="btn-green">Shop Deluxe Sampler</a>
+      </td>
+      <td class="col col-img" width="45%" valign="middle" style="padding:24px 24px 24px 12px;">
+        <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/19031_Deluxe_Sampler_1.png?v=1763046940" alt="Harmony House Foods Deluxe Sampler, 32 ZIP pouches" style="width:100%; display:block;">
+      </td>
+    </tr>
+  </table>
+
+  <!-- Card 5: Beach House Essentials (image left) -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F5F0E8;">
+    <tr>
+      <td class="col col-img" width="45%" valign="middle" style="padding:24px 12px 24px 24px;">
+        <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/19405_Beach_House_Essentials_1_cb96ebe6-83e7-421b-b0d5-e4059b2f45b9.png?v=1776778034" alt="Harmony House Foods Beach House Essentials kit" style="width:100%; display:block;">
+      </td>
+      <td class="col" width="55%" valign="middle" style="padding:8px 24px 24px 12px;">
+        <p class="kicker">Beach House Essentials</p>
+        <h3 class="card-name serif">Sweet Meets Savory, 23 ct</h3>
+        <p class="card-copy">Everything to keep the beach house pantry stocked and ready. Premium dehydrated vegetables, freeze dried tropical fruit, and crisp berries in one kit, with a long shelf life and no added sugar. New this season.</p>
+        <p style="margin:0 0 14px;"><span class="price-old">$229.95</span> &nbsp; <span class="price-new">$195.46</span><span class="save">Save 15%</span></p>
+        <a href="https://www.harmonyhousefoods.com/products/beach-house-essentials-23-count" class="btn-green">Shop Beach House</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Card 6: Fireside Favorites (image right) -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr>
+      <td class="col" width="55%" valign="middle" style="padding:24px 12px 24px 24px;">
+        <p class="kicker">Fireside Favorites</p>
+        <h3 class="card-name serif">250+ Servings, 33 ZIP Pouches</h3>
+        <p class="card-copy">Our best selling Backpacking Soup and Chili Kit and Vegetable Sampler combined into one package. Ready to cook plant based meals plus all the vegetables you need for cozy, home cooked dinners without a trip to the store. New this season.</p>
+        <p style="margin:0 0 14px;"><span class="price-old">$129.95</span> &nbsp; <span class="price-new">$110.46</span><span class="save">Save 15%</span></p>
+        <a href="https://www.harmonyhousefoods.com/products/fireside-favorites-33-zip-pouches" class="btn-green">Shop Fireside Favorites</a>
+      </td>
+      <td class="col col-img" width="45%" valign="middle" style="padding:24px 24px 24px 12px;">
+        <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/19505_Fireside_Favorites_1.png?v=1764071494" alt="Harmony House Foods Fireside Favorites kit, 33 ZIP pouches" style="width:100%; display:block;">
+      </td>
+    </tr>
+  </table>
+
+  <!-- ===== BLOG SECTION (tease first two medleys) ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F3E7C6;">
+    <tr><td align="center" style="padding:34px 30px 8px;">
+      <p class="kicker">From The Blog</p>
+      <h2 class="sec-head serif">Ways To Enjoy Them All Summer</h2>
+      <p class="sec-sub">A little inspiration for the medleys above, straight from our kitchen to yours.</p>
+    </td></tr>
+  </table>
+
+  <!-- Blog tease 1: Berry -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F3E7C6;">
+    <tr><td style="padding:18px 26px 0;">
+      <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=1200&q=80" alt="Berries over yogurt and oats" style="width:100%; display:block;">
+    </td></tr>
+    <tr><td style="padding:16px 30px 24px;">
+      <h3 class="serif" style="margin:0 0 8px; font-size:19px; color:#2F5E36;">Berry Medley, Three Easy Ways</h3>
+      <p style="margin:0; font-size:14px; color:#5A5245; line-height:1.65;">Nothing says summer like berries. Fold them into morning yogurt or overnight oats, shake up a handful of homemade trail mix for the hike, or scatter them over pancakes and waffles back at the campground. No rinsing, no spoiling, just color and sweetness on demand.</p>
+    </td></tr>
+  </table>
+
+  <!-- Blog tease 2: Tropical -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F3E7C6;">
+    <tr><td style="padding:6px 26px 0;">
+      <img src="https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=1200&q=80" alt="Tropical fruit smoothie bowl" style="width:100%; display:block;">
+    </td></tr>
+    <tr><td style="padding:16px 30px 26px;">
+      <h3 class="serif" style="margin:0 0 8px; font-size:19px; color:#2F5E36;">Tropical Medley, Vacation In Every Bite</h3>
+      <p style="margin:0; font-size:14px; color:#5A5245; line-height:1.65;">Sweet pineapple, mango, and banana taste like a getaway wherever you are. Snack them straight from the jar, blend them into smoothie bowls, or rehydrate for fruit salads and tropical desserts. They even fold beautifully into homemade energy bites before a long trail day.</p>
+    </td></tr>
+  </table>
+
+  <!-- Read the Blog CTA -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F3E7C6;">
+    <tr><td align="center" style="padding:6px 30px 34px;">
+      <a href="https://harmonyhousefoods.com/blogs/news/soak-up-summer-adventures-with-fruit-medleys" class="btn">Read The Blog</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== CLOSING SALE STRIP ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#3d7a44;">
+    <tr><td align="center" style="padding:30px;">
+      <h2 class="serif" style="margin:0 0 8px; color:#FFFFFF; font-size:22px;">15% Off Ends This Week</h2>
+      <p style="margin:0 0 18px; color:#E7EFE3; font-size:14px; line-height:1.6;">Stock the pack, the beach house, and the pantry before summer slips by.</p>
+      <a href="https://www.harmonyhousefoods.com/collections/on-sale" class="btn">Shop The Sale</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== FOOTER ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#2F5E36;">
+    <tr><td align="center" style="padding:22px 30px 8px;">
+      <a href="https://www.harmonyhousefoods.com/collections/all?sort_by=best-selling" style="color:#F3E7C6; font-family:Arial,sans-serif; font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:bold; text-decoration:none;">Shop</a>
+      <span style="color:#5B9A62;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <a href="https://www.harmonyhousefoods.com/blogs/news" style="color:#F3E7C6; font-family:Arial,sans-serif; font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:bold; text-decoration:none;">Recipes</a>
+      <span style="color:#5B9A62;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <a href="https://www.harmonyhousefoods.com/pages/about-us" style="color:#F3E7C6; font-family:Arial,sans-serif; font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:bold; text-decoration:none;">About Us</a>
+    </td></tr>
+    <tr><td align="center" style="padding:6px 30px 24px;">
+      <p style="margin:0; color:#9DBFA3; font-size:11px; line-height:1.6; font-family:Arial,sans-serif;">Harmony House Foods. Premium dehydrated and freeze dried foods.</p>
+    </td></tr>
+  </table>
+
+</div>
+</body>
+</html>

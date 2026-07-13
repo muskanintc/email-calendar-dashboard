@@ -55,21 +55,21 @@
       "creativeDirection": "Mirror attached reference layout; HHF green/cream palette; blog feature + 2 recipes + read-post CTA; 2-col sale cards with 15% OFF badge; why-Harmony-House trust labels; footer nav"
     },
     {
-      "id": "2026-07-15-blog-sale",
+      "id": "2026-07-15-fruit-medleys-summer-sale",
       "date": "2026-07-15",
       "day": "Wed",
       "type": "promotional",
-      "status": "pending",
-      "theme": "Blog + Sale (awaiting details)",
-      "product": "",
-      "shortDescription": "Weekly Blog + Sale email. Blog link and sale products to be provided by client.",
-      "emailCopyLink": "",
+      "status": "copy-ready",
+      "theme": "Soak Up Summer Adventures With Fruit Medleys (Blog + 15% Sale)",
+      "product": "Sale (15% off): Berry Medley (4 jars qt), Tropical Fruit Medley (4 jars qt), Orchard Fruit Medley (4 jars qt), Deluxe Sampler (32 zip), Beach House Essentials (23 ct), Fireside Favorites (33 zip)",
+      "shortDescription": "Weekly blog + sale email built on the fruit medleys summer-adventures blog. Products first: 3 fruit medleys (Berry/Tropical/Orchard, four quart jars each) then 3 best-selling kits (Deluxe Sampler, Beach House Essentials, Fireside Favorites), every price a strikethrough markdown at 15% off. Alternating large standalone cards, each with own Shop Now. Blog section teases first two medleys (Berry, Tropical) with usage ideas + stock photos, then a single Read the Blog CTA deep-linked to the exact post. Sale banner + hero both carry Shop the Sale -> /collections/on-sale.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/2026-07-15-fruit-medleys-summer-sale.html",
       "finalDesignLink": "",
-      "notes": "Added per client Jul 6. Awaiting blog link and sale products before writing.",
-      "productUrl": "",
-      "collectionUrl": "",
-      "offerCode": "",
-      "creativeDirection": "Blog + Sale layout (HHF green/cream), TBD on details."
+      "notes": "Client brief Jul 13 (Slack): blog https://harmonyhousefoods.com/blogs/news/soak-up-summer-adventures-with-fruit-medleys + 6 sale items. All 6 product pages + images verified 200; prices from live Shopify (=15% off, regular = price/0.85): Berry/Tropical/Orchard $76.46 reg $89.95; Deluxe Sampler $93.46 reg $109.95; Beach House Essentials $195.46 reg $229.95; Fireside Favorites $110.46 reg $129.95. NONE are USDA Certified Organic, so that phrasing intentionally omitted. Blog teases first two medleys only, per feedback #23. Designer image folder: outputs/july-2026/2026-07-15-images (6 product + hero + 2 blog stock). Copy-ready Jul 13.",
+      "productUrl": "https://www.harmonyhousefoods.com/collections/on-sale",
+      "collectionUrl": "https://www.harmonyhousefoods.com/collections/on-sale",
+      "offerCode": "15% off (markdown on the 6 items)",
+      "creativeDirection": "HHF green #3d7a44/#2F5E36, gold #C9A24B, cream #F3E7C6/#F5F0E8. Sale banner + hero image (Shop the Sale). Products first: alternating full-width cards (image side swaps), strikethrough->15%-off price + Save 15% chip + own Shop Now. Green kits band. Blog section = 2 medley usage teasers with stock photos + single Read the Blog CTA. Closing 15% strip + footer nav. Distinct alternating-card layout vs Jul 8 grid."
     },
     {
       "id": "2026-07-22-blog-sale",
