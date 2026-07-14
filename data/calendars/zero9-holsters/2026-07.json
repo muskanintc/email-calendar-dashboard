@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-17-most-trusted-duty-gear",
+      "date": "2026-07-17",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "approved",
+      "theme": "The Most Trusted Duty Gear",
+      "product": "Portable Radio Case (Motorola APX Series), Duty Style Double Mag Pouch 9/40, ASP Handcuff Case, Flashlight Case (Bezel Down)",
+      "shortDescription": "Four product roundup on the 'most trusted duty gear' theme. Category level hero (no model in headline), 2x2 grid, each product with its real USP + a broad fitment line + its own Shop Now, mount + 8 finish note, brand trust bar (1,800+ departments, 4.9 stars, made in the USA). Client feedback applied: no Kydex (low profile ruggedized cases), case/pouch never carrier, no model in headline, broad fitment on every card, no pricing, no warranty, full name Zero9 Holsters.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/zero9-holsters/july-2026/2026-07-17-most-trusted-duty-gear.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 14 (theme + 4 products, remember client feedback). All 4 product pages + images verified 200. Approved in Slack Jul 14. Closing CTA 'Square Away Your Loadout' kept per client Q&A.",
+      "productUrl": "",
+      "collectionUrl": "https://zero9holsters.com/",
+      "offerCode": "",
+      "creativeDirection": "Zero9 black #0A0A0A / panel #111418 / red #E62826. Red rule + centered officer hero (banner1_2), 2x2 product grid (APX6000BLK_1 / DMP_1 / ASPV2Blk / BD-2BLK), mount+finish note, trust bar, closing CTA, logo footer."
+    },
+    {
       "id": "2026-welcome-01-welcome",
       "date": "2026-07-08",
       "day": "Wed",
