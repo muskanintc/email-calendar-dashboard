@@ -55,21 +55,21 @@
       "creativeDirection": ""
     },
     {
-      "id": "2026-07-18-tbd",
+      "id": "2026-07-18-gold-dipping-lock-it-in",
       "date": "2026-07-18",
       "day": "Sat",
       "type": "promotional",
-      "status": "pending",
-      "theme": "[NEEDS INFO: details to be provided by client]",
-      "product": "",
-      "shortDescription": "Placeholder slot reserved per client Jul 10. Awaiting theme/product/creative details.",
-      "emailCopyLink": "",
+      "status": "copy-ready",
+      "theme": "Gold Is Dipping. Lock It In. (gold best sellers)",
+      "product": "3mm Hermes 22k, 4mm Diamond Cut Franco 14k USA, Voyager Gold Compass, Champion Gold Saint Michael, Stoic 4 Virtues Yellow Gold, 5mm Miami Cuban 14k, 3mm Diamond Cut Franco 14k USA",
+      "shortDescription": "Nick founder-voice email on the gold-dipped market-timing angle (gold near $4100 for the first time in months; Proclamation prices to the live gold market so lock it in now). Longer converting build: founder heads-up, Why Buy Now (priced to live market / solid not plated / investment you wear), then 7 gold best sellers each with its own Shop Now, closing reinforcement, Solid Gold + Made in USA + Lifetime Warranty line. No individual product pricing; karats only in real product names; no hyphens; no sign-off.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/july-2026/2026-07-18-gold-dipping-lock-it-in.html",
       "finalDesignLink": "",
-      "notes": "Client Jul 10 flagged Jul 15/18/22/26/29 as upcoming sends; details to follow.",
+      "notes": "Client brief Slack Jul 14 (gold dipping theme + 7 gold best sellers, \"more content so it converts more\"). All 7 pages + images verified 200 Jul 14. Copy-ready Jul 15.",
       "productUrl": "",
-      "collectionUrl": "",
+      "collectionUrl": "https://www.proclamationjewelry.com/collections/all-mens-pendants",
       "offerCode": "",
-      "creativeDirection": ""
+      "creativeDirection": "Onyx black + royal gold #D4AF37, Trajan Pro. Gold Hermes chain hero, founder intro, Why Buy Now 3-point block, 2-up best-seller grid (7 items, last centered), closing CTA, trust line, wordmark footer."
     },
     {
       "id": "2026-07-15-cross-religious-pendants",
