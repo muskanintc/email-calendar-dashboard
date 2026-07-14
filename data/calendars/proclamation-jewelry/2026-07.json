@@ -72,21 +72,21 @@
       "creativeDirection": ""
     },
     {
-      "id": "2026-07-15-tbd",
+      "id": "2026-07-15-cross-religious-pendants",
       "date": "2026-07-15",
       "day": "Wed",
       "type": "promotional",
-      "status": "pending",
-      "theme": "[NEEDS INFO: details to be provided by client]",
-      "product": "",
-      "shortDescription": "Placeholder slot reserved per client Jul 10. Awaiting theme/product/creative details.",
-      "emailCopyLink": "",
+      "status": "copy-ready",
+      "theme": "Cross & Religious Pendants (best sellers)",
+      "product": "Redemption Gold/Silver Crucifix, Champion Gold/Silver Saint Michael, Saint Christopher Gold, Courage Silver Cross, Faith Silver Cross",
+      "shortDescription": "Nick founder voice roundup of the most loved crosses and religious pendants in gold and sterling silver. Hero Redemption gold crucifix, grouped sections (Redemption crucifix gold+silver, Champion Saint Michael gold+silver, Saint Christopher gold, The Cross Courage+Faith silver), each product its own Shop Now. Made in the USA, Lifetime Warranty, soft gold-value line. No pricing, no karat, no hyphens, no sign-off.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/july-2026/2026-07-15-cross-religious-pendants.html",
       "finalDesignLink": "",
-      "notes": "Client Jul 10 flagged Jul 15/18/22/26/29 as upcoming sends; details to follow.",
+      "notes": "Client brief Slack Jul 14 (theme + 7 best sellers). All 7 product pages + images verified 200 on Jul 14. Copy-ready Jul 15.",
       "productUrl": "",
-      "collectionUrl": "",
+      "collectionUrl": "https://www.proclamationjewelry.com/collections/all-mens-pendants",
       "offerCode": "",
-      "creativeDirection": ""
+      "creativeDirection": "Onyx black #0A0A0A + royal gold #D4AF37, Trajan Pro headings. Gold-crucifix hero, Nick first-person intro, early gold CTA, grouped 2-up cards each with separate Shop Now, Saint Christopher full-width, Made in USA + Lifetime Warranty line, wordmark footer."
     },
     {
       "id": "2026-07-12-champion-most-loved",
