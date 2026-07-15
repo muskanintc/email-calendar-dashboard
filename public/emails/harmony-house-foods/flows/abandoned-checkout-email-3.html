@@ -1,0 +1,162 @@
+<!--
+===============================================================
+HARMONY HOUSE FOODS — ABANDONED CHECKOUT FLOW
+===============================================================
+Email 3 of 3
+Trigger: ~48 hours after Started Checkout (if not purchased)
+Goal: Last call. Gentle urgency that the saved checkout will expire,
+      plus a final benefit push. Close the order.
+Angle: "Your checkout is about to expire / don't lose your saved
+      order." Positive urgency, never fear-based.
+Tone: Warm, direct, encouraging.
+
+DESIGN SYSTEM: same navy/orange/cream. Benefit band mirrors the
+cart flow Email 3 (SKIP THE CHOPPING / DITCH FOOD WASTE / EAT FRESH
+ANYTIME). Storage line follows the client rule: up to 2 years in the
+original containers; long term storage when repackaged.
+===============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abandoned Checkout Email 3 — Harmony House Foods</title>
+</head>
+<body style="margin:0; padding:0; background-color:#F5F0E8; font-family:Arial, Helvetica, sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#F5F0E8;">
+<tr><td align="center">
+<table width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff; max-width:600px;">
+
+<!-- ==== SUBJECT + PREVIEW (VISIBLE) ==== -->
+<tr><td style="padding:20px 25px; background-color:#f0f4ff; border-bottom:3px solid #1B3A5C;">
+  <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Subject Line Options</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. Your saved order expires soon.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. Last call to finish checkout.</p>
+  <p style="margin:0 0 16px 0; font-size:14px; color:#333;">3. Don't lose your spot. Complete your order.</p>
+  <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Preview Text Options</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. Your details are still saved, but not for long. Finish in one click.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. Popular picks and stock can run low. Complete your order today.</p>
+  <p style="margin:0; font-size:14px; color:#333;">3. Free shipping on $99+ is still waiting for you.</p>
+</td></tr>
+
+<!-- ==== LOGO ==== -->
+<tr><td align="center" style="padding:24px 0 12px 0; background-color:#ffffff;">
+  <img src="https://www.harmonyhousefoods.com/cdn/shop/files/logo_453089b8-ec5d-4fcf-9594-6a4b9c9debaa.png?v=1762757611"
+       alt="Harmony House Foods" width="180" style="display:block;" />
+</td></tr>
+
+<!-- ==== HERO (orange accent headline) ==== -->
+<tr><td style="padding:10px 30px 6px 30px; text-align:center; background-color:#ffffff;">
+  <h1 style="margin:0 0 12px 0; font-size:26px; font-weight:800; color:#1B3A5C; line-height:1.15; font-family:Georgia,'Times New Roman',serif;">
+    YOUR ORDER IS <span style="color:#E87722;">ALMOST YOURS</span>
+  </h1>
+  <p style="margin:0; font-size:15px; color:#555; line-height:1.7; max-width:440px; display:inline-block;">
+    Your details are still saved, but not for much longer. Finish now and skip starting over. It only takes a click.
+  </p>
+</td></tr>
+
+<!-- ==== DYNAMIC CHECKOUT ITEM ==== -->
+<tr><td style="padding:16px 24px 4px 24px; background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f9f9f9; border-radius:12px;">
+  <tr>
+    <td width="38%" style="padding:16px; text-align:center; vertical-align:middle;">
+      <img src="https://www.harmonyhousefoods.com/cdn/shop/files/19020_Bean___Legume_Sampler_1.png?v=1764040947&width=600"
+           alt="{{ item.product_name }}" width="150" style="display:block; margin:0 auto; max-width:100%;" />
+    </td>
+    <td width="62%" style="padding:16px 22px; vertical-align:middle;">
+      <p style="margin:0 0 6px 0; font-size:17px; font-weight:800; color:#1B3A5C;">{{ item.product_name }}</p>
+      <p style="margin:0 0 8px 0; font-size:13px; color:#888;">({{ item.variant }})</p>
+      <p style="margin:0 0 10px 0; font-size:16px; color:#333; font-weight:700;">${{ item.price }}</p>
+      <p style="margin:0; font-size:12px; color:#888;">Qty: {{ item.quantity }}</p>
+    </td>
+  </tr>
+  </table>
+</td></tr>
+
+<!-- ==== PRIMARY CTA ==== -->
+<tr><td align="center" style="padding:14px 30px 16px 30px; background-color:#ffffff;">
+  <a href="{{ checkout_url }}" style="display:inline-block; background-color:#1B3A5C; color:#ffffff; font-size:16px; font-weight:800; text-decoration:none; padding:16px 46px; border-radius:30px; text-transform:uppercase; letter-spacing:1px;">
+    Complete Your Order
+  </a>
+</td></tr>
+
+<!-- ==== BENEFIT BAND (orange, 3 icons) ==== -->
+<tr><td style="padding:0; background-color:#E87722;">
+  <table width="100%" cellpadding="0" cellspacing="0"><tr><td style="padding:22px 18px 8px 18px;">
+  <table width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#129379;</div><p style="margin:0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Skip The<br/>Chopping</p></td></tr></table></td>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#9851;</div><p style="margin:0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Ditch<br/>Food Waste</p></td></tr></table></td>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#9200;</div><p style="margin:0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Eat Fresh<br/>Anytime</p></td></tr></table></td>
+  </tr></table>
+  </td></tr>
+  <tr><td style="padding:2px 22px 20px 22px; text-align:center;">
+    <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.7;">
+      Your future self, and your pantry, will thank you. Finish your order once and have real, premium produce ready for weeks. No shopping. No waste. Just meals that come together in minutes.
+    </p>
+  </td></tr></table>
+</td></tr>
+
+<!-- ==== FREE SHIPPING REMINDER (navy) ==== -->
+<tr><td style="padding:15px 25px; background-color:#1B3A5C; text-align:center;">
+  <p style="margin:0; font-size:15px; font-weight:700; color:#ffffff;">
+    &#128666; Don't forget: FREE Shipping on Orders $99+
+  </p>
+</td></tr>
+
+<!-- ==== URGENCY + STORAGE + SECONDARY CTA ==== -->
+<tr><td style="padding:22px 34px 6px 34px; text-align:center; background-color:#ffffff;">
+  <p style="margin:0 0 10px 0; font-size:15px; color:#333; line-height:1.7;">
+    Your saved checkout expires soon and you'll need to start over. Don't miss out on having your pantry stocked and ready for anything.
+  </p>
+  <p style="margin:0; font-size:14px; color:#666; line-height:1.7;">
+    Every order stays good for up to 2 years in the original containers, and it's ready for long term storage when you repackage it.
+  </p>
+</td></tr>
+<tr><td align="center" style="padding:14px 30px 20px 30px; background-color:#ffffff;">
+  <a href="{{ checkout_url }}" style="display:inline-block; background-color:#E87722; color:#ffffff; font-size:14px; font-weight:800; text-decoration:none; padding:13px 38px; border-radius:26px; text-transform:uppercase; letter-spacing:1px;">
+    Resume Your Checkout
+  </a>
+</td></tr>
+
+<!-- ==== 3-ICON TRUST GRID (orange band) ==== -->
+<tr><td style="padding:0; background-color:#E87722;">
+  <table width="100%" cellpadding="0" cellspacing="0"><tr><td style="padding:20px 18px;">
+  <table width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#127807;</div><p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Premium<br/>Ingredients</p><p style="margin:0; font-size:11px; color:#888;">Rehydrate quickly<br/>for everyday use</p></td></tr></table></td>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#128666;</div><p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Fast, Fresh<br/>Delivery</p><p style="margin:0; font-size:11px; color:#888;">Quick order<br/>processing</p></td></tr></table></td>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#128104;&#8205;&#127859;</div><p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Crafted<br/>Recipes</p><p style="margin:0; font-size:11px; color:#888;">Nutrition meets<br/>flavor</p></td></tr></table></td>
+  </tr></table>
+  </td></tr></table>
+</td></tr>
+
+<!-- ==== BRAND FOOTER ==== -->
+<tr><td align="center" style="padding:26px 30px 6px 30px; background-color:#ffffff;">
+  <img src="https://www.harmonyhousefoods.com/cdn/shop/files/logo_453089b8-ec5d-4fcf-9594-6a4b9c9debaa.png?v=1762757611" alt="Harmony House Foods" width="120" style="display:block; margin:0 auto 12px auto;" />
+  <p style="margin:0 0 16px 0; font-size:13px; color:#666; line-height:1.6;">Bringing quality shelf stable food to your pantry for over 20 years.</p>
+  <table cellpadding="0" cellspacing="0" style="margin:0 auto;"><tr>
+    <td style="padding:5px 6px; font-size:12px; color:#1B3A5C; font-weight:700;">&#10003; Vegan</td>
+    <td style="padding:5px 6px; font-size:12px; color:#1B3A5C; font-weight:700;">&#10003; Non-GMO</td>
+    <td style="padding:5px 6px; font-size:12px; color:#1B3A5C; font-weight:700;">&#10003; Gluten Free</td>
+    <td style="padding:5px 6px; font-size:12px; color:#1B3A5C; font-weight:700;">&#10003; Nutritious</td>
+  </tr></table>
+</td></tr>
+<tr><td style="padding:14px 20px; background-color:#1B3A5C; text-align:center;">
+  <p style="margin:0; font-size:13px; font-weight:800; color:#ffffff; text-transform:uppercase; letter-spacing:1px;">We're Always Here To Help</p>
+</td></tr>
+<tr><td align="center" style="padding:16px 30px 22px 30px; background-color:#ffffff;">
+  <p style="margin:0 0 8px 0; font-size:13px; color:#1B3A5C;">service@harmonyhousefoods.com</p>
+  <p style="margin:0 0 14px 0; font-size:12px; color:#666;">(800) 696-1395 &nbsp;/&nbsp; (828) 306-1610 &nbsp;&nbsp;|&nbsp;&nbsp; Fax (800) 696-7874</p>
+  <p style="margin:0; font-size:12px; color:#888;">
+    <a href="#" style="color:#888; text-decoration:underline;">Unsubscribe</a> &nbsp;|&nbsp;
+    <a href="#" style="color:#888; text-decoration:underline;">My Account</a> &nbsp;|&nbsp;
+    <a href="#" style="color:#888; text-decoration:underline;">Privacy</a>
+  </p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
