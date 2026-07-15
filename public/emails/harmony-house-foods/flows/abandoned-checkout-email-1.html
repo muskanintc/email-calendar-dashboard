@@ -1,24 +1,14 @@
 <!--
 ===============================================================
-HARMONY HOUSE FOODS — ABANDONED CHECKOUT FLOW
+HARMONY HOUSE FOODS — ABANDONED CHECKOUT FLOW  (REV 2)
 ===============================================================
-Email 1 of 3
-Trigger: ~1 hour after checkout started (Klaviyo "Started Checkout")
-Goal: Reassure the order is saved and get them back to FINISH the
-      checkout they already began. Low pressure, warm.
-Angle vs cart flow: The customer got further than the cart. They
-      entered checkout. So the message is "you're almost done / you
-      already did the hard part," NOT "rediscover these products."
-Tone: Warm, helpful, confident.
-
-DESIGN SYSTEM (match approved abandoned-cart flow):
-  Navy #1B3A5C · Orange #E87722 · Green accent #6FA84B
-  Page bg cream #F5F0E8 · Cream card #F1E9D9 · White cards #FFFFFF
-  Rounded cards, orange side tabs on hero, navy strips.
-
-NOTE FOR KLAVIYO:
-  All {{ }} are dynamic merge tags. Product block loops the
-  Started Checkout line items. Rendered sample = Bean & Legume Sampler.
+Email 1 of 3  ·  Trigger: ~1 hour after Started Checkout
+REV2 CHANGES (client, Jul 15):
+  - Copy pushed hard onto CHECKOUT RECOVERY + URGENCY. Dropped the
+    evergreen brand why-buy paragraph that overlapped the cart flow.
+  - Angle: "you made it all the way to checkout, items aren't reserved
+    yet, finish to lock them in."
+Design system unchanged (navy #1B3A5C / orange #E87722 / cream).
 ===============================================================
 -->
 <!DOCTYPE html>
@@ -37,13 +27,13 @@ NOTE FOR KLAVIYO:
 <!-- ==== SUBJECT + PREVIEW (VISIBLE) ==== -->
 <tr><td style="padding:20px 25px; background-color:#f0f4ff; border-bottom:3px solid #1B3A5C;">
   <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Subject Line Options</p>
-  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. You're one step from done.</p>
-  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. Your order is saved. Finish checkout?</p>
-  <p style="margin:0 0 16px 0; font-size:14px; color:#333;">3. Almost there. Let's get your pantry stocked.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. You were seconds from done.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. Your checkout is saved (for now).</p>
+  <p style="margin:0 0 16px 0; font-size:14px; color:#333;">3. One tap and your order is placed.</p>
   <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Preview Text Options</p>
-  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. Everything you picked is still here. Pick up right where you left off.</p>
-  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. No need to start over. Your details are saved.</p>
-  <p style="margin:0; font-size:14px; color:#333;">3. Finish your order and get free shipping on $99+.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. Your items aren't reserved yet. Finish checkout to lock them in.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. We held your details so you don't have to start over.</p>
+  <p style="margin:0; font-size:14px; color:#333;">3. Pick up at the last step and get free shipping on $99+.</p>
 </td></tr>
 
 <!-- ==== LOGO ==== -->
@@ -53,16 +43,14 @@ NOTE FOR KLAVIYO:
 </td></tr>
 
 <!-- ==== HERO (cream card, orange side tabs) ==== -->
-<!-- DESIGN NOTE: Cream rounded card with an orange tab bleeding off each side,
-     exactly like Email 1 of the cart flow. Highlight "ALMOST DONE" in green. -->
 <tr><td style="padding:8px 24px 4px 24px; background-color:#ffffff;">
   <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#F1E9D9; border-radius:14px;">
   <tr><td style="padding:34px 30px; text-align:center;">
     <h1 style="margin:0 0 14px 0; font-size:27px; font-weight:800; color:#1B3A5C; line-height:1.15; font-family:Georgia,'Times New Roman',serif;">
-      YOU'RE <span style="color:#6FA84B;">ALMOST DONE</span>
+      YOU WERE <span style="color:#E87722;">SECONDS AWAY</span>
     </h1>
-    <p style="margin:0; font-size:15px; color:#555; line-height:1.7; max-width:430px; display:inline-block;">
-      You already did the hard part. Your order is saved and waiting, so there's no need to start over. Pick up right where you left off.
+    <p style="margin:0; font-size:15px; color:#555; line-height:1.7; max-width:440px; display:inline-block;">
+      You made it all the way to checkout, then something pulled you away. We saved your details so you can finish in one tap. Heads up though: your items aren't reserved until the order is placed.
     </p>
   </td></tr>
   </table>
@@ -71,6 +59,7 @@ NOTE FOR KLAVIYO:
 <!-- ==== DYNAMIC CHECKOUT ITEMS ==== -->
 <!-- KLAVIYO: loop {{ event.items }} from the Started Checkout event. Max 3 shown. -->
 <tr><td style="padding:18px 24px 6px 24px; background-color:#ffffff;">
+  <p style="margin:0 0 12px 4px; font-size:12px; font-weight:800; color:#E87722; text-transform:uppercase; letter-spacing:1px;">Waiting in your checkout</p>
   <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f9f9f9; border-radius:12px; margin-bottom:10px;">
   <tr>
     <td width="38%" style="padding:16px; text-align:center; vertical-align:middle;">
@@ -95,20 +84,20 @@ NOTE FOR KLAVIYO:
   </a>
 </td></tr>
 
-<!-- ==== FREE SHIPPING STRIP (navy, matches cart flow) ==== -->
+<!-- ==== FREE SHIPPING STRIP ==== -->
 <tr><td style="padding:15px 25px; background-color:#1B3A5C; text-align:center;">
   <p style="margin:0; font-size:15px; font-weight:700; color:#ffffff;">
     &#128666; FREE Shipping on Orders $99+
   </p>
 </td></tr>
 
-<!-- ==== WHY FINISH NOW ==== -->
+<!-- ==== CHECKOUT REASSURANCE (not generic brand copy) ==== -->
 <tr><td style="padding:22px 36px 10px 36px; text-align:center; background-color:#ffffff;">
   <p style="margin:0 0 10px 0; font-size:15px; color:#333; line-height:1.7;">
-    No more last minute trips to the grocery store. Keep premium vegetables, fruits, beans, and more on hand whenever you need them for quick, convenient meals.
+    Nothing to redo. Your cart, your details, and your shipping are exactly where you left them. Placing the order takes one tap and locks in your items before they move.
   </p>
   <p style="margin:0; font-size:14px; color:#666; line-height:1.7;">
-    Real food that's ready when you are. Stays good for up to 2 years in the original containers, and ready for long term storage when you repackage it.
+    Every order is backed by our freshness guarantee and lifetime customer support.
   </p>
 </td></tr>
 
@@ -119,41 +108,20 @@ NOTE FOR KLAVIYO:
   </a>
 </td></tr>
 
-<!-- ==== 3-ICON TRUST GRID (orange band, matches cart flow) ==== -->
+<!-- ==== 3-ICON TRUST GRID (orange band) ==== -->
 <tr><td style="padding:0; background-color:#E87722;">
   <table width="100%" cellpadding="0" cellspacing="0"><tr><td style="padding:20px 18px;">
-  <table width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="33%" align="center" valign="top" style="padding:5px;">
-      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;">
-        <div style="font-size:26px; margin-bottom:8px;">&#127807;</div>
-        <p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Premium<br/>Ingredients</p>
-        <p style="margin:0; font-size:11px; color:#888;">Rehydrate quickly<br/>for everyday use</p>
-      </td></tr></table>
-    </td>
-    <td width="33%" align="center" valign="top" style="padding:5px;">
-      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;">
-        <div style="font-size:26px; margin-bottom:8px;">&#128666;</div>
-        <p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Fast, Fresh<br/>Delivery</p>
-        <p style="margin:0; font-size:11px; color:#888;">Quick order<br/>processing</p>
-      </td></tr></table>
-    </td>
-    <td width="33%" align="center" valign="top" style="padding:5px;">
-      <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;">
-        <div style="font-size:26px; margin-bottom:8px;">&#128104;&#8205;&#127859;</div>
-        <p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Crafted<br/>Recipes</p>
-        <p style="margin:0; font-size:11px; color:#888;">Nutrition meets<br/>flavor</p>
-      </td></tr></table>
-    </td>
-  </tr>
-  </table>
+  <table width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#127807;</div><p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Premium<br/>Ingredients</p><p style="margin:0; font-size:11px; color:#888;">Rehydrate quickly<br/>for everyday use</p></td></tr></table></td>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#128666;</div><p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Fast, Fresh<br/>Delivery</p><p style="margin:0; font-size:11px; color:#888;">Quick order<br/>processing</p></td></tr></table></td>
+    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#128104;&#8205;&#127859;</div><p style="margin:0 0 4px 0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Crafted<br/>Recipes</p><p style="margin:0; font-size:11px; color:#888;">Nutrition meets<br/>flavor</p></td></tr></table></td>
+  </tr></table>
   </td></tr></table>
 </td></tr>
 
-<!-- ==== BRAND FOOTER (matches cart flow) ==== -->
+<!-- ==== BRAND FOOTER ==== -->
 <tr><td align="center" style="padding:26px 30px 6px 30px; background-color:#ffffff;">
-  <img src="https://www.harmonyhousefoods.com/cdn/shop/files/logo_453089b8-ec5d-4fcf-9594-6a4b9c9debaa.png?v=1762757611"
-       alt="Harmony House Foods" width="120" style="display:block; margin:0 auto 12px auto;" />
+  <img src="https://www.harmonyhousefoods.com/cdn/shop/files/logo_453089b8-ec5d-4fcf-9594-6a4b9c9debaa.png?v=1762757611" alt="Harmony House Foods" width="120" style="display:block; margin:0 auto 12px auto;" />
   <p style="margin:0 0 16px 0; font-size:13px; color:#666; line-height:1.6;">Bringing quality shelf stable food to your pantry for over 20 years.</p>
   <table cellpadding="0" cellspacing="0" style="margin:0 auto;"><tr>
     <td style="padding:5px 6px; font-size:12px; color:#1B3A5C; font-weight:700;">&#10003; Vegan</td>
@@ -168,12 +136,11 @@ NOTE FOR KLAVIYO:
 <tr><td align="center" style="padding:16px 30px 22px 30px; background-color:#ffffff;">
   <p style="margin:0 0 8px 0; font-size:13px; color:#1B3A5C;">service@harmonyhousefoods.com</p>
   <p style="margin:0 0 14px 0; font-size:12px; color:#666;">(800) 696-1395 &nbsp;/&nbsp; (828) 306-1610 &nbsp;&nbsp;|&nbsp;&nbsp; Fax (800) 696-7874</p>
-  <p style="margin:0 0 6px 0; font-size:12px; color:#888;">
+  <p style="margin:0; font-size:12px; color:#888;">
     <a href="#" style="color:#888; text-decoration:underline;">Unsubscribe</a> &nbsp;|&nbsp;
     <a href="#" style="color:#888; text-decoration:underline;">My Account</a> &nbsp;|&nbsp;
     <a href="#" style="color:#888; text-decoration:underline;">Privacy</a>
   </p>
-  <!-- DESIGN NOTE: Facebook / Instagram / X / Pinterest icon row, same as cart flow footer -->
 </td></tr>
 
 </table>

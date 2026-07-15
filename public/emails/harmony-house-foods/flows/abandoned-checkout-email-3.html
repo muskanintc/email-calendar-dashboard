@@ -1,19 +1,15 @@
 <!--
 ===============================================================
-HARMONY HOUSE FOODS — ABANDONED CHECKOUT FLOW
+HARMONY HOUSE FOODS — ABANDONED CHECKOUT FLOW  (REV 2)
 ===============================================================
-Email 3 of 3
-Trigger: ~48 hours after Started Checkout (if not purchased)
-Goal: Last call. Gentle urgency that the saved checkout will expire,
-      plus a final benefit push. Close the order.
-Angle: "Your checkout is about to expire / don't lose your saved
-      order." Positive urgency, never fear-based.
-Tone: Warm, direct, encouraging.
-
-DESIGN SYSTEM: same navy/orange/cream. Benefit band mirrors the
-cart flow Email 3 (SKIP THE CHOPPING / DITCH FOOD WASTE / EAT FRESH
-ANYTIME). Storage line follows the client rule: up to 2 years in the
-original containers; long term storage when repackaged.
+Email 3 of 3  ·  Trigger: ~48 hours after Started Checkout
+REV2 CHANGES (client, Jul 15):
+  - Final-call urgency. The saved checkout is about to be released;
+    finishing now is the last chance before it's rebuilt from scratch.
+  - Dropped the cart-flow "your future self / your pantry" line.
+  - Storage line kept per client rule (up to 2 years in original
+    containers; long term storage only if repackaged).
+Design system unchanged.
 ===============================================================
 -->
 <!DOCTYPE html>
@@ -32,28 +28,33 @@ original containers; long term storage when repackaged.
 <!-- ==== SUBJECT + PREVIEW (VISIBLE) ==== -->
 <tr><td style="padding:20px 25px; background-color:#f0f4ff; border-bottom:3px solid #1B3A5C;">
   <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Subject Line Options</p>
-  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. Your saved order expires soon.</p>
-  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. Last call to finish checkout.</p>
-  <p style="margin:0 0 16px 0; font-size:14px; color:#333;">3. Don't lose your spot. Complete your order.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. Last call: your checkout expires today.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. This is the final reminder.</p>
+  <p style="margin:0 0 16px 0; font-size:14px; color:#333;">3. After this, you'll have to start over.</p>
   <p style="margin:0 0 12px 0; font-size:11px; font-weight:700; color:#1B3A5C; text-transform:uppercase; letter-spacing:2px;">Preview Text Options</p>
-  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. Your details are still saved, but not for long. Finish in one click.</p>
-  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. Popular picks and stock can run low. Complete your order today.</p>
-  <p style="margin:0; font-size:14px; color:#333;">3. Free shipping on $99+ is still waiting for you.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">1. We're about to release your saved checkout. One tap keeps it.</p>
+  <p style="margin:0 0 4px 0; font-size:14px; color:#333;">2. Your details and items go back into the pool soon.</p>
+  <p style="margin:0; font-size:14px; color:#333;">3. Finish now and free shipping on $99+ is still yours.</p>
 </td></tr>
 
 <!-- ==== LOGO ==== -->
-<tr><td align="center" style="padding:24px 0 12px 0; background-color:#ffffff;">
+<tr><td align="center" style="padding:24px 0 8px 0; background-color:#ffffff;">
   <img src="https://www.harmonyhousefoods.com/cdn/shop/files/logo_453089b8-ec5d-4fcf-9594-6a4b9c9debaa.png?v=1762757611"
        alt="Harmony House Foods" width="180" style="display:block;" />
 </td></tr>
 
-<!-- ==== HERO (orange accent headline) ==== -->
-<tr><td style="padding:10px 30px 6px 30px; text-align:center; background-color:#ffffff;">
+<!-- ==== URGENCY RIBBON ==== -->
+<tr><td style="padding:12px 25px; background-color:#E87722; text-align:center;">
+  <p style="margin:0; font-size:14px; font-weight:800; color:#ffffff; text-transform:uppercase; letter-spacing:2px;">&#9203; Final Reminder</p>
+</td></tr>
+
+<!-- ==== HERO ==== -->
+<tr><td style="padding:22px 30px 6px 30px; text-align:center; background-color:#ffffff;">
   <h1 style="margin:0 0 12px 0; font-size:26px; font-weight:800; color:#1B3A5C; line-height:1.15; font-family:Georgia,'Times New Roman',serif;">
-    YOUR ORDER IS <span style="color:#E87722;">ALMOST YOURS</span>
+    YOUR CHECKOUT <span style="color:#E87722;">EXPIRES TODAY</span>
   </h1>
   <p style="margin:0; font-size:15px; color:#555; line-height:1.7; max-width:440px; display:inline-block;">
-    Your details are still saved, but not for much longer. Finish now and skip starting over. It only takes a click.
+    This is the last reminder. We're about to release your saved checkout, which means your details and your items go back into the pool. Finish now and none of it is lost.
   </p>
 </td></tr>
 
@@ -76,45 +77,31 @@ original containers; long term storage when repackaged.
 </td></tr>
 
 <!-- ==== PRIMARY CTA ==== -->
-<tr><td align="center" style="padding:14px 30px 16px 30px; background-color:#ffffff;">
+<tr><td align="center" style="padding:14px 30px 8px 30px; background-color:#ffffff;">
   <a href="{{ checkout_url }}" style="display:inline-block; background-color:#1B3A5C; color:#ffffff; font-size:16px; font-weight:800; text-decoration:none; padding:16px 46px; border-radius:30px; text-transform:uppercase; letter-spacing:1px;">
     Complete Your Order
   </a>
 </td></tr>
 
-<!-- ==== BENEFIT BAND (orange, 3 icons) ==== -->
-<tr><td style="padding:0; background-color:#E87722;">
-  <table width="100%" cellpadding="0" cellspacing="0"><tr><td style="padding:22px 18px 8px 18px;">
-  <table width="100%" cellpadding="0" cellspacing="0"><tr>
-    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#129379;</div><p style="margin:0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Skip The<br/>Chopping</p></td></tr></table></td>
-    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#9851;</div><p style="margin:0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Ditch<br/>Food Waste</p></td></tr></table></td>
-    <td width="33%" align="center" valign="top" style="padding:5px;"><table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px;"><tr><td align="center" style="padding:18px 8px;"><div style="font-size:26px; margin-bottom:8px;">&#9200;</div><p style="margin:0; font-size:12px; font-weight:800; color:#1B3A5C; text-transform:uppercase;">Eat Fresh<br/>Anytime</p></td></tr></table></td>
-  </tr></table>
-  </td></tr>
-  <tr><td style="padding:2px 22px 20px 22px; text-align:center;">
-    <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.7;">
-      Your future self, and your pantry, will thank you. Finish your order once and have real, premium produce ready for weeks. No shopping. No waste. Just meals that come together in minutes.
-    </p>
-  </td></tr></table>
-</td></tr>
-
-<!-- ==== FREE SHIPPING REMINDER (navy) ==== -->
-<tr><td style="padding:15px 25px; background-color:#1B3A5C; text-align:center;">
+<!-- ==== FREE SHIPPING REMINDER ==== -->
+<tr><td style="padding:14px 25px; background-color:#1B3A5C; text-align:center;">
   <p style="margin:0; font-size:15px; font-weight:700; color:#ffffff;">
-    &#128666; Don't forget: FREE Shipping on Orders $99+
+    &#128666; Finish today and FREE Shipping on $99+ is still yours
   </p>
 </td></tr>
 
-<!-- ==== URGENCY + STORAGE + SECONDARY CTA ==== -->
+<!-- ==== WHY IT'S WORTH FINISHING + STORAGE (client rule) ==== -->
 <tr><td style="padding:22px 34px 6px 34px; text-align:center; background-color:#ffffff;">
   <p style="margin:0 0 10px 0; font-size:15px; color:#333; line-height:1.7;">
-    Your saved checkout expires soon and you'll need to start over. Don't miss out on having your pantry stocked and ready for anything.
+    Once your checkout is released you'll have to rebuild it from scratch, and popular picks can sell out before you do. A few taps now and it's handled.
   </p>
   <p style="margin:0; font-size:14px; color:#666; line-height:1.7;">
-    Every order stays good for up to 2 years in the original containers, and it's ready for long term storage when you repackage it.
+    What you ordered stays good for up to 2 years in the original containers, and it's ready for long term storage when you repackage it.
   </p>
 </td></tr>
-<tr><td align="center" style="padding:14px 30px 20px 30px; background-color:#ffffff;">
+
+<!-- ==== SECONDARY CTA ==== -->
+<tr><td align="center" style="padding:14px 30px 22px 30px; background-color:#ffffff;">
   <a href="{{ checkout_url }}" style="display:inline-block; background-color:#E87722; color:#ffffff; font-size:14px; font-weight:800; text-decoration:none; padding:13px 38px; border-radius:26px; text-transform:uppercase; letter-spacing:1px;">
     Resume Your Checkout
   </a>
