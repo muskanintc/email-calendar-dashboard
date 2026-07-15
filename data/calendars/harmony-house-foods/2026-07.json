@@ -104,6 +104,57 @@
       "collectionUrl": "",
       "offerCode": "",
       "creativeDirection": "Best-seller spotlight. Vibrant bell pepper imagery, recipe and cooking lifestyle."
+    },
+    {
+      "date": "2026-07-15",
+      "day": "Wed",
+      "type": "abandoned-cart",
+      "status": "copy-ready",
+      "product": "Dynamic Started Checkout line items (Klaviyo)",
+      "finalDesignLink": "",
+      "productUrl": "https://www.harmonyhousefoods.com/",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "HHF navy #1B3A5C / orange #E87722 / cream #F5F0E8. Match Abandoned Cart flow. Dynamic Started Checkout block, free shipping $99+ strip, 3-icon trust grid (Premium Ingredients / Fast Fresh Delivery / Crafted Recipes), over-20-years footer with contact + socials.",
+      "id": "2026-07-15-abandoned-checkout-1",
+      "theme": "Abandoned Checkout 1 of 3: Your Fresh Meals Are One Step Away",
+      "shortDescription": "Abandoned Checkout flow email 1 (~1 hr). Built off the Abandoned Cart flow, checkout recovery copy. Brand-connected hero (Your Fresh Meals Are One Step Away): you were at the last step of stocking your pantry, items not held until you finish. Dynamic checkout product block, Complete Your Order + Resume Your Checkout, free shipping $99+, trust grid, footer.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/flows/abandoned-checkout-email-1.html",
+      "notes": "Abandoned Checkout flow (not a dated send). Revs Jul 15: checkout+urgency woven into HHF brand emotion; products framed as ingredients for any meal (not dinner/'meals'); storage rule (up to 2 yrs original containers, long-term only if repackaged); trust grid in every email."
+    },
+    {
+      "date": "2026-07-15",
+      "day": "Wed",
+      "type": "abandoned-cart",
+      "status": "copy-ready",
+      "product": "Dynamic Started Checkout line items (Klaviyo)",
+      "finalDesignLink": "",
+      "productUrl": "https://www.harmonyhousefoods.com/",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "HHF navy #1B3A5C / orange #E87722 / cream #F5F0E8. Match Abandoned Cart flow. Dynamic Started Checkout block, free shipping $99+ strip, 3-icon trust grid (Premium Ingredients / Fast Fresh Delivery / Crafted Recipes), over-20-years footer with contact + socials.",
+      "id": "2026-07-15-abandoned-checkout-2",
+      "theme": "Abandoned Checkout 2 of 3: Your Pantry Is Almost Stocked",
+      "shortDescription": "Abandoned Checkout flow email 2 (~24 hr). Orange banner Your Checkout Is Still Open, headline Your Pantry Is Almost Stocked (a day later, order still saved, items not reserved). Dynamic checkout block + Complete Your Order, real proof bar (250k+ customers, thousands of 5-star reviews, Backpacker Magazine Editor's Choice), Lisa M. verified review, Resume Your Checkout, free shipping, trust grid, footer.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/flows/abandoned-checkout-email-2.html",
+      "notes": "Reviews swapped per client (not David L./Jennifer K.). Site publishes only 3 testimonials, so used Lisa M. + real proof bar. Trust grid added to E2 for parity Jul 15."
+    },
+    {
+      "date": "2026-07-15",
+      "day": "Wed",
+      "type": "abandoned-cart",
+      "status": "copy-ready",
+      "product": "Dynamic Started Checkout line items (Klaviyo)",
+      "finalDesignLink": "",
+      "productUrl": "https://www.harmonyhousefoods.com/",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "HHF navy #1B3A5C / orange #E87722 / cream #F5F0E8. Match Abandoned Cart flow. Dynamic Started Checkout block, free shipping $99+ strip, 3-icon trust grid (Premium Ingredients / Fast Fresh Delivery / Crafted Recipes), over-20-years footer with contact + socials.",
+      "id": "2026-07-15-abandoned-checkout-3",
+      "theme": "Abandoned Checkout 3 of 3: Your Kitchen Essentials Are Slipping Away",
+      "shortDescription": "Abandoned Checkout flow email 3 (~48 hr). Final Reminder ribbon, headline Your Kitchen Essentials Are Slipping Away (saved checkout about to be released, rebuild from scratch). Dynamic checkout block + Complete Your Order, free shipping reminder, storage line (up to 2 yrs original containers, long-term if repackaged), stocked-pantry emotional close, trust grid, footer.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/emails/harmony-house-foods/flows/abandoned-checkout-email-3.html",
+      "notes": "Abandoned Checkout flow (not a dated send). Final-call urgency folded into HHF brand emotion. Storage rule applied."
     }
   ]
 }
