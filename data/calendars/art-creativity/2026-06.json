@@ -55,21 +55,21 @@
       "creativeDirection": "Yellow hero, alternating image/copy cards, party/confetti vibes, summer birthday theme"
     },
     {
-      "id": "2026-06-26-friday-email",
+      "id": "2026-06-26-play-personality",
       "date": "2026-06-26",
       "day": "Fri",
       "type": "promotional",
       "status": "done",
-      "theme": "[NEEDS INFO: Jun 26 Friday email subject/theme]",
-      "product": "",
-      "shortDescription": "Written and sent outside the tool (client confirmed Jun 29). Awaiting subject/theme + copy link to complete the record.",
-      "emailCopyLink": "",
+      "theme": "Play Personality: Three Types of Play, Two Products Each, Curated by How Kids Play",
+      "product": "Three play types (Explorer, Thinker, Builder), two products each",
+      "shortDescription": "Educational/promotional email that segments toys by a child's play personality: Explorer, Thinker, and Builder, with two curated products for each type. Free shipping on $30+.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/june-2026/2026-06-26-play-personality.html",
       "finalDesignLink": "",
-      "notes": "Added per client Jun 29; Art Creativity sends every Friday.",
+      "notes": "Added per client Jul 16; sent Jun 26 (Art Creativity sends every Friday). Theme confirmed by client.",
       "productUrl": "",
       "collectionUrl": "",
-      "offerCode": "",
-      "creativeDirection": ""
+      "offerCode": "Free shipping $30+",
+      "creativeDirection": "Three play-type sections (Explorer / Thinker / Builder), two products per section, curated by how kids play. Bright, colorful Art Creativity style."
     }
   ]
 }
