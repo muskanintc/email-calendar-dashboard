@@ -89,21 +89,21 @@
       "creativeDirection": "Rugged dark theme, orange #F26522. KEEP YOUR COOL headline, full-bleed Performer product hero, THE PERFORMER name + Shop the Performer button, 2x2 feature grid, detail image, Made in USA band, orange-bordered fit tip, 3-up trust bar, italic testimonial, closing CTA, footer with socials + unsubscribe."
     },
     {
-      "id": "2026-07-19-email",
+      "id": "2026-07-19-steel-walker-ii",
       "date": "2026-07-19",
       "day": "Sun",
       "type": "promotional",
-      "status": "pending",
-      "theme": "[NEEDS INFO: theme/product to be provided by client]",
-      "product": "",
-      "shortDescription": "",
-      "emailCopyLink": "",
+      "status": "copy-ready",
+      "theme": "The Steel Walker II: magnetic grip for metal roofs",
+      "product": "Steel Walker II (magnetic metal-roof boot)",
+      "shortDescription": "Single-product spotlight on the Steel Walker II magnetic boot for steel and metal roofs. Distinct layout from the Jul 16 Performer: full-bleed hero, product name in the headline (THE STEEL WALKER II) + Shop CTA in the first half, a 3-part HOW IT HOLDS THE METAL row (powerful magnets, softer rubber sole, enhanced tread), two alternating image+copy feature rows (moisture wicking lining + triple ply cushioning; configurations Strap Only / Composition Toe / Composition Toe and Strap with safety toe), brief Cougar Paws Covers care tip, trust stat bar, closing CTA, footer. Performer learnings applied.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/cougar-paws/july-2026/2026-07-19-steel-walker-ii.html",
       "finalDesignLink": "",
-      "notes": "Placeholder slot added per client (Slack, Jul 14): 7 July emails on 16, 19, 21, 24, 26, 29, 31. Details to follow.",
-      "productUrl": "",
-      "collectionUrl": "",
+      "notes": "Client brief (Slack, Jul 16): promote Steel Walker II, Magnetic Roofing Boots for Metal Roofs. All facts verified from cougarpaws.com/products/the-steelwalker-ii (magnets + softer rubber sole + enhanced tread; moisture wicking lining; triple ply cushioning; Strap Only / Composition Toe / Composition Toe and Strap; pair with Cougar Paws Covers on the ground). Images verified 200: DSCF31891-Edit.png, SW2.jpg, KWP-00128.png. Rules: no hyphens/dashes (moisture wicking, triple ply, all day), no pricing, no SKU/patent/ASTM numbers in copy, never 'patented traction', 'steel and metal roofs' not 'standing seam'. No fit/sizing box, no generic testimonial (per Performer feedback). No offer code specified. [NEEDS INFO] mailing address for footer.",
+      "productUrl": "https://www.cougarpaws.com/products/the-steelwalker-ii",
+      "collectionUrl": "https://www.cougarpaws.com/collections/boots-for-metal-roof",
       "offerCode": "",
-      "creativeDirection": ""
+      "creativeDirection": "Rugged dark theme, orange #F26522. Full-bleed hero, THE STEEL WALKER II headline + Shop the Steel Walker II button up top, 3 numbered circles for the grip mechanism, two alternating image/copy rows, small care tip line, 3-up trust bar, closing CTA, footer with socials + unsubscribe."
     },
     {
       "id": "2026-07-21-email",
