@@ -36,6 +36,23 @@
       "collectionUrl": "",
       "offerCode": "Buy More Save More: $75->10%, $150->15%, $300->20%",
       "creativeDirection": "Nunito, white bg, sky-blue hero + yellow eyebrow, yellow offer banner (top bookend), 4 alternating mint/white product cards each with green rounded Shop Now, text-only offer reminder (no stacked CTA), 3-up trust bar, conversational closer."
+    },
+    {
+      "id": "2026-07-17-little-explorers",
+      "date": "2026-07-17",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "Raise a Little Explorer",
+      "product": "Kids' Camera Toy Set (Pack of 12), Bendable Planets (Solar System set)",
+      "shortDescription": "Curiosity/discovery angle for two products: one points a kid at the world around them (the Kids' Camera, a little photographer), the other puts the solar system in their hands (Bendable Planets, a little astronomer). Backyard to outer space, screen-free play. Offer kept light (free shipping $30+).",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/art-creativity/july-2026/2026-07-17-little-explorers.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 16 (July 17, find an interesting angle; 2 products). Both verified available:true via .js 2026-07-16, images 200. No pricing, no hyphens. Distinct layout from Jul 10.",
+      "productUrl": "",
+      "collectionUrl": "",
+      "offerCode": "None (free shipping $30+ only)",
+      "creativeDirection": "Nunito, white bg, 'Curiosity Unlocked' yellow eyebrow + sky-blue hero, two-way split intro (camera / planets emoji cards), two large discovery feature blocks (blue camera, yellow planets) each with green rounded Shop Now, 'two small toys one big idea' note, 3-up trust bar, curiosity closer."
     }
   ]
 }
