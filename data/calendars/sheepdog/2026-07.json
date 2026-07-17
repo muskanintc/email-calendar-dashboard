@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-17-near360-both-ears",
+      "date": "2026-07-17",
+      "day": "Fri",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "N-ear 360 Flexo: Keep Both Ears on the World (open-ear situational awareness)",
+      "product": "N-ear 360 Flexo Earpiece, Black, Braided Fiber (SHEEPDOG Exclusive)",
+      "shortDescription": "Fresh angle per client Jul 17 (product promoted many times, need a new hook). Leads on the OPEN EAR design as the hero, not specs or back-in-stock: most earpieces seal your ear canal and trade your hearing for your radio; the N-ear 360's open ear tip lets you hear your surroundings AND your radio in the same ear. Dark hero 'Keep Both Ears on the World' with first CTA, a short situational-awareness reframe, then three reasons (01 Situational Awareness, 02 Zero Ear Fatigue, 03 Patented Bend Over Ear) alternating image side, a vest-routing band (22 inch braided cable routes between Velcro straps, engineered in Denmark) with a one-line connector guide (3.5mm Motorola/Kenwood/Tait/EF Johnson, 2.5mm OEM Harris), What Is Included graphic, positive-framing demand band (most loved exclusive, limited quantities), final CTA. Verified available:true + images 200 on 2026-07-17.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/sheepdog/july-2026/2026-07-17-near360-both-ears.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 17 21:19: write a NEW-angle, high-converting email on the N-ear 360 Flexo (promoted many times before). New lead angle = open-ear situational awareness ('keep both ears on the world'); distinct from prior Flexo sends (back-in-stock May 25, CYCLONE2/TRIAD2/TRIAD PRO bundles, June 'what agencies are ordering' roundup). Rules honored: product-page images only (verified 200); no 'sold out' (high demand / limited quantities positive framing); no radio-compatibility grid (one connector line only); no hyphens/dashes in prose (brand name 'N-ear 360' keeps its own hyphen); no pricing; no hype words; operator-to-operator tone. Acknowledged in Slack thread 1784303354.616229.",
+      "productUrl": "https://sheepdogmics.com/products/n-ear-360-flexo-earpiece-braided-fiber-sheepdog-black",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "Sheepdog charcoal #282828 / red #DE2A2A, Archivo Black headings, Archivo body. Field-shot hero on dark, three alternating image/text reason rows, light-gray vest-routing band, What Is Included graphic, dark demand band, standard footer. 600px single column, mobile-first."
+    },
+    {
       "id": "2026-07-15-triad-pro-kits",
       "date": "2026-07-15",
       "day": "Wed",
