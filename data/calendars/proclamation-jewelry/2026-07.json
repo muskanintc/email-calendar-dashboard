@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-20-abandoned-checkout-flow",
+      "date": "2026-07-20",
+      "day": "Sun",
+      "type": "abandoned-cart",
+      "status": "copy-ready",
+      "theme": "Abandoned Checkout Flow redesign (3 emails)",
+      "product": "Dynamic cart (Klaviyo). Recs: shop by category (Chains, Pendants, Rings)",
+      "shortDescription": "Redesigned 3 email abandoned checkout flow per client brief Jul 20 (studied their 3 current emails + Mejuri reference). Removed the top banner image; each email leads with a strong headline (no passive 'still thinking about it'), then the dynamic Klaviyo cart block in the first half with an early Return to Cart CTA, then the tiered offer (MOBILE100 / MOBILE50 / MOBILE25). Second half adds a varied live image, a Trustpilot 4.8 + Google 4.9 review proof band, and stock safe shop by category recs. Escalates across sends: E1 reminder (~1hr), E2 social proof (~24hr), E3 reserved for 48 hours. Rebuilt in Proclamation onyx + gold brand system (flagged as an upgrade vs the current white template). All images verified 200 on 2026-07-20.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/proclamation-jewelry/july-2026/2026-07-20-abandoned-checkout-flow.html",
+      "finalDesignLink": "",
+      "notes": "NEEDS CONFIRM before send: middle offer code shows MOBILE50 (client live creative) but assets.md has MOBILE15. Also removed the blanket 'crafted in Italy' line (chains are Italian made, pendants/clasps USA made) in favor of the always true 16 step artisan / heirloom line. Klaviyo dynamic: Return to Cart uses {{ event.extra.checkout_url }}; cart card wraps in the line_items loop. Acknowledged in Slack thread 1784546542.346829.",
+      "productUrl": "",
+      "collectionUrl": "https://www.proclamationjewelry.com/collections/bestsellers",
+      "offerCode": "MOBILE100 ($100 off $1,500+), MOBILE50 ($50 off $500 to $1,500) [confirm vs MOBILE15], MOBILE25 ($25 off under $500)",
+      "creativeDirection": "Onyx #0A0A0A + royal gold #D4AF37. Trajan Pro headings, IBM Plex Mono labels, Georgia/Arial body. No top banner. Structure per email: utility bar, brand bar + slim nav, eyebrow + strong H1, early gold Return to Cart CTA, dynamic cart card, gold bordered tiered offer panel, varied live image, review proof band, 3 up shop by category tiles, trust badges, footer wordmark. 600px single column, mobile first."
+    },
+    {
       "id": "2026-07-29-tbd",
       "date": "2026-07-29",
       "day": "Wed",

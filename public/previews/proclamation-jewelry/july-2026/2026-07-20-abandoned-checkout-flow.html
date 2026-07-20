@@ -1,0 +1,557 @@
+<!--
+=================================================================
+  PROCLAMATION JEWELRY — Abandoned Checkout Flow (REDESIGN)
+  Date: 2026-07-20
+  Brief (client, Jul 20): redesign the 3 email abandoned checkout flow.
+    - Remove the top banner image.
+    - After the logo, lead with a STRONG headline (not the passive
+      "still thinking about it").
+    - Bring the DYNAMIC cart product block into the FIRST HALF,
+      right after the headline.
+    - Keep the offer and the language that is converting, tighten it,
+      and add proven cart recovery elements.
+    - A "live image" may appear AFTER the first half (varied per email).
+    - Premium jewelry brand: elevate for conversion.
+  Reference studied: Mejuri "We've held onto this for you" + the 3
+    current Proclamation emails supplied.
+
+  DESIGN DECISION (my recommendation, flagged to client):
+    Rebuilt in Proclamation's own onyx black + royal gold brand system
+    (matches the campaign emails and the config) instead of the generic
+    white template the current flow uses. This reads more premium for a
+    luxury jewelry brand. Say the word if you want the lighter look kept.
+
+  SUGGESTIONS ADDED (proven cart recovery levers):
+    1. Review proof band (Trustpilot 4.8/5, Google 4.9/5) in every email.
+    2. Dynamic cart block moved into the first half with an early CTA.
+    3. Escalation across the 3 sends (reminder, social proof, reserved
+       for 48 hours) rather than three near identical emails.
+    4. Shop by category recommendations (stock safe for a flow) instead
+       of hard coded product cards that can sell out.
+
+  NEEDS CONFIRM (do not send until resolved):
+    - MIDDLE OFFER CODE. Your current creative shows MOBILE50 for the
+      $50 off tier, but assets.md has it as MOBILE15. Rendered as
+      MOBILE50 here (from your live creative). Confirm the live code.
+
+  RULES HONORED:
+    - No hyphens or dashes in prose. No individual promo pricing set by
+      us (cart price is the client's own dynamic cart via Klaviyo).
+    - No country of origin claim on the whole cart: your gold CHAINS are
+      Italian made and your PENDANTS and CLASPS are USA made, so a
+      blanket "crafted in Italy" line (in the current email 3) is not
+      accurate for every piece. Replaced with the 16 step artisan and
+      heirloom craft line, which is always true.
+    - Vocabulary: clients/patrons, invest, crafted, pieces/creations.
+    - Dynamic cart + Return to Cart use Klaviyo variables (see dev notes
+      at the very bottom).
+    - Images all verified live (200) on 2026-07-20.
+=================================================================
+-->
+
+<div style="max-width:640px;margin:0 auto;padding:20px;font-family:Arial,sans-serif;font-size:13px;line-height:1.6;color:#111;background:#fbf6e9;border:2px solid #D4AF37;">
+  <div style="font-weight:bold;font-size:15px;letter-spacing:1px;">PROCLAMATION — ABANDONED CHECKOUT FLOW (3 EMAILS)</div>
+  <div style="margin-top:8px;">Suggested timing: <b>Email 1</b> about 1 hour after abandon, <b>Email 2</b> about 24 hours, <b>Email 3</b> about 48 hours. All three carry the tiered offer and the dynamic cart block. Scroll to see all three.</div>
+  <div style="margin-top:8px;color:#8a1b1b;"><b>Confirm before send:</b> middle offer code shows as MOBILE50 (your live creative) but assets has MOBILE15. Please confirm the live code.</div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- =====================   EMAIL 1 of 3   ===================== -->
+<!-- Timing: ~1 hour after abandon. Angle: warm reminder.         -->
+<!-- ============================================================ -->
+
+<!-- SUBJECT + PREVIEW (VISIBLE, pick one set) -->
+<div style="max-width:600px;margin:24px auto 0;padding:16px;background:#fff;font-family:Arial,sans-serif;font-size:13px;color:#111;border-bottom:2px solid #D4AF37;">
+  <strong>EMAIL 1 &nbsp;|&nbsp; SUBJECT LINE OPTIONS (pick 1):</strong>
+  <ol style="margin:6px 0 12px 18px;padding:0;">
+    <li>You left something worth keeping</li>
+    <li>Your cart is still yours</li>
+    <li>The piece you chose is waiting</li>
+  </ol>
+  <strong>PREVIEW TEXT OPTIONS (pick 1):</strong>
+  <ol style="margin:6px 0 0 18px;padding:0;">
+    <li>Say the word and we will begin crafting it for you.</li>
+    <li>Still in your cart, and still worth every bit of the wait.</li>
+    <li>Complete your order and wear your story.</li>
+  </ol>
+</div>
+
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">The piece you chose is still in your cart. Return whenever you are ready and we will begin crafting it for you.</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0A0A0A;margin:0;padding:0;">
+  <tr><td align="center" style="padding:0 12px;">
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background:#0A0A0A;">
+
+      <!-- Utility bar -->
+      <tr><td align="center" style="padding:12px 0;background:#000;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:3px;color:#D4AF37;text-transform:uppercase;">Free Shipping On Orders $500+</div>
+      </td></tr>
+
+      <!-- Brand bar + slim nav -->
+      <tr><td align="center" style="padding:22px 0 12px;border-bottom:1px solid #1c1c1c;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;letter-spacing:6px;color:#D4AF37;">PROCLAMATION</div>
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:3px;color:#8a8a8a;text-transform:uppercase;padding-top:10px;">
+          <a href="https://www.proclamationjewelry.com/collections/bestsellers" style="color:#8a8a8a;text-decoration:none;">Shop</a> &nbsp;&middot;&nbsp;
+          <a href="https://www.proclamationjewelry.com/pages/about" style="color:#8a8a8a;text-decoration:none;">About</a> &nbsp;&middot;&nbsp;
+          <a href="https://www.proclamationjewelry.com/pages/contact" style="color:#8a8a8a;text-decoration:none;">Contact</a>
+        </div>
+      </td></tr>
+
+      <!-- HEADLINE (no banner image, strong lead) -->
+      <tr><td align="center" style="padding:40px 30px 4px;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:4px;color:#D4AF37;text-transform:uppercase;">Your Cart</div>
+      </td></tr>
+      <tr><td align="center" style="padding:10px 24px 0;">
+        <h1 style="margin:0;font-family:'Trajan Pro',Georgia,serif;font-size:33px;line-height:1.15;color:#ffffff;font-weight:normal;">You Left Something<br>Worth Keeping.</h1>
+      </td></tr>
+      <tr><td align="center" style="padding:16px 40px 0;">
+        <p style="margin:0;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#cfcfcf;">The piece you chose is still in your cart. Return whenever you are ready, and we will begin crafting it for you.</p>
+      </td></tr>
+
+      <!-- EARLY CTA -->
+      <tr><td align="center" style="padding:26px 0 6px;">
+        <a href="{{ event.extra.checkout_url }}" style="display:inline-block;background:#D4AF37;color:#0A0A0A;font-family:'Trajan Pro',Georgia,serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:15px 44px;">Return To Cart</a>
+      </td></tr>
+
+      <!-- ===== DYNAMIC CART BLOCK (first half) ===== -->
+      <!-- DEV: Klaviyo abandoned checkout line items loop. Sample row shown. -->
+      <tr><td style="padding:34px 24px 0;">
+        <div style="border-top:1px solid #1c1c1c;"></div>
+        <div style="text-align:center;font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:3px;color:#D4AF37;text-transform:uppercase;padding:22px 0 18px;">Your Cart</div>
+
+        <!-- BEGIN dynamic item (repeats per item) -->
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#111;border:1px solid #1c1c1c;">
+          <tr>
+            <td width="150" valign="top" style="padding:14px;">
+              <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_DiamondCutFrancoChain_YellowGold_Hanging.jpg?v=1722435102" width="150" alt="Item in your cart" style="display:block;width:100%;max-width:150px;height:auto;border:0;background:#fff;">
+            </td>
+            <td valign="middle" style="padding:14px 16px;">
+              <div style="font-family:'Trajan Pro',Georgia,serif;font-size:16px;color:#ffffff;line-height:1.3;">{{ item.product_title | default: "2mm Diamond Cut Franco Chain, 22k Gold" }}</div>
+              <div style="font-family:Arial,sans-serif;font-size:13px;color:#9a9a9a;padding-top:6px;">Qty {{ item.quantity | default: 1 }}</div>
+              <div style="font-family:Arial,sans-serif;font-size:15px;color:#D4AF37;padding-top:8px;">{{ item.line_price | default: "" }}</div>
+            </td>
+          </tr>
+        </table>
+        <!-- END dynamic item -->
+
+        <div style="text-align:center;padding:22px 0 0;">
+          <a href="{{ event.extra.checkout_url }}" style="display:inline-block;border:1px solid #D4AF37;color:#D4AF37;font-family:'Trajan Pro',Georgia,serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 40px;">Complete Your Order</a>
+        </div>
+      </td></tr>
+
+      <!-- ===== OFFER PANEL ===== -->
+      <tr><td style="padding:34px 24px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #D4AF37;">
+          <tr><td style="background:#D4AF37;padding:12px 16px;text-align:center;">
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:1px;color:#0A0A0A;text-transform:uppercase;font-weight:bold;">Lifetime Warranty &amp; Free Returns / Exchanges Within 15 Days</div>
+          </td></tr>
+          <tr><td style="background:#0f0f0f;padding:24px 16px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$100 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders $1,500+</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE100</div>
+              </td>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;border-left:1px solid #1c1c1c;border-right:1px solid #1c1c1c;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$50 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders $500 to $1,500</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE50</div>
+              </td>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$25 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders Under $500</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE25</div>
+              </td>
+            </tr></table>
+            <div style="text-align:center;font-family:Arial,sans-serif;font-size:12px;color:#9a9a9a;padding-top:16px;">A one time welcome on the order in your cart. Enter your code at checkout.</div>
+          </td></tr>
+        </table>
+      </td></tr>
+
+      <!-- ===== SECOND HALF: LIVE LIFESTYLE IMAGE (E1 = Miami Cuban) ===== -->
+      <tr><td align="center" style="padding:34px 0 0;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/5mm_Miami_Cuban_Link_Chain_Gold_Hang.jpg?v=1722141361" width="600" alt="Solid gold Miami Cuban link chain by Proclamation" style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+      </td></tr>
+      <tr><td align="center" style="padding:22px 34px 0;">
+        <p style="margin:0;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#cfcfcf;">Every Proclamation piece moves through a 16 step artisan process, crafted to be worn now and handed down later. This is not a trend. It is an heirloom in the making.</p>
+      </td></tr>
+
+      <!-- ===== REVIEW PROOF BAND ===== -->
+      <tr><td align="center" style="padding:30px 24px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #1c1c1c;border-bottom:1px solid #1c1c1c;"><tr>
+          <td width="50%" style="text-align:center;padding:20px 8px;">
+            <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;color:#D4AF37;">4.8 / 5</div>
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:2px;color:#9a9a9a;text-transform:uppercase;padding-top:6px;">Trustpilot &middot; 388 Reviews</div>
+          </td>
+          <td width="50%" style="text-align:center;padding:20px 8px;border-left:1px solid #1c1c1c;">
+            <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;color:#D4AF37;">4.9 / 5</div>
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:2px;color:#9a9a9a;text-transform:uppercase;padding-top:6px;">Google &middot; 335 Reviews</div>
+          </td>
+        </tr></table>
+      </td></tr>
+
+      <!-- ===== SHOP BY CATEGORY (stock safe recs) ===== -->
+      <tr><td align="center" style="padding:34px 24px 0;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:3px;color:#ffffff;text-transform:uppercase;">Also Worth Your Time</div>
+      </td></tr>
+      <tr><td style="padding:18px 16px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/mens-chains" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_Hermes_Heavy_Chain_Mens_22K_Gold.jpg?v=1741961527" width="170" alt="Shop chains" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Chains</div></a>
+          </td>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/all-mens-pendants" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160" width="170" alt="Shop pendants" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Pendants</div></a>
+          </td>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/mens-rings" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/mens_gold_ring_crown_14k_wedding_band.jpg?v=1739301818" width="170" alt="Shop rings" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Rings</div></a>
+          </td>
+        </tr></table>
+      </td></tr>
+
+      <!-- ===== TRUST BADGES ===== -->
+      <tr><td align="center" style="padding:34px 24px 0;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#8a8a8a;text-transform:uppercase;line-height:2;">15 Day Money Back Guarantee &nbsp;&middot;&nbsp; Lifetime Warranty &amp; Maintenance &nbsp;&middot;&nbsp; Financing Available</div>
+      </td></tr>
+
+      <!-- Footer -->
+      <tr><td align="center" style="padding:30px 24px 34px;border-top:1px solid #1c1c1c;margin-top:24px;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:4px;color:#D4AF37;padding-top:24px;">PROCLAMATION</div>
+        <div style="font-family:Arial,sans-serif;font-size:11px;color:#7a7a7a;padding-top:12px;line-height:1.7;">Forged for Legacy, Worn to Inspire<br>Houston, Texas<br><a href="{% unsubscribe %}" style="color:#7a7a7a;">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="{% manage_preferences %}" style="color:#7a7a7a;">Email Preferences</a></div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+
+
+<!-- ============================================================ -->
+<!-- =====================   EMAIL 2 of 3   ===================== -->
+<!-- Timing: ~24 hours. Angle: social proof + confident nudge.    -->
+<!-- ============================================================ -->
+
+<div style="max-width:600px;margin:48px auto 0;padding:16px;background:#fff;font-family:Arial,sans-serif;font-size:13px;color:#111;border-bottom:2px solid #D4AF37;">
+  <strong>EMAIL 2 &nbsp;|&nbsp; SUBJECT LINE OPTIONS (pick 1):</strong>
+  <ol style="margin:6px 0 12px 18px;padding:0;">
+    <li>Still yours. Claim it.</li>
+    <li>Thousands of men wear their story. Join them.</li>
+    <li>Your cart is holding a piece worth having</li>
+  </ol>
+  <strong>PREVIEW TEXT OPTIONS (pick 1):</strong>
+  <ol style="margin:6px 0 0 18px;padding:0;">
+    <li>Rated 4.8 on Trustpilot and 4.9 on Google. Your piece is waiting.</li>
+    <li>Your selection has not moved, and neither has our promise.</li>
+    <li>Return to your cart and let the craft begin.</li>
+  </ol>
+</div>
+
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Rated 4.8 on Trustpilot and 4.9 on Google by men who wear their story. Your selection is still in your cart.</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0A0A0A;margin:0;padding:0;">
+  <tr><td align="center" style="padding:0 12px;">
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background:#0A0A0A;">
+
+      <tr><td align="center" style="padding:12px 0;background:#000;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:3px;color:#D4AF37;text-transform:uppercase;">Free Shipping On Orders $500+</div>
+      </td></tr>
+
+      <tr><td align="center" style="padding:22px 0 12px;border-bottom:1px solid #1c1c1c;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;letter-spacing:6px;color:#D4AF37;">PROCLAMATION</div>
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:3px;color:#8a8a8a;text-transform:uppercase;padding-top:10px;">
+          <a href="https://www.proclamationjewelry.com/collections/bestsellers" style="color:#8a8a8a;text-decoration:none;">Shop</a> &nbsp;&middot;&nbsp;
+          <a href="https://www.proclamationjewelry.com/pages/about" style="color:#8a8a8a;text-decoration:none;">About</a> &nbsp;&middot;&nbsp;
+          <a href="https://www.proclamationjewelry.com/pages/contact" style="color:#8a8a8a;text-decoration:none;">Contact</a>
+        </div>
+      </td></tr>
+
+      <tr><td align="center" style="padding:40px 30px 4px;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:4px;color:#D4AF37;text-transform:uppercase;">Still Yours</div>
+      </td></tr>
+      <tr><td align="center" style="padding:10px 24px 0;">
+        <h1 style="margin:0;font-family:'Trajan Pro',Georgia,serif;font-size:33px;line-height:1.15;color:#ffffff;font-weight:normal;">Still Yours.<br>Claim It.</h1>
+      </td></tr>
+      <tr><td align="center" style="padding:16px 40px 0;">
+        <p style="margin:0;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#cfcfcf;">Your selection has not moved, and neither has our promise. Join the men who wear their story every day.</p>
+      </td></tr>
+
+      <tr><td align="center" style="padding:26px 0 6px;">
+        <a href="{{ event.extra.checkout_url }}" style="display:inline-block;background:#D4AF37;color:#0A0A0A;font-family:'Trajan Pro',Georgia,serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:15px 44px;">Return To Cart</a>
+      </td></tr>
+
+      <!-- ===== SOCIAL PROOF FIRST (E2 leans on reviews) ===== -->
+      <tr><td align="center" style="padding:30px 24px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #1c1c1c;border-bottom:1px solid #1c1c1c;"><tr>
+          <td width="50%" style="text-align:center;padding:20px 8px;">
+            <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;color:#D4AF37;">4.8 / 5</div>
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:2px;color:#9a9a9a;text-transform:uppercase;padding-top:6px;">Trustpilot &middot; 388 Reviews</div>
+          </td>
+          <td width="50%" style="text-align:center;padding:20px 8px;border-left:1px solid #1c1c1c;">
+            <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;color:#D4AF37;">4.9 / 5</div>
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:2px;color:#9a9a9a;text-transform:uppercase;padding-top:6px;">Google &middot; 335 Reviews</div>
+          </td>
+        </tr></table>
+      </td></tr>
+
+      <!-- ===== DYNAMIC CART BLOCK (first half) ===== -->
+      <tr><td style="padding:30px 24px 0;">
+        <div style="text-align:center;font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:3px;color:#D4AF37;text-transform:uppercase;padding:0 0 18px;">Your Cart</div>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#111;border:1px solid #1c1c1c;">
+          <tr>
+            <td width="150" valign="top" style="padding:14px;">
+              <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_DiamondCutFrancoChain_YellowGold_Hanging.jpg?v=1722435102" width="150" alt="Item in your cart" style="display:block;width:100%;max-width:150px;height:auto;border:0;background:#fff;">
+            </td>
+            <td valign="middle" style="padding:14px 16px;">
+              <div style="font-family:'Trajan Pro',Georgia,serif;font-size:16px;color:#ffffff;line-height:1.3;">{{ item.product_title | default: "2mm Diamond Cut Franco Chain, 22k Gold" }}</div>
+              <div style="font-family:Arial,sans-serif;font-size:13px;color:#9a9a9a;padding-top:6px;">Qty {{ item.quantity | default: 1 }}</div>
+              <div style="font-family:Arial,sans-serif;font-size:15px;color:#D4AF37;padding-top:8px;">{{ item.line_price | default: "" }}</div>
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;padding:22px 0 0;">
+          <a href="{{ event.extra.checkout_url }}" style="display:inline-block;border:1px solid #D4AF37;color:#D4AF37;font-family:'Trajan Pro',Georgia,serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 40px;">Complete Your Order</a>
+        </div>
+      </td></tr>
+
+      <!-- ===== OFFER PANEL ===== -->
+      <tr><td style="padding:34px 24px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #D4AF37;">
+          <tr><td style="background:#D4AF37;padding:12px 16px;text-align:center;">
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:1px;color:#0A0A0A;text-transform:uppercase;font-weight:bold;">Lifetime Warranty &amp; Free Returns / Exchanges Within 15 Days</div>
+          </td></tr>
+          <tr><td style="background:#0f0f0f;padding:24px 16px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$100 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders $1,500+</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE100</div>
+              </td>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;border-left:1px solid #1c1c1c;border-right:1px solid #1c1c1c;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$50 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders $500 to $1,500</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE50</div>
+              </td>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$25 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders Under $500</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE25</div>
+              </td>
+            </tr></table>
+            <div style="text-align:center;font-family:Arial,sans-serif;font-size:12px;color:#9a9a9a;padding-top:16px;">A one time welcome on the order in your cart. Enter your code at checkout.</div>
+          </td></tr>
+        </table>
+      </td></tr>
+
+      <!-- ===== SECOND HALF: LIVE IMAGE (E2 = Voyager pendant, different from E1) ===== -->
+      <tr><td align="center" style="padding:34px 0 0;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Voyager_Gold_Compass_Pendant.jpg?v=1775935835" width="600" alt="Voyager gold compass pendant by Proclamation" style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+      </td></tr>
+      <tr><td align="center" style="padding:22px 34px 0;">
+        <p style="margin:0;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#cfcfcf;">Our patrons do not chase trends. They choose pieces with meaning and wear them for decades. When you are ready, your selection will be crafted with the same care.</p>
+      </td></tr>
+
+      <!-- Shop by category -->
+      <tr><td align="center" style="padding:34px 24px 0;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:3px;color:#ffffff;text-transform:uppercase;">Also Worth Your Time</div>
+      </td></tr>
+      <tr><td style="padding:18px 16px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/mens-chains" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_Hermes_Heavy_Chain_Mens_22K_Gold.jpg?v=1741961527" width="170" alt="Shop chains" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Chains</div></a>
+          </td>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/all-mens-pendants" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160" width="170" alt="Shop pendants" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Pendants</div></a>
+          </td>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/mens-rings" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/mens_gold_ring_crown_14k_wedding_band.jpg?v=1739301818" width="170" alt="Shop rings" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Rings</div></a>
+          </td>
+        </tr></table>
+      </td></tr>
+
+      <tr><td align="center" style="padding:34px 24px 0;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#8a8a8a;text-transform:uppercase;line-height:2;">15 Day Money Back Guarantee &nbsp;&middot;&nbsp; Lifetime Warranty &amp; Maintenance &nbsp;&middot;&nbsp; Financing Available</div>
+      </td></tr>
+
+      <tr><td align="center" style="padding:30px 24px 34px;border-top:1px solid #1c1c1c;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:4px;color:#D4AF37;padding-top:24px;">PROCLAMATION</div>
+        <div style="font-family:Arial,sans-serif;font-size:11px;color:#7a7a7a;padding-top:12px;line-height:1.7;">Forged for Legacy, Worn to Inspire<br>Houston, Texas<br><a href="{% unsubscribe %}" style="color:#7a7a7a;">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="{% manage_preferences %}" style="color:#7a7a7a;">Email Preferences</a></div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+
+
+<!-- ============================================================ -->
+<!-- =====================   EMAIL 3 of 3   ===================== -->
+<!-- Timing: ~48 hours. Angle: reserved for you, gentle urgency.  -->
+<!-- ============================================================ -->
+
+<div style="max-width:600px;margin:48px auto 0;padding:16px;background:#fff;font-family:Arial,sans-serif;font-size:13px;color:#111;border-bottom:2px solid #D4AF37;">
+  <strong>EMAIL 3 &nbsp;|&nbsp; SUBJECT LINE OPTIONS (pick 1):</strong>
+  <ol style="margin:6px 0 12px 18px;padding:0;">
+    <li>We reserved your cart for 48 hours</li>
+    <li>Your selection is set aside. Claim it.</li>
+    <li>Last call on the piece you chose</li>
+  </ol>
+  <strong>PREVIEW TEXT OPTIONS (pick 1):</strong>
+  <ol style="margin:6px 0 0 18px;padding:0;">
+    <li>We are holding your selection. Complete your order and let the craft begin.</li>
+    <li>Your cart, your code, and your piece are all waiting.</li>
+    <li>Two days, then your cart releases. Lock it in.</li>
+  </ol>
+</div>
+
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">We have set your selection aside for the next 48 hours. Complete your order and we will begin crafting your piece.</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0A0A0A;margin:0;padding:0;">
+  <tr><td align="center" style="padding:0 12px;">
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background:#0A0A0A;">
+
+      <tr><td align="center" style="padding:12px 0;background:#000;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:3px;color:#D4AF37;text-transform:uppercase;">Free Shipping On Orders $500+</div>
+      </td></tr>
+
+      <tr><td align="center" style="padding:22px 0 12px;border-bottom:1px solid #1c1c1c;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;letter-spacing:6px;color:#D4AF37;">PROCLAMATION</div>
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:3px;color:#8a8a8a;text-transform:uppercase;padding-top:10px;">
+          <a href="https://www.proclamationjewelry.com/collections/bestsellers" style="color:#8a8a8a;text-decoration:none;">Shop</a> &nbsp;&middot;&nbsp;
+          <a href="https://www.proclamationjewelry.com/pages/about" style="color:#8a8a8a;text-decoration:none;">About</a> &nbsp;&middot;&nbsp;
+          <a href="https://www.proclamationjewelry.com/pages/contact" style="color:#8a8a8a;text-decoration:none;">Contact</a>
+        </div>
+      </td></tr>
+
+      <tr><td align="center" style="padding:40px 30px 4px;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:4px;color:#D4AF37;text-transform:uppercase;">Reserved For You</div>
+      </td></tr>
+      <tr><td align="center" style="padding:10px 24px 0;">
+        <h1 style="margin:0;font-family:'Trajan Pro',Georgia,serif;font-size:33px;line-height:1.15;color:#ffffff;font-weight:normal;">We Reserved Your Cart.<br>48 Hours.</h1>
+      </td></tr>
+      <tr><td align="center" style="padding:16px 40px 0;">
+        <p style="margin:0;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#cfcfcf;">We have set your selection aside for the next two days. Complete your order and we will begin crafting your piece.</p>
+      </td></tr>
+
+      <tr><td align="center" style="padding:26px 0 6px;">
+        <a href="{{ event.extra.checkout_url }}" style="display:inline-block;background:#D4AF37;color:#0A0A0A;font-family:'Trajan Pro',Georgia,serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:15px 44px;">Return To Cart</a>
+      </td></tr>
+
+      <!-- Dynamic cart first half -->
+      <tr><td style="padding:34px 24px 0;">
+        <div style="border-top:1px solid #1c1c1c;"></div>
+        <div style="text-align:center;font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:3px;color:#D4AF37;text-transform:uppercase;padding:22px 0 18px;">Your Cart</div>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#111;border:1px solid #1c1c1c;">
+          <tr>
+            <td width="150" valign="top" style="padding:14px;">
+              <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/4mm_DiamondCutFrancoChain_YellowGold_Hanging.jpg?v=1722435102" width="150" alt="Item in your cart" style="display:block;width:100%;max-width:150px;height:auto;border:0;background:#fff;">
+            </td>
+            <td valign="middle" style="padding:14px 16px;">
+              <div style="font-family:'Trajan Pro',Georgia,serif;font-size:16px;color:#ffffff;line-height:1.3;">{{ item.product_title | default: "2mm Diamond Cut Franco Chain, 22k Gold" }}</div>
+              <div style="font-family:Arial,sans-serif;font-size:13px;color:#9a9a9a;padding-top:6px;">Qty {{ item.quantity | default: 1 }}</div>
+              <div style="font-family:Arial,sans-serif;font-size:15px;color:#D4AF37;padding-top:8px;">{{ item.line_price | default: "" }}</div>
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;padding:22px 0 0;">
+          <a href="{{ event.extra.checkout_url }}" style="display:inline-block;border:1px solid #D4AF37;color:#D4AF37;font-family:'Trajan Pro',Georgia,serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 40px;">Complete Your Order</a>
+        </div>
+      </td></tr>
+
+      <!-- Offer panel -->
+      <tr><td style="padding:34px 24px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #D4AF37;">
+          <tr><td style="background:#D4AF37;padding:12px 16px;text-align:center;">
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:1px;color:#0A0A0A;text-transform:uppercase;font-weight:bold;">Lifetime Warranty &amp; Free Returns / Exchanges Within 15 Days</div>
+          </td></tr>
+          <tr><td style="background:#0f0f0f;padding:24px 16px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$100 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders $1,500+</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE100</div>
+              </td>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;border-left:1px solid #1c1c1c;border-right:1px solid #1c1c1c;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$50 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders $500 to $1,500</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE50</div>
+              </td>
+              <td width="33%" valign="top" style="text-align:center;padding:6px;">
+                <div style="font-family:'Trajan Pro',Georgia,serif;font-size:18px;color:#ffffff;">$25 Off</div>
+                <div style="font-family:Arial,sans-serif;font-size:11px;color:#9a9a9a;padding:6px 0;">Orders Under $500</div>
+                <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:13px;color:#D4AF37;letter-spacing:1px;">MOBILE25</div>
+              </td>
+            </tr></table>
+            <div style="text-align:center;font-family:Arial,sans-serif;font-size:12px;color:#9a9a9a;padding-top:16px;">A one time welcome on the order in your cart. Enter your code at checkout.</div>
+          </td></tr>
+        </table>
+      </td></tr>
+
+      <!-- Second half: live image (E3 = gold crown ring, different again) -->
+      <tr><td align="center" style="padding:34px 0 0;">
+        <img src="https://cdn.shopify.com/s/files/1/0247/5725/files/mens_gold_ring_crown_14k_wedding_band.jpg?v=1739301818" width="600" alt="Majesty gold crown ring by Proclamation" style="display:block;width:100%;max-width:600px;height:auto;border:0;background:#fff;">
+      </td></tr>
+      <tr><td align="center" style="padding:22px 34px 0;">
+        <p style="margin:0;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#cfcfcf;">Every commission carries a lifetime warranty and our promise of maintenance for life. Invest once, and wear it for good.</p>
+      </td></tr>
+
+      <!-- Review proof -->
+      <tr><td align="center" style="padding:30px 24px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #1c1c1c;border-bottom:1px solid #1c1c1c;"><tr>
+          <td width="50%" style="text-align:center;padding:20px 8px;">
+            <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;color:#D4AF37;">4.8 / 5</div>
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:2px;color:#9a9a9a;text-transform:uppercase;padding-top:6px;">Trustpilot &middot; 388 Reviews</div>
+          </td>
+          <td width="50%" style="text-align:center;padding:20px 8px;border-left:1px solid #1c1c1c;">
+            <div style="font-family:'Trajan Pro',Georgia,serif;font-size:22px;color:#D4AF37;">4.9 / 5</div>
+            <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:10px;letter-spacing:2px;color:#9a9a9a;text-transform:uppercase;padding-top:6px;">Google &middot; 335 Reviews</div>
+          </td>
+        </tr></table>
+      </td></tr>
+
+      <!-- Shop by category -->
+      <tr><td align="center" style="padding:34px 24px 0;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:3px;color:#ffffff;text-transform:uppercase;">Also Worth Your Time</div>
+      </td></tr>
+      <tr><td style="padding:18px 16px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/mens-chains" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/3mm_Hermes_Heavy_Chain_Mens_22K_Gold.jpg?v=1741961527" width="170" alt="Shop chains" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Chains</div></a>
+          </td>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/all-mens-pendants" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/Saint_Michael_Archangel_Gold_Pendant.jpg?v=1775933160" width="170" alt="Shop pendants" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Pendants</div></a>
+          </td>
+          <td width="33%" valign="top" style="text-align:center;padding:8px;">
+            <a href="https://www.proclamationjewelry.com/collections/mens-rings" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0247/5725/files/mens_gold_ring_crown_14k_wedding_band.jpg?v=1739301818" width="170" alt="Shop rings" style="display:block;width:100%;max-width:170px;height:auto;border:0;margin:0 auto;background:#fff;"><div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;padding-top:10px;">Rings</div></a>
+          </td>
+        </tr></table>
+      </td></tr>
+
+      <tr><td align="center" style="padding:34px 24px 0;">
+        <div style="font-family:'IBM Plex Mono',Courier,monospace;font-size:11px;letter-spacing:2px;color:#8a8a8a;text-transform:uppercase;line-height:2;">15 Day Money Back Guarantee &nbsp;&middot;&nbsp; Lifetime Warranty &amp; Maintenance &nbsp;&middot;&nbsp; Financing Available</div>
+      </td></tr>
+
+      <tr><td align="center" style="padding:30px 24px 34px;border-top:1px solid #1c1c1c;">
+        <div style="font-family:'Trajan Pro',Georgia,serif;font-size:15px;letter-spacing:4px;color:#D4AF37;padding-top:24px;">PROCLAMATION</div>
+        <div style="font-family:Arial,sans-serif;font-size:11px;color:#7a7a7a;padding-top:12px;line-height:1.7;">Forged for Legacy, Worn to Inspire<br>Houston, Texas<br><a href="{% unsubscribe %}" style="color:#7a7a7a;">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="{% manage_preferences %}" style="color:#7a7a7a;">Email Preferences</a></div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+
+<!--
+  DEV / KLAVIYO NOTES
+  - Return To Cart / Complete Your Order links use the Klaviyo Started
+    Checkout URL: {{ event.extra.checkout_url }}. Swap for your exact
+    event variable if different in the account.
+  - The "Your Cart" card is a placeholder for the Klaviyo dynamic line
+    item loop. Wrap it in {% for item in event.extra.line_items %} ...
+    {% endfor %} and map product_title, quantity, line_price, and the
+    product image. The sample row (2mm Diamond Cut Franco Chain, 22k
+    Gold) mirrors your example so the layout is easy to read in review.
+  - Unsubscribe / preferences use Klaviyo tags {% unsubscribe %} and
+    {% manage_preferences %}.
+  - Fonts: Trajan Pro (fallback Georgia) headings, IBM Plex Mono labels,
+    Georgia/Arial body. Palette: bg #0A0A0A, gold #D4AF37, body #cfcfcf.
+  - All static images verified live (200) on 2026-07-20. Category tiles
+    link to live collections (mens-chains, all-mens-pendants, mens-rings)
+    so they never point at a sold out product.
+-->
