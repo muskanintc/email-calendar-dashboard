@@ -1,0 +1,241 @@
+<!--
+=============================================================
+  HARMONY HOUSE FOODS — Email Wireframe
+  Date: July 22, 2026
+  Type: Promotional (weekly Blog + Sale, 15% OFF)
+  Theme: 10 Fun Ways to Use Freeze-Dried Fruit
+  Blog: https://www.harmonyhousefoods.com/blogs/news/10-fun-ways-to-use-freeze-dried-fruit
+  On-Sale collection: https://www.harmonyhousefoods.com/collections/on-sale
+  Template: promotional.md
+
+  SALE ITEMS (all 15% OFF this week; live Shopify price = 15%-off price,
+  regular = price / 0.85; all pages + images verified HTTP 200 on 2026-07-20):
+   1. Berry Medley (4 Jars, Quart Size)          $76.46  (reg $89.95)
+   2. Tropical Fruit Medley (4 Jars, Quart Size) $76.46  (reg $89.95)
+   3. Orchard Fruit Medley (4 Jars, Quart Size)  $76.46  (reg $89.95)
+   4. Deluxe Fruit Assortment (12 Jars, Quart)  $212.46  (reg $249.95)
+
+  LAYOUT (deliberately different from the Jul 15 medley email per feedback #8):
+   Jul 15 = hero with NO top CTA, alternating L/R medley cards, then a kits trio.
+   Jul 22 = hero WITH a Shop The Sale button (restores the usual sale-banner CTA,
+   feedback #22), image-top stacked medley cards, a full-width green Deluxe
+   Assortment feature (the product the blog is built around), then the blog
+   "10 Fun Ways" section (first TWO ways only + Read the Blog), then closing sale.
+
+  RULES HONORED:
+  - Full brand name "Harmony House Foods" (feedback #16).
+  - "freeze-dried" always hyphenated (feedback #39).
+  - These fruit items are NOT the USDA Certified Organic line, so that phrasing
+    is intentionally NOT used (feedback #5 applies only to the organic line).
+  - Products in the first scroll (feedback #3). Each product = its own large
+    standalone card with its own Shop Now (no 3-in-a-row grid, feedback #25).
+  - Every price a MARKDOWN: regular struck through, then the 15%-off price (#21).
+  - Sale banner CTA "Shop The Sale" -> /collections/on-sale (feedback #22).
+  - Blog teases only the FIRST TWO ways (Fruit Powders, Charcuterie Board), then
+    a single "Read the Blog" CTA deep-linked to the exact post (feedback #20, #23);
+    no "read the blog" text above the button (#9). Real ways pulled from the post.
+  - Storage line uses the approved phrasing (feedback #33).
+  - Hi-res stock recipe photos (Unsplash, designer can swap), verified 200 (#2, #24);
+    product images full-res Shopify CDN (#10). SLPL visible at top (#4).
+  - No hyphens or dashes in copy (except the client term "freeze-dried").
+
+  SUBJECT LINE OPTIONS (hooky, do not repeat the headline):
+  1. Ten ways to use freeze-dried fruit
+  2. Your fruit does way more than snacking
+  3. Fruit powders, better baking, and boards
+
+  PREVIEW TEXT OPTIONS:
+  1. Blend it, bake it, build a board. 15% off fruit this week.
+  2. Berry, Tropical, and Orchard medleys plus the Deluxe Assortment, on sale now.
+  3. Ten creative ways to enjoy freeze-dried fruit all summer.
+
+  DESIGNER NOTES:
+  - Hero + 2 blog photos: Unsplash stock (verified 200), swap for HHF lifestyle if available.
+  - Product images: Shopify CDN, verified 200, full res.
+  - Palette: HHF green #3d7a44 / #2F5E36, gold #C9A24B, cream #F3E7C6 / #F5F0E8,
+    warm text #5A5245 / #2B2B2B. Arial body, Georgia serif headings.
+  - Cards stack full width on mobile; image sits above copy on small screens.
+=============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony House Foods — 10 Fun Ways to Use Freeze-Dried Fruit</title>
+<style>
+  body { margin:0; padding:0; background:#F5F0E8; font-family:Arial, sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#FFFFFF; }
+  .serif { font-family:Georgia, 'Times New Roman', serif; }
+  .btn { display:inline-block; background:#C9A24B; color:#2B2B2B; font-family:Arial,sans-serif; font-size:13px; font-weight:bold; letter-spacing:1.5px; text-transform:uppercase; text-decoration:none; padding:13px 30px; }
+  .btn-green { display:inline-block; background:#3d7a44; color:#FFFFFF; font-family:Arial,sans-serif; font-size:12px; font-weight:bold; letter-spacing:1.5px; text-transform:uppercase; text-decoration:none; padding:12px 26px; }
+  .price-old { color:#9a9a9a; text-decoration:line-through; font-size:15px; }
+  .price-new { color:#3d7a44; font-weight:bold; font-size:20px; }
+  .save { display:inline-block; background:#E7EFE3; color:#2F5E36; font-size:11px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; padding:3px 9px; margin-left:6px; }
+  .kicker { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#C9A24B; font-weight:bold; margin:0 0 8px; }
+  .card-name { font-size:21px; color:#2F5E36; margin:0 0 8px; line-height:1.2; }
+  .card-copy { font-size:14px; color:#5A5245; line-height:1.6; margin:0 0 14px; }
+  .sec-head { font-size:24px; color:#2F5E36; margin:0 0 6px; line-height:1.25; }
+  .sec-sub { font-size:14px; color:#5A5245; line-height:1.6; margin:0 auto; max-width:440px; }
+  @media only screen and (max-width:480px) {
+    .col { display:block !important; width:100% !important; }
+    .card-name { font-size:19px; }
+    .sec-head { font-size:20px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== SLPL (visible) ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F3E7C6;">
+    <tr><td style="padding:12px 26px;">
+      <p style="margin:0; font-size:11px; color:#5A5245; line-height:1.6;"><strong style="color:#2F5E36;">SL:</strong> Ten ways to use freeze-dried fruit &nbsp; | &nbsp; Your fruit does way more than snacking &nbsp; | &nbsp; Fruit powders, better baking, and boards</p>
+      <p style="margin:6px 0 0; font-size:11px; color:#5A5245; line-height:1.6;"><strong style="color:#2F5E36;">PL:</strong> Blend it, bake it, build a board. 15% off fruit this week. &nbsp; | &nbsp; Berry, Tropical, and Orchard medleys plus the Deluxe Assortment, on sale now.</p>
+    </td></tr>
+  </table>
+
+  <!-- ===== HERO (single headline + Shop The Sale CTA) ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr><td>
+      <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=1200&q=80" alt="A spread of fresh and dried fruit" style="width:100%; display:block;">
+    </td></tr>
+    <tr><td align="center" style="background:#FFFFFF; padding:32px 30px 30px;">
+      <p class="kicker">10 Fun Ways</p>
+      <h1 class="serif" style="margin:0 0 16px; font-size:28px; color:#2F5E36; line-height:1.25;">Freeze-Dried Fruit Does<br>Far More Than Snacking</h1>
+      <p class="serif" style="margin:0 0 20px; display:inline-block; background:#2F5E36; color:#F3E7C6; font-size:18px; font-weight:bold; letter-spacing:0.5px; padding:10px 24px;">15% Off All Fruit This Week</p>
+      <br>
+      <a href="https://www.harmonyhousefoods.com/collections/on-sale" class="btn">Shop The Sale</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== SECTION 1: THE MEDLEYS ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F5F0E8;">
+    <tr><td align="center" style="padding:32px 30px 8px;">
+      <h2 class="sec-head serif">This Week's Fruit Sale</h2>
+      <p class="sec-sub">Every medley is four full quart jars of freeze-dried fruit. All natural, ready to snack, blend, or bake. All 15% off.</p>
+    </td></tr>
+  </table>
+
+  <!-- Card 1: Berry Medley (image top) -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr><td align="center" style="padding:26px 24px 0;">
+      <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/50116_Berry_Medley_1.png?v=1763046466" alt="Harmony House Foods Berry Medley, 4 quart jars" style="width:78%; max-width:360px; display:block;">
+    </td></tr>
+    <tr><td align="center" style="padding:14px 30px 26px;">
+      <p class="kicker">Berry Medley</p>
+      <h3 class="card-name serif">Strawberry, Blueberry, Raspberry</h3>
+      <p class="card-copy" style="max-width:440px; margin-left:auto; margin-right:auto;">Four quart jars of freeze-dried berries, two of strawberry plus blueberry and raspberry. Sweet, crisp, and made for stirring into yogurt, oatmeal, and trail mix.</p>
+      <p style="margin:0 0 14px;"><span class="price-old">$89.95</span> &nbsp; <span class="price-new">$76.46</span><span class="save">Save 15%</span></p>
+      <a href="https://www.harmonyhousefoods.com/products/berry-medley-4-jars-quart-size" class="btn-green">Shop Berry Medley</a>
+    </td></tr>
+  </table>
+
+  <!-- Card 2: Tropical Fruit Medley -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F5F0E8;">
+    <tr><td align="center" style="padding:26px 24px 0;">
+      <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/50114_Tropical_Fruit_Medley.png?v=1776720479" alt="Harmony House Foods Tropical Fruit Medley, 4 quart jars" style="width:78%; max-width:360px; display:block;">
+    </td></tr>
+    <tr><td align="center" style="padding:14px 30px 26px;">
+      <p class="kicker">Tropical Fruit Medley</p>
+      <h3 class="card-name serif">Pineapple, Mango, Banana</h3>
+      <p class="card-copy" style="max-width:440px; margin-left:auto; margin-right:auto;">A full gallon across four quart jars of freeze-dried pineapple dices, mango dices, and banana slices. Vacation in every bite, perfect for smoothie bowls, fruit salads, and snacking by the water.</p>
+      <p style="margin:0 0 14px;"><span class="price-old">$89.95</span> &nbsp; <span class="price-new">$76.46</span><span class="save">Save 15%</span></p>
+      <a href="https://www.harmonyhousefoods.com/products/tropical-fruit-medley-4-jars-quart-size" class="btn-green">Shop Tropical Medley</a>
+    </td></tr>
+  </table>
+
+  <!-- Card 3: Orchard Fruit Medley -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr><td align="center" style="padding:26px 24px 0;">
+      <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/50112_Orchard_Fruit_Medley_1.png?v=1763045631" alt="Harmony House Foods Orchard Fruit Medley, 4 quart jars" style="width:78%; max-width:360px; display:block;">
+    </td></tr>
+    <tr><td align="center" style="padding:14px 30px 28px;">
+      <p class="kicker">Orchard Fruit Medley</p>
+      <h3 class="card-name serif">Apple, Peach, Cherry</h3>
+      <p class="card-copy" style="max-width:440px; margin-left:auto; margin-right:auto;">Four quart jars of apple dices, peach dices, and whole cherries, all unsweetened and natural. Orchard flavor for baking, oatmeal, and afternoon handfuls that never bruise in the bag.</p>
+      <p style="margin:0 0 14px;"><span class="price-old">$89.95</span> &nbsp; <span class="price-new">$76.46</span><span class="save">Save 15%</span></p>
+      <a href="https://www.harmonyhousefoods.com/products/orchard-fruit-medley-4-jars-quart-size" class="btn-green">Shop Orchard Medley</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== DELUXE FRUIT ASSORTMENT FEATURE ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#2F5E36;">
+    <tr><td align="center" style="padding:30px 30px 6px;">
+      <p class="kicker" style="color:#C9A24B;">Want It All</p>
+      <h2 class="serif" style="margin:0 0 10px; font-size:24px; color:#FFFFFF; line-height:1.25;">The Deluxe Fruit Assortment</h2>
+      <p style="margin:0 auto 0; max-width:440px; font-size:14px; color:#EAF1E6; line-height:1.6;">Twelve quart jars covering the full range of our freeze-dried fruit, the assortment our blog is built around. Sealed in the jars, it stays good for up to 2 years in the original containers, and is ready for long term storage when you repackage it.</p>
+    </td></tr>
+    <tr><td align="center" style="padding:18px 24px 6px;">
+      <img src="https://cdn.shopify.com/s/files/1/0628/2857/6862/files/50124_Deluxe_Fruit_Assortment_e83c47d3-ca5b-45f1-b42a-50509e0d97e7.png?v=1778186688" alt="Harmony House Foods Deluxe Fruit Assortment, 12 quart jars" style="width:82%; max-width:400px; display:block; background:#FFFFFF;">
+    </td></tr>
+    <tr><td align="center" style="padding:6px 30px 30px;">
+      <p style="margin:0 0 14px;"><span class="price-old" style="color:#B9C7B4;">$249.95</span> &nbsp; <span class="price-new" style="color:#F3E7C6;">$212.46</span><span class="save" style="background:#C9A24B; color:#2B2B2B;">Save 15%</span></p>
+      <a href="https://www.harmonyhousefoods.com/products/deluxe-fruit-assortment-12-jars-quart-size" class="btn">Shop The Assortment</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== BLOG: 10 FUN WAYS (first two only) ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F5F0E8;">
+    <tr><td align="center" style="padding:34px 30px 6px;">
+      <h2 class="sec-head serif">10 Fun Ways to Use Freeze-Dried Fruit</h2>
+      <p class="sec-sub">Most people picture a quick snack or an oatmeal topping. Your fruit can do far more. Here are two favorites to start.</p>
+    </td></tr>
+  </table>
+
+  <!-- Way 1 -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr>
+      <td class="col" width="42%" valign="middle" style="padding:22px 12px 22px 24px;">
+        <img src="https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=1200&q=80" alt="Fruit blended into a powder for smoothie bowls and baking" style="width:100%; display:block;">
+      </td>
+      <td class="col" width="58%" valign="middle" style="padding:14px 24px 18px 12px;">
+        <p class="kicker">Way 1</p>
+        <h3 class="card-name serif">Blend It Into Fruit Powders</h3>
+        <p class="card-copy">Pulse freeze-dried fruit into a fine powder to flavor yogurt, frosting, pancake batter, and smoothie bowls. Blueberry and strawberry powders double as natural food coloring.</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Way 2 -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr>
+      <td class="col" width="58%" valign="middle" style="padding:14px 12px 18px 24px;">
+        <p class="kicker">Way 2</p>
+        <h3 class="card-name serif">Upgrade Your Charcuterie Board</h3>
+        <p class="card-copy">Freeze-dried fruit adds color and crunch to a board. Try cherries with aged cheddar, mango with a spicy cheese, or strawberries alongside dark chocolate.</p>
+      </td>
+      <td class="col" width="42%" valign="middle" style="padding:22px 24px 22px 12px;">
+        <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=1200&q=80" alt="A charcuterie board with fruit, cheese, and chocolate" style="width:100%; display:block;">
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;">
+    <tr><td align="center" style="padding:6px 30px 30px;">
+      <p class="card-copy" style="max-width:420px; margin:0 auto 16px;">Eight more ways are waiting, from gourmet trail mix to better muffins and infused water.</p>
+      <a href="https://www.harmonyhousefoods.com/blogs/news/10-fun-ways-to-use-freeze-dried-fruit" class="btn-green">Read The Blog</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== CLOSING SALE STRIP ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#F3E7C6;">
+    <tr><td align="center" style="padding:30px 30px;">
+      <h2 class="serif" style="margin:0 0 8px; font-size:22px; color:#2F5E36;">15% Off Fruit, All Week</h2>
+      <p class="sec-sub" style="margin:0 0 18px;">Berry, Tropical, and Orchard medleys plus the Deluxe Fruit Assortment. Stock the pantry while the sale is on.</p>
+      <a href="https://www.harmonyhousefoods.com/collections/on-sale" class="btn">Shop The Sale</a>
+    </td></tr>
+  </table>
+
+  <!-- ===== FOOTER ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#2B2B2B;">
+    <tr><td align="center" style="padding:24px 30px;">
+      <p class="serif" style="margin:0 0 6px; font-size:16px; color:#F3E7C6;">Harmony House Foods</p>
+      <p style="margin:0 0 12px; font-size:12px; color:#C9BFA8; line-height:1.6;">Freeze-dried and dehydrated vegetables, fruits, and beans. Family owned since 2003.</p>
+      <p style="margin:0; font-size:11px; color:#8F887A;">You are receiving this because you subscribed at harmonyhousefoods.com.<br>Unsubscribe &nbsp;|&nbsp; Update Preferences</p>
+    </td></tr>
+  </table>
+
+</div>
+</body>
+</html>

@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-22-fun-ways-freeze-dried-fruit-sale",
+      "date": "2026-07-22",
+      "day": "Wed",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "10 Fun Ways to Use Freeze-Dried Fruit (Blog + 15% Sale)",
+      "product": "Berry Medley, Tropical Fruit Medley, Orchard Fruit Medley (4 Jars each), Deluxe Fruit Assortment (12 Jars)",
+      "shortDescription": "Weekly blog + 15% sale email per client brief Jul 20. Blog: '10 Fun Ways to Use Freeze-Dried Fruit'. Hero (with a Shop The Sale CTA) then the three fruit medleys as image-top standalone cards (each a 15% markdown + own Shop Now), a full-width green Deluxe Fruit Assortment feature (12 jars, the product the blog is built around, with the approved storage line), then the blog section teasing the first TWO of the ten ways (Blend Into Fruit Powders; Upgrade Your Charcuterie Board) with two stock photos + a single deep-linked Read The Blog CTA, then a closing Shop The Sale strip. All four products verified available + priced; regular = sale / 0.85. Layout deliberately different from the Jul 15 medley email (hero now carries the sale CTA; image-top cards; Deluxe feature replaces the kits trio).",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/harmony-house-foods/july-2026/2026-07-22-fun-ways-freeze-dried-fruit-sale.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 20 20:45: blog https://www.harmonyhousefoods.com/blogs/news/10-fun-ways-to-use-freeze-dried-fruit + 4 sale items (Berry, Tropical, Orchard medleys, Deluxe Fruit Assortment). Prices (15% off; reg = price/0.85): medleys $76.46 (reg $89.95), Deluxe Fruit Assortment 12 jars $212.46 (reg $249.95). Rules: full brand name Harmony House Foods; freeze-dried hyphenated; NOT the USDA organic line so no organic claim; markdown pricing; Shop The Sale banner CTA -> /collections/on-sale; first two blog ways only + deep-linked Read The Blog; approved storage phrasing; SLPL visible; hi-res stock recipe photos + full-res product images (all verified 200). Acknowledged in Slack thread 1784560511.503869.",
+      "productUrl": "",
+      "collectionUrl": "https://www.harmonyhousefoods.com/collections/on-sale",
+      "offerCode": "15% off (on-sale collection markdowns)",
+      "creativeDirection": "HHF green #2F5E36/#3d7a44, gold #C9A24B, cream #F3E7C6/#F5F0E8. Hero image + single headline + 15% off line + Shop The Sale button; 'This Week's Fruit Sale' intro; three image-top medley cards alternating cream/white; green full-width Deluxe Fruit Assortment feature; '10 Fun Ways' blog section with two alternating photo/idea rows + Read The Blog; cream closing sale strip; dark footer. 600px, mobile first."
+    },
+    {
       "id": "2026-07-02-mushroom-pantry-stuffer",
       "date": "2026-07-02",
       "day": "Thu",
