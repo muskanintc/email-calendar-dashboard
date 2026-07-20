@@ -4,6 +4,23 @@
   "month": 7,
   "emails": [
     {
+      "id": "2026-07-20-k9-ecollar-case-dogtra",
+      "date": "2026-07-20",
+      "day": "Sun",
+      "type": "promotional",
+      "status": "copy-ready",
+      "theme": "K9 E-Collar Remote Case: New Dogtra 1900X and 280X Fit",
+      "product": "K9 E-Collar Remote Case - Dogtra",
+      "shortDescription": "Single product email leading on the NEW Dogtra 1900X and 280X fit per client brief Jul 20, while naming all other supported Dogtra models. Category level hero 'THE ORIGINAL E-COLLAR REMOTE CASE' (no model in headline) with new-fit subhead + early Shop Now; new 1900X/280X molded-fit section; 'Made For Your Dogtra' broad fitment strip (1900X/280X new, ARC 200 and 1900s incl Black Edition, 3500X, plus 2300 Series and contact for other models); Build Yours (8 finishes via ColorID chart + Tek-Lok/Molle-Lok mounts + shock cord retention); closing Shop Now. All facts pulled from the product page/variants; all images verified 200.",
+      "emailCopyLink": "https://email-calendar-dashboard.vercel.app/previews/zero9-holsters/july-2026/2026-07-20-k9-ecollar-case-dogtra.html",
+      "finalDesignLink": "",
+      "notes": "Client brief Jul 20 20:19: Dogtra 1900X/280X new; lead on them, also mention the other variants; remember client feedback. Standing Zero9 rules applied: functional voice, no hype, no pricing, no warranty, 'case' not 'carrier', no 'Kydex', no model name in the hero headline (new models in subhead + section, which is allowed), mandatory broad fitment (all supported Dogtra models named), full name Zero9 Holsters, two Shop Now CTAs, real product-page images only, SL/PL visible. Supported models per page: Dogtra 2300 Series; Dogtra 1900X/280X (new); Dogtra ARC Series 200 and 1900s incl Black Edition; Dogtra 3500X. Note: client wrote '3500i' and '2300 series x'; page says 3500X and 2300 Series, used the accurate page names. Acknowledged in Slack thread 1784558953.693149.",
+      "productUrl": "https://zero9holsters.com/products/k9-e-collar-remote-case-dogtra",
+      "collectionUrl": "",
+      "offerCode": "",
+      "creativeDirection": "Zero9 black #0A0A0A / panel #111418 / red #E62826, Tomorrow/Arial Black headings. Logo bar, 1900XOut hero + category headline + early CTA, split new-fit section (1900XBLK), 3-up models strip (1900XBW new / DogtraArc_2 / 3500x), ColorID finish chart band, Build Yours finish+mount, closing CTA, Cleveland origin strip, logo footer. 600px single column, mobile first."
+    },
+    {
       "id": "2026-07-17-most-trusted-duty-gear",
       "date": "2026-07-17",
       "day": "Fri",
